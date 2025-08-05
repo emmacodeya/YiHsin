@@ -1,0 +1,30 @@
+body {
+  font-family: "Noto Sans TC", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+p {
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,12 @@
+header {
+  a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }
+}
