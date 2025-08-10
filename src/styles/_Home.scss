@@ -1,0 +1,11 @@
+.banner {
+  height: 100vh; 
+  background-image: url('/images/banner.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.banner .subtitle {
+  display: inline-block;
+  margin-left: 200px;
+}

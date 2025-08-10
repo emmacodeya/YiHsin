@@ -6,9 +6,9 @@ const Footer = () => {
         <div className="">
           <h5 className="fs-3  text-primary-400 mb-5">義歆實業股份有限公司</h5>
           <p className="fs-6 text-primary-600">專營封口機、包裝設備，品質與服務是我們的堅持。</p>
-          <div className="d-flex gap-2">
-            {/* <img src="/line-icon.svg" alt="LINE" width="30" />
-            <img src="/email-icon.svg" alt="Email" width="30" /> */}
+          <div className="fs-3 mt-2 d-flex align-items-center ">
+           <i className="bi bi-line me-2 text-primary-400"></i>
+           <i className="bi bi-envelope  text-primary-400"></i>
           </div>
         </div>
 

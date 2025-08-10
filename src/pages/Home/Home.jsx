@@ -1,8 +1,14 @@
 const Home = () => {
   return (
-    <div className="container py-5 text-center text-white">
-      <h1>歡迎來到義歆實業</h1>
-      <p>我們專注於專業產品與合作夥伴關係。</p>
+    <div className="banner d-flex flex-column justify-content-center text-primary-600">
+    <div className="container">
+      <h1>
+        餐影開店最佳夥伴
+        <br />
+        <span className="subtitle">從銷售到售後全部搞定</span>
+      </h1>
+      <h2 className="mt-3">專注於食品封口包裝及飲料門市桌上型機器</h2></div>
+      
     </div>
   );
 };
