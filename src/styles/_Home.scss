@@ -1,11 +1,121 @@
 .banner {
   height: 100vh; 
-  background-image: url('/images/banner.png'); 
+  background-image: url('/images/banner-2.png'); 
   background-size: cover;
   background-position: center;
 }
 
-.banner .subtitle {
-  display: inline-block;
-  margin-left: 200px;
+
+
+.service-flow {
+  background: linear-gradient(180deg, rgba(10,30,84,.78), rgba(10,30,84,.72));
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  .flow-grid { position: relative; }
+
+  .step-card {
+    position: relative;
+    padding: 1.5rem 1.25rem;
+    border-radius: 16px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    box-shadow: 0 8px 24px rgba(0,0,0,.15);
+    transition: transform .18s ease, box-shadow .18s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(0,0,0,.22);
+    }
+
+    .icon-wrap{
+      width:56px;height:56px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      margin-bottom:.75rem;
+      background:#B39A84; color:#0A1E54; font-size:1.5rem;
+      box-shadow: inset 0 0 0 4px rgba(243,236,230,.25);
+    }
+
+    .num-badge{
+      position:absolute; top:-12px; left:-12px;
+      width:32px;height:32px;border-radius:50%;
+      background:#F9F0EE; color:#0A1E54; font-weight:700;
+      display:flex;align-items:center;justify-content:center;
+      border:2px solid #B39A84;
+    }
+  }
+
+  /* 桌機：水平連接線 */
+  @media (min-width: 768px){
+    .connector::after{
+      content:""; position:absolute; top:50%; right:-12px;
+      width:24px; height:2px; background:#B39A84; opacity:.6;
+      transform: translateY(-50%);
+    }
+    .connector-last::after{ display:none; }
+  }
+
+  /* 手機：垂直時間軸 */
+  @media (max-width: 767.98px){
+    .flow-grid .col{ position:relative; padding-left:18px; }
+    .flow-grid .col::before{
+      content:""; position:absolute; left:6px; top:0; bottom:0;
+      width:2px; background:rgba(179,154,132,.35);
+    }
+    .step-card::before{
+      content:""; position:absolute; left:-12px; top:12px;
+      width:10px; height:10px; border-radius:50%;
+      background:#B39A84; box-shadow:0 0 0 4px rgba(179,154,132,.25);
+    }
+  }
+}
+
+
+.product-showcase {
+  background: linear-gradient(180deg, #eef3fb 0%, #f6f8fc 100%);
+
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(10, 30, 84, 0.08);
+    box-shadow: 0 8px 24px rgba(10, 30, 84, 0.1);
+  }
+
+  .btn-soft {
+    background: #f2f5fb;
+    border: 1px solid transparent;
+    color: #0A1E54;
+    padding: .6rem .9rem;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    &.active {
+      background: #E9EEF9;
+      border-color: #DDE6FA;
+      font-weight: 700;
+      color: #0A1E54;
+    }
+
+    &:hover {
+      background: #E9EEF9;
+    }
+  }
+
+  /* 圖片大小設定 */
+  .product-img {
+    width: 100%;
+    height: 400px; // 桌機
+    background: #f2f5fb;
+    border: 1px solid #dde6fa;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (max-width: 767.98px) {
+    .product-img {
+      height: 160px; // 手機更小
+    }
+  }
 }
