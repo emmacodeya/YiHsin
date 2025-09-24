@@ -1,0 +1,50 @@
+.product-showcase .nav {
+  box-shadow: 0 2px 8px #6e6b6714;
+  border-radius: 12px;
+}
+.product-showcase .nav-link { border-radius: 12px; }
+.product-showcase .nav-link:hover { color: #569573; }
+.product-showcase .nav-pills .nav-link.active {
+  color: #212529;
+  background-color: #B39A84;
+}
+
+/* 右側容器：垂直置中 */
+.product-showcase .right-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 520px;
+}
+@media (max-width: 991.98px) {
+  .product-showcase .right-wrap { min-height: auto; }
+}
+
+/* 卡片樣式 */
+.product-showcase .glass {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 14px 30px rgba(10,30,84,.08), 0 2px 8px rgba(10,30,84,.06);
+}
+.product-showcase .card-wide { max-width: 960px; }
+
+/* 單張圖片（2） */
+.product-showcase .single-image {
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .product-showcase .single-image { height: 200px; }
+}
+
+/* CTA */
+.btn-outline-primary-100 {
+  border-width: 2px;
+  border-color: #0A1E54;
+  color: #0A1E54;
+}
+.btn-outline-primary-100:hover {
+  background: #0A1E54;
+  color: #fff;
+}

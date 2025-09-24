@@ -1,0 +1,455 @@
+{
+  "products": [
+    {
+      "category": "封口機",
+      "items": [
+        {
+          "model": "K-2590SA",
+          "images": [
+            "http://localhost:3000/images/product/K-2590SA(BK).jpg",
+            "http://localhost:3000/images/product/K-2590SA(ST).jpg"
+          ],
+          "features": [
+            "適用冷熱飲封口，密合度高、圖案對位準確，不滴不漏。",
+            "提供觸控與按鍵雙重操作模式，滿足不同使用習慣。",
+            "支援繁體中文、簡體中文與英文多語系，操作介面簡單易懂。",
+            "精緻外觀搭配全封閉防塵設計，強化衛生與安全。"
+          ],
+          "specs": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "450 W",
+            "sealing_range": "∮90或∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "20 KG",
+            "dimensions": "395.5*266*540 mm"
+          }
+        },
+        {
+          "model": "K-2590S",
+          "images": [
+            "http://localhost:3000/images/product/K-2590S(BK).jpg",
+            "http://localhost:3000/images/product/K-2590S(ST).jpg"
+          ],
+          "features": [
+            "自動追蹤膠膜定位，封口圖案對位精準，密封效果穩定不漏。",
+            "數位顯示與溫度調節系統，控溫準確，封口品質一致。",
+            "封口杯數與溫度即時顯示，便於操作與監控產能。",
+            "全封閉式防塵結構設計，有效避免外部污染，提升飲品衛生安全。"
+          ],
+          "specs": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "450 W",
+            "sealing_range": "∮90或∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "20 KG",
+            "dimensions": "395.5*266*540 mm"
+          }
+        },
+        {
+          "model": "K-2590D5.5",
+          "images": ["http://localhost:3000/images/product/K-2590D5.5.jpg"],
+          "features": [
+            "支援全自動與半自動雙模式操作，放入杯子即可自動封口，操作快速又省力。",
+            "封口圖案對位精準，封口嚴密，不滴不漏。",
+            "旋鈕式調溫設計，調整快速直覺，適合現場作業需求。",
+            "封口杯數即時顯示，有助於產能掌握與品質控管。"
+          ],
+          "specs": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "500 W",
+            "sealing_range": "∮90或∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "27 KG",
+            "dimensions": "410*250*555 mm"
+          }
+        },
+        {
+          "model": "K-2580D5.5",
+          "images": ["http://localhost:3000/images/product/K-2580D5.5.jpg"],
+          "features": [
+            "支援全自動與半自動操作，放杯即可封口，省時又省力。",
+            "採用數位控溫技術，溫度控制精準，有效確保封口品質。",
+            "封口圖案準確對位，密封效果佳，不滴不漏。",
+            "封口溫度與封杯數即時顯示，方便作業與品質管理。"
+          ],
+          "specs": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "500 W",
+            "sealing_range": "∮90或∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "26 KG",
+            "dimensions": "410*250*555 mm"
+          }
+        }
+      ]
+    },
+    {
+      "category": "果糖機",
+      "items": [
+        {
+          "model": "F-09",
+          "images": ["http://localhost:3000/images/product/F-09.jpg"],
+          "features": [
+            "定量出糖精準，誤差僅 ±0.1g，確保飲品甜度一致。",
+            "具備重複記憶功能，連續出糖時無需重複按鍵操作，提升效率。",
+            "機身輕巧節省空間，搭配 6L大容量糖桶，適合各種場域。",
+            "設有防蟻腳墊，符合食品衛生需求。",
+            "提供 10 組糖量快捷鍵，設定簡單、操作快速。"
+          ],
+          "specs": {
+            "filling_accuracy": "±1 cc",
+            "power": "500 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "capacity": "2500 cc/min",
+            "tank_volume": "6 L",
+            "weight": "6 KG",
+            "dimensions": "420*150*400 mm"
+          }
+        }
+      ]
+    },
+    {
+      "category": "搖搖機",
+      "items": [
+        {
+          "model": "KS-01A",
+          "images": ["http://localhost:3000/images/product/KS-01A.jpg"],
+          "features": [
+            "全自動進出杯設計，搭配封開式機體結構，運行安靜又安全。",
+            "預設 7種搖動模式，可自訂時間，靈活滿足不同飲品製作需求。",
+            "可調式杯架設計，兼容多種雪克杯，操作便利。",
+            "採用大吸盤固定底座，搖動穩定、噪音低、耐用性高。",
+            "一鍵啟動搭配緊急停止按鈕，操作安全有保障。",
+            "全不鏽鋼一體成型設計，防水防塵，易於清潔。"
+          ],
+          "specs": {
+            "power": "70 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "capacity": "300-500 PSC/HR",
+            "timing_accuracy":"0.1 sec",
+            "weight": "31 KG",
+            "dimensions": "560*260*520 mm"
+          }
+        },
+        {
+          "model": "YY-01A",
+          "images": ["http://localhost:3000/images/product/YY-01A.jpg"],
+          "features": [
+            "採用360°旋轉搖動方式，混合更均勻，口感更穩定。",
+            "自動進出杯設計，封閉式箱體結構，運行安靜、安全。",
+            "可預設7 種搖動模式，時間可自由調整，滿足多樣飲品需求。",
+            "可調式杯架設計，支援不同尺寸雪克杯，應用靈活。",
+            "強力吸盤設計，搖動穩定性高，低噪音、耐久度佳。",
+            "一鍵啟動與緊急停止設計，強化操作安全。",
+            "不鏽鋼一體成型機身，防水防塵，易於清潔與保養。"
+          ],
+          "specs": {
+            "power": "70 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "capacity": "300-500 PSC/HR",
+            "timing_accuracy": "0.1 sec",
+            "weight": "30 KG",
+            "dimensions": "560*260*550 mm"
+          }
+        },
+        {
+          "model": "YY-02",
+          "images": [
+            "http://localhost:3000/images/product/YY-02.jpg",
+            "http://localhost:3000/images/product/YY-02(帶防護罩）.jpg"
+          ],
+          "features": [
+            "自帶防護罩設計，提升作業安全性，操作更安心。",
+            "採用360°旋轉搖動技術，可同時製作雙杯，口感均勻，效率倍增。",
+            "支援多種雪克杯與奶油槍，搭配可調式杯架，應用彈性高。",
+            "旋轉式時間設定介面，操作簡單，支援 0.1~3600 秒自由設定。",
+            "全金屬配重設計，穩定性高，機身易於清潔，符合衛生需求。",
+            "附緊急停止按鈕，一鍵停止保護使用者。"
+          ],
+          "specs": {
+            "power": "50 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "capacity": "500-700 PSC/HR",
+            "timing_accuracy": "0.1 sec",
+            "weight": "26 KG",
+            "dimensions": "390*342*380 mm"
+          }
+        },
+        {
+          "model": "KS-02",
+          "images": ["http://localhost:3000/images/product/KS-02.jpg"],
+          "features": [
+            "採雙電機分離控制設計，上下搖動穩定均勻，雙杯同時處理更有效率。",
+            "可調式杯架支援多種雪克杯類型，應用範圍廣。",
+            "搭配旋轉式時間設定，支援 0.1–3600 秒自由調整，靈活操作。",
+            "一體式不鏽鋼機身設計，耐用易清潔，符合商用衛生需求。",
+            "全金屬配重裝置，穩固不移位，機器運作安靜穩定。",
+            "一鍵啟動與緊急停止按鈕設計，操作直覺又安全。"
+          ],
+          "specs": {
+            "power": "90 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "capacity": "500-700 PSC/HR",
+            "timing_accuracy": "0.1 sec",
+            "weight": "34 KG",
+            "dimensions": "420*368*413 mm"
+          }
+        }
+      ]
+    },
+    {
+      "category": "檸檬機系列",
+      "items": [
+        {
+          "model": "K-CD02",
+          "images":  ["http://localhost:3000/images/product/K-CD02(ST).jpg"],
+          "features": [
+            "白動旋轉偏心式捶打設計，確保檸檬、水果與冰塊均勻混合，口感佳。",
+            "支援8組預設配方，捶打時間與速度可靈活調整，快速切換不同飲品製程。",
+            "自動進出結構設計，杯子穩固放置，操作順手、安全不易傾倒。",
+            "一鍵啟動操作簡單，內建清潔模式，日常保養方便快速。",
+            "可拆式錘頭設計，支援多種杯型與配件客製化需求。",
+            "高匹配杯蓋結構，有效防止捶打過程中飲品飛濺。"
+          ],
+          "specs": {
+            "power": "150 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "shaker_cup": "700/1000 ml",
+            "cup_height": "153 mm",
+            "pounding_time": "0-98 s",
+            "pounding_speed": "1-10 levels",
+            "weight": "27 KG",
+            "dimensions": "240*465*596 mm"
+          }
+        },
+        {
+          "model": "K-CD04",
+          "images": ["http://localhost:3000/images/product/K-CD04.jpg"],
+          "features": [
+            "自動旋轉偏心式捶打設計，快速均勻混合檸檬、水果與冰塊，製作高品質飲品。",
+            "支援8組預設配方，捶打時間與速度可自由調整，滿足不同飲品需求。",
+            "自動進出杯設計，放杯穩定、取杯方便，提升操作效率與安全性。",
+            "高匹配杯蓋結構設計，防止内容物飛濺，保持作業環境整潔。",
+            "一鍵啟動＋一鍵清潔模式，操作簡單，日常維護省時省力。",
+            "可拆卸式錘頭，支援客製化配件，適應不同作業場景。"
+          ],
+          "specs": {
+            "power": "300 W",
+            "voltage": "220/50 V/Hz",
+            "shaker_cup": "1000 ml",
+            "cup_height": "200 mm",
+            "pounding_time": "0-98 s",
+            "pounding_speed": "1-10 levels",
+            "weight": "30 KG",
+            "dimensions": "240*465*670 mm"
+          }
+        },
+        {
+          "model": "K-CD07",
+          "images":  ["http://localhost:3000/images/product/K-CD07.jpg"],
+          "features": [
+            "搭載邊旋轉邊捶打機構，確保混合更均勻、口感更滑順。",
+            "可支援8組預設配方，捶打時間與速度可彈性設定，快速切換作業。",
+            "適配153mm與200mm杯高，支援多種雪克杯尺寸，使用更自由。",
+            "強勁動力設計，可輕鬆處理整顆檸檬、水果與冰塊，效率高。",
+            "一鍵啟動操作簡便，搭配一鍵清潔功能，日常保養無負擔。",
+            "可拆卸式錘頭，支援定制，滿足不同飲品調製需求。"
+          ],
+          "specs": {
+            "power": "300 W",
+            "voltage": "220/50 V/Hz",
+            "shaker_cup": "1000 ml",
+            "cup_height": "153/200 mm",
+            "pounding_time": "0-98 s",
+            "pounding_speed": "1-10 levels",
+            "weight": "30 KG",
+            "dimensions": "230*465*570 mm"
+          }
+        }
+      ]
+    },
+    {
+        "category": "鋁蓋封口機系列",
+        "items": [
+          {
+            "model": "K-2280A",
+            "images": ["http://localhost:3000/images/product/K-2280A.jpg"],
+            "features": [
+              "雙工位自動進出設計，快速放置杯體與杯蓋，提升封口效率。",
+              "開機即用、無需預熱，封口不等待，有效節能提升產能。",
+              "特製可更換式杯座設計，穩定固定杯體，適用多種容器。",
+              "支援客製化杯座，一機多用，降低設備投資成本。",
+              "配備安全防護罩與一鍵復位功能，操作更安心。"
+            ],
+            "specs": {
+              "power": "100 W",
+              "voltage": "220/50 V/Hz",
+              "sealing_diameter": "∮80 mm",
+              "sealing_time": "7 s (進出時間4s, 封杯時間3s)",
+              "weight": "30 KG",
+              "dimensions": "260*465*565 mm"
+            }
+          },
+          {
+            "model": "K-2256A",
+            "images":  ["http://localhost:3000/images/product/K-2256A.jpg"],
+            "features": [
+              "雙工位設計，放杯與封口可同步作業，顯著提升封杯效率。",
+              "無需預熱，開機即用，縮短等候時間並節省能源。",
+              "可替換式特製杯座設計，固定性高，可支援多樣容器。",
+              "支援客製化杯座規格，一機多用，減少設備汰換成本。",
+              "搭配安全防護罩與一鍵復位功能，操作直覺又安全。"
+            ],
+            "specs": {
+              "power": "100 W",
+              "voltage": "220/50 V/Hz",
+              "sealing_diameter": "∮56 mm",
+              "sealing_time": "7 s (進出時間4s, 封杯時間3s)",
+              "weight": "30 KG",
+              "dimensions": "260*465*565 mm"
+            }
+          },
+          {
+            "model": "K-2290A",
+            "images":["http://localhost:3000/images/product/K-2290A.jpg"],
+            "features": [
+              "採雙工位設計，杯體與杯蓋可快速進出，封口效率高。",
+              "免預熱設計，開機即用，有效節省等待時間與耗電。",
+              "特製可替換杯座，固定穩定，適用多種杯型。",
+              "客製化支援多規格容器，一機可多用途，靈活應用。",
+              "内建安全防護罩與一鍵復位功能，確保操作安全性。"
+            ],
+            "specs": {
+              "power": "100 W",
+              "voltage": "220/50 V/Hz",
+              "sealing_diameter": "∮90 mm",
+              "sealing_time": "7 s (進出時間4s, 封杯時間3s)",
+              "weight": "30 KG",
+              "dimensions": "260*465*565 mm"
+            }
+          },
+          {
+            "model": "K-22126A",
+            "images": ["http://localhost:3000/images/product/K-22126A.jpg"],
+            "features": [
+              "雙工位自動進出設計，快速置放盒體與鋁蓋，封盒效率高。",
+              "採免預熱技術，開機即可操作，節省時間與電力。",
+              "特製可替換杯座設計，穩固耐用，支援多種容器盒型。",
+              "支援客製化多種盒型模具，一機多用，擴充性佳。",
+              "配備安全防護罩與一鍵復位功能，作業安全有保障。"
+            ],
+            "specs": {
+              "power": "100 W",
+              "voltage": "220/50 V/Hz",
+              "sealing_diameter": "∮126 mm",
+              "sealing_time": "7 s (進出時間4s, 封杯時間3s)",
+              "weight": "39 KG",
+              "dimensions": "260*465*565 mm"
+            }
+          }
+        ]
+      },
+    {
+      "category": "容器封口機",
+      "items": [
+        {
+          "model": "K-255X",
+          "images": ["http://localhost:3000/images/product/K-255X.jpg"],
+          "features": [
+            "適用多種盒裝食品，封口範圍廣泛。",
+            "自動感應封口與半自動模式，操作彈性高。",
+            "內建自動頂盒功能，放盒取盒更順手，提高效率。",
+            "可客製封口模具，精準匹配不同容器。",
+            "數位控溫系統確保封口穩定，品質一致。",
+            "自動追蹤膠膜定位，圖案精準對位。",
+            "封口數量自動計數，方便生產管理。",
+            "安全擋板與一鍵復位裝置，操作安心。"
+          ],
+          "specs": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1000 W",
+            "sealing_range": "∮155 或 155*155 以內",
+            "film_width": "依實際容器尺寸",
+            "capacity": "400-500 PSC/HR",
+            "weight": "33 KG",
+            "dimensions": "468*300*561 mm"
+          }
+        },
+        {
+          "model": "K-1519",
+          "images": ["http://localhost:3000/images/product/K-1519.jpg"],
+          "features": [
+            "適用多種盒裝食品，封口範圍最大可達 155×190mm。",
+            "自動感應封口與半自動雙模式。",
+            "自動頂盒功能，放置取盒快速順暢。",
+            "可客製封口模具，對應不同容器尺寸。",
+            "數位控溫，溫度穩定提升密封品質。",
+            "自動對位功能，外觀整齊美觀。",
+            "封口數量自動計數，產能一目了然。",
+            "安全擋板與一鍵復位，保障安全。"
+          ],
+          "specs": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1000 W",
+            "sealing_range": "155*190 以內",
+            "film_width": "依實際容器尺寸",
+            "capacity": "400-500 PSC/HR",
+            "weight": "35 KG",
+            "dimensions": "510*310*575 mm"
+          }
+        },
+        {
+          "model": "K-1823",
+          "images":  ["http://localhost:3000/images/product/K-1823.jpg"],
+          "features": [
+            "適用大型餐盒封口（最大 180×230mm），適合外送需求。",
+            "自動感應封口與半自動操作，情境應用靈活。",
+            "自動頂盒機構，放盒與取盒更輕鬆。",
+            "可客製化封口模具，擴充性高。",
+            "數位控溫，封口溫度精準穩定。",
+            "膠膜圖案自動對位，外觀整齊。",
+            "封口數自動計數，方便管理。",
+            "安全擋板與一鍵復位，強化安全。"
+          ],
+          "specs": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1200 W",
+            "sealing_range": "180*230 以內",
+            "film_width": "依實際容器尺寸",
+            "capacity": "400-500 PSC/HR",
+            "weight": "38 KG",
+            "dimensions": "598*326*566 mm"
+          }
+        },
+        {
+          "model": "K-400",
+          "images":  ["http://localhost:3000/images/product/400.jpg"],
+          "features": [
+            "支援標準封口、抽真空封口與氣調保鮮封口。",
+            "全自動、半自動與單動三種操作模式可切換。",
+            "專利轉動系統與自動頂出裝置，置杯與取杯效率提升。",
+            "適用封口範圍大，可封多樣盒型。",
+            "數位溫控系統，依材質調整封溫，保證密封品質。",
+            "自動追蹤封口膠膜定位，封口圖案整齊準確。",
+            "內建封杯數自動計數功能，有助生產監控。",
+            "鋁合金表面陽極氧化處理＋不鏽鋼機身，耐蝕耐用、安全衛生。"
+          ],
+          "specs": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1000 W",
+            "sealing_range": "∮180 以內或 220*175 mm",
+            "film_width": "依實際容器尺寸",
+            "capacity": "5-12 PSC/min",
+            "weight": "56 KG",
+            "dimensions": "480*400*645 mm",
+            "optional_config": "印字機"
+          }
+        }
+      ]
+    }
+  ]
+}

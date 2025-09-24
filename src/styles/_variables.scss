@@ -308,13 +308,17 @@ $dark: $gray-900 !default;
 // $success:       $green !default;
 // $danger:        $red !default;
 
-
+$primary-100: #0A1E54;
 $primary-200: #3a3e6c;
 $primary-400: #fcfa93;
 $primary-600: #999999;
+$primary-800: #F9F0EE;
+$primary-1000: #B39A84;
+
+
 
 $gray-100: #f0f0f0;
-$gray-200: #d4d4d4;
+$gray-200: #CFC7C8; 
 $gray-400: #939393;
 $gray-600: #5b5b5b;
 $gray-800: #333333;
@@ -337,9 +341,12 @@ $theme-colors: (
   "danger-200": $danger-200,
   "light": $light,
   "dark": $dark,
+  "primary-100": $primary-100,
   "primary-200": $primary-200,
   "primary-400": $primary-400,
   "primary-600": $primary-600,
+  "primary-800": $primary-800,
+  "primary-1000": $primary-1000,
   "gray-100": $gray-100,
   "gray-200": $gray-200,
   "gray-400": $gray-400,

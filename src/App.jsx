@@ -60,7 +60,7 @@ const Content = () => {
       {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/" element={<Home />} />
-      </Routes>
+    </Routes>
       {!isAdmin && <Footer />}
     </>
   );
