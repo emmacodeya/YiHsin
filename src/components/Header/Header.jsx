@@ -1,12 +1,57 @@
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { LangContext } from "../../App";
 
 const Header = () => {
+  const { lang } = useContext(LangContext);
+
+  const text = {
+    "zh-TW": {
+      company: "義歆實業股份有限公司",
+      home: "首頁",
+      products: "產品項目",
+      used: "精選中古機",
+      news: "最新消息",
+      partners: "尋找合作夥伴",
+      contact: "聯繫我們",
+      gmail: "Gmail",
+      line: "官方LINE",
+      phone: "電話",
+    },
+    "zh-CN": {
+      company: "义歆实业股份有限公司",
+      home: "首页",
+      products: "产品项目",
+      used: "精选中古机",
+      news: "最新消息",
+      partners: "寻找合作伙伴",
+      contact: "联系我们",
+      gmail: "邮箱",
+      line: "官方LINE",
+      phone: "电话",
+    },
+    en: {
+      company: "Yihsin Industrial Co., Ltd.",
+      home: "Home",
+      products: "Products",
+      used: "Used Machines",
+      news: "News",
+      partners: "Partners",
+      contact: "Contact Us",
+      gmail: "Email",
+      line: "LINE",
+      phone: "Phone",
+    },
+  };
+
+  const t = text[lang] || text["zh-TW"];
+
   return (
     <nav className="navbar navbar-expand-lg py-3 navbar-classic">
       <div className="container-fluid">
         {/* 公司名稱 */}
         <NavLink to="/" className="navbar-brand fs-4">
-          義歆實業股份有限公司
+          {t.company}
         </NavLink>
 
         {/* 漢堡選單 */}
@@ -28,44 +73,72 @@ const Header = () => {
           <ul className="navbar-nav mx-auto gap-3">
             <li className="nav-item">
               <NavLink to="/" className="nav-link">
-                首頁
+                {t.home}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/products" className="nav-link">
-                產品項目
+                {t.products}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/usedmachine" className="nav-link">
-                精選中古機
+                {t.used}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/news" className="nav-link">
-                最新消息
+                {t.news}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/partners" className="nav-link">
-                尋找合作夥伴
+                {t.partners}
               </NavLink>
             </li>
           </ul>
 
           {/* 右邊聯繫資訊 */}
-          <div className="text-end small d-flex gap-4 contact-info">
-            <div className="text-center">
-              <p className="fw-bold">聯繫我們</p>
-              <p>0900-008-608</p>
+          <div className="text-end small contact-info mt-lg-0 mt-2">
+            {/* 桌機版 */}
+            <div className="d-none d-md-flex gap-4 justify-content-end">
+              <div className="text-center">
+                <p className="fw-bold mb-1">{t.contact}</p>
+                <p className="mb-0">0900-008-608</p>
+              </div>
+              <div className="text-center">
+                <p className="fw-bold mb-1">{t.gmail}</p>
+                <p className="mb-0">yihsin1630@gmail.com</p>
+              </div>
+              <div className="text-center">
+                <p className="fw-bold mb-1">{t.line}</p>
+                <p className="mb-0">@477fjgkd</p>
+              </div>
             </div>
-            <div className="text-center">
-              <p className="fw-bold">Gmail</p>
-              <p>yihsin1630@gmail.com</p>
-            </div>
-            <div className="text-center">
-              <p className="fw-bold">LINE</p>
-              <p>0900008608</p>
+
+            {/* 手機板：折疊式 */}
+            <div className="d-md-none">
+              <button
+                className="btn btn-primary-1000 w-50 fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#contactCollapse"
+              >
+                {t.contact}
+              </button>
+              <div className="collapse mt-2" id="contactCollapse">
+                <div className="text-center bg-primary-200 text-white py-2 rounded">
+                  <p className="mb-1 text-gray-200">
+                    {t.phone}：0900-008-608
+                  </p>
+                  <p className="mb-1 text-gray-200">
+                    {t.gmail}：yihsin1630@gmail.com
+                  </p>
+                  <p className="mb-0 text-gray-200">
+                    {t.line}：@477fjgkd
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
