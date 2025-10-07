@@ -1,76 +1,108 @@
-.banner {
-  height: 100vh; 
-  background-image: url('/images/banner-2.png'); 
-  background-size: cover;
-  background-position: center;
+
+.product-showcase,
+.service-flow,
+.banner,
+.best-solutions,
+.hot-section {
+  /* 框架共用設定 */
+  img {
+    max-width: 100%;
+    display: block;
+  }
 }
 
+/*  Banner 區塊 */
+.banner {
+  background: url('/images/banner-2.png') center/cover no-repeat;
+  height: 100vh;
 
+  // h1 {
+  //   font-family: "Ma Shan Zheng", cursive;
+  // }
 
+  @include respond-down(md) {
+    background: url('/images/banner-sm.png') center/cover no-repeat;
+  }
+}
+
+/* 流程區塊 */
 .service-flow {
-  background: linear-gradient(180deg, rgba(10,30,84,.78), rgba(10,30,84,.72));
+  background: linear-gradient(180deg, rgba(10, 30, 84, .78), rgba(10, 30, 84, .72));
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 
-  .flow-grid { position: relative; }
+  .flow-grid {
+    position: relative;
+  }
 
   .step-card {
     position: relative;
     padding: 1.5rem 1.25rem;
     border-radius: 16px;
-    background: rgba(255,255,255,.06);
-    border: 1px solid rgba(255,255,255,.12);
-    box-shadow: 0 8px 24px rgba(0,0,0,.15);
+    background: rgba(255, 255, 255, .06);
+    border: 1px solid rgba(255, 255, 255, .12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
     transition: transform .18s ease, box-shadow .18s ease;
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 12px 28px rgba(0,0,0,.22);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .22);
     }
 
-    .icon-wrap{
-      width:56px;height:56px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;
-      margin-bottom:.75rem;
-      background:#B39A84; color:#0A1E54; font-size:1.5rem;
-      box-shadow: inset 0 0 0 4px rgba(243,236,230,.25);
+    .icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: .75rem;
+      background: #B39A84;
+      color: #0A1E54;
+      font-size: 1.5rem;
+      box-shadow: inset 0 0 0 4px rgba(243, 236, 230, .25);
     }
 
-    .num-badge{
-      position:absolute; top:-12px; left:-12px;
-      width:32px;height:32px;border-radius:50%;
-      background:#F9F0EE; color:#0A1E54; font-weight:700;
-      display:flex;align-items:center;justify-content:center;
-      border:2px solid #B39A84;
+    .num-badge {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #F9F0EE;
+      color: #0A1E54;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #B39A84;
     }
   }
 
-  /* 桌機：水平連接線 */
-  @media (min-width: 768px){
-    .connector::after{
-      content:""; position:absolute; top:50%; right:-12px;
-      width:24px; height:2px; background:#B39A84; opacity:.6;
+  /* 桌機以上 (lg up) */
+  @include respond-up(lg) {
+    .connector::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -12px;
+      width: 24px;
+      height: 2px;
+      background: #B39A84;
+      opacity: .6;
       transform: translateY(-50%);
     }
-    .connector-last::after{ display:none; }
-  }
 
-  /* 手機：垂直時間軸 */
-  @media (max-width: 767.98px){
-    .flow-grid .col{ position:relative; padding-left:18px; }
-    .flow-grid .col::before{
-      content:""; position:absolute; left:6px; top:0; bottom:0;
-      width:2px; background:rgba(179,154,132,.35);
-    }
-    .step-card::before{
-      content:""; position:absolute; left:-12px; top:12px;
-      width:10px; height:10px; border-radius:50%;
-      background:#B39A84; box-shadow:0 0 0 4px rgba(179,154,132,.25);
+    .flow-grid .col::before,
+    .step-card::before,
+    .connector-last::after {
+      display: none;
     }
   }
 }
 
-
+/* Product Showcase */
 .product-showcase {
   background: linear-gradient(180deg, #eef3fb 0%, #f6f8fc 100%);
 
@@ -105,7 +137,7 @@
   /* 圖片大小設定 */
   .product-img {
     width: 100%;
-    height: 400px; // 桌機
+    height: 400px;
     background: #f2f5fb;
     border: 1px solid #dde6fa;
     border-radius: 16px;
@@ -113,9 +145,206 @@
     background-position: center;
   }
 
-  @media (max-width: 767.98px) {
+  @include respond-down(md) {
     .product-img {
-      height: 160px; // 手機更小
+      height: 160px;
     }
+  }
+}
+
+/* 容器推薦 */
+.hot-topic {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  @include respond-down(lg) {
+    img {
+      height: 150px;
+    }
+  }
+}
+
+/* 標題線條 */
+.section-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 1rem;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: currentColor;
+  }
+}
+
+/* Best Solutions 區塊 */
+.best-solutions {
+  background: linear-gradient(180deg, #eef3fb 0%, #f6f8fc 100%);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 300px;
+  }
+
+  .solutions-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0A1E54;
+    gap: 1rem;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      height: 2px;
+      background: currentColor;
+    }
+  }
+
+  .hot-topic img {
+    width: 100%;
+    height: 240px; // 桌機預設大小
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  @include respond-down(lg) { // 平板（992 以下）
+    .hot-topic img {
+      height: 180px;
+    }
+  }
+
+  @include respond-down(md) { // 手機（767 以下）
+    .hot-topic img {
+      height: 140px;
+    }
+  }
+
+  .hot-topic:hover img {
+    transform: scale(1.05);
+  }
+}
+
+/* 熱門主題 hot-section */
+.hot-section {
+  background: linear-gradient(180deg, #eef3fb 0%, #f6f8fc 100%);
+}
+
+.hot-card-wrap {
+  position: relative;
+  padding-top: 20px;
+}
+
+.badge-box {
+  top: 0;
+  left: 25px;
+  z-index: 2;
+}
+
+.hot-card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: #CFC7C8;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .hot-item-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover .hot-item-img {
+    transform: scale(1.03);
+  }
+}
+
+/* 其他共用元件設定  */
+.tagline-box {
+  font-size: 20px;
+}
+
+.fixed-square {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+
+  @include respond-up(md) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.two-col-section .row {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.brush-title {
+  position: relative;
+  display: inline-block;
+  background: #B39A84;
+  clip-path: polygon(5% 10%, 95% 0, 100% 40%, 90% 100%, 10% 90%, 0 30%);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    animation: shimmer 2.5s infinite;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    left: 125%;
   }
 }

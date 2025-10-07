@@ -1,11 +1,27 @@
-@mixin pad {
-  @media (max-width: 768px) {
-    @content;
+@import 'variables';
+
+
+@mixin respond-up($breakpoint) {
+  $value: map-get($grid-breakpoints, $breakpoint);
+
+  @if $value != null {
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "⚠️ 沒有找到 '#{$breakpoint}' 這個斷點！";
   }
 }
 
-@mixin mobile {
-  @media (max-width: 568px) {
-    @content;
+
+@mixin respond-down($breakpoint) {
+  $value: map-get($grid-breakpoints, $breakpoint);
+
+  @if $value != null {
+    @media (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "⚠️ 沒有找到 '#{$breakpoint}' 這個斷點！";
   }
 }

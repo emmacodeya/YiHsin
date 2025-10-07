@@ -1,18 +1,87 @@
-import React from "react";
+import { useContext } from "react";
+import { LangContext } from "../../App";
 
 const Footer = () => {
+  const { lang, setLang } = useContext(LangContext);
+
+  const handleLangChange = (e) => {
+    const newLang = e.target.value;
+    setLang(newLang);
+    localStorage.setItem("lang", newLang);
+  };
+
+  const text = {
+    "zh-TW": {
+      company: "義歆實業股份有限公司",
+      desc: "專營封口機、包裝設備，品質與服務是我們的堅持。",
+      products: "產品項目",
+      productsList: ["封口機", "封罐機", "果糖機", "搖搖機", "檸檬機"],
+      links: "快速連結",
+      linksList: ["關於我們", "常見問題", "聯絡我們"],
+      contact: "聯絡資訊",
+      address: "新北市土城區中央路二段121巷2號5樓",
+      phone: "電話",
+      fax: "傳真",
+      email: "電子信箱",
+      copyright: "版權所有 © 2025 義歆實業股份有限公司",
+      chooseLang: "選擇語言",
+    },
+    "zh-CN": {
+      company: "义歆实业股份有限公司",
+      desc: "专营封口机、包装设备，品质与服务是我们的坚持。",
+      products: "产品项目",
+      productsList: ["封口机", "封罐机", "果糖机", "摇摇机", "柠檬机"],
+      links: "快速链接",
+      linksList: ["关于我们", "常见问题", "联系我们"],
+      contact: "联系方式",
+      address: "新北市土城区中央路二段121巷2号5楼",
+      phone: "电话",
+      fax: "传真",
+      email: "电子邮箱",
+      copyright: "版权所有 © 2025 义歆实业股份有限公司",
+      chooseLang: "选择语言",
+    },
+    en: {
+      company: "Yihsin Industrial Co., Ltd.",
+      desc: "Specialized in sealing and packaging machines — quality and service are our commitment.",
+      products: "Products",
+      productsList: [
+        "Cup Sealer",
+        "Can Sealer",
+        "Fructose Dispenser",
+        "Shaking Machine",
+        "Lemon Pounding Machine",
+      ],
+      links: "Quick Links",
+      linksList: ["About Us", "FAQ", "Contact Us"],
+      contact: "Contact Info",
+      address: "5F., No.2, Ln.121, Sec.2, Zhongyang Rd., Tucheng Dist., New Taipei City",
+      phone: "Tel",
+      fax: "Fax",
+      email: "Email",
+      copyright: "© 2025 Yihsin Industrial Co., Ltd. All Rights Reserved.",
+      chooseLang: "Language",
+    },
+  };
+
+  const t = text[lang] || text["zh-TW"];
+
   return (
-    <footer className="footer-classic text-light mt-5">
+    <footer className="footer-classic text-light">
       <div className="container py-5">
         <div className="row gy-4 gx-5 align-items-start">
           {/* 公司資訊 */}
           <div className="col-12 col-md-6 col-lg-3">
-            <h5 className="fw-bold text-accent mb-2">義歆實業股份有限公司</h5>
-            <p className="small text-secondary mb-3">
-              專營封口機、包裝設備，品質與服務是我們的堅持。
-            </p>
+            <h5 className="fw-bold text-accent mb-2">{t.company}</h5>
+            <p className="small text-gray-200 mb-3">{t.desc}</p>
             <div className="d-flex gap-3">
-              <a href="#" className="icon-circle" aria-label="LINE">
+              <a
+                href="https://line.me/R/ti/p/@477fjgkd"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon-circle"
+                aria-label="LINE"
+              >
                 <i className="bi bi-line"></i>
               </a>
               <a
@@ -27,52 +96,63 @@ const Footer = () => {
 
           {/* 產品項目 */}
           <div className="col-6 col-md-3 col-lg-2">
-            <h6 className="fw-bold text-accent mb-3">產品項目</h6>
+            <h6 className="fw-bold text-accent mb-3">{t.products}</h6>
             <ul className="list-unstyled small footer-list">
-              <li><a href="#" className="footer-link">封口機</a></li>
-              <li><a href="#" className="footer-link">封罐機</a></li>
-              <li><a href="#" className="footer-link">果糖機</a></li>
-              <li><a href="#" className="footer-link">搖搖機</a></li>
-              <li><a href="#" className="footer-link">檸檬機</a></li>
+              {t.productsList.map((p, i) => (
+                <li key={i}>
+                  <a href="#" className="footer-link">
+                    {p}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* 快速連結 */}
           <div className="col-6 col-md-3 col-lg-2">
-            <h6 className="fw-bold text-accent mb-3">快速連結</h6>
+            <h6 className="fw-bold text-accent mb-3">{t.links}</h6>
             <ul className="list-unstyled small footer-list">
-              <li><a href="/about-us" className="footer-link">關於我們</a></li>
-              <li><a href="#" className="footer-link">常見問題</a></li>
-              <li><a href="#" className="footer-link">聯絡我們</a></li>
+              {t.linksList.map((l, i) => (
+                <li key={i}>
+                  <a href="#" className="footer-link">
+                    {l}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* 聯絡資訊 */}
           <div className="col-12 col-md-6 col-lg-5 small">
-            <h6 className="fw-bold text-accent mb-3">聯絡資訊</h6>
-            <p className="mb-2"><i className="bi bi-geo-alt-fill me-2"></i>新北市土城區中央路二段121巷2號5樓</p>
-            <p className="mb-2"><i className="bi bi-telephone-fill me-2"></i>02-2787-8000</p>
-            <p className="mb-2"><i className="bi bi-printer-fill me-2"></i>02-2787-8000</p>
-            <p className="mb-0"><i className="bi bi-envelope-fill me-2"></i>yihsin1630@gmail.com</p>
+            <h6 className="fw-bold text-accent mb-3">{t.contact}</h6>
+            <p className="mb-2">
+              <i className="bi bi-geo-alt-fill me-2"></i>{t.address}
+            </p>
+            <p className="mb-2">
+              <i className="bi bi-telephone-fill me-2"></i>{t.phone}：02-2787-8000
+            </p>
+            <p className="mb-2">
+              <i className="bi bi-printer-fill me-2"></i>{t.fax}：02-2787-8000
+            </p>
+            <p className="mb-0">
+              <i className="bi bi-envelope-fill me-2"></i>{t.email}：yihsin1630@gmail.com
+            </p>
           </div>
         </div>
       </div>
 
-      {/* 版權 + 語言選單（右側） */}
+      {/* 底部版權 + 語言選擇 */}
       <div className="footer-bottom">
         <div className="container py-3 d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center">
-          <small className="text-secondary">
-            Copyright © 2025 義歆實業股份有限公司. All Rights Reserved.
-          </small>
-
+          <small className="text-secondary">{t.copyright}</small>
           <div className="d-flex align-items-center gap-2">
             <span className="text-accent small d-none d-sm-inline">
-              <i className="bi bi-globe2 me-1"></i>選擇語言
+              <i className="bi bi-globe2 me-1"></i>{t.chooseLang}
             </span>
             <select
               className="form-select form-select-sm lang-select w-auto"
-              defaultValue="zh-TW"
-              aria-label="Language"
+              value={lang}
+              onChange={handleLangChange}
             >
               <option value="zh-TW">繁體中文</option>
               <option value="zh-CN">简体中文</option>

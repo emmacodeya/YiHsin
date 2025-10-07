@@ -1,50 +1,178 @@
-.product-showcase .nav {
-  box-shadow: 0 2px 8px #6e6b6714;
-  border-radius: 12px;
-}
-.product-showcase .nav-link { border-radius: 12px; }
-.product-showcase .nav-link:hover { color: #569573; }
-.product-showcase .nav-pills .nav-link.active {
-  color: #212529;
-  background-color: #B39A84;
-}
+@import 'variables';
 
-/* 右側容器：垂直置中 */
-.product-showcase .right-wrap {
-  display: flex;
-  align-items: center;
-  min-height: 520px;
-}
-@media (max-width: 991.98px) {
-  .product-showcase .right-wrap { min-height: auto; }
-}
+.product-showcase {
+  /* 左側分類（桌機） */
+  .nav {
+    box-shadow: 0 2px 8px #6e6b6714;
+    border-radius: 12px;
+  }
 
-/* 卡片樣式 */
-.product-showcase .glass {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 14px 30px rgba(10,30,84,.08), 0 2px 8px rgba(10,30,84,.06);
-}
-.product-showcase .card-wide { max-width: 960px; }
+  .nav-link {
+    border-radius: 12px;
+    transition: all 0.3s ease;
 
-/* 單張圖片（2） */
-.product-showcase .single-image {
-  height: 280px;
-  border-radius: 20px;
-  overflow: hidden;
-}
+    &:hover {
+      color: #B39A84;
+    }
+  }
 
-@media (max-width: 992px) {
-  .product-showcase .single-image { height: 200px; }
-}
+  .nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #B39A84;
+  }
 
-/* CTA */
-.btn-outline-primary-100 {
-  border-width: 2px;
-  border-color: #0A1E54;
-  color: #0A1E54;
-}
-.btn-outline-primary-100:hover {
-  background: #0A1E54;
-  color: #fff;
+  /* 右側容器：垂直置中 */
+  .right-wrap {
+    display: flex;
+    align-items: center;
+    min-height: 520px;
+  }
+
+  @include respond-up(md) {
+    .right-wrap {
+      min-height: auto;
+    }
+  }
+
+  /* 卡片樣式 */
+  .glass {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 14px 30px rgba(10, 30, 84, 0.08),
+      0 2px 8px rgba(10, 30, 84, 0.06);
+  }
+
+  .card-wide {
+    max-width: 960px;
+  }
+
+  /* 單張圖片 */
+  .single-image {
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.4s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  @include respond-up(md) {
+    .single-image {
+      height: 200px;
+    }
+  }
+
+  /* CTA */
+  .btn-outline-primary-100 {
+    border-width: 2px;
+    border-color: #0A1E54;
+    color: #0A1E54;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #0A1E54;
+      color: #fff;
+    }
+  }
+
+  /* 自訂更多詳情按鈕 */
+  .btn-more {
+    font-size: 1rem;
+    padding: 0.4rem 1.4rem;
+    border-radius: 50px;
+    letter-spacing: 0.05em;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background: #0A1E54;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      font-size: 0.95rem;
+      padding: 0.35rem 1.2rem;
+    }
+  }
+
+  /* 右側文字區塊（桌機垂直置中／手機靠左） */
+  .card-wide .col-lg-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    .card-wide .col-lg-7 {
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .card-wide .btn-more {
+      align-self: flex-start;
+    }
+  }
+
+  /* === 📱 手機＋💻平板 共用樣式 === */
+  @media (max-width: map-get($grid-breakpoints, lg)) {
+    /* 橫向分類按鈕 */
+    .category-scroll,
+    .nav-pills {
+      display: flex !important;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      gap: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      background: transparent !important;
+      box-shadow: none;
+
+      button,
+      .nav-link {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        border-radius: 9999px;
+        border: 1.8px solid #B39A84;
+        color: #B39A84;
+        background: #fff;
+        font-weight: 600;
+        padding: 0.5rem 1.25rem;
+        scroll-snap-align: start;
+        transition: all 0.3s ease;
+
+        &.active {
+          background: #B39A84;
+          color: #fff;
+        }
+      }
+    }
+
+    .right-wrap {
+      background: #cfc7c8 !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 1.5rem !important;
+    }
+
+    .card-wide {
+      .single-image {
+        margin-bottom: 1rem;
+        height: auto;
+
+        img {
+          max-height: 220px;
+        }
+      }
+    }
+  }
 }
