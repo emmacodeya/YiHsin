@@ -1,0 +1,166 @@
+/* =========================
+   🔹 Products Page Style
+   ========================= */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 🔹右下詳細視窗 */
+.product-detail {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  height: 70vh;
+  z-index: 1050;
+  background: #CFC7C8;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border: 1px solid #ddd;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+
+  .offcanvas-header {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 1.25rem;
+  }
+
+  /* ✅ 左圖 + 右文字 */
+  .offcanvas-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .product-images {
+      flex: 1 1 45%;
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        max-height: 250px;
+        object-fit: contain;
+      }
+    }
+
+    .product-info {
+      flex: 1 1 55%;
+      h6 {
+        color: #111;
+        margin-top: 0.75rem;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        padding-left: 1rem;
+        li {
+          margin-bottom: 0.25rem;
+          color: #555;
+        }
+      }
+
+      table td {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  /* 底部馬上聯繫按鈕 */
+  .contact-btn {
+    border-top: 1px solid #eee;
+    background: #CFC7C8;
+  }
+}
+
+  /* 表格 */
+
+  .specs-table {
+  background-color: #bdb6b7;  // 可改你喜歡的色
+  td {
+    background-color: #B39A84; // 每格底色
+  }
+  tr:nth-child(even) td {
+    background-color: #CFC7C8; // 隔行色
+  }
+}
+
+
+  
+
+/* 保留原本卡片樣式 */
+.card {
+  max-width: 340px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-img-top {
+    height: 220px;
+    object-fit: contain;
+    padding: 8px;
+    transition: transform 0.4s ease;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  .card-body {
+    text-align: center;
+  }
+}
+
+/* 🔹輪播指示點 — 簡約清晰版 */
+.carousel-indicators {
+  justify-content: center;
+  margin-top: 0.75rem;
+
+  button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #aaa; // 🔹淡灰底，在白底可見
+    opacity: 0.6;
+    transition: all 0.3s ease;
+
+    &.active {
+      background-color: #0A1E54; // 🔸主題藍（明顯但不刺眼）
+      opacity: 1;
+      transform: scale(1.2);
+    }
+
+    &:hover {
+      background-color: #555; // 🔹滑過時更深灰
+      opacity: 0.9;
+    }
+  }
+}
+
+

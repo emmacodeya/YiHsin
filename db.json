@@ -10,8 +10,7 @@
     {
       "model": "K-2590SA",
       "images": [
-        "http://localhost:3000/images/product/K-2590SA.png",
-        "http://localhost:3000/images/product/K-2590SA(ST).jpg"
+        "http://localhost:3000/images/product/K-2590SA.png"
       ],
       "features": {
         "zh-TW": [
@@ -33,21 +32,52 @@
           "Refined appearance with fully enclosed dustproof design for improved hygiene and safety."
         ]
       },
-      "specs": {
-        "voltage": "220/110/50/60 V/Hz",
-        "power": "450 W",
-        "sealing_range": "∮90或∮95 mm",
-        "film_width": "130 mm",
-        "capacity": "5~12 PSC/min",
-        "weight": "20 KG",
-        "dimensions": "395.5*266*540 mm"
-      }
+        "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "film_width": "胶膜宽度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "film_width": "Film Width",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "450 W",
+            "sealing_range": "∮90或∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "20 KG",
+            "dimensions": "395.5*266*540 mm"
+          }
+        }
+
     },
     {
       "model": "K-2590S",
       "images": [
-        "http://localhost:3000/images/product/K-2590S(BK).jpg",
-        "http://localhost:3000/images/product/K-2590S(ST).jpg"
+        "http://localhost:3000/images/product/K-2590S小圖示.png"
       ],
       "features": {
         "zh-TW": [
@@ -69,15 +99,46 @@
           "Fully enclosed dustproof design enhances beverage hygiene and safety."
         ]
       },
-      "specs": {
-        "voltage": "220/110/50/60 V/Hz",
-        "power": "450 W",
-        "sealing_range": "∮90或∮95 mm",
-        "film_width": "130 mm",
-        "capacity": "5~12 PSC/min",
-        "weight": "20 KG",
-        "dimensions": "395.5*266*540 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "film_width": "胶膜宽度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "film_width": "Film Width",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "450 W",
+            "sealing_range": "∮90或∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "20 KG",
+            "dimensions": "395.5*266*540 mm"
+          }
+        }
     },
     {
       "model": "K-2590D5.5",
@@ -103,14 +164,45 @@
         ]
       },
       "specs": {
-        "voltage": "220/110/50/60 V/Hz",
-        "power": "500 W",
-        "sealing_range": "∮90或∮95 mm",
-        "film_width": "130 mm",
-        "capacity": "5~12 PSC/min",
-        "weight": "27 KG",
-        "dimensions": "410*250*555 mm"
-      }
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "film_width": "胶膜宽度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "film_width": "Film Width",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "500 ",
+            "sealing_range": "∮90或∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "27 KG",
+            "dimensions": "410*250*555 mm"
+          }
+        }
     },
     {
       "model": "K-2580D5.5",
@@ -135,15 +227,46 @@
           "Displays sealing temperature and count in real time for quality control."
         ]
       },
-      "specs": {
-        "voltage": "220/110/50/60 V/Hz",
-        "power": "500 W",
-        "sealing_range": "∮90或∮95 mm",
-        "film_width": "130 mm",
-        "capacity": "5~12 PSC/min",
-        "weight": "26 KG",
-        "dimensions": "410*250*555 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "film_width": "胶膜宽度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "film_width": "Film Width",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "450 ",
+            "sealing_range": "∮90或∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "26 KG",
+            "dimensions": "410*250*555 mm"
+          }
+        }
     }
   ]
     },
@@ -181,14 +304,45 @@
         ]
       },
       "specs": {
-        "filling_accuracy": "±1 cc",
-        "power": "500 W",
-        "voltage": "220/110/50/60 V/Hz",
-        "capacity": "2500 cc/min",
-        "tank_volume": "6 L",
-        "weight": "6 KG",
-        "dimensions": "420*150*400 mm"
-      }
+          "titles": {
+            "zh-TW": {
+              "filling_accuracy": "灌裝精度",
+              "power": "功率",
+              "voltage": "電壓",
+              "capacity": "產能",
+              "tank_volume": "容量",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "filling_accuracy": "灌装精度",
+              "power": "功率",
+              "voltage": "电压",
+              "capacity": "产能",
+              "tank_volume": "容量",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "filling_accuracy": "Filling Accuracy",
+              "power": "Power",
+              "voltage": "Voltage",
+              "capacity": "Output Capacity",
+              "tank_volume": "Tank Volume",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "filling_accuracy": "±1 cc",
+            "power": "500 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "capacity": "2500 cc/min",
+            "tank_volume": "6 L",
+            "weight": "6 KG",
+            "dimensions": "420*150*400 mm"
+          }
+        }
     },
     {
       "model": "QF-11D2",
@@ -217,14 +371,42 @@
           "Anti-ant design ensures safety and hygiene."
         ]
       },
-      "specs": {
-        "filling_accuracy": "±1-2 CC",
-        "power": "95 W",
-        "voltage": "110/220/50/60",
-        "capacity": "250 CC",
-        "weight": "12.5 KG",
-        "dimensions": "360*250*365 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "filling_accuracy": "灌裝精度",
+              "power": "功率",
+              "voltage": "電壓",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "filling_accuracy": "灌装精度",
+              "power": "功率",
+              "voltage": "电压",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "filling_accuracy": "Filling Accuracy",
+              "power": "Power",
+              "voltage": "Voltage",
+              "capacity": "Output Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "filling_accuracy": "±1-2 CC",
+            "power": "95 W",
+            "voltage": "110/220/50/60",
+            "capacity": "250 CC",
+            "weight": "12.5 KG",
+            "dimensions": "420*150*400 m"
+          }
+        }
     }
   ]
     },
@@ -264,14 +446,42 @@
           "All stainless steel body, waterproof and dustproof, easy to clean."
         ]
       },
-      "specs": {
-        "power": "70 W",
-        "voltage": "220/110/50/60 V/Hz",
-        "capacity": "300-500 PSC/HR",
-        "timing_accuracy": "0.1 sec",
-        "weight": "31 KG",
-        "dimensions": "560*260*520 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "timing_accuracy": "定時精度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "timing_accuracy": "定时精度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "timing_accuracy": "Timing Accuracy",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "70 W",
+            "timing_accuracy": "0.1 sec",
+            "capacity": "300-500 PSC/HR",
+            "weight": "31 KG",
+            "dimensions": "560*260*520 mm"
+          }
+        }
     },
     {
       "model": "YY-01A",
@@ -306,13 +516,41 @@
         ]
       },
       "specs": {
-        "power": "70 W",
-        "voltage": "220/110/50/60 V/Hz",
-        "capacity": "300-500 PSC/HR",
-        "timing_accuracy": "0.1 sec",
-        "weight": "30 KG",
-        "dimensions": "560*260*550 mm"
-      }
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "timing_accuracy": "定時精度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "timing_accuracy": "定时精度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "timing_accuracy": "Timing Accuracy",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "70 W",
+            "timing_accuracy": "0.1 sec",
+            "capacity": "300-500 PSC/HR",
+            "weight": "30 KG",
+            "dimensions": "560*260*550 mm"
+          }
+        }
     },
     {
       "model": "YY-02",
@@ -346,18 +584,46 @@
           "Equipped with emergency stop button for safety."
         ]
       },
-      "specs": {
-        "power": "50 W",
-        "voltage": "220/110/50/60 V/Hz",
-        "capacity": "500-700 PSC/HR",
-        "timing_accuracy": "0.1 sec",
-        "weight": "26 KG",
-        "dimensions": "390*342*380 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "timing_accuracy": "定時精度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "timing_accuracy": "定时精度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "timing_accuracy": "Timing Accuracy",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "50 W",
+            "timing_accuracy": "0.1 sec",
+            "capacity": "500-700 PSC/HR",
+            "weight": "26 KG",
+            "dimensions": "390*342*380 mm"
+          }
+        }
     },
     {
       "model": "KS-02",
-      "images": ["http://localhost:3000/images/product/KS-02.jpg"],
+      "images": ["http://localhost:3000/images/product/KS-02.png"],
       "features": {
         "zh-TW": [
           "採雙電機分離控制設計，上下搖動穩定均勻，雙杯同時處理更有效率。",
@@ -384,14 +650,42 @@
           "One-touch start and emergency stop button ensure safety and simplicity."
         ]
       },
-      "specs": {
-        "power": "90 W",
-        "voltage": "220/110/50/60 V/Hz",
-        "capacity": "500-700 PSC/HR",
-        "timing_accuracy": "0.1 sec",
-        "weight": "34 KG",
-        "dimensions": "420*368*413 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "timing_accuracy": "定時精度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "timing_accuracy": "定时精度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "timing_accuracy": "Timing Accuracy",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "90 W",
+            "timing_accuracy": "0.1 sec",
+            "capacity": "500-700 PSC/HR",
+            "weight": "34 KG",
+            "dimensions": "420*368*413 mm"
+          }
+        }
     }
   ]
     },
@@ -404,7 +698,7 @@
   "items": [
     {
       "model": "K-CD02",
-      "images": ["http://localhost:3000/images/product/K-CD02(ST).jpg"],
+      "images": ["http://localhost:3000/images/product/K-CD02小圖示.png"],
       "features": {
         "zh-TW": [
           "白動旋轉偏心式捶打設計，確保檸檬、水果與冰塊均勻混合，口感佳。",
@@ -431,16 +725,50 @@
           "High-fitting lid structure prevents splashing during operation."
         ]
       },
-      "specs": {
-        "power": "150 W",
-        "voltage": "220/110/50/60 V/Hz",
-        "shaker_cup": "700/1000 ml",
-        "cup_height": "153 mm",
-        "pounding_time": "0-98 s",
-        "pounding_speed": "1-10 levels",
-        "weight": "27 KG",
-        "dimensions": "240*465*596 mm"
-      }
+     "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "shaker_cup": "搖打杯容量",
+              "cup_height": "適用杯高",
+              "pounding_time": "捶打時間",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "shaker_cup": "摇打杯容量",
+              "cup_height": "适用杯高",
+              "pounding_time": "捶打时间",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "shaker_cup": "Shaker Cup Volume",
+              "cup_height": "Cup Height",
+              "pounding_time": "Pounding Time",
+              "pounding_speed": "Pounding Speed",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "150 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "shaker_cup": "700/1000 ml",
+            "cup_height": "153 mm",
+            "pounding_time": "0-98 s",
+            "pounding_speed": "1-10 levels",
+            "weight": "27 KG",
+            "dimensions": "240*465*596 mm"
+          }
+        }
     },
     {
       "model": "K-CD04",
@@ -472,15 +800,49 @@
         ]
       },
       "specs": {
-        "power": "300 W",
-        "voltage": "220/50 V/Hz",
-        "shaker_cup": "1000 ml",
-        "cup_height": "200 mm",
-        "pounding_time": "0-98 s",
-        "pounding_speed": "1-10 levels",
-        "weight": "30 KG",
-        "dimensions": "240*465*670 mm"
-      }
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "shaker_cup": "搖打杯容量",
+              "cup_height": "適用杯高",
+              "pounding_time": "捶打時間",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "shaker_cup": "摇打杯容量",
+              "cup_height": "适用杯高",
+              "pounding_time": "捶打时间",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "shaker_cup": "Shaker Cup Volume",
+              "cup_height": "Cup Height",
+              "pounding_time": "Pounding Time",
+              "pounding_speed": "Pounding Speed",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "300 W",
+            "voltage": "220/50 V/Hz",
+            "shaker_cup": "1000 ml",
+            "cup_height": "200 mm",
+            "pounding_time": "0-98 s",
+            "pounding_speed": "1-10 levels",
+            "weight": "30 KG",
+            "dimensions": "240*465*670 mm"
+          }
+        }
     },
     {
       "model": "K-CD07",
@@ -511,16 +873,50 @@
           "Detachable hammer head supports customization for various drink applications."
         ]
       },
-      "specs": {
-        "power": "300 W",
-        "voltage": "220/50 V/Hz",
-        "shaker_cup": "1000 ml",
-        "cup_height": "153/200 mm",
-        "pounding_time": "0-98 s",
-        "pounding_speed": "1-10 levels",
-        "weight": "30 KG",
-        "dimensions": "230*465*570 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "shaker_cup": "搖打杯容量",
+              "cup_height": "適用杯高",
+              "pounding_time": "捶打時間",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "shaker_cup": "摇打杯容量",
+              "cup_height": "适用杯高",
+              "pounding_time": "捶打时间",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "shaker_cup": "Shaker Cup Volume",
+              "cup_height": "Cup Height",
+              "pounding_time": "Pounding Time",
+              "pounding_speed": "Pounding Speed",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "300 W",
+            "voltage": "220/50 V/Hz",
+            "shaker_cup": "1000 ml",
+            "cup_height": "153/200 mm",
+            "pounding_time": "0-98 s",
+            "pounding_speed": "1-10 levels",
+            "weight": "30 KG",
+            "dimensions": "230*465*570 mm"
+          }
+        }
     }
   ]
     },
@@ -558,17 +954,45 @@
         ]
       },
       "specs": {
-        "power": "100 W",
-        "voltage": "220/50 V/Hz",
-        "sealing_diameter": "∮80 mm",
-        "sealing_time": "7 s (進出時間4s, 封杯時間3s)",
-        "weight": "30 KG",
-        "dimensions": "260*465*565 mm"
-      }
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "sealing_diameter": "封口口徑",
+              "sealing_time": "封口時間",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "sealing_diameter": "封口口径",
+              "sealing_time": "封口时间",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "sealing_diameter": "Sealing Diameter",
+              "sealing_time": "Sealing Time",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "100 W",
+            "voltage": "220/50 V/Hz",
+            "sealing_diameter": "∮80 mm",
+            "sealing_time": "7s",
+            "weight": "30 KG",
+            "dimensions": "260*465*565 mm"
+          }
+        }
     },
     {
       "model": "K-2256A",
-      "images": ["http://localhost:3000/images/product/K-2256A.jpg"],
+      "images": ["http://localhost:3000/images/product/K-2256A小圖示.png"],
       "features": {
         "zh-TW": [
           "雙工位設計，放杯與封口可同步作業，顯著提升封杯效率。",
@@ -592,18 +1016,46 @@
           "Equipped with a safety guard and reset function for intuitive and safe operation."
         ]
       },
-      "specs": {
-        "power": "100 W",
-        "voltage": "220/50 V/Hz",
-        "sealing_diameter": "∮56 mm",
-        "sealing_time": "7 s (進出時間4s, 封杯時間3s)",
-        "weight": "30 KG",
-        "dimensions": "260*465*565 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "sealing_diameter": "封口口徑",
+              "sealing_time": "封口時間",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "sealing_diameter": "封口口径",
+              "sealing_time": "封口时间",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "sealing_diameter": "Sealing Diameter",
+              "sealing_time": "Sealing Time",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "100 W",
+            "voltage": "220/50 V/Hz",
+            "sealing_diameter": "∮56 mm",
+            "sealing_time": "7s",
+            "weight": "30 KG",
+            "dimensions": "260*465*565 mm"
+          }
+        }
     },
     {
       "model": "K-2290A",
-      "images": ["http://localhost:3000/images/product/K-2290A.jpg"],
+      "images": ["http://localhost:3000/images/product/K-2290A.png"],
       "features": {
         "zh-TW": [
           "採雙工位設計，杯體與杯蓋可快速進出，封口效率高。",
@@ -628,17 +1080,45 @@
         ]
       },
       "specs": {
-        "power": "100 W",
-        "voltage": "220/50 V/Hz",
-        "sealing_diameter": "∮90 mm",
-        "sealing_time": "7 s (進出時間4s, 封杯時間3s)",
-        "weight": "30 KG",
-        "dimensions": "260*465*565 mm"
-      }
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "sealing_diameter": "封口口徑",
+              "sealing_time": "封口時間",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "sealing_diameter": "封口口径",
+              "sealing_time": "封口时间",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "sealing_diameter": "Sealing Diameter",
+              "sealing_time": "Sealing Time",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "100 W",
+            "voltage": "220/50 V/Hz",
+            "sealing_diameter": "∮90 mm",
+            "sealing_time": "7s",
+            "weight": "30 KG",
+            "dimensions": "260*465*565 mm"
+          }
+        }
     },
     {
       "model": "K-22126A",
-      "images": ["http://localhost:3000/images/product/K-22126A.jpg"],
+      "images": ["http://localhost:3000/images/product/K-22126A.png"],
       "features": {
         "zh-TW": [
           "雙工位自動進出設計，快速置放盒體與鋁蓋，封盒效率高。",
@@ -662,14 +1142,42 @@
           "Equipped with a safety guard and one-touch reset for secure and reliable operation."
         ]
       },
-      "specs": {
-        "power": "100 W",
-        "voltage": "220/50 V/Hz",
-        "sealing_diameter": "∮126 mm",
-        "sealing_time": "7 s (進出時間4s, 封杯時間3s)",
-        "weight": "39 KG",
-        "dimensions": "260*465*565 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "sealing_diameter": "封口口徑",
+              "sealing_time": "封口時間",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "sealing_diameter": "封口口径",
+              "sealing_time": "封口时间",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "sealing_diameter": "Sealing Diameter",
+              "sealing_time": "Sealing Time",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "100 W",
+            "voltage": "220/50 V/Hz",
+            "sealing_diameter": "∮126 mm",
+            "sealing_time": "7s",
+            "weight": "39 KG",
+            "dimensions": "260*465*565 mm"
+          }
+        }
     }
   ]
       },
@@ -716,14 +1224,42 @@
         ]
       },
       "specs": {
-        "voltage": "220/110/50/60 V/Hz",
-        "power": "1000 W",
-        "sealing_range": "∮155 或 155*155 以內",
-        "film_width": "依實際容器尺寸",
-        "capacity": "400-500 PSC/HR",
-        "weight": "33 KG",
-        "dimensions": "468*300*561 mm"
-      }
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1000 W",
+            "sealing_range": "∮155 或 155*155 ",
+            "capacity": "400-500 PSC/HR",
+            "weight": "33 KG",
+            "dimensions": "468*300*561 mm"
+          }
+        }
     },
     {
       "model": "K-1519",
@@ -761,14 +1297,42 @@
         ]
       },
       "specs": {
-        "voltage": "220/110/50/60 V/Hz",
-        "power": "1000 W",
-        "sealing_range": "155*190 以內",
-        "film_width": "依實際容器尺寸",
-        "capacity": "400-500 PSC/HR",
-        "weight": "35 KG",
-        "dimensions": "510*310*575 mm"
-      }
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1000 W",
+            "sealing_range": "155*190",
+            "capacity": "400-500 PSC/HR",
+            "weight": "35 KG",
+            "dimensions": "510*310*575 mm"
+          }
+        }
     },
     {
       "model": "K-1823",
@@ -805,15 +1369,43 @@
           "Safety guard and one-touch reset enhance safety."
         ]
       },
-      "specs": {
-        "voltage": "220/110/50/60 V/Hz",
-        "power": "1200 W",
-        "sealing_range": "180*230 以內",
-        "film_width": "依實際容器尺寸",
-        "capacity": "400-500 PSC/HR",
-        "weight": "38 KG",
-        "dimensions": "598*326*566 mm"
-      }
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1200 W",
+            "sealing_range": "180*230",
+            "capacity": "400-500 PSC/HR",
+            "weight": "38 KG",
+            "dimensions": "598*326*566 mm"
+          }
+        }
     },
     {
       "model": "K-400",
@@ -851,15 +1443,50 @@
         ]
       },
       "specs": {
-        "voltage": "220/110/50/60 V/Hz",
-        "power": "1000 W",
-        "sealing_range": "∮180 以內或 220*175 mm",
-        "film_width": "依實際容器尺寸",
-        "capacity": "5-12 PSC/min",
-        "weight": "56 KG",
-        "dimensions": "480*400*645 mm",
-        "optional_config": "印字機"
-      }
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸",
+              "optional_config": "可選配項目"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸",
+              "optional_config": "可选配项目"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions",
+              "optional_config": "Optional Configuration"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1000 W",
+            "sealing_range": "∮180 or 220*175 mm",
+            "capacity": "5-12 PSC/min",
+            "weight": "56 KG",
+            "dimensions": "480*400*645 mm",
+            "optional_config": {
+              "zh-TW": "印字機",
+              "zh-CN": "打印机",
+              "en": "Printer"
+            }
+          }
+        }
     }
   ]
     }
@@ -1034,98 +1661,203 @@
     ]
   }
 ],
- "economical": [
-  {
-    "items": [
-      {
-        "name": {
-          "zh-TW": "K-2590S",
-          "zh-CN": "K-2590S",
-          "en": "K-2590S"
+  "economical": [
+    {
+      "items": [
+        {
+          "name": {
+            "zh-TW": "K-2590S",
+            "zh-CN": "K-2590S",
+            "en": "K-2590S"
+          },
+          "image": "http://localhost:3000/images/product/K-2590S小圖示.png",
+          "features": {
+            "zh-TW": [
+              "自動追蹤膠膜定位，封口圖案對位精準，密封效果穩定不漏。",
+              "數位顯示與溫度調節系統，控溫準確，封口品質一致。"
+            ],
+            "zh-CN": [
+              "自动追踪胶膜定位，封口图案对位精准，密封效果稳定不漏。",
+              "数字显示与温度调节系统，控温准确，封口品质一致。"
+            ],
+            "en": [
+              "Automatic film tracking ensures precise sealing alignment with no leaks.",
+              "Digital display and temperature control system ensure consistent sealing quality."
+            ]
+          }
         },
-        "image": "http://localhost:3000/images/product/K-2590S小圖示.png",
-        "features": {
-          "zh-TW": [
-            "自動追蹤膠膜定位，封口圖案對位精準，密封效果穩定不漏。",
-            "數位顯示與溫度調節系統，控溫準確，封口品質一致。"
-          ],
-          "zh-CN": [
-            "自动追踪胶膜定位，封口图案对位精准，密封效果稳定不漏。",
-            "数字显示与温度调节系统，控温准确，封口品质一致。"
-          ],
-          "en": [
-            "Automatic film tracking ensures precise sealing alignment with no leaks.",
-            "Digital display and temperature control system ensure consistent sealing quality."
-          ]
+        {
+          "name": {
+            "zh-TW": "K-2256A",
+            "zh-CN": "K-2256A",
+            "en": "K-2256A"
+          },
+          "image": "http://localhost:3000/images/product/K-2256A小圖示.png",
+          "features": {
+            "zh-TW": [
+              "雙工位設計，放杯與封口可同步作業，顯著提升封杯效率。",
+              "無需預熱，開機即用，縮短等候時間並節省能源。"
+            ],
+            "zh-CN": [
+              "双工位设计，放杯与封口可同步作业，显著提升封杯效率。",
+              "无需预热，开机即用，缩短等待时间并节省能源。"
+            ],
+            "en": [
+              "Dual-station design allows cup loading and sealing simultaneously for higher efficiency.",
+              "No preheating required—ready to use instantly, saving time and energy."
+            ]
+          }
+        },
+        {
+          "name": {
+            "zh-TW": "YY-02",
+            "zh-CN": "YY-02",
+            "en": "YY-02"
+          },
+          "image": "http://localhost:3000/images/product/YY-02小圖示.png",
+          "features": {
+            "zh-TW": [
+              "自帶防護罩設計，提升作業安全性，操作更安心。",
+              "採用360°旋轉搖動技術，可同時製作雙杯，口感均勻，效率倍增。"
+            ],
+            "zh-CN": [
+              "自带防护罩设计，提升作业安全性，操作更安心。",
+              "采用360°旋转摇动技术，可同时制作双杯，口感均匀，效率倍增。"
+            ],
+            "en": [
+              "Built-in protective cover enhances operational safety and confidence.",
+              "360° rotational shaking enables dual-cup operation for even texture and double efficiency."
+            ]
+          }
+        },
+        {
+          "name": {
+            "zh-TW": "K-CD02",
+            "zh-CN": "K-CD02",
+            "en": "K-CD02"
+          },
+          "image": "http://localhost:3000/images/product/K-CD02小圖示.png",
+          "features": {
+            "zh-TW": [
+              "白動旋轉偏心式捶打設計，確保檸檬、水果與冰塊均勻混合，口感佳。",
+              "支援8組預設配方，捶打時間與速度可靈活調整，快速切換不同飲品製程。"
+            ],
+            "zh-CN": [
+              "自动旋转偏心式捶打设计，确保柠檬、水果与冰块均匀混合，口感佳。",
+              "支持8组预设配方，捶打时间与速度可灵活调整，快速切换不同饮品制作。"
+            ],
+            "en": [
+              "Automatic rotary eccentric pounding design ensures even mixing of lemons, fruits, and ice for better taste.",
+              "Supports 8 preset programs with adjustable time and speed for flexible drink preparation."
+            ]
+          }
         }
+      ]
+    }
+  ],
+  "faq": [{
+    "zh-TW": [
+      {
+        "q": "如何挑選封口機種類及報價？",
+        "a": "市面上容器種類繁多，不同 c.c. 數有不同口徑與用途。\n請您提供容器尺寸、容器材質、每日產能及是否有其他特殊需求等，我們會根據您的需要提供最適當的產品與報價。"
       },
       {
-        "name": {
-          "zh-TW": "K-2256A",
-          "zh-CN": "K-2256A",
-          "en": "K-2256A"
-        },
-        "image": "http://localhost:3000/images/product/K-2256A小圖示.png",
-        "features": {
-          "zh-TW": [
-            "雙工位設計，放杯與封口可同步作業，顯著提升封杯效率。",
-            "無需預熱，開機即用，縮短等候時間並節省能源。"
-          ],
-          "zh-CN": [
-            "双工位设计，放杯与封口可同步作业，显著提升封杯效率。",
-            "无需预热，开机即用，缩短等待时间并节省能源。"
-          ],
-          "en": [
-            "Dual-station design allows cup loading and sealing simultaneously for higher efficiency.",
-            "No preheating required—ready to use instantly, saving time and energy."
-          ]
-        }
+        "q": "單一封口機是否可以處理多種不同的尺寸容器？",
+        "a": "一般桌上型封口機都是固定口徑（95mm），不過可依客戶需求加購 90mm 套環，只需套上套環便可實現單台封口機處理兩種尺寸的杯型。\n此外，相同口徑但不同高度的容器，單台封口機亦可通用。"
       },
       {
-        "name": {
-          "zh-TW": "YY-02",
-          "zh-CN": "YY-02",
-          "en": "YY-02"
-        },
-        "image": "http://localhost:3000/images/product/YY-02小圖示.png",
-        "features": {
-          "zh-TW": [
-            "自帶防護罩設計，提升作業安全性，操作更安心。",
-            "採用360°旋轉搖動技術，可同時製作雙杯，口感均勻，效率倍增。"
-          ],
-          "zh-CN": [
-            "自带防护罩设计，提升作业安全性，操作更安心。",
-            "采用360°旋转摇动技术，可同时制作双杯，口感均匀，效率倍增。"
-          ],
-          "en": [
-            "Built-in protective cover enhances operational safety and confidence.",
-            "360° rotational shaking enables dual-cup operation for even texture and double efficiency."
-          ]
-        }
+        "q": "如何訂購？",
+        "a": "可透過『聯繫我們』的聯絡資訊與我們接洽。\n我們會先初步了解您的需求與使用地點，為您尋找最近的服務點，由當地服務人員為您提供報價與售後服務。\n往後的保養與維修也將由他們協助，讓您省去溝通成本並能快速解決問題。"
+      }
+    ],
+    "zh-CN": [
+      {
+        "q": "如何挑选封口机种类及报价？",
+        "a": "市面上容器种类繁多，不同 c.c. 数有不同口径和用途。\n请您提供容器尺寸、容器材质、每日产能以及是否有其他特殊需求，我们会根据您的需要提供最合适的产品与报价。"
       },
       {
-        "name": {
-          "zh-TW": "K-CD02",
-          "zh-CN": "K-CD02",
-          "en": "K-CD02"
-        },
-        "image": "http://localhost:3000/images/product/K-CD02小圖示.png",
-        "features": {
-          "zh-TW": [
-            "白動旋轉偏心式捶打設計，確保檸檬、水果與冰塊均勻混合，口感佳。",
-            "支援8組預設配方，捶打時間與速度可靈活調整，快速切換不同飲品製程。"
-          ],
-          "zh-CN": [
-            "自动旋转偏心式捶打设计，确保柠檬、水果与冰块均匀混合，口感佳。",
-            "支持8组预设配方，捶打时间与速度可灵活调整，快速切换不同饮品制作。"
-          ],
-          "en": [
-            "Automatic rotary eccentric pounding design ensures even mixing of lemons, fruits, and ice for better taste.",
-            "Supports 8 preset programs with adjustable time and speed for flexible drink preparation."
-          ]
-        }
+        "q": "单一封口机是否可以处理多种不同尺寸的容器？",
+        "a": "一般桌上型封口机都是固定口径（95mm），不过可依客户需求加购 90mm 套环，只需套上套环便可实现单台封口机处理两种尺寸的杯型。\n此外，相同口径但不同高度的容器，单台封口机亦可通用。"
+      },
+      {
+        "q": "如何订购？",
+        "a": "可通过『联系我们』的联系方式与我们洽谈。\n我们会先了解您的需求及使用地点，帮您寻找最近的服务点，由当地人员提供报价与售后支持。\n后续保养及维修也由他们服务，既节省沟通成本，也能快速解决问题。"
+      }
+    ],
+    "en": [
+      {
+        "q": "How to choose the right sealing machine and get a quotation?",
+        "a": "There are many types of containers with different capacities, diameters, and purposes. Please provide your container size, material, daily output, and any special requirements. We will recommend the most suitable model and quotation based on your needs."
+      },
+      {
+        "q": "Can one sealing machine handle multiple container sizes?",
+        "a": "Most tabletop sealing machines have a fixed diameter (95mm). However, by purchasing an optional 90mm adapter ring, one machine can handle two cup sizes. For containers with the same diameter but different heights, the same machine can be used as well."
+      },
+      {
+        "q": "How to place an order?",
+        "a": "You can contact us through the information listed in the ‘Contact Us’ section. We will first understand your needs and location, then connect you with the nearest service center for quotation and follow-up maintenance. This helps reduce communication costs and ensures prompt service."
       }
     ]
-  }
-]
+  }],
+  "about": [
+    {
+      "zh-TW": {
+        "title": "關於我們",
+        "content": [
+          "義歆實業股份有限公司，專注於代理與推廣 YODO 鎧瑋品牌餐飲設備，為飲料與餐飲業者提供完整的開店解決方案。",
+          "YODO 鎧瑋深耕台灣多年，致力於食品容器封口包裝之研究與開發，擁有百分百之自主技術，以穩定耐用與創新設計著稱，廣泛應用於連鎖飲料品牌與餐飲門市。",
+          "義歆作為鎧瑋的專屬代理，致力於："
+        ],
+        "list": [
+          "產品銷售：將最優質的 YODO 鎧瑋設備帶入市場",
+          "客戶服務：提供諮詢、導入與使用建議",
+          "售後支援：維修、保養及零件供應，確保客戶長期穩定營運"
+        ],
+        "mission": [
+          "我們的使命是成為連鎖餐飲品牌開店的最佳合作夥伴。",
+          "無論您是新創品牌或成熟連鎖體系，義歆都能提供合適的設備方案與專業支援，協助您快速進入市場並持續成長。"
+        ],
+        "vision": "展望未來，義歆將與鎧瑋一同攜手，拓展更多海外市場，讓台灣製造的高品質餐飲設備走向國際。"
+      },
+
+      "zh-CN": {
+        "title": "关于我们",
+        "content": [
+          "义歆实业股份有限公司，专注于代理与推广 YODO 铠玮品牌餐饮设备，为饮料与餐饮业者提供完整的开店解决方案。",
+          "YODO 铠玮深耕台湾多年，致力于食品容器封口包装之研究与开发，拥有百分百的自主技术，以稳定耐用与创新设计著称，广泛应用于连锁饮料品牌与餐饮门市。",
+          "义歆作为铠玮的专属代理，致力于："
+        ],
+        "list": [
+          "产品销售：将最优质的 YODO 铠玮设备带入市场",
+          "客户服务：提供咨询、导入与使用建议",
+          "售后支援：维修、保养及零件供应，确保客户长期稳定营运"
+        ],
+        "mission": [
+          "我们的使命是成为连锁餐饮品牌开店的最佳合作伙伴。",
+          "无论您是新创品牌或成熟连锁体系，义歆都能提供合适的设备方案与专业支援，协助您快速进入市场并持续成长。"
+        ],
+        "vision": "展望未来，义歆将与铠玮携手，拓展更多海外市场，让台湾制造的高品质餐饮设备走向国际。"
+      },
+
+      "en": {
+        "title": "About Us",
+        "content": [
+          "Yihsin Industrial Co., Ltd. specializes in distributing and promoting YODO Kaiwei catering equipment, providing comprehensive store-opening solutions for beverage and restaurant businesses.",
+          "YODO Kaiwei has been deeply rooted in Taiwan for many years, focusing on the research and development of food container sealing and packaging technologies. Known for its stability, durability, and innovative design, YODO products are widely used in major beverage chains and restaurants.",
+          "As the exclusive distributor of YODO Kaiwei, Yihsin is committed to:"
+        ],
+        "list": [
+          "Product Sales: Introducing high-quality YODO Kaiwei equipment to the market.",
+          "Customer Service: Providing consultation, system integration, and operational guidance.",
+          "After-sales Support: Offering maintenance, parts supply, and long-term service to ensure stable operation."
+        ],
+        "mission": [
+          "Our mission is to be the best business partner for chain restaurants and beverage brands.",
+          "Whether you are a startup or an established chain, Yihsin offers professional equipment solutions and reliable support to help your brand grow."
+        ],
+        "vision": "Looking ahead, Yihsin will continue to work closely with YODO Kaiwei to expand into global markets, bringing Taiwan’s high-quality catering equipment to the world."
+      }
+    }
+  ]
+
 }

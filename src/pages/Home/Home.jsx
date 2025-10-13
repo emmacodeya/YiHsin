@@ -1,8 +1,13 @@
 import ProductShowcase from "../../components/ProductShowcase";
 import FloatingButtons from "../../components/FloatingButtons";
+import AdPopup from "../../components/AdPopup";
 import { motion as Motion } from "framer-motion";
 import { useEffect, useState, useContext } from "react";
 import { LangContext } from "../../App";
+import { Link } from "react-router-dom";
+
+
+
 
 const Home = () => {
   const { lang } = useContext(LangContext);
@@ -148,6 +153,7 @@ const flowStepsMap = {
 
   return (
     <>
+    <AdPopup /> 
   {/* banner */}
   <div className="banner p-3  text-primary-1000">
     <div className="container mt-7 container py-5 text-center text-primary-1000">
@@ -278,7 +284,10 @@ const flowStepsMap = {
               : "最熱銷"}
           </h2>
 
-          <button
+        <a
+            href="https://line.me/R/ti/p/@477fjgkd"
+            target="_blank"              
+            rel="noopener noreferrer"    
             className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
               px-lg-2 py-lg-1 fw-bold d-flex align-items-center"
           >
@@ -290,7 +299,8 @@ const flowStepsMap = {
                 : "馬上聯繫"}
             </span>
             <i className="bi bi-arrow-right"></i>
-          </button>
+          </a>
+
         </div>
       </div>
 
@@ -312,13 +322,13 @@ const flowStepsMap = {
                 <div className="hot-card-wrap position-relative">
                   {/* 超出去的框框 */}
                   <div className="badge-box position-absolute bg-white border border-primary-1000 rounded-1 px-2 py-0">
-                    <a
-                      href="#"
-                      className="d-flex align-items-center text-primary-1000 small fw-bold py-1"
-                    >
-                      <i className="bi bi-play-fill me-1"></i>
-                      {item.name}
-                    </a>
+                    <Link
+                    to={`/products?cat=${encodeURIComponent(item.category?.["zh-TW"] || "")}&model=${encodeURIComponent(item.model || "")}`}
+                    className="d-flex align-items-center text-primary-1000 small fw-bold py-1"
+                  >
+                    <i className="bi bi-play-fill me-1"></i>
+                    {item.name}
+                  </Link>
                   </div>
 
                   {/* 圖片卡片 */}
@@ -412,21 +422,20 @@ const flowStepsMap = {
               </ul>
             )}
 
-            <div>
-              <a
-                href={`/products?cat=economical&model=${encodeURIComponent(
-                  name || ""
-                )}`}
-                className="btn btn-outline-primary-100 rounded-pill px-4 fw-bold"
-              >
-                {lang === "en"
-                  ? "View More"
-                  : lang === "zh-CN"
-                  ? "更多详情"
-                  : "更多詳情"}
-              </a>
-            </div>
+           <div>
+            <Link
+              to={`/products?cat=economical&model=${encodeURIComponent(name || "")}`}
+              className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
+                          px-lg-2 py-lg-1 fw-bold"
+            >
+              {lang === "en"
+                ? "View More"
+                : lang === "zh-CN"
+                ? "更多详情"
+                : "更多詳情"}
+            </Link>
           </div>
+                    </div>
         </div>
       );
     })}
