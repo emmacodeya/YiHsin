@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { LangContext } from "../../App";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   const { lang, setLang } = useContext(LangContext);
@@ -112,14 +114,27 @@ const Footer = () => {
           <div className="col-6 col-md-3 col-lg-2">
             <h6 className="fw-bold text-accent mb-3">{t.links}</h6>
             <ul className="list-unstyled small footer-list">
-              {t.linksList.map((l, i) => (
+            {t.linksList.map((l, i) => {
+              let path = "#";
+
+              if (l.includes("關於") || l.includes("关于") || l.includes("About")) {
+                path = "/about";
+              } else if (l.includes("常見") || l.includes("FAQ")) {
+                path = "/faq";
+              } else if (l.includes("聯絡") || l.includes("Contact")) {
+                path = "/contact";
+              }
+
+              return (
                 <li key={i}>
-                  <a href="#" className="footer-link">
+                  <Link to={path} className="footer-link">
                     {l}
-                  </a>
+                  </Link>
                 </li>
-              ))}
+              );
+            })}
             </ul>
+
           </div>
 
           {/* 聯絡資訊 */}

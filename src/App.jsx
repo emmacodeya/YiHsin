@@ -8,6 +8,12 @@ import Footer from "./components/Footer/Footer";
 
 // 前台頁面
 import Home from "./pages/Home/Home";
+import AboutUs from "./pages/AboutUs";
+import Faq from "./pages/Faq";
+import Products from "./pages/Products/Products"; 
+import Contact from "./pages/Contact";
+
+
 
 // === 建立多語 Context ===
 // eslint-disable-next-line react-refresh/only-export-components
@@ -75,6 +81,11 @@ const Content = () => {
       {!isAdmin && <Header />}
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/products" element={<Products />} />
+
       </Routes>
       {!isAdmin && <Footer />}
     </>

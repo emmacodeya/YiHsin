@@ -1,5 +1,8 @@
 import { useEffect, useState, useMemo, useContext } from "react";
 import { LangContext } from "../App";
+import { Link } from "react-router-dom";
+
+
 
 export default function ProductShowcase() {
   const { lang } = useContext(LangContext);
@@ -154,20 +157,20 @@ export default function ProductShowcase() {
                         </ul>
 
                         <div className="d-flex justify-content-start">
-                          <a
-                            href={`/products?cat=${encodeURIComponent(
-                              getText(activeCategory.category)
-                            )}&model=${encodeURIComponent(activeItem.model || "")}`}
-                            className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
-                            px-lg-2 py-lg-1 fw-bold btn-more"
-                          >
-                            {lang === "en"
-                              ? "View More"
-                              : lang === "zh-CN"
-                              ? "更多详情"
-                              : "更多詳情"}
-                          </a>
-                        </div>
+                        <Link
+                          to={`/products?cat=${encodeURIComponent(
+                            getText(activeCategory.category)
+                          )}&model=${encodeURIComponent(activeItem.model || "")}`}
+                          className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
+                          px-lg-2 py-lg-1 fw-bold btn-more"
+                        >
+                          {lang === "en"
+                            ? "View More"
+                            : lang === "zh-CN"
+                            ? "更多详情"
+                            : "更多詳情"}
+                        </Link>
+                      </div>
                       </div>
                     </div>
                   </div>
