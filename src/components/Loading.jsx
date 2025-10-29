@@ -1,19 +1,27 @@
-import BarLoader from "react-spinners/BarLoader";
-import PropTypes from "prop-types";
+import { BarLoader } from "react-spinners";
 
-const Loading = ({loading}) => {
-    if (!loading) return null;
-    return (
-            <div className="loading-overlay d-flex flex-column justify-content-center align-items-center" style={{ minHeight: "200px" }}>
-              <img src="https://dream-workshop-api.onrender.com/assets/images/icons/favicon.ico" alt="品牌Logo" style={{ width: '50px', marginBottom: '20px' }} />
-              <BarLoader color="#36d7b7" loading={loading} size={50} />
-              <p className="mt-3 text-gray-100">載入中，請稍候...</p>
-            </div>
-    );
-  };
+const Loading = ({ loading = true }) => {
+  if (!loading) return null;
 
-  Loading.propTypes = {
-    loading: PropTypes.bool.isRequired,
-  };
-  
-  export default Loading;
+  return (
+    <div
+      className="loading-overlay d-flex justify-content-center align-items-center"
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100vh",
+        background: "rgba(255, 255, 255, 0.7)",
+        zIndex: 2000,
+      }}
+    >
+      <div className="text-center">
+        <BarLoader color="#b39a84" height={5} width={180} />
+        <p className="mt-3 text-primary-1000 fw-bold">載入中...</p>
+      </div>
+    </div>
+  );
+};
+
+export default Loading;

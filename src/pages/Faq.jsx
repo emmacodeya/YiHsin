@@ -1,5 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import { LangContext } from "../App";
+import FloatingButtons from "../components/FloatingButtons";
 
 const Faq = () => {
   const { lang } = useContext(LangContext); 
@@ -16,6 +17,7 @@ const Faq = () => {
 
 
   return (
+    <>
     <section className="bg-gray-200 py-lg-12 py-5">
       <div className="container text-center">
         <h2 className="fw-bold display-6 mb-5 text-primary-100">常見 Q&A</h2>
@@ -44,6 +46,8 @@ const Faq = () => {
         </div>
       </div>
     </section>
+    <FloatingButtons />
+    </>
   );
 };
 

@@ -1,6 +1,3 @@
-/* =========================
-   🔹 Products Page Style
-   ========================= */
 
 @keyframes slideUp {
   from {
@@ -13,7 +10,10 @@
   }
 }
 
+
+
 /* 🔹右下詳細視窗 */
+
 .product-detail {
   position: fixed;
   bottom: 0;
@@ -21,7 +21,7 @@
   width: 50vw;
   height: 70vh;
   z-index: 1050;
-  background: #CFC7C8;
+  background: #cfc7c8;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border: 1px solid #ddd;
@@ -53,6 +53,7 @@
 
     .product-images {
       flex: 1 1 45%;
+
       img {
         display: block;
         margin: 0 auto;
@@ -64,6 +65,7 @@
 
     .product-info {
       flex: 1 1 55%;
+
       h6 {
         color: #111;
         margin-top: 0.75rem;
@@ -72,6 +74,7 @@
 
       ul {
         padding-left: 1rem;
+
         li {
           margin-bottom: 0.25rem;
           color: #555;
@@ -87,19 +90,27 @@
   /* 底部馬上聯繫按鈕 */
   .contact-btn {
     border-top: 1px solid #eee;
-    background: #CFC7C8;
+    background: #cfc7c8;
+  }
+
+  @include respond-down(md) {
+    width: 100%;
+    height: 80vh;
+    right: 0;
+    border-radius: 16px 16px 0 0;
   }
 }
 
-  /* 表格 */
+/* 表格 */
+.specs-table {
+  background-color: #bdb6b7;
 
-  .specs-table {
-  background-color: #bdb6b7;  // 可改你喜歡的色
   td {
-    background-color: #B39A84; // 每格底色
+    background-color: #b39a84;
   }
+
   tr:nth-child(even) td {
-    background-color: #CFC7C8; // 隔行色
+    background-color: #cfc7c8;
   }
 }
 
@@ -146,18 +157,18 @@
     height: 10px;
     border-radius: 50%;
     border: none;
-    background-color: #aaa; // 🔹淡灰底，在白底可見
+    background-color: #aaa; 
     opacity: 0.6;
     transition: all 0.3s ease;
 
     &.active {
-      background-color: #0A1E54; // 🔸主題藍（明顯但不刺眼）
+      background-color: #0A1E54; 
       opacity: 1;
       transform: scale(1.2);
     }
 
     &:hover {
-      background-color: #555; // 🔹滑過時更深灰
+      background-color: #555; 
       opacity: 0.9;
     }
   }

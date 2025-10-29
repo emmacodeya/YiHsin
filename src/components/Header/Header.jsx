@@ -1,9 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { LangContext } from "../../App";
 
 const Header = () => {
   const { lang } = useContext(LangContext);
+  const navigate = useNavigate();
 
   const text = {
     "zh-TW": {
@@ -82,11 +83,6 @@ const Header = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/usedmachine" className="nav-link">
-                {t.used}
-              </NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink to="/news" className="nav-link">
                 {t.news}
               </NavLink>
@@ -98,25 +94,47 @@ const Header = () => {
             </li>
           </ul>
 
-          {/* 右邊聯繫資訊 */}
+          {/* ✅ 右邊聯繫資訊 */}
           <div className="text-end small contact-info mt-lg-0 mt-2">
             {/* 桌機版 */}
             <div className="d-none d-md-flex gap-4 justify-content-end">
+              {/* 聯絡我們 */}
               <div className="text-center">
-                <p className="fw-bold mb-1">{t.contact}</p>
-                <p className="mb-0">0900-008-608</p>
+                <p className="fw-bold">{t.contact}</p>
+                <button
+                  className="btn btn-link p-0 text-decoration-none text-primary-1000 "
+                  onClick={() => navigate("/contact")}
+                >
+                  0900-008-608
+                </button>
               </div>
+
+              {/* Gmail */}
               <div className="text-center">
-                <p className="fw-bold mb-1">{t.gmail}</p>
-                <p className="mb-0">yihsin1630@gmail.com</p>
+                <p className="fw-bold">{t.gmail}</p>
+                <a
+                  href="mailto:yihsin1630@gmail.com"
+                  className="text-decoration-none text-primary-1000 "
+                >
+                  yihsin1630@gmail.com
+                </a>
               </div>
+
+              {/* LINE */}
               <div className="text-center">
-                <p className="fw-bold mb-1">{t.line}</p>
-                <p className="mb-0">@477fjgkd</p>
+                <p className="fw-bold">{t.line}</p>
+                <a
+                  href="https://line.me/R/ti/p/@477fjgkd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-decoration-none text-primary-1000 "
+                >
+                  @477fjgkd
+                </a>
               </div>
             </div>
 
-            {/* 手機板：折疊式 */}
+            {/* 手機版：折疊式 */}
             <div className="d-md-none">
               <button
                 className="btn btn-primary-1000 w-50 fw-bold"
@@ -126,16 +144,37 @@ const Header = () => {
               >
                 {t.contact}
               </button>
+
               <div className="collapse mt-2" id="contactCollapse">
                 <div className="text-center bg-primary-200 text-white py-2 rounded">
-                  <p className="mb-1 text-gray-200">
-                    {t.phone}：0900-008-608
+                  <p className="mb-1">
+                    {t.phone}：
+                    <a
+                      href="tel:0900008608"
+                      className="text-white text-decoration-none"
+                    >
+                      0900-008-608
+                    </a>
                   </p>
-                  <p className="mb-1 text-gray-200">
-                    {t.gmail}：yihsin1630@gmail.com
+                  <p className="mb-1">
+                    {t.gmail}：
+                    <a
+                      href="mailto:yihsin1630@gmail.com"
+                      className="text-white text-decoration-none"
+                    >
+                      yihsin1630@gmail.com
+                    </a>
                   </p>
-                  <p className="mb-0 text-gray-200">
-                    {t.line}：@477fjgkd
+                  <p className="mb-0">
+                    {t.line}：
+                    <a
+                      href="https://line.me/R/ti/p/@477fjgkd"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-link text-white text-decoration-none p-0"
+                    >
+                      @477fjgkd
+                    </a>
                   </p>
                 </div>
               </div>

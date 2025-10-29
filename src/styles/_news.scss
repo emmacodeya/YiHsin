@@ -1,0 +1,43 @@
+.news-page {
+
+  .title-underline {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #b39a84, #cfc7c8);
+    border-radius: 2px;
+  }
+
+  .news-card {
+    transition: all 0.3s ease;
+
+    .card-img-wrap {
+      position: relative;
+
+      img {
+        height: 220px;
+        object-fit: contain;
+        transition: transform 0.4s ease;
+      }
+
+      .date-badge {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: rgba(179, 154, 132, 0.9);
+        color: #fff;
+        font-size: 0.85rem;
+        padding: 0.25rem 0.75rem;
+        border-top-left-radius: 8px;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

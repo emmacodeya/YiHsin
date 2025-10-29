@@ -1,5 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { LangContext } from "../App";
+import FloatingButtons from "../components/FloatingButtons";
+
 
 const AboutUs = () => {
   const { lang } = useContext(LangContext);
@@ -16,6 +18,7 @@ const AboutUs = () => {
 
 
   return (
+    <>
     <section className="about-section">
       {/* 左側深色玻璃風區塊 */}
       <div className="about-left">
@@ -55,6 +58,8 @@ const AboutUs = () => {
         </div>
       </div>
     </section>
+     <FloatingButtons />
+    </>
   );
 };
 

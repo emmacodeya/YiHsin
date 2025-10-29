@@ -1,0 +1,126 @@
+.contact-layout {
+  .contact-left {
+    background: #3a3e6c;
+    color: #fff;
+
+   .contact-cards {
+        display: flex;              
+        flex-direction: column;     
+        align-items: center;        
+        gap: 1.5rem;                
+        width: 100%;
+        max-width: 380px;           
+        margin: 0 auto;
+
+
+      .contact-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.2);
+          transform: translateY(-4px);
+        }
+
+        .icon-wrap {
+          width: 45px;
+          height: 45px;
+          background: linear-gradient(135deg, #b39a84, #cfc7c8);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 0.5rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .contact-right {
+    background: #f5f6f8;
+  }
+
+  .contact-form {
+    background: #e4dfdb;
+    border: 1px solid #d6d2ce;
+    max-width: 650px;
+
+    input,
+    textarea {
+      border-radius: 8px;
+      border: 1px solid #cfc7c8;
+      background: #fff;
+      color: #0a1e54;
+
+      &:focus {
+        border: 2px solid #b39a84;
+        box-shadow: 0 0 6px rgba(179, 154, 132, 0.4);
+      }
+    }
+
+    .is-invalid {
+      border-color: #dc3545;
+    }
+  }
+
+  .send-btn {
+    background: linear-gradient(135deg, #0a1e54, #b39a84);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: 0 0 10px rgba(10, 30, 84, 0.3);
+    }
+  }
+
+  .btn-line {
+    background-color: #06c755;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 10px rgba(6, 199, 85, 0.4);
+    }
+  }
+
+  .btn-mail {
+    background-color: #b39a84;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 10px rgba(179, 154, 132, 0.4);
+    }
+  }
+
+  .spin {
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @media (max-width: 991px) {
+    .contact-left {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+  }
+}

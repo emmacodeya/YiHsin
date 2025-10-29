@@ -1,6 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import { LangContext } from "../../App";
 import { useLocation } from "react-router-dom";
+import FloatingButtons from "../../components/FloatingButtons";
 
 const Products = () => {
   const { lang } = useContext(LangContext);
@@ -9,6 +10,9 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   const [selected, setSelected] = useState(null);
   const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const category = params.get("category");
+
 
   // 載入產品資料
   useEffect(() => {
@@ -21,22 +25,45 @@ const Products = () => {
       .catch((err) => console.error("載入 products 失敗:", err));
   }, []);
 
+useEffect(() => {
+  if (category && products.length > 0) {
+    const matchedCat = products.find(
+      (p) =>
+        p.category["zh-TW"] === category ||
+        p.category["zh-CN"] === category ||
+        p.category["en"] === category
+    );
+
+    if (matchedCat) {
+      setActiveCat(matchedCat.category["zh-TW"]);
+    } else {
+      setActiveCat("all");
+    }
+  }
+}, [category, products, lang]);
+
+useEffect(() => {
+  if (products.length > 0) {
+    setCategories(products.map((p) => p.category));
+  }
+}, [lang, products]);
+
   // 過濾顯示
-  const displayedItems =
-    activeCat === "all"
-      ? products.flatMap((p) =>
+const displayedItems =
+  activeCat === "all"
+    ? products.flatMap((p) =>
+        p.items.map((item) => ({ ...item, category: p.category }))
+      )
+    : products
+        .filter((p) => p.category["zh-TW"] === activeCat)
+        .flatMap((p) =>
           p.items.map((item) => ({ ...item, category: p.category }))
-        )
-      : products
-          .filter((p) => p.category["zh-TW"] === activeCat)
-          .flatMap((p) =>
-            p.items.map((item) => ({ ...item, category: p.category }))
-          );
+        );
 
   const getFeatures = (item) =>
     item.features?.[lang] || item.features?.["zh-TW"] || [];
 
-  // ✅ 當網址帶有 ?model= 時，自動打開彈出視窗
+  // 當網址帶有 ?model= 時，自動打開彈出視窗
 useEffect(() => {
   const params = new URLSearchParams(location.search);
   const model = params.get("model");
@@ -55,13 +82,15 @@ useEffect(() => {
   }
 }, [location, products]);
 
-// ✅ 關閉彈窗時清除網址參數（讓網址回復到 /products）
+// 關閉彈窗時清除網址參數
 const closeDetail = () => {
   setSelected(null);
-  window.history.replaceState({}, "", "/products");
+  const base = `${window.location.origin}${window.location.pathname}#/products`;
+  window.history.replaceState({}, "", base);
 };
 
   return (
+    <>
     <div key={location.search} className="hot-section">
       <div className="container py-5 products-page">
         {/* 🔸分類導覽列 */}
@@ -110,7 +139,7 @@ const closeDetail = () => {
           ))}
         </div>
 
-        {/* 🔸右下詳細視窗 */}
+        {/* 右下詳細視窗 */}
         {selected && (
           <div className="offcanvas show shadow-lg product-detail">
             <div className="offcanvas-header">
@@ -122,7 +151,7 @@ const closeDetail = () => {
               ></button>
             </div>
 
-            {/* ✅ 左圖 + 右文字排版 */}
+            {/* 左圖 + 右文字排版 */}
             <div className="offcanvas-body d-flex flex-column flex-lg-row gap-4">
               {/* 左側圖片區（含輪播） */}
               <div className="product-images flex-shrink-0 w-100 w-lg-50">
@@ -224,7 +253,7 @@ const closeDetail = () => {
               </div>
             </div>
 
-            {/* ✅ 下方 LINE 聯繫按鈕 */}
+            {/* 下方 LINE 聯繫按鈕 */}
             <div className="contact-btn text-center py-3 border-top">
               <a
                 href="https://line.me/R/ti/p/@477fjgkd"
@@ -239,6 +268,8 @@ const closeDetail = () => {
         )}
       </div>
     </div>
+    <FloatingButtons />
+    </>
   );
 };
 
