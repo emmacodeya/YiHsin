@@ -39,3 +39,42 @@
     option { color: #0A1E54; }
   }
 }
+
+
+@include respond-down(sm) {
+  .footer-classic {
+    text-align: center;
+
+    .row {
+      justify-content: center;
+    }
+
+    .col-12 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    h5,
+    h6,
+    p {
+      text-align: center;
+    }
+
+    .d-flex.gap-3 {
+      justify-content: center !important;
+    }
+
+    .icon-circle {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-bottom .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+  }
+}

@@ -11,19 +11,24 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const { lang } = useContext(LangContext);
+  const [products, setProducts] = useState([]);
+
+
+  // 讀取所有產品資料（供容器推薦區塊比對使用）
+useEffect(() => {
+  fetch("http://localhost:3000/products")
+    .then((res) => res.json())
+    .then((data) => setProducts(data || []))
+    .catch((err) => console.error("載入 products 失敗:", err));
+}, []);
 
   // 多語文字設定
   const textMap = {
-    "zh-TW": "餐飲開店最佳夥伴從銷售到售後全部搞定",
-    "zh-CN": "餐饮开店最佳伙伴从销售到售后全部搞定",
-    en: "Your best restaurant partner — from sales to after-service",
+    "zh-TW": "餐飲開店最佳夥伴",
+    "zh-CN": "餐饮开店最佳伙伴",
+    en: "Your Best Partner in Starting a Restaurant Business.",
   };
 
-  const subTextMap = {
-    "zh-TW": "專注於食品封口包裝及飲料門市桌上型機器",
-    "zh-CN": "专注于食品封口包装及饮料门市桌上型机器",
-    en: "Focused on food sealing and beverage shop equipment",
-  };
 
   const flowTitleMap = {
     "zh-TW": "服務流程",
@@ -104,7 +109,6 @@ const flowStepsMap = {
 };
 
   const text = textMap[lang];
-  const subText = subTextMap[lang];
   const letters = text.split("");
 
   // 資料 state
@@ -120,14 +124,14 @@ const flowStepsMap = {
       .then((res) => res.json())
       .then((data) => setCategories(data || []))
       .catch((err) => console.error("載入 db.json 失敗:", err));
-  }, []);
+  }, [lang]);
 
   useEffect(() => {
     fetch("http://localhost:3000/bestSolutions")
       .then((res) => res.json())
       .then((data) => setBestSolutions(data || []))
       .catch((err) => console.error("載入 db.json 失敗:", err));
-  }, []);
+  }, [lang]);
 
   useEffect(() => {
     fetch("http://localhost:3000/hotitems")
@@ -135,14 +139,14 @@ const flowStepsMap = {
       .then((data) => {
         if (data[0]?.items) setHotItems(data[0].items);
       });
-  }, []);
+  }, [lang]);
 
   useEffect(() => {
     fetch("http://localhost:3000/economical")
       .then((res) => res.json())
       .then((data) => setEconomical(data || []))
       .catch((err) => console.error("載入資料失敗:", err));
-}, []);
+}, [lang]);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);
@@ -176,7 +180,6 @@ const flowStepsMap = {
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: letters.length * 0.1, duration: 0.6 }}
   >
-     {subText}
   </Motion.p>
 </div>
   </div>
@@ -210,8 +213,8 @@ const flowStepsMap = {
   </div>
 </section>
 
-  {/* 產品項目 */}
-    <ProductShowcase />
+{/* 產品項目 */}
+<ProductShowcase />
 
 {/* 容器推薦 */}
 <section className="service-flow py-lg-12 py-5 text-white">
@@ -242,15 +245,54 @@ const flowStepsMap = {
               typeof item.name === "object"
                 ? item.name[lang] || item.name["zh-TW"]
                 : item.name;
+            let targetCategory = null;
+            if (products?.length > 0) {
+              targetCategory = products.find((p) => {
+                const c = p.category;
+                return (
+                  // 封口機
+                  (["飲料封口", "饮料封口", "Drink sealing"].some((kw) =>
+                    name.includes(kw)
+                  ) && c["zh-TW"].includes("封口機")) ||
+
+                  // 鋁蓋封口機
+                  (["封罐", "封罐", "Food can sealing"].some((kw) =>
+                    name.includes(kw)
+                  ) && c["zh-TW"].includes("鋁蓋封口機")) ||
+
+                  // 容器封口機
+                  ([
+                    "冷凍",
+                    "冷冻",
+                    "Frozen",
+                    "便當",
+                    "便当",
+                    "Bento",
+                    "湯品",
+                    "汤品",
+                    "Soup",
+                  ].some((kw) => name.includes(kw)) &&
+                    c["zh-TW"].includes("容器封口機"))
+                );
+              })?.category?.["zh-TW"];
+            }
+
+            // fallback：找不到時導向封口機
+            if (!targetCategory) targetCategory = "封口機";
 
             return (
               <div className="col" key={i}>
-                <div className="hot-topic position-relative">
-                  <img src={imgSrc} alt={name} />
-                  <p className="position-absolute bottom-0 start-0 m-1 fw-bold fs-5 text-white">
-                    {name}
-                  </p>
-                </div>
+                <Link
+                  to={`/products?category=${encodeURIComponent(targetCategory)}`}
+                  className="text-decoration-none"
+                >
+                  <div className="hot-topic position-relative">
+                    <img src={imgSrc} alt={name} />
+                    <p className="position-absolute bottom-0 start-0 m-1 fw-bold fs-5 text-white">
+                      {name}
+                    </p>
+                  </div>
+                </Link>
               </div>
             );
           })}
@@ -259,6 +301,7 @@ const flowStepsMap = {
     )}
   </div>
 </section>
+
 
 
  {/* 熱銷區塊 */}
@@ -322,8 +365,8 @@ const flowStepsMap = {
                 <div className="hot-card-wrap position-relative">
                   {/* 超出去的框框 */}
                   <div className="badge-box position-absolute bg-white border border-primary-1000 rounded-1 px-2 py-0">
-                    <Link
-                    to={`/products?cat=${encodeURIComponent(item.category?.["zh-TW"] || "")}&model=${encodeURIComponent(item.model || "")}`}
+                   <Link
+                    to={`/products?model=${encodeURIComponent(item.name)}`}
                     className="d-flex align-items-center text-primary-1000 small fw-bold py-1"
                   >
                     <i className="bi bi-play-fill me-1"></i>
@@ -423,17 +466,17 @@ const flowStepsMap = {
             )}
 
            <div>
-            <Link
-              to={`/products?cat=economical&model=${encodeURIComponent(name || "")}`}
-              className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
-                          px-lg-2 py-lg-1 fw-bold"
-            >
-              {lang === "en"
-                ? "View More"
-                : lang === "zh-CN"
-                ? "更多详情"
-                : "更多詳情"}
-            </Link>
+          <Link
+            to={`/products?model=${encodeURIComponent(name || "")}`}
+            className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
+                        px-lg-2 py-lg-1 fw-bold"
+          >
+            {lang === "en"
+              ? "View More"
+              : lang === "zh-CN"
+              ? "更多详情"
+              : "更多詳情"}
+          </Link>
           </div>
                     </div>
         </div>
@@ -448,14 +491,12 @@ const flowStepsMap = {
   <div className="container">
     {bestSolutions[0] && (
       <div>
-        {/* 標題 */}
         <h2 className="solutions-title fw-bold display-6 mb-3 text-center">
           {typeof bestSolutions[0].title === "object"
             ? bestSolutions[0].title[lang] || bestSolutions[0].title["zh-TW"]
             : bestSolutions[0].title}
         </h2>
 
-        {/* 副標題 */}
         {bestSolutions[0].subtitle && (
           <p className="text-center mb-lg-8 mb-5">
             {typeof bestSolutions[0].subtitle === "object"
@@ -464,7 +505,6 @@ const flowStepsMap = {
           </p>
         )}
 
-        {/* 方案卡片 */}
         <div className="row row-cols-lg-5 row-cols-md-2 row-cols-1 gy-4 align-items-end">
           {bestSolutions[0].items.map((item, i) => {
             const name =
@@ -474,12 +514,15 @@ const flowStepsMap = {
 
             return (
               <div className="col text-center" key={i}>
-                <div className="hot-topic">
-                  <img src={item.image} alt={name} className="img-fluid" />
-                  <p className="fw-bold fs-5 mt-2 text-primary-100">
-                    {name}
-                  </p>
-                </div>
+                <Link 
+                  to={`/products?category=${encodeURIComponent(name)}`}
+                  className="text-decoration-none"
+                >
+                  <div className="hot-topic">
+                    <img src={item.image} alt={name} className="img-fluid" />
+                    <p className="fw-bold fs-5 mt-2 text-primary-100">{name}</p>
+                  </div>
+                </Link>
               </div>
             );
           })}

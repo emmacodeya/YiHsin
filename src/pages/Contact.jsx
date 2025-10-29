@@ -2,91 +2,122 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { LangContext } from "../App";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import Select from "react-select";
+import FloatingButtons from "../components/FloatingButtons";
 
 const Contact = () => {
   const { lang } = useContext(LangContext);
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [selectedModel, setSelectedModel] = useState(null);
+  const [selectedCountry, setSelectedCountry] = useState(null);
+  const [countries, setCountries] = useState([]);
 
-  const [errors, setErrors] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
+  // ✅ 從 JSON Server 抓取國家資料
+  useEffect(() => {
+    const fetchCountries = async () => {
+      try {
+        const res = await fetch("http://localhost:3000/countries");
+        if (!res.ok) throw new Error("Network response was not ok");
+        const data = await res.json();
 
+        const langKey = lang === "en" ? "en" : lang === "zh-CN" ? "zh-CN" : "zh-TW";
+        const countryList = data[0][langKey] || [];
+        setCountries(countryList);
+      } catch (err) {
+        console.error("Error fetching countries:", err);
+        setCountries([]);
+      }
+    };
+    fetchCountries();
+  }, [lang]);
+
+  // 多語資料
   const t = {
     "zh-TW": {
       title: "聯絡我們",
-      desc: "有任何產品問題或合作需求，歡迎使用下方表單或直接聯繫我們。",
+      desc: "若有任何產品疑問、報價或維修需求，請使用下方表單或透過聯絡方式與我們聯繫。",
+      info: [
+        { icon: "bi-telephone-fill", title: "聯絡電話", value: "0900-008-608" },
+        { icon: "bi-clock-fill", title: "服務時間", value: "週一至週五 09:00–18:00" },
+        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城區中央路二段121巷2號5樓" },
+
+      ],
       name: "姓名／公司名稱 *",
       email: "電子郵件 *",
       phone: "聯絡電話 *",
+      model: "詢問機種 *",
+      industry: "行業 *",
+      address: "聯絡地址 *",
+      country: "國家 *",
       message: "留言內容 *",
       submit: "送出訊息",
-      infoTitle: "聯絡資訊",
-      phoneLabel: "電話",
-      emailLabel: "Email",
-      addressLabel: "地址",
-      hoursLabel: "服務時間",
-      address: "新北市土城區中央路二段126號3樓",
-      hours: "週一至週五 09:00–18:00",
       line: "加入 LINE",
       mail: "寄信給我們",
-      sent: "已成功寄出！感謝您的聯絡！",
+      sentTitle: "寄出成功！",
+      sent: "感謝您的來信，我們將盡快回覆。",
       fail: "寄信失敗，請稍後再試。",
-      required: "欄位未填寫完畢！",
-      phoneInvalid: "電話格式不正確，請輸入 09 開頭的手機號碼或市話！",
+      required: "請填寫所有必填欄位！",
       emailInvalid: "電子郵件格式不正確！",
-      msgInvalid: "留言內容不可為空！",
+      phoneInvalid: "電話格式不正確！",
+      models: ["封口機", "封罐機", "果糖機", "搖搖機", "檸檬機", "其他"],
     },
     "zh-CN": {
       title: "联系我们",
-      desc: "如有任何产品问题或合作需求，欢迎使用下方表单或直接与我们联系。",
+      desc: "如有任何产品疑问、报价或维修需求，请使用下方表单或通过联系方式与我们联系。",
+      info: [
+        { icon: "bi-telephone-fill", title: "联系电话", value: "0900-008-608" },
+        { icon: "bi-clock-fill", title: "服务时间", value: "周一至周五 09:00–18:00" },
+        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城区中央路二段121巷2号5楼" },
+
+      ],
       name: "姓名／公司名称 *",
       email: "电子邮箱 *",
       phone: "联系电话 *",
+      model: "询问机种 *",
+      industry: "行业 *",
+      address: "联系地址 *",
+      country: "国家 *",
       message: "留言内容 *",
       submit: "发送讯息",
-      infoTitle: "联系方式",
-      phoneLabel: "电话",
-      emailLabel: "邮箱",
-      addressLabel: "地址",
-      hoursLabel: "服务时间",
-      address: "新北市土城区中央路二段126号3楼",
-      hours: "周一至周五 09:00–18:00",
       line: "加入 LINE",
       mail: "发送邮件",
-      sent: "已成功发送！感谢您的联系！",
-      fail: "发送失败，请稍后重试。",
-      required: "栏位未填写完毕！",
-      phoneInvalid: "电话格式不正确，请输入以 09 开头的手机号或座机号！",
+      sentTitle: "发送成功！",
+      sent: "感谢您的来信，我们将尽快回复。",
+      fail: "发送失败，请稍后再试。",
+      required: "请填写所有必填栏位！",
       emailInvalid: "电子邮箱格式不正确！",
-      msgInvalid: "留言内容不能为空！",
+      phoneInvalid: "电话号码格式不正确！",
+      models: ["封口机", "封罐机", "果糖机", "摇摇机", "柠檬机", "其他"],
     },
     en: {
       title: "Contact Us",
-      desc: "If you have any questions or cooperation inquiries, please fill out the form below or contact us directly.",
+      desc: "For any inquiries or cooperation, please fill in the form below or contact us directly.",
+      info: [
+        { icon: "bi-telephone-fill", title: "Telephone", value: "0900-008-608" },
+        { icon: "bi-clock-fill", title: "Service Hours", value: "Mon–Fri 9:00–18:00" },
+        { icon: "bi-geo-alt-fill", title: "Address", value: "5F., No.2, Ln.121, Sec.2, Zhongyang Rd., New Taipei City" },
+        
+      ],
       name: "Name / Company *",
       email: "Email *",
       phone: "Phone *",
+      model: "Model of Interest *",
+      industry: "Industry *",
+      address: "Address *",
+      country: "Country *",
       message: "Message *",
       submit: "Send Message",
-      infoTitle: "Contact Info",
-      phoneLabel: "Phone",
-      emailLabel: "Email",
-      addressLabel: "Address",
-      hoursLabel: "Business Hours",
-      address: "3F., No.126, Sec.2, Zhongyang Rd., Tucheng Dist., New Taipei City, Taiwan",
-      hours: "Mon–Fri 09:00–18:00",
       line: "Add LINE",
       mail: "Send Email",
-      sent: "Message sent successfully!",
-      fail: "Failed to send, please try again.",
+      sentTitle: "Message Sent!",
+      sent: "Thank you for contacting us. We'll get back to you soon.",
+      fail: "Failed to send. Please try again later.",
       required: "Please complete all required fields!",
-      phoneInvalid: "Invalid phone number format!",
       emailInvalid: "Invalid email format!",
-      msgInvalid: "Message cannot be empty!",
+      phoneInvalid: "Invalid phone number format!",
+      models: ["Cup Sealer", "Can Sealer", "Fructose Dispenser", "Shaking Machine", "Lemon Squeezer", "Other"],
     },
   };
 
@@ -96,205 +127,251 @@ const Contact = () => {
     document.title = `${text.title}｜義歆實業股份有限公司`;
   }, [lang, text.title]);
 
-  // 驗證函式
   const validateField = (name, value) => {
-    let errorMsg = "";
+    let msg = "";
+    if (!value?.trim()) msg = text.required;
+    else if (name === "user_email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) msg = text.emailInvalid;
+    else if (name === "user_phone" && !/^(09\d{8}|0\d{1,2}-?\d{6,8})$/.test(value)) msg = text.phoneInvalid;
+    setErrors((prev) => ({ ...prev, [name]: msg }));
+    return msg === "";
+  };
 
-    if (!value.trim()) {
-      errorMsg = text.required;
-    } else {
-      switch (name) {
-        case "user_email":
-          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value))
-            errorMsg = text.emailInvalid;
-          break;
-        case "user_phone":
-          if (!/^(09\d{8}|0\d{1,2}-?\d{6,8})$/.test(value))
-            errorMsg = text.phoneInvalid;
-          break;
-        case "message":
-          if (value.trim().length === 0) errorMsg = text.msgInvalid;
-          break;
-        default:
-          break;
+ const handleSendEmail = (e) => {
+  e.preventDefault();
+  const form = e.target;
+
+  const modelInput = document.createElement("input");
+  modelInput.type = "hidden";
+  modelInput.name = "model";
+  modelInput.value = selectedModel ? selectedModel.value : "";
+  form.appendChild(modelInput);
+
+  const countryInput = document.createElement("input");
+  countryInput.type = "hidden";
+  countryInput.name = "country";
+  countryInput.value = selectedCountry ? selectedCountry.label : "";
+  form.appendChild(countryInput);
+
+  const normalFields = ["user_name", "user_email", "user_phone", "industry", "address", "message"];
+  const allNormalValid = normalFields.every((f) => validateField(f, form[f]?.value || ""));
+  const modelValid = !!selectedModel;
+  const countryValid = !!selectedCountry;
+
+  if (!modelValid) setErrors((prev) => ({ ...prev, model: text.required }));
+  if (!countryValid) setErrors((prev) => ({ ...prev, country: text.required }));
+
+  const allValid = allNormalValid && modelValid && countryValid;
+
+  if (!allValid) {
+    Swal.fire({ icon: "warning", text: text.required, confirmButtonColor: "#b39a84" });
+    return;
+  }
+
+  setLoading(true);
+  emailjs
+    .sendForm("service_yihsin1630", "template_op10jbx", formRef.current, "J4zGrb2tDWXbBTPyq")
+    .then(
+      () => {
+        setLoading(false);
+        Swal.fire({
+          icon: "success",
+          title: text.sentTitle,
+          text: text.sent,
+          background: "#f3fff5",
+          color: "#0A1E54",
+          confirmButtonColor: "#0A1E54",
+          iconColor: "#6bcf81",
+        });
+        form.reset();
+        setSelectedModel(null);
+        setSelectedCountry(null);
+        setErrors({});
+      },
+      () => {
+        setLoading(false);
+        Swal.fire({ icon: "error", title: "Oops!", text: text.fail, confirmButtonColor: "#d33" });
       }
-    }
-
-    setErrors((prev) => ({ ...prev, [name]: errorMsg }));
-    return errorMsg === "";
-  };
-
-  // 即時驗證
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    validateField(name, value);
-  };
-
-  // 送出表單
-  const handleSendEmail = (e) => {
-    e.preventDefault();
-    const form = e.target;
-
-    const fields = ["user_name", "user_email", "user_phone", "message"];
-    const allValid = fields.every((field) =>
-      validateField(field, form[field].value)
     );
+};
 
-    if (!allValid) {
-      Swal.fire({
-        icon: "warning",
-        text: text.required,
-        confirmButtonColor: "#3085d6",
-      });
-      return;
-    }
-
-    setLoading(true);
-
-    const SERVICE_ID = "service_yihsin1630";
-    const TEMPLATE_ID = "template_op10jbx";
-    const PUBLIC_KEY = "J4zGrb2tDWXbBTPyq";
-
-    emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
-      .then(
-        () => {
-          setLoading(false);
-          Swal.fire({
-            icon: "success",
-            title: "寄出成功",
-            text: text.sent,
-            confirmButtonColor: "#3085d6",
-          });
-          form.reset();
-          setErrors({ name: "", email: "", phone: "", message: "" });
-        },
-        () => {
-          setLoading(false);
-          Swal.fire({
-            icon: "error",
-            title: "寄信失敗",
-            text: text.fail,
-            confirmButtonColor: "#d33",
-          });
-        }
-      );
-  };
 
   return (
-    <section className="hot-section py-lg-12 py-5">
-      <div className="container">
-        {/* 標題 */}
-        <div className="text-center mb-5">
-          <h1 className="fw-bold display-6 mb-5 text-primary-100">{text.title}</h1>
-          <p className="text-primary-200">{text.desc}</p>
-        </div>
+    <>
+    <section className="contact-layout">
+      <div className="container-fluid p-0">
+        <div className="row g-0">
 
-        <div className="row g-5 align-items-start ">
-          {/* 左側表單 */}
-          <div className="col-lg-6">
-            <form
-              ref={formRef}
-              onSubmit={handleSendEmail}
-              className="p-4 rounded-3 shadow-sm bg-gray-200"
-            >
-              {/* 姓名／公司 */}
-              <div className="mb-3">
-                <label className="form-label fw-bold text-primary-100">{text.name}</label>
-                <input
-                  type="text"
-                  name="user_name"
-                  className={`form-control text-primary-100 ${
-                    errors.user_name ? "border border-danger" : ""
-                  }`}
-                  onChange={handleInputChange}
-                />
-                {errors.user_name && (
-                  <small className="text-danger">{errors.user_name}</small>
-                )}
-              </div>
-
-              {/* Email */}
-              <div className="mb-3">
-                <label className="form-label fw-bold text-primary-100">{text.email}</label>
-                <input
-                  type="email"
-                  name="user_email"
-                  className={`form-control text-primary-100 ${
-                    errors.user_email ? "border border-danger" : ""
-                  }`}
-                  onChange={handleInputChange}
-                />
-                {errors.user_email && (
-                  <small className="text-danger">{errors.user_email}</small>
-                )}
-              </div>
-
-              {/* 電話 */}
-              <div className="mb-3">
-                <label className="form-label fw-bold text-primary-100">{text.phone}</label>
-                <input
-                  type="tel"
-                  name="user_phone"
-                  className={`form-control text-primary-100 ${
-                    errors.user_phone ? "border border-danger" : ""
-                  }`}
-                  onChange={handleInputChange}
-                />
-                {errors.user_phone && (
-                  <small className="text-danger">{errors.user_phone}</small>
-                )}
-              </div>
-
-              {/* 留言 */}
-              <div className="mb-3">
-                <label className="form-label fw-bold text-primary-100">{text.message}</label>
-                <textarea
-                  name="message"
-                  rows="5"
-                  className={`form-control text-primary-100 ${
-                    errors.message ? "border border-danger" : ""
-                  }`}
-                  placeholder={text.message}
-                  onChange={handleInputChange}
-                ></textarea>
-                {errors.message && (
-                  <small className="text-danger">{errors.message}</small>
-                )}
-              </div>
-
-              {/* 按鈕 */}
-              <button
-                type="submit"
-                className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
-                          px-lg-2 py-lg-1 fw-bold"
-                style={{ fontSize: "0.9rem", width: "auto" }}
-                disabled={loading}
-              >
-                {loading ? "⏳ 送出中..." : text.submit}
-              </button>
-            </form>
+          {/* 左側聯絡資訊 */}
+          <div className="col-12 col-lg-5 contact-left text-light py-5 d-flex flex-column align-items-center justify-content-center">
+            <h2 className="fw-bold mb-4 text-center">{text.title}</h2>
+            <p className="mb-5 px-4 text-center small opacity-75">{text.desc}</p>
+            <div className="contact-cards">
+              {text.info.map((item, i) => (
+                <div className="contact-card" key={i}>
+                  <div className="icon-wrap">
+                    <i className={`bi ${item.icon}`}></i>
+                  </div>
+                  <h6 className="fw-bold mt-2">{item.title}</h6>
+                  <p className="mb-0 small">{item.value}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* 右側聯絡資訊 */}
-          <div className="col-lg-6">
-            <div className="p-4 bg-gray-200 rounded-3 shadow-sm text-primary-100">
-              <h4 className="fw-bold mb-3">{text.infoTitle}</h4>
-              <p className="mb-2">{text.phoneLabel}：0900-008-608</p>
-              <p className="mb-2">{text.emailLabel}：yihsin1630@gmail.com</p>
-              <p className="mb-2">{text.addressLabel}：{text.address}</p>
-              <p className="mb-3">{text.hoursLabel}：{text.hours}</p>
-              <a
-                href="https://line.me/R/ti/p/@477fjgkd"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-success rounded-pill px-lg-4 py-lg-2 
-                          px-lg-2 py-lg-1 fw-bold me-2"
-              >
+          {/* 右側表單 */}
+          <div className="col-12 col-lg-7 contact-right py-5 px-lg-5">
+            <div className="contact-form mx-auto text-start p-4 rounded-4 shadow bg-light">
+              <form ref={formRef} onSubmit={handleSendEmail}>
+                {[
+                  { name: "user_name", label: text.name, type: "text" },
+                  { name: "user_email", label: text.email, type: "email" },
+                  { name: "user_phone", label: text.phone, type: "tel" },
+                  { name: "industry", label: text.industry, type: "text" },
+                  { name: "address", label: text.address, type: "text" },
+                ].map((f, i) => (
+                  <div className="mb-3" key={i}>
+                    <label className="form-label fw-bold text-primary-100">{f.label}</label>
+                    <input
+                      type={f.type}
+                      name={f.name}
+                      className={`form-control text-primary-100 ${errors[f.name] ? "is-invalid" : ""}`}
+                      onBlur={(e) => validateField(e.target.name, e.target.value)}
+                    />
+                    {errors[f.name] && (
+                      <small className="text-danger fade-in">
+                        <i className="bi bi-exclamation-circle me-1"></i>
+                        {errors[f.name]}
+                      </small>
+                    )}
+                  </div>
+                ))}
+
+                {/* 詢問機種 */}
+                <div className="mb-3">
+                  <label className="form-label fw-bold text-primary-100">{text.model}</label>
+                  <Select
+                    name="model"
+                    options={text.models.map((m) => ({ label: m, value: m }))}
+                    value={selectedModel}
+                    onChange={(val) => {
+                      setSelectedModel(val);
+                      const input = document.querySelector("input[name='model']");
+                      if (input) input.value = val ? val.value : "";
+                    }}
+                    placeholder={
+                      lang === "en"
+                        ? "Select model..."
+                        : lang === "zh-CN"
+                        ? "请选择机种"
+                        : "請選擇機種"
+                    }
+                    classNamePrefix="react-select"
+                    styles={{
+                      control: (base, state) => ({
+                        ...base,
+                        borderColor: state.isFocused ? "#b39a84" : "#cfc7c8",
+                        boxShadow: "none",
+                        borderRadius: "8px",
+                        "&:hover": { borderColor: "#b39a84" },
+                      }),
+                      singleValue: (base) => ({
+                        ...base,
+                        color: "#0a1e54",
+                      }),
+                      placeholder: (base) => ({
+                        ...base,
+                        color: "#a0a6b5",
+                      }),
+                      option: (base, state) => ({
+                        ...base,
+                        backgroundColor: state.isSelected
+                          ? "#b39a84"
+                          : state.isFocused
+                          ? "rgba(179, 154, 132, 0.1)"
+                          : "white",
+                        color: state.isSelected ? "white" : "#0a1e54",
+                      }),
+                    }}
+                  />
+                  {/* ✅ EmailJS 讀取用 */}
+                  <input type="hidden" name="model" />
+                </div>
+
+
+                {/* 國家 */}
+                <div className="mb-3">
+                  <label className="form-label fw-bold text-primary-100">{text.country}</label>
+                  <Select
+                    name="country"
+                    options={countries}
+                    value={selectedCountry}
+                    onChange={(val) => setSelectedCountry(val)}
+                    placeholder={
+                      lang === "en" ? "Select country..." : lang === "zh-CN" ? "请选择国家" : "請選擇國家"
+                    }
+                    classNamePrefix="react-select"
+                    styles={{
+                      control: (base, state) => ({
+                        ...base,
+                        borderColor: state.isFocused ? "#b39a84" : "#cfc7c8",
+                        boxShadow: "none",
+                        borderRadius: "8px",
+                        "&:hover": { borderColor: "#b39a84" },
+                      }),
+                      singleValue: (base) => ({
+                        ...base,
+                        color: "#0a1e54",
+                      }),
+                      placeholder: (base) => ({
+                        ...base,
+                        color: "#a0a6b5",
+                      }),
+                      option: (base, state) => ({
+                        ...base,
+                        backgroundColor: state.isSelected
+                          ? "#b39a84"
+                          : state.isFocused
+                          ? "rgba(179, 154, 132, 0.1)"
+                          : "white",
+                        color: state.isSelected ? "white" : "#0a1e54",
+                      }),
+                    }}
+                  />
+                </div>
+
+
+                {/* 留言 */}
+                <div className="mb-3">
+                  <label className="form-label fw-bold text-primary-100">{text.message}</label>
+                  <textarea
+                    name="message"
+                    rows="5"
+                    className={`form-control ${errors.message ? "is-invalid" : ""}`}
+                    onBlur={(e) => validateField("message", e.target.value)}
+                  ></textarea>
+                </div>
+
+                <div className="text-center">
+                  <button type="submit" className="btn send-btn" disabled={loading}>
+                    {loading ? (
+                      <>
+                        <i className="bi bi-arrow-repeat spin me-2"></i>
+                        {lang === "en" ? "Sending..." : lang === "zh-CN" ? "发送中..." : "送出中..."}
+                      </>
+                    ) : (
+                      text.submit
+                    )}
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            {/* 底部按鈕 */}
+            <div className="mt-5 d-flex justify-content-center gap-3 flex-wrap">
+              <a href="https://line.me/R/ti/p/@477fjgkd" target="_blank" rel="noreferrer" className="btn btn-line rounded-pill px-4 py-2 fw-bold">
                 <i className="bi bi-line me-1"></i> {text.line}
               </a>
-              <a href="mailto:yihsin1630@gmail.com" className="btn btn-primary-100 rounded-pill px-lg-4 py-lg-2 
-                          px-lg-2 py-lg-1 fw-bold">
+              <a href="mailto:yihsin1630@gmail.com" className="btn btn-mail rounded-pill px-4 py-2 fw-bold">
                 <i className="bi bi-envelope me-1"></i> {text.mail}
               </a>
             </div>
@@ -302,6 +379,8 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    <FloatingButtons />
+    </>
   );
 };
 

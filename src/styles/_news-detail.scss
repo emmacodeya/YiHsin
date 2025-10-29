@@ -1,0 +1,84 @@
+.news-detail {
+  color: #0a1e54;
+  background: linear-gradient(180deg, #eef3fb 0%, #f6f8fc 100%);
+
+  h2 {
+    font-size: 2rem;
+    color: #b39a84;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #333;
+  }
+
+  /* 小標題樣式 */
+  h4 {
+    color: #0a1e54;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border-left: 4px solid #b39a84;
+    padding-left: 0.75rem;
+  }
+
+  /* 清單樣式 */
+  ul {
+    margin-left: 1.2rem;
+    list-style: none;
+
+    li {
+      position: relative;
+      margin-bottom: 0.6rem;
+      padding-left: 1.2rem;
+      line-height: 1.8;
+      color: #444;
+
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #b39a84;
+        font-weight: bold;
+      }
+    }
+  }
+
+  /* 文章內圖片 */
+  img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  /* 返回按鈕 */
+  .btn {
+    border-color: #b39a84;
+    color: #b39a84;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #b39a84;
+      color: #fff;
+    }
+  }
+
+  /* 手機版微調 */
+  @include respond-down(md) {
+    h2 {
+      font-size: 1.6rem;
+    }
+    h4 {
+      font-size: 1.15rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}

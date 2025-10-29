@@ -142,7 +142,7 @@
     },
     {
       "model": "K-2590D5.5",
-      "images": ["http://localhost:3000/images/product/K-2590D5.5.jpg"],
+      "images": ["http://localhost:3000/images/product/K-2590D5.5.png"],
       "features": {
         "zh-TW": [
           "支援全自動與半自動雙模式操作，放入杯子即可自動封口，操作快速又省力。",
@@ -206,7 +206,7 @@
     },
     {
       "model": "K-2580D5.5",
-      "images": ["http://localhost:3000/images/product/K-2580D5.5.jpg"],
+      "images": ["http://localhost:3000/images/product/K-2580D5.5.png"],
       "features": {
         "zh-TW": [
           "支援全自動與半自動操作，放杯即可封口，省時又省力。",
@@ -279,7 +279,7 @@
   "items": [
     {
       "model": "F-09",
-      "images": ["http://localhost:3000/images/product/F-09.jpg"],
+      "images": ["http://localhost:3000/images/product/F-09.png"],
       "features": {
         "zh-TW": [
           "定量出糖精準，誤差僅 ±0.1g，確保飲品甜度一致。",
@@ -419,7 +419,7 @@
   "items": [
     {
       "model": "KS-01A",
-      "images": ["http://localhost:3000/images/product/KS-01A.jpg"],
+      "images": ["http://localhost:3000/images/product/KS-01A.png"],
       "features": {
         "zh-TW": [
           "全自動進出杯設計，搭配封開式機體結構，運行安靜又安全。",
@@ -485,7 +485,7 @@
     },
     {
       "model": "YY-01A",
-      "images": ["http://localhost:3000/images/product/YY-01A.jpg"],
+      "images": ["http://localhost:3000/images/product/YY-01A.png"],
       "features": {
         "zh-TW": [
           "採用 360° 旋轉搖動方式，混合更均勻，口感更穩定。",
@@ -556,7 +556,7 @@
       "model": "YY-02",
       "images": [
         "http://localhost:3000/images/product/YY-02小圖示.png",
-        "http://localhost:3000/images/product/YY-02(帶防護罩）.jpg"
+        "http://localhost:3000/images/product/YY-02(帶防護罩）.png"
       ],
       "features": {
         "zh-TW": [
@@ -691,9 +691,9 @@
     },
     {
       "category": {
-    "zh-TW": "檸檬機系列",
-    "zh-CN": "柠檬机系列",
-    "en": "Lemon Pounding Machine Series"
+    "zh-TW": "檸檬機",
+    "zh-CN": "柠檬机",
+    "en": "Lemon Pounding Machine"
   },
   "items": [
     {
@@ -772,7 +772,7 @@
     },
     {
       "model": "K-CD04",
-      "images": ["http://localhost:3000/images/product/K-CD04.jpg"],
+      "images": ["http://localhost:3000/images/product/K-CD04.png"],
       "features": {
         "zh-TW": [
           "自動旋轉偏心式捶打設計，快速均勻混合檸檬、水果與冰塊，製作高品質飲品。",
@@ -922,9 +922,9 @@
     },
     {
   "category": {
-    "zh-TW": "鋁蓋封口機系列",
-    "zh-CN": "铝盖封口机系列",
-    "en": "Aluminum Lid Sealer Series"
+    "zh-TW": "鋁蓋封口機",
+    "zh-CN": "铝盖封口机",
+    "en": "Aluminum Lid Sealer"
   },
   "items": [
     {
@@ -1190,7 +1190,7 @@
   "items": [
     {
       "model": "K-255X",
-      "images": ["http://localhost:3000/images/product/K-255X.jpg"],
+      "images": ["http://localhost:3000/images/product/K-255X.png"],
       "features": {
         "zh-TW": [
           "適用多種盒裝食品，封口範圍廣泛。",
@@ -1263,7 +1263,7 @@
     },
     {
       "model": "K-1519",
-      "images": ["http://localhost:3000/images/product/K-1519.jpg"],
+      "images": ["http://localhost:3000/images/product/K-1519.png"],
       "features": {
         "zh-TW": [
           "適用多種盒裝食品，封口範圍最大可達 155×190mm。",
@@ -1336,7 +1336,7 @@
     },
     {
       "model": "K-1823",
-      "images": ["http://localhost:3000/images/product/K-1823.jpg"],
+      "images": ["http://localhost:3000/images/product/K-1823.png"],
       "features": {
         "zh-TW": [
           "適用大型餐盒封口（最大 180×230mm），適合外送需求。",
@@ -1409,7 +1409,7 @@
     },
     {
       "model": "K-400",
-      "images": ["http://localhost:3000/images/product/400.jpg"],
+      "images": ["http://localhost:3000/images/product/400.png"],
       "features": {
         "zh-TW": [
           "支援標準封口、抽真空封口與氣調保鮮封口。",
@@ -1858,6 +1858,225 @@
         "vision": "Looking ahead, Yihsin will continue to work closely with YODO Kaiwei to expand into global markets, bringing Taiwan’s high-quality catering equipment to the world."
       }
     }
+  ],
+  "countries":[
+    {
+  "zh-TW": [
+    { "label": "台灣", "value": "Taiwan" },
+    { "label": "中國", "value": "China" },
+    { "label": "香港", "value": "Hong Kong" },
+    { "label": "澳門", "value": "Macau" },
+    { "label": "日本", "value": "Japan" },
+    { "label": "韓國", "value": "Korea, Republic of" },
+    { "label": "新加坡", "value": "Singapore" },
+    { "label": "馬來西亞", "value": "Malaysia" },
+    { "label": "泰國", "value": "Thailand" },
+    { "label": "越南", "value": "Vietnam" },
+    { "label": "菲律賓", "value": "Philippines" },
+    { "label": "印尼", "value": "Indonesia" },
+    { "label": "印度", "value": "India" },
+    { "label": "美國", "value": "United States" },
+    { "label": "加拿大", "value": "Canada" },
+    { "label": "英國", "value": "United Kingdom" },
+    { "label": "德國", "value": "Germany" },
+    { "label": "法國", "value": "France" },
+    { "label": "澳洲", "value": "Australia" },
+    { "label": "紐西蘭", "value": "New Zealand" },
+    { "label": "其他", "value": "Other" }
+  ],
+  "zh-CN": [
+    { "label": "台湾", "value": "Taiwan" },
+    { "label": "中国", "value": "China" },
+    { "label": "香港", "value": "Hong Kong" },
+    { "label": "澳门", "value": "Macau" },
+    { "label": "日本", "value": "Japan" },
+    { "label": "韩国", "value": "Korea, Republic of" },
+    { "label": "新加坡", "value": "Singapore" },
+    { "label": "马来西亚", "value": "Malaysia" },
+    { "label": "泰国", "value": "Thailand" },
+    { "label": "越南", "value": "Vietnam" },
+    { "label": "菲律宾", "value": "Philippines" },
+    { "label": "印尼", "value": "Indonesia" },
+    { "label": "印度", "value": "India" },
+    { "label": "美国", "value": "United States" },
+    { "label": "加拿大", "value": "Canada" },
+    { "label": "英国", "value": "United Kingdom" },
+    { "label": "德国", "value": "Germany" },
+    { "label": "法国", "value": "France" },
+    { "label": "澳大利亚", "value": "Australia" },
+    { "label": "新西兰", "value": "New Zealand" },
+    { "label": "其他", "value": "Other" }
+  ],
+  "en": [
+    { "label": "Taiwan", "value": "Taiwan" },
+    { "label": "China", "value": "China" },
+    { "label": "Hong Kong", "value": "Hong Kong" },
+    { "label": "Macau", "value": "Macau" },
+    { "label": "Japan", "value": "Japan" },
+    { "label": "South Korea", "value": "Korea, Republic of" },
+    { "label": "Singapore", "value": "Singapore" },
+    { "label": "Malaysia", "value": "Malaysia" },
+    { "label": "Thailand", "value": "Thailand" },
+    { "label": "Vietnam", "value": "Vietnam" },
+    { "label": "Philippines", "value": "Philippines" },
+    { "label": "Indonesia", "value": "Indonesia" },
+    { "label": "India", "value": "India" },
+    { "label": "United States", "value": "United States" },
+    { "label": "Canada", "value": "Canada" },
+    { "label": "United Kingdom", "value": "United Kingdom" },
+    { "label": "Germany", "value": "Germany" },
+    { "label": "France", "value": "France" },
+    { "label": "Australia", "value": "Australia" },
+    { "label": "New Zealand", "value": "New Zealand" },
+    { "label": "Other", "value": "Other" }
   ]
+}
+
+  ],
+ "news": [
+  {
+    "id": 1,
+    "title": {
+      "zh-TW": "全新上市｜鎧瑋商用飲料封口機 K-2590SA",
+      "zh-CN": "全新上市｜铠伟商用饮料封口机 K-2590SA",
+      "en": "New Launch｜KAIWEI Commercial Cup Sealer K-2590SA"
+    },
+    "date": "2025-11-10",
+    "cover": "http://localhost:3000/images/discount.jpg",
+    "summary": {
+      "zh-TW": "鎧瑋全新 K-2590SA 飲料封口機，以高效、穩定、耐用為核心，掀起封口新革命！",
+      "zh-CN": "铠伟全新 K-2590SA 饮料封口机，以高效、稳定、耐用为核心，掀起封口新革命！",
+      "en": "The new K-2590SA cup sealer by KAIWEI brings a new standard of efficiency, stability, and durability!"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "迎接飲品封口新世代！鎧瑋最新推出 K-2590SA 商用飲料封口機，以高效、穩定、耐用為核心，滿足飲料店與餐飲業者的日常高強度使用需求。",
+          "zh-CN": "迎接饮品封口新时代！铠伟推出 K-2590SA 商用饮料封口机，以高效、稳定、耐用为核心，满足饮品店及餐饮业者的日常高强度使用需求。",
+          "en": "Introducing the next generation of beverage sealing! The K-2590SA commercial cup sealer is designed for high efficiency, stability, and durability to meet daily demands of beverage and food businesses."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "zh-TW": "產品特色",
+          "zh-CN": "产品特色",
+          "en": "Key Features"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "zh-TW": [
+            "電磁式熱封按鍵：一鍵自動刺膜+封口，降低人力及時間成本。",
+            "液晶觸控螢幕：操作簡易，溫度、時間一目了然。",
+            "金屬烤漆防塵機身：耐磨防鏽、質感升級。",
+            "護手擋板設計：安全防護再升級。"
+          ],
+          "zh-CN": [
+            "电磁式热封按键：一键自动刺膜+封口，降低人力与时间成本。",
+            "液晶触控萤幕：操作简易，温度与时间一目了然。",
+            "金属烤漆防尘机身：耐磨防锈、质感升级。",
+            "护手挡板设计：安全防护再升级。"
+          ],
+          "en": [
+            "Electromagnetic sealing button: one-touch automatic pierce and seal.",
+            "LCD touch screen for easy temperature and time control.",
+            "Metal powder-coated body: durable and stylish.",
+            "Safety guard panel for enhanced protection."
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "市場勁爆價：NT$14,000，高CP值入門首選！",
+          "zh-CN": "市场劲爆价：NT$14,000，高性价比入门首选！",
+          "en": "Special launch price: NT$14,000 — the best value for professional sealing!"
+        }
+      },
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "立即洽詢鎧瑋封口機，搶先體驗高效封口新標準。",
+          "zh-CN": "立即洽询铠伟封口机，抢先体验高效封口新标准。",
+          "en": "Contact KAIWEI today to experience the new standard in high-performance sealing."
+        }
+      },
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "客服專線：0900-008-608",
+          "zh-CN": "客服专线：0900-008-608",
+          "en": "Customer Service: 0900-008-608"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": {
+      "zh-TW": "義歆實業股份有限公司【官方LINE】上線囉！",
+      "zh-CN": "义歆实业股份有限公司【官方LINE】上线啦！",
+      "en": "Yihsin Industrial Official LINE Account is Now Online!"
+    },
+    "date": "2025-10-25",
+    "cover": "http://localhost:3000/images/LINE.png",
+    "summary": {
+      "zh-TW": "立即加入義歆實業官方LINE好友，掌握新品、優惠與維修最新資訊！",
+      "zh-CN": "立即加入义歆实业官方LINE好友，掌握新品、优惠与维修最新资讯！",
+      "en": "Join Yihsin Industrial's official LINE account for product news, offers, and service updates!"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "為了提供更即時、更貼心的服務，義歆實業正式推出官方LINE帳號！",
+          "zh-CN": "为了提供更即时、更贴心的服务，义歆实业正式推出官方LINE帐号！",
+          "en": "To provide faster and more personalized service, Yihsin Industrial has launched its official LINE account!"
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "zh-TW": "加入好友即可享有",
+          "zh-CN": "加入好友即可享有",
+          "en": "Join us to enjoy these benefits"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "zh-TW": [
+            "最新機型與活動第一手通知",
+            "專屬LINE客服快速回覆",
+            "維修與保固狀況即時查詢"
+          ],
+          "zh-CN": [
+            "最新机型与活动第一手通知",
+            "专属LINE客服快速回复",
+            "维修与保固状况即时查询"
+          ],
+          "en": [
+            "First-hand updates on new products and events",
+            "Quick customer support via LINE",
+            "Instant service and warranty tracking"
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "立即掃描QR Code 或點擊右方LINE小圖標！",
+          "zh-CN": "立即扫描QR Code 或点击右方LINE小图标！",
+          "en": "Scan the QR code or click the LINE icon to connect now!"
+        }
+      }
+    ]
+  }
+]
+
+
 
 }

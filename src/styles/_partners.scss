@@ -1,0 +1,224 @@
+/* === Hero 區 === */
+.partners-hero {
+  position: relative;
+  background: linear-gradient(rgba(10, 30, 84, 0.92), rgba(10, 30, 84, 0.85)),
+    url("http://localhost:3000/images/world-map-dark.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 0 6rem;
+  overflow: hidden;
+
+  .hero-title {
+    font-family: "Noto Serif TC", serif;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #f8f7f5, #cfc7c8, #b39a84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  .hero-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .curve-divider {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/* === 品牌介紹（左右雙欄）=== */
+.partners-intro {
+  position: relative;
+  background: #fff;
+  color: #0a1e54;
+  padding: 6rem 0;
+  overflow: hidden;
+
+  /* 右側背景圖 */
+  .intro-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 55%; /* 稍微往左延伸 */
+    background: url("http://localhost:3000/images/team-work.png") center 45% / contain no-repeat;
+    /* ↑ 45% 表示圖片偏左顯示，可微調成 40%、50% */
+    opacity: 0.2; /* 淡化圖片 */
+    filter: grayscale(20%) brightness(0.9);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .intro-text {
+    position: relative;
+    z-index: 2;
+    h2.section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #b39a84;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #b39a84;
+      padding-left: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.8;
+      color: #333;
+    }
+  }
+}
+
+/* === 響應式 === */
+@media (max-width: 768px) {
+  .partners-intro {
+    text-align: center;
+
+    .intro-text {
+      h2.section-title {
+        border-left: none;
+        padding-left: 0;
+      }
+    }
+
+    .intro-bg {
+      display: none; /* 手機隱藏背景圖避免干擾文字 */
+    }
+  }
+}
+
+
+
+/* === 全球邀請 + 合作優勢 + CTA 統一背景 === */
+.partners-section {
+  background: linear-gradient(rgba(10, 30, 84, 0.95), rgba(10, 30, 84, 0.95)),
+    url("http://localhost:3000/images/world-map-dark.jpg") center/cover no-repeat;
+  color: #fff;
+  padding: 6rem 0;
+
+  /* === 全球邀請 === */
+  .partners-invite {
+    text-align: left;
+
+    h2 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #b39a84, #cfc7c8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+  }
+
+  /* === 合作優勢 === */
+  .partners-advantages {
+    text-align: center;
+    padding: 5rem 0;
+
+    h2 {
+      background: linear-gradient(90deg, #b39a84, #cfc7c8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+
+    .adv-card {
+      width: 240px;
+      height: 240px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: 2rem 1rem;
+      margin: 1rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-8px);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      i {
+        color: #fff;
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
+      }
+
+      h5 {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.85);
+      }
+    }
+  }
+
+  /* === CTA === */
+  .partners-cta {
+    text-align: center;
+    padding-top: 5rem;
+
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .btn {
+      border: 2px solid #b39a84;
+      color: #b39a84;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #b39a84;
+        color: #0a1e54;
+      }
+    }
+  }
+}
+
+/* === 響應式 === */
+@media (max-width: 768px) {
+  .partners-hero {
+    padding: 6rem 0 3rem;
+    .hero-title {
+      font-size: 2.2rem;
+    }
+  }
+
+  .partners-section {
+    text-align: center;
+    .partners-invite {
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
