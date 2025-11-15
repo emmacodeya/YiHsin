@@ -1,11 +1,10 @@
-
 .about-section {
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
   overflow: hidden;
 
-  /* ================= 左側：玻璃風背景 ================= */
+  /* 左側玻璃風背景 */
   .about-left {
     flex: 1;
     min-width: 320px;
@@ -15,50 +14,30 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem;
-    text-align: center;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
   }
 
-  /* ================= 右側主內容 ================= */
+  /* 右側主內容 */
   .about-right {
     flex: 2;
     background: linear-gradient(180deg, #e9e6e7, #cfc7c8);
     color: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 4rem;
 
     .about-inner {
       max-width: 900px;
       line-height: 1.8;
     }
 
-    /* === ✅ content 區塊：去卡片式，左側導引線條 === */
+    /* 內容區塊（左導引線條） */
     .about-content-block {
-      background: transparent;
-      border: none;
-      padding: 0;
-      margin-bottom: 2rem;
-      box-shadow: none;
-      backdrop-filter: none;
-      transition: all 0.3s ease;
-
       .about-text {
         font-size: 1.15rem;
         line-height: 1.9;
         color: #222;
-        margin-bottom: 1.2rem;
         position: relative;
         padding-left: 1.2rem;
+        margin-bottom: 1.2rem;
 
-        /* 左側導引線條 */
         &::before {
           content: "";
           position: absolute;
@@ -73,17 +52,15 @@
         }
       }
 
-      /* hover 效果：文字微亮、線條加強 */
       &:hover .about-text {
         color: #0a1e54;
       }
-
       &:hover .about-text::before {
         opacity: 0.9;
       }
     }
 
-    /* === 列表 === */
+    /* 列表 */
     .about-list {
       list-style: none;
       padding-left: 0;
@@ -103,7 +80,7 @@
       }
     }
 
-    /* === 任務重點框 === */
+    /* 任務強調框 */
     .about-highlight {
       background: rgba(255, 255, 255, 0.6);
       border-left: 4px solid #0a1e54;
@@ -112,14 +89,14 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
-    /* === 願景 === */
+    /* 願景 */
     .about-vision {
       font-style: italic;
       color: #555;
     }
   }
 
-  /* ================= RWD 平板以下 ================= */
+  /* 平板以下 */
   @include respond-down(lg) {
     flex-direction: column;
 
@@ -131,37 +108,26 @@
       text-align: center;
     }
 
-    .about-right {
-      padding: 3rem;
-    }
+    .about-list li {
+      padding-left: 0;
+      text-align: left;
 
-    /* ✅ 平板以下：列表符號改為與文字同行 */
-    .about-list {
-      li {
-        padding-left: 0;
-        text-align: left;
-
-        &::before {
-          position: static;
-          display: inline-block;
-          margin-right: 0.5rem;
-          transform: translateY(1px);
-        }
+      &::before {
+        position: static;
+        display: inline-block;
+        margin-right: 0.5rem;
+        transform: translateY(1px);
       }
     }
 
-    /* 平板以下：導引線移除 */
-    .about-content-block {
-      .about-text {
-        padding-left: 0;
-        &::before {
-          display: none;
-        }
+    .about-content-block .about-text {
+      padding-left: 0;
+      &::before {
+        display: none;
       }
     }
   }
 
-  /* ================= 手機（md 以下） ================= */
   @include respond-down(md) {
     .about-right {
       padding: 2rem;

@@ -1,26 +1,30 @@
 .contact-layout {
+  /* ===== 左側資訊 ===== */
   .contact-left {
     background: #3a3e6c;
     color: #fff;
 
-   .contact-cards {
-        display: flex;              
-        flex-direction: column;     
-        align-items: center;        
-        gap: 1.5rem;                
-        width: 100%;
-        max-width: 380px;           
-        margin: 0 auto;
-
+    .contact-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto;
 
       .contact-card {
         background: rgba(255, 255, 255, 0.1);
         border-radius: 12px;
-        padding: 1rem;
+        padding: 1.5rem;
         text-align: center;
         color: #fff;
         width: 100%;
         transition: all 0.3s ease;
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         &:hover {
           background: rgba(255, 255, 255, 0.2);
@@ -42,85 +46,150 @@
     }
   }
 
+  /* ===== 右側表單區 ===== */
   .contact-right {
     background: #f5f6f8;
-  }
 
-  .contact-form {
-    background: #e4dfdb;
-    border: 1px solid #d6d2ce;
-    max-width: 650px;
+    .contact-form {
+      background: #e4dfdb;
+      border: 1px solid #d6d2ce;
+      max-width: 650px;
 
-    input,
-    textarea {
-      border-radius: 8px;
-      border: 1px solid #cfc7c8;
-      background: #fff;
-      color: #0a1e54;
+      input,
+      textarea {
+        border-radius: 8px;
+        border: 1px solid #cfc7c8;
+        background: #fff;
+        color: #0a1e54;
 
-      &:focus {
-        border: 2px solid #b39a84;
-        box-shadow: 0 0 6px rgba(179, 154, 132, 0.4);
+        &:focus {
+          border: 2px solid #b39a84;
+          box-shadow: 0 0 6px rgba(179, 154, 132, 0.4);
+        }
+      }
+
+      .is-invalid {
+        border-color: #dc3545;
       }
     }
 
-    .is-invalid {
-      border-color: #dc3545;
+    .send-btn {
+      background: linear-gradient(135deg, #0a1e54, #b39a84);
+      color: #fff;
+      border: none;
+      padding: 0.6rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        box-shadow: 0 0 10px rgba(10, 30, 84, 0.3);
+      }
+    }
+
+    .btn-line {
+      background-color: #06c755;
+      color: #fff;
+      border: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 10px rgba(6, 199, 85, 0.4);
+      }
+    }
+
+    .btn-mail {
+      background-color: #b39a84;
+      color: #fff;
+      border: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 10px rgba(179, 154, 132, 0.4);
+      }
     }
   }
 
-  .send-btn {
-    background: linear-gradient(135deg, #0a1e54, #b39a84);
-    color: #fff;
-    border: none;
-    padding: 0.6rem 2rem;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-
-    &:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
-      box-shadow: 0 0 10px rgba(10, 30, 84, 0.3);
-    }
-  }
-
-  .btn-line {
-    background-color: #06c755;
-    color: #fff;
-    transition: all 0.3s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 0 10px rgba(6, 199, 85, 0.4);
-    }
-  }
-
-  .btn-mail {
-    background-color: #b39a84;
-    color: #fff;
-    transition: all 0.3s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 0 10px rgba(179, 154, 132, 0.4);
-    }
-  }
-
+  /* ===== loading icon ===== */
   .spin {
     animation: spin 1s linear infinite;
   }
-
   @keyframes spin {
     to {
       transform: rotate(360deg);
     }
   }
 
-  @media (max-width: 991px) {
+/* === react-select 客製樣式 === */
+
+/* 外框樣式 */
+.react-select__control {
+  border: 1px solid #cfc7c8 !important;        
+  border-radius: 8px !important;
+  background-color: #fff !important;
+  box-shadow: none !important;
+
+  &:hover {
+    border-color: #b39a84 !important;          
+  }
+}
+
+/* 點擊時 */
+.react-select__control--is-focused {
+  border-color: #b39a84 !important;
+  box-shadow: 0 0 6px rgba(179, 154, 132, 0.4) !important; 
+}
+
+/* 下拉選單 */
+.react-select__option {
+  color: #0a1e54 !important;                   
+}
+.react-select__option--is-focused {
+  background-color: rgba(179, 154, 132, 0.1) !important; 
+}
+.react-select__option--is-selected {
+  background-color: #b39a84 !important;       
+  color: #fff !important;                      
+}
+
+
+.react-select__single-value {
+  color: #0a1e54 !important;
+}
+
+
+.react-select__input-container {
+  color: #0a1e54 !important;
+}
+
+
+.react-select__placeholder {
+  color: #a0a6b5 !important;
+}
+
+
+  /* RWD */
+  @include respond-down(lg) {
     .contact-left {
       text-align: center;
       padding-bottom: 2rem;
+    }
+    .contact-card {
+      min-height: 130px;
+    }
+  }
+
+  @include respond-down(md) {
+    .contact-form {
+      padding: 2rem;
+    }
+
+    .contact-card {
+      min-height: 120px;
     }
   }
 }
