@@ -3,7 +3,7 @@ import { LangContext } from "../App";
 import FloatingButtons from "../components/FloatingButtons";
 
 const Faq = () => {
-  const { lang } = useContext(LangContext); 
+  const { lang } = useContext(LangContext);
   const [faqData, setFaqData] = useState([]);
 
   useEffect(() => {
@@ -15,38 +15,37 @@ const Faq = () => {
 
   if (!faqData.length) return <section className="about-section"></section>;
 
-
   return (
     <>
-    <section className="bg-gray-200 py-lg-12 py-5">
-      <div className="container text-center">
-        <h2 className="fw-bold display-6 mb-5 text-primary-100">常見 Q&A</h2>
+      <section className="bg-gray-200 py-lg-12 py-5">
+        <div className="container text-center">
+          <h2 className="fw-bold display-6 mb-5 text-primary-100">
+            常見 Q&A
+          </h2>
 
-        <div className="d-flex flex-column align-items-center gap-4">
-          {faqData.map((item, i) => (
-            <div
-              key={i}
-              className="faq-card bg-white rounded-4 shadow-sm p-4 text-start"
-              style={{ maxWidth: "800px", width: "100%" }}
-            >
-              <h5 className="fw-bold text-primary-100 mb-3">
-                <span className="me-2 text-primary-600">Q{i + 1}.</span>
-                {item.q}
-              </h5>
-              <p
-                className="mb-0 text-primary-1000"
-                style={{ whiteSpace: "pre-line" }}
+          <div className="d-flex flex-column align-items-center gap-4">
+            {faqData.map((item, i) => (
+              <div
+                key={i}
+                className="faq-card bg-white rounded-4 shadow-sm p-4 text-start w-100"
+                style={{ maxWidth: "800px" }}
               >
-                <span className="fw-bold text-danger">A{i + 1}.</span>
-                <br />
-                {item.a}
-              </p>
-            </div>
-          ))}
+                <h5 className="fw-bold text-primary-100 mb-3">
+                  <span className="me-2 text-primary-600">Q{i + 1}.</span>
+                  {item.q}
+                </h5>
+                <p className="mb-0 text-primary-1000" style={{ whiteSpace: "pre-line" }}>
+                  <span className="fw-bold text-danger">A{i + 1}.</span>
+                  <br />
+                  {item.a}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
-    <FloatingButtons />
+      </section>
+
+      <FloatingButtons />
     </>
   );
 };

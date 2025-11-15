@@ -12,7 +12,7 @@
     font-family: "Noto Serif TC", serif;
     font-size: 3rem;
     background: linear-gradient(90deg, #f8f7f5, #cfc7c8, #b39a84);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
   }
@@ -31,7 +31,7 @@
     svg {
       display: block;
       width: 100%;
-      height: auto;
+      height: 70px; 
     }
   }
 }
@@ -114,7 +114,7 @@
       font-size: 2.6rem;
       font-weight: 700;
       background: linear-gradient(90deg, #b39a84, #cfc7c8);
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 1rem;
     }
@@ -133,7 +133,7 @@
 
     h2 {
       background: linear-gradient(90deg, #b39a84, #cfc7c8);
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 700;
       margin-bottom: 3rem;
