@@ -8,12 +8,12 @@ const News = () => {
   const [newsList, setNewsList] = useState([]);
   const { lang } = useContext(LangContext);
 
-  useEffect(() => {
-    fetch("http://localhost:3000/news")
-      .then((res) => res.json())
-      .then((data) => setNewsList(data))
-      .catch((err) => console.error("載入 news 失敗:", err));
-  }, []);
+ useEffect(() => {
+  fetch("/YiHsin/db.json")
+    .then((res) => res.json())
+    .then((data) => setNewsList(data.news || []))
+    .catch((err) => console.error("載入 news 失敗:", err));
+}, []);
 
   // 翻譯輔助函式
   const t = (obj) => obj?.[lang] || obj?.["zh-TW"];

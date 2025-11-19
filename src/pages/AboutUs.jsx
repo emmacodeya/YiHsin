@@ -6,12 +6,17 @@ const AboutUs = () => {
   const { lang } = useContext(LangContext);
   const [t, setT] = useState(null);
 
-  useEffect(() => {
-    fetch("http://localhost:3000/about")
-      .then((res) => res.json())
-      .then((data) => setT(data[0][lang] || data[0]["zh-TW"]))
-      .catch((err) => console.error("載入關於我們失敗:", err));
-  }, [lang]);
+useEffect(() => {
+  fetch("/YiHsin/db.json")
+    .then((res) => res.json())
+    .then((data) => {
+      const about = data.about?.[0];
+      if (about) {
+        setT(about[lang] || about["zh-TW"]);
+      }
+    })
+    .catch((err) => console.error("載入關於我們失敗:", err));
+}, [lang]);
 
   if (!t) return <section className="about-section"></section>;
 
