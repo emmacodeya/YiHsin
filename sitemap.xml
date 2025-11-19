@@ -8,32 +8,63 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- 產品項目 -->
+  <!-- 主要頁面 -->
   <url>
     <loc>https://emmacodeya.github.io/YiHsin/#/products</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- 合作夥伴 -->
   <url>
     <loc>https://emmacodeya.github.io/YiHsin/#/partners</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- 最新消息 -->
   <url>
     <loc>https://emmacodeya.github.io/YiHsin/#/news</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- 聯絡我們 -->
   <url>
     <loc>https://emmacodeya.github.io/YiHsin/#/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- 產品詳頁（全部 model） -->
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-2590SA</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-2590S</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-2590</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-2590SB</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-9</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-9S</loc></url>
+
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/KL-310MX</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/KL-310A</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/KL-310M</loc></url>
+
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/YY-02</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/YY-03</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/YY-08</loc></url>
+
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-CD07</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/CD-7</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/MH-300</loc></url>
+
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-338OD</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-338PF</loc></url>
+
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-390E</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-390F</loc></url>
+
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-2600A</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/K-2600B</loc></url>
+
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/YY-20</loc></url>
+
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/CNC-D-700</loc></url>
+  <url><loc>https://emmacodeya.github.io/YiHsin/#/product/CNC-C-700</loc></url>
 
 </urlset>
