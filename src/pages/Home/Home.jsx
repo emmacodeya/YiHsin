@@ -345,7 +345,7 @@ const flowStepsMap = {
             return (
               <div
                 key={index}
-                className={`col-6 ${index % 2 === 0 ? "pt-8" : "pb-8"}`} // 左低右高
+                className={`col-sm-6  ${index % 2 === 0 ? "pt-sm-8" : "pb-sm-8"}`} // 左低右高
               >
                 <div className="hot-card-wrap position-relative">
                   {/* 超出去的框框 */}
