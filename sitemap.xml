@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 首頁 -->
+  <url>
+    <loc>https://emmacodeya.github.io/YiHsin/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 產品項目 -->
+  <url>
+    <loc>https://emmacodeya.github.io/YiHsin/#/products</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 合作夥伴 -->
+  <url>
+    <loc>https://emmacodeya.github.io/YiHsin/#/partners</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 最新消息 -->
+  <url>
+    <loc>https://emmacodeya.github.io/YiHsin/#/news</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 聯絡我們 -->
+  <url>
+    <loc>https://emmacodeya.github.io/YiHsin/#/contact
