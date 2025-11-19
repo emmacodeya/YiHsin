@@ -384,11 +384,13 @@ const flowStepsMap = {
 {/* 最實惠區塊 */}
 <section className="py-lg-12 py-5 service-flow two-col-section">
   <div className="container">
+
     {/* 區塊標題 */}
     <div className="text-center mb-8">
       <h2 className="fw-bold text-white display-2 mb-3">
         {lang === "en" ? "Best Value" : lang === "zh-CN" ? "最实惠" : "最實惠"}
       </h2>
+
       <h5 className="mb-1 text-primary-1000">
         {lang === "en"
           ? "We’ve selected the most economical models"
@@ -396,6 +398,7 @@ const flowStepsMap = {
           ? "我们挑选了最经济的款式"
           : "我們挑選了最經濟的款式"}
       </h5>
+
       <h5 className="text-primary-1000">
         {lang === "en"
           ? "Perfect for small shops seeking great value"
@@ -405,8 +408,8 @@ const flowStepsMap = {
       </h5>
     </div>
 
-    {/* 自動渲染交錯版型 */}
-    {economical[0]?.items?.map((item, idx) => {
+    {/* 內容卡片：交錯版型 */}
+    {economical.map((item, idx) => {
       const name =
         typeof item.name === "object"
           ? item.name[lang] || item.name["zh-TW"]
@@ -433,13 +436,13 @@ const flowStepsMap = {
             />
           </div>
 
-          {/* 文字 */}
+          {/* 文字內容 */}
           <div className="col-md-6 d-flex flex-column justify-content-center text-block">
-            <h3 className="brush-title  py-1 px-4  fw-bold mb-lg-5 mb-3 text-end">
+            <h3 className="brush-title py-1 px-4 fw-bold mb-lg-5 mb-3 text-end">
               {name}
             </h3>
 
-            {features && Array.isArray(features) && (
+            {Array.isArray(features) && (
               <ul className="mb-lg-4 mb-2 text-muted text-start">
                 {features.map((f, i) => (
                   <li key={i} className="mb-2">{f}</li>
@@ -447,25 +450,26 @@ const flowStepsMap = {
               </ul>
             )}
 
-           <div>
-          <Link
-            to={`/products?model=${encodeURIComponent(name || "")}`}
-            className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
-                        px-2 py-1 fw-bold"
-          >
-            {lang === "en"
-              ? "View More"
-              : lang === "zh-CN"
-              ? "更多详情"
-              : "更多詳情"}
-          </Link>
+            <div>
+              <Link
+                to={`/products?model=${encodeURIComponent(name || "")}`}
+                className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 px-2 py-1 fw-bold"
+              >
+                {lang === "en"
+                  ? "View More"
+                  : lang === "zh-CN"
+                  ? "更多详情"
+                  : "更多詳情"}
+              </Link>
+            </div>
           </div>
-                    </div>
         </div>
       );
     })}
   </div>
 </section>
+
+
 
 
 {/* 飲料開店最佳方案 */}
