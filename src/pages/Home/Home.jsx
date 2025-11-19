@@ -85,7 +85,7 @@ const flowStepsMap = {
     },
     {
       title: "On-site Training",
-      text: "After ordering, within 3–5 working days (excluding custom products), we’ll deliver the machine to your location and provide installation, operation, and basic maintenance training.",
+      text: "After ordering, within 3–5 working days (excluding Customized products), we’ll deliver the machine to your location and provide installation, operation, and basic maintenance training.",
       icon: "bi-truck",
     },
     {
@@ -134,17 +134,20 @@ const flowStepsMap = {
   <div className="banner p-3  text-primary-1000">
     <div className="container mt-7 container py-5 text-center text-primary-1000">
       <h1 className="mb-4">
-    {letters.map((char, i) => (
-      <Motion.span
-        key={i}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: i * 0.1, duration: 0.6 }}
-        style={{ display: "inline-block" }}
-      >
-        {char}
-      </Motion.span>
-    ))}
+  {letters.map((char, i) => (
+  <Motion.span
+    key={i}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: i * 0.1, duration: 0.6 }}
+    style={{
+      display: "inline-block",
+      width: char === " " ? "0.5em" : "auto"
+    }}
+  >
+    {char === " " ? "\u00A0" : char} 
+  </Motion.span>
+))}
   </h1>
 
   <Motion.p
@@ -272,7 +275,7 @@ const flowStepsMap = {
                 >
                   <div className="hot-topic position-relative">
                     <img src={imgSrc} alt={name} />
-                    <p className="position-absolute bottom-0 start-0 m-1 fw-bold fs-5 text-white">
+                    <p className="position-absolute bottom-0 start-0 m-1 fw-bold fs-6 text-white">
                       {name}
                     </p>
                   </div>
@@ -366,7 +369,7 @@ const flowStepsMap = {
 
                     {/* tagline 疊在圖片底部 */}
                     <div className="tagline-box position-absolute bottom-0 start-0 w-100 d-flex justify-content-around align-items-center m-1">
-                      <span className="fw-bold text-white">{tagline}</span>
+                      <span className="fw-bold text-white fs-6">{tagline}</span>
                       <i className="bi bi-arrow-right text-white"></i>
                     </div>
                   </div>
@@ -393,7 +396,7 @@ const flowStepsMap = {
 
       <h5 className="mb-1 text-primary-1000">
         {lang === "en"
-          ? "We’ve selected the most economical models"
+          ? "We’ve selected the most economical models."
           : lang === "zh-CN"
           ? "我们挑选了最经济的款式"
           : "我們挑選了最經濟的款式"}
@@ -521,7 +524,7 @@ const flowStepsMap = {
                       alt={name}
                       className="img-fluid"
                     />
-                    <p className="fw-bold fs-5 mt-2 text-primary-100">
+                    <p className="fw-bold fs-6 mt-2 text-primary-100">
                       {name}
                     </p>
                   </div>
