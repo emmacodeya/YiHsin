@@ -311,10 +311,6 @@ const flowStepsMap = {
   </div>
 </section>
 
-
-
-
-
  {/* 熱銷區塊 */}
 <section className="hot-section py-lg-12 py-5">
   <div className="container">
@@ -343,7 +339,7 @@ const flowStepsMap = {
             target="_blank"              
             rel="noopener noreferrer"    
             className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
-              px-lg-2 py-lg-1 fw-bold d-flex align-items-center"
+              px-2 py-1 fw-bold d-flex align-items-center"
           >
             <span className="pe-2">
               {lang === "en"
@@ -464,7 +460,7 @@ const flowStepsMap = {
 
           {/* 文字 */}
           <div className="col-md-6 d-flex flex-column justify-content-center text-block">
-            <h3 className="brush-title fw-bold mb-lg-5 mb-3 text-end">
+            <h3 className="brush-title  py-1 px-4  fw-bold mb-lg-5 mb-3 text-end">
               {name}
             </h3>
 
@@ -480,7 +476,7 @@ const flowStepsMap = {
           <Link
             to={`/products?model=${encodeURIComponent(name || "")}`}
             className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
-                        px-lg-2 py-lg-1 fw-bold"
+                        px-2 py-1 fw-bold"
           >
             {lang === "en"
               ? "View More"
@@ -559,9 +555,6 @@ const flowStepsMap = {
     )}
   </div>
 </section>
-
-
-
 
 {/* 浮動快捷按鈕 */}
 <FloatingButtons />

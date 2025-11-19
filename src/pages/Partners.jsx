@@ -244,7 +244,7 @@ const Partners = () => {
             </Motion.p>
             <Motion.a
               href="/#/contact"
-              className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 fw-bold"
+              className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 px-2 py-1 fw-bold"
               variants={fadeUp}
               initial="hidden"
               whileInView="show"
