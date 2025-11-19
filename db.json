@@ -274,7 +274,7 @@
       "category": {
     "zh-TW": "果糖機",
     "zh-CN": "果糖机",
-    "en": "Fructose Dispenser"
+    "en": "Syrup Filling Machine"
   },
   "items": [
     {
@@ -849,7 +849,7 @@
       "images": ["/YiHsin/images/product/K-CD07.png"],
       "features": {
         "zh-TW": [
-          "搭載邊旋轉邊捶打機構，確保混合更均勻、口感更滑順。",
+          "搭載邊旋轉邊捶打結構，確保混合更均勻、口感更滑順。",
           "支援 8 組預設配方，捶打時間與速度可彈性設定，快速切換作業。",
           "適配 153mm 與 200mm 杯高，支援多種雪克杯尺寸，使用更自由。",
           "強勁動力設計，可輕鬆處理整顆檸檬、水果與冰塊，效率高。",
@@ -857,7 +857,7 @@
           "可拆卸式錘頭，支援定制，滿足不同飲品調製需求。"
         ],
         "zh-CN": [
-          "搭载边旋转边捶打机构，确保混合更均匀、口感更顺滑。",
+          "搭载边旋转边捶打结构，确保混合更均匀、口感更顺滑。",
           "支持 8 组预设配方，捶打时间与速度可灵活调整，快速切换操作。",
           "适配 153mm 与 200mm 杯高，支持多种雪克杯尺寸，使用更自由。",
           "强劲动力设计，可轻松处理整颗柠檬、水果与冰块，效率高。",
@@ -865,7 +865,7 @@
           "可拆卸式锤头，支持定制，满足不同饮品制作需求。"
         ],
         "en": [
-          "Equipped with dual rotary-pounding mechanism for smoother, more even blending.",
+          "Equipped with a simultaneous rotating and pounding mechanism to ensure more even mixing and a smoother texture.",
           "Supports 8 preset modes with flexible time and speed adjustments.",
           "Compatible with 153mm and 200mm cups — fits multiple shaker sizes.",
           "Powerful motor easily handles whole lemons, fruits, and ice with high efficiency.",
@@ -1595,7 +1595,7 @@
         "name": {
           "zh-TW": "果糖機",
           "zh-CN": "果糖机",
-          "en": "Fructose Dispenser"
+          "en": "Syrup Filling Machine"
         },
         "image": "/YiHsin/images/product/QF-11D2-2去背.png"
       },
