@@ -10,15 +10,6 @@ const Home = () => {
   const { lang } = useContext(LangContext);
   const [products, setProducts] = useState([]);
 
-
-  // 讀取所有產品資料（供容器推薦區塊比對使用）
-useEffect(() => {
-  fetch("http://localhost:3000/products")
-    .then((res) => res.json())
-    .then((data) => setProducts(data || []))
-    .catch((err) => console.error("載入 products 失敗:", err));
-}, []);
-
   // 多語文字設定
   const textMap = {
     "zh-TW": "餐飲開店最佳夥伴",
@@ -115,35 +106,19 @@ const flowStepsMap = {
   const [economical, setEconomical] = useState([]);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  // fetch data
   useEffect(() => {
-    fetch("http://localhost:3000/categories")
-      .then((res) => res.json())
-      .then((data) => setCategories(data || []))
-      .catch((err) => console.error("載入 db.json 失敗:", err));
-  }, [lang]);
-
-  useEffect(() => {
-    fetch("http://localhost:3000/bestSolutions")
-      .then((res) => res.json())
-      .then((data) => setBestSolutions(data || []))
-      .catch((err) => console.error("載入 db.json 失敗:", err));
-  }, [lang]);
-
-  useEffect(() => {
-    fetch("http://localhost:3000/hotitems")
-      .then((res) => res.json())
-      .then((data) => {
-        if (data[0]?.items) setHotItems(data[0].items);
-      });
-  }, [lang]);
-
-  useEffect(() => {
-    fetch("http://localhost:3000/economical")
-      .then((res) => res.json())
-      .then((data) => setEconomical(data || []))
-      .catch((err) => console.error("載入資料失敗:", err));
+  fetch("/YiHsin/db.json")
+    .then((res) => res.json())
+    .then((data) => {
+      setProducts(data.products || []);
+      setCategories(data.categories || []);
+      setBestSolutions(data.bestSolutions || []);
+      setHotItems(data.hotitems?.[0]?.items || []);
+      setEconomical(data.economical?.[0]?.items || []);
+    })
+    .catch((err) => console.error("載入 db.json 失敗:", err));
 }, [lang]);
+
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 768);

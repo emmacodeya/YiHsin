@@ -8,22 +8,19 @@ const NewsDetail = () => {
   const { id } = useParams();
   const [news, setNews] = useState(null);
 
-  useEffect(() => {
-    fetch("http://localhost:3000/news")
-      .then((res) => res.json())
-      .then((data) => {
-        const item = data.find((n) => String(n.id) === String(id));
-        setNews(item);
-      })
-      .catch((err) => console.error("載入單一 news 失敗:", err));
-  }, [id]);
+useEffect(() => {
+  fetch("/YiHsin/db.json")
+    .then((res) => res.json())
+    .then((data) => {
+      const item = data.news?.find((n) => String(n.id) === String(id));
+      setNews(item);
+    })
+    .catch((err) => console.error("載入單一 news 失敗:", err));
+}, [id]);
 
   if (!news) return <p className="text-center py-5">載入中...</p>;
 
-  // ✅ 翻譯輔助函式
   const t = (obj) => obj?.[lang] || obj?.["zh-TW"];
-
-  // ✅ 返回按鈕多語
   const text = {
     "zh-TW": { back: "返回最新消息" },
     "zh-CN": { back: "返回最新消息" },

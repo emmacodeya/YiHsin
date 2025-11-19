@@ -14,23 +14,27 @@ const Contact = () => {
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [countries, setCountries] = useState([]);
 
-  // ✅ 抓取國家資料
-  useEffect(() => {
-    const fetchCountries = async () => {
-      try {
-        const res = await fetch("http://localhost:3000/countries");
-        if (!res.ok) throw new Error("Network response was not ok");
-        const data = await res.json();
-        const langKey = lang === "en" ? "en" : lang === "zh-CN" ? "zh-CN" : "zh-TW";
-        const countryList = data[0][langKey] || [];
-        setCountries(countryList);
-      } catch (err) {
-        console.error("Error fetching countries:", err);
-        setCountries([]);
-      }
-    };
-    fetchCountries();
-  }, [lang]);
+  // 抓取國家資料
+ useEffect(() => {
+  const fetchCountries = async () => {
+    try {
+      const res = await fetch("/YiHsin/db.json");
+      if (!res.ok) throw new Error("Network response was not ok");
+
+      const data = await res.json();
+      const langKey = lang === "en" ? "en" : lang === "zh-CN" ? "zh-CN" : "zh-TW";
+
+      const countryList = data.countries?.[0]?.[langKey] || [];
+      setCountries(countryList);
+
+    } catch (err) {
+      console.error("Error fetching countries:", err);
+      setCountries([]);
+    }
+  };
+
+  fetchCountries();
+}, [lang]);
 
   // 多語內容
   const t = {

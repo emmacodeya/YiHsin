@@ -6,12 +6,17 @@ const Faq = () => {
   const { lang } = useContext(LangContext);
   const [faqData, setFaqData] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:3000/faq")
-      .then((res) => res.json())
-      .then((data) => setFaqData(data[0][lang] || []))
-      .catch((err) => console.error("載入 FAQ 失敗:", err));
-  }, [lang]);
+ useEffect(() => {
+  fetch("/YiHsin/db.json")
+    .then((res) => res.json())
+    .then((data) => {
+      const faq = data.faq?.[0];
+      if (faq) {
+        setFaqData(faq[lang] || faq["zh-TW"]);
+      }
+    })
+    .catch((err) => console.error("載入 FAQ 失敗:", err));
+}, [lang]);
 
   if (!faqData.length) return <section className="about-section"></section>;
 

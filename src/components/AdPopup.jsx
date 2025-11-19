@@ -15,7 +15,7 @@ const AdPopup = () => {
       <div className="ad-popup">
         <button className="close-btn" onClick={() => setVisible(false)}>×</button>
         <img
-          src="http://localhost:3000/images/discount.jpg"
+          src="/YiHsin/images/discount.jpg"
           alt="限時優惠"
           className="img-fluid rounded my-5"
         />

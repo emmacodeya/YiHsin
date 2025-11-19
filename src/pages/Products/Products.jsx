@@ -40,17 +40,17 @@ useEffect(() => {
   };
 }, []);
 
+useEffect(() => {
+  fetch("/YiHsin/db.json")
+    .then((res) => res.json())
+    .then((data) => {
+      const productList = data.products || [];
+      setProducts(productList);
+      setCategories(productList.map((p) => p.category));
+    })
+    .catch((err) => console.error("載入 products 失敗:", err));
+}, []);
 
-  // 載入產品資料
-  useEffect(() => {
-    fetch("http://localhost:3000/products")
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
-        setCategories(data.map((p) => p.category));
-      })
-      .catch((err) => console.error("載入 products 失敗:", err));
-  }, []);
 
 useEffect(() => {
   if (category && products.length > 0) {
