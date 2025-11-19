@@ -98,7 +98,7 @@ const NewsDetail = () => {
             <Link
               to="/news"
               className="btn btn-outline-primary-1000 rounded-pill px-lg-4 py-lg-2 
-              px-lg-2 py-lg-1 fw-bold"
+              px-2 py-1 fw-bold"
             >
               {text[lang].back}
             </Link>

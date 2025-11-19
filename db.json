@@ -1941,7 +1941,7 @@
       "zh-CN": "全新上市｜铠伟商用饮料封口机 K-2590SA",
       "en": "New Launch｜KAIWEI Commercial Cup Sealer K-2590SA"
     },
-    "date": "2025-11-10",
+    "date": "2025-11-25",
     "cover": "http://localhost:3000/images/discount.jpg",
     "summary": {
       "zh-TW": "鎧瑋全新 K-2590SA 飲料封口機，以高效、穩定、耐用為核心，掀起封口新革命！",
@@ -1999,9 +1999,9 @@
       {
         "type": "paragraph",
         "text": {
-          "zh-TW": "立即洽詢鎧瑋封口機，搶先體驗高效封口新標準。",
-          "zh-CN": "立即洽询铠伟封口机，抢先体验高效封口新标准。",
-          "en": "Contact KAIWEI today to experience the new standard in high-performance sealing."
+          "zh-TW": "立即洽詢，搶先體驗高效封口新標準。",
+          "zh-CN": "立即洽询，抢先体验高效封口新标准。",
+          "en": "Contact us now and be the first to experience the new standard in high-efficiency sealing."
         }
       },
       {
@@ -2021,7 +2021,7 @@
       "zh-CN": "义歆实业股份有限公司【官方LINE】上线啦！",
       "en": "Yihsin Industrial Official LINE Account is Now Online!"
     },
-    "date": "2025-10-25",
+    "date": "2025-11-25",
     "cover": "http://localhost:3000/images/LINE.png",
     "summary": {
       "zh-TW": "立即加入義歆實業官方LINE好友，掌握新品、優惠與維修最新資訊！",
@@ -2076,7 +2076,5 @@
     ]
   }
 ]
-
-
 
 }

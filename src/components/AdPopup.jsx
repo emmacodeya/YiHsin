@@ -25,7 +25,7 @@ const AdPopup = () => {
             target="_blank"              
             rel="noopener noreferrer"    
             className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
-              px-lg-2 py-lg-1 fw-bold"
+              px-2 py-1 fw-bold"
           >
           馬上聯繫
         </a>

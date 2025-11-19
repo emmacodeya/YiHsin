@@ -79,7 +79,7 @@ export default function ProductShowcase() {
             <button
               key={i}
               type="button"
-              className={`btn btn-outline-primary-100 px-3 py-2 fw-bold ${
+              className={`btn btn-outline-primary-100 px-2 py-1 fw-bold ${
                 i === activeIdx ? "active" : ""
               }`}
               onClick={() => setActiveIdx(i)}
@@ -110,7 +110,7 @@ export default function ProductShowcase() {
 
           {/* 右側內容區 */}
           <div className="col-12 col-lg-9 d-flex align-items-center justify-content-center">
-            <div className="rounded-3 bg-gray-200 w-100 h-100 p-lg-7 p-3 d-flex align-items-center right-wrap">
+            <div className="rounded-3 bg-gray-200 w-100 h-100 p-lg-5 p-3 d-flex align-items-center right-wrap">
               {!activeItem ? (
                 <div className="p-4 text-primary-600">
                   {lang === "en"
@@ -162,7 +162,7 @@ export default function ProductShowcase() {
                             getText(activeCategory.category)
                           )}&model=${encodeURIComponent(activeItem.model || "")}`}
                           className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
-                          px-lg-2 py-lg-1 fw-bold btn-more"
+                          px-2 py-1 fw-bold btn-more"
                         >
                           {lang === "en"
                             ? "View More"

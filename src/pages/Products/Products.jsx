@@ -14,6 +14,33 @@ const Products = () => {
   const category = params.get("category");
 
 
+useEffect(() => {
+  // 設定 Title
+  const previousTitle = document.title;
+  document.title = "產品項目｜義歆實業";
+
+  // 設定 Description
+  const metaDescription = document.querySelector('meta[name="description"]');
+  const previousDescription = metaDescription
+    ? metaDescription.getAttribute("content")
+    : "";
+
+  if (metaDescription) {
+    metaDescription.setAttribute(
+      "content",
+      "查看義歆實業全系列封口機、鋁蓋封口機、果糖機、搖搖機、檸檬機等食品封口設備。提供全台安裝、販售、保固、維修服務。"
+    );
+  }
+
+  return () => {
+    document.title = previousTitle;
+    if (metaDescription) {
+      metaDescription.setAttribute("content", previousDescription);
+    }
+  };
+}, []);
+
+
   // 載入產品資料
   useEffect(() => {
     fetch("http://localhost:3000/products")
@@ -69,7 +96,6 @@ useEffect(() => {
   const model = params.get("model");
 
   if (model && products.length > 0) {
-    // 找到符合 model 的產品
     const match = products
       .flatMap((p) =>
         p.items.map((item) => ({ ...item, category: p.category }))
@@ -82,6 +108,44 @@ useEffect(() => {
   }
 }, [location, products]);
 
+// 單一產品彈出視窗 SEO
+useEffect(() => {
+  if (!selected) return; 
+
+  // 備份原本的 SEO
+  const previousTitle = document.title;
+  const metaDescription = document.querySelector('meta[name="description"]');
+  const previousDescription = metaDescription
+    ? metaDescription.getAttribute("content")
+    : "";
+
+  // 生成動態 Title
+  const titleText = `${selected.model}｜${selected.category["zh-TW"]}｜義歆實業`;
+
+  // 生成動態 Description
+  const featureList = Array.isArray(selected.features)
+    ? selected.features.slice(0, 2).join("；")
+    : "";
+
+  const descriptionText =
+    featureList ||
+    `${selected.model} 詳細規格、功能特色與更多資訊。`;
+
+  document.title = titleText;
+  if (metaDescription) {
+    metaDescription.setAttribute("content", descriptionText);
+  }
+
+  // 離開彈窗時還原 SEO
+  return () => {
+    document.title = previousTitle;
+    if (metaDescription) {
+      metaDescription.setAttribute("content", previousDescription);
+    }
+  };
+}, [selected]);
+
+
 // 關閉彈窗時清除網址參數
 const closeDetail = () => {
   setSelected(null);
@@ -91,6 +155,36 @@ const closeDetail = () => {
 
   return (
     <>
+
+    {selected && (
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        name: selected.model,
+        image: Array.isArray(selected.images) ? selected.images[0] : "",
+        brand: {
+          "@type": "Brand",
+          name: "YODO / 義歆實業"
+        },
+        category: selected.category?.[lang] || selected.category?.["zh-TW"] || "產品",
+        description: Array.isArray(selected.features)
+          ? selected.features.slice(0, 3).join("；")
+          : "",
+        additionalProperty: Object.entries(selected.specs || {}).map(
+          ([key, value]) => ({
+            "@type": "PropertyValue",
+            name: key,
+            value: value
+          })
+        )
+      })
+    }}
+  />
+)}
+
     <div key={location.search} className="hot-section">
       <div className="container py-5 products-page">
         {/* 🔸分類導覽列 */}
