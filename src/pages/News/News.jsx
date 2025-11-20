@@ -8,6 +8,29 @@ const News = () => {
   const [newsList, setNewsList] = useState([]);
   const { lang } = useContext(LangContext);
 
+
+ useEffect(() => {
+  const title = 
+    lang === "en"
+      ? "News｜Yihsin Industrial"
+      : lang === "zh-CN"
+      ? "最新消息｜义歆实业"
+      : "最新消息｜義歆實業";
+
+  const description =
+    lang === "en"
+      ? "Latest announcements, product updates and industry insights from Yihsin Industrial."
+      : lang === "zh-CN"
+      ? "义歆实业最新活动、产品公告、优惠信息与行业资讯整理。"
+      : "義歆實業最新活動、產品公告、優惠資訊與產業消息整理。";
+
+  document.title = title;
+
+  const desc = document.querySelector('meta[name="description"]');
+  desc?.setAttribute("content", description);
+}, [lang]);
+
+
  useEffect(() => {
   fetch("/YiHsin/db.json")
     .then((res) => res.json())

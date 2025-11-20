@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { motion as Motion } from "framer-motion";
 import { LangContext } from "../App";
 import FloatingButtons from "../components/FloatingButtons";
@@ -77,6 +77,30 @@ const Partners = () => {
       ],
     },
   };
+
+    useEffect(() => {
+  const title =
+    lang === "en"
+      ? "Partners｜Yihsin Industrial"
+      : lang === "zh-CN"
+      ? "合作伙伴｜义歆实业"
+      : "合作夥伴｜義歆實業";
+
+  const description =
+    lang === "en"
+      ? "Become a Yihsin Industrial global partner. Join us in building a world-class food sealing equipment service platform."
+      : lang === "zh-CN"
+      ? "成为义歆实业全球合作伙伴，与我们一起打造世界级的食品封口设备服务平台。"
+      : "成為義歆實業全球合作夥伴，一起打造世界級的食品封口設備服務平台。";
+
+  document.title = title;
+
+  const metaDesc = document.querySelector('meta[name="description"]');
+  metaDesc?.setAttribute("content", description);
+}, [lang]);
+
+
+  
 
   const t = text[lang];
 

@@ -14,6 +14,28 @@ const Contact = () => {
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [countries, setCountries] = useState([]);
 
+  useEffect(() => {
+  const title =
+    lang === "en"
+      ? "Contact Us｜Yihsin Industrial"
+      : lang === "zh-CN"
+      ? "联系我们｜义歆实业"
+      : "聯絡我們｜義歆實業";
+
+  const description =
+    lang === "en"
+      ? "Contact Yihsin Industrial for sealing machines, aluminum lid sealing machines, fructose dispensers, and shaker machines. We provide installation, sales, warranty, and maintenance services across Taiwan."
+      : lang === "zh-CN"
+      ? "如需封口机、铝盖封口机、果糖机或摇摇机设备，欢迎联系义歆实业，我们提供全台安装、销售、保固和维修服务。"
+      : "如需封口機、鋁蓋封口機、果糖機或搖搖機設備，歡迎聯絡義歆實業，我們提供全台安裝、銷售、保固與維修服務。";
+
+  document.title = title;
+
+  const metaDesc = document.querySelector('meta[name="description"]');
+  metaDesc?.setAttribute("content", description);
+}, [lang]);
+
+
   // 抓取國家資料
  useEffect(() => {
   const fetchCountries = async () => {

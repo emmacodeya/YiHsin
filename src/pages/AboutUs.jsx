@@ -6,6 +6,28 @@ const AboutUs = () => {
   const { lang } = useContext(LangContext);
   const [t, setT] = useState(null);
 
+  useEffect(() => {
+  const title =
+    lang === "en"
+      ? "About Us｜Yihsin Industrial"
+      : lang === "zh-CN"
+      ? "关于我们｜义歆实业"
+      : "關於我們｜義歆實業";
+
+  const description =
+    lang === "en"
+      ? "Learn about Yihsin Industrial, a professional supplier of sealing machines, aluminum lid sealers, fructose dispensers, and shaker machines, providing installation and maintenance services across Taiwan."
+      : lang === "zh-CN"
+      ? "了解义歆实业——专业封口机、铝盖封口机、果糖机及摇摇机设备供应商，提供全台湾安装及售后服务。"
+      : "了解義歆實業——專業封口機、鋁蓋封口機、果糖機與搖搖機設備供應商，提供全台安裝與售後維修服務。";
+
+  document.title = title;
+
+  const metaDesc = document.querySelector('meta[name="description"]');
+  metaDesc?.setAttribute("content", description);
+}, [lang]);
+
+
 useEffect(() => {
   fetch("/YiHsin/db.json")
     .then((res) => res.json())
