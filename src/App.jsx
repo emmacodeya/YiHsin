@@ -12,6 +12,7 @@ import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs";
 import Faq from "./pages/Faq";
 import Products from "./pages/Products/Products"; 
+import ProductDetail from "./pages/Products/ProductDetail"; 
 import Contact from "./pages/Contact";
 import Partners from "./pages/Partners";
 import NotFound from "./pages/NotFound";
@@ -131,6 +132,7 @@ useEffect(() => {
         <Route path="/faq" element={<Faq />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/product/:model" element={<ProductDetail />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/partners" element={<Partners />} />

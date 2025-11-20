@@ -9,6 +9,41 @@ const NewsDetail = () => {
   const [news, setNews] = useState(null);
 
 useEffect(() => {
+  if (!news) return;
+
+  // 🔥 正確取得多語系標題
+  const rawTitle =
+    typeof news.title === "string"
+      ? news.title
+      : news.title?.[lang] || news.title?.["zh-TW"] || "";
+
+  // 多語系 Title
+  const title =
+    lang === "en"
+      ? `${rawTitle}｜Yihsin Industrial`
+      : lang === "zh-CN"
+      ? `${rawTitle}｜义歆实业`
+      : `${rawTitle}｜義歆實業`;
+
+  // 🔥 正確取得多語系摘要
+  const rawSummary =
+    typeof news.summary === "string"
+      ? news.summary
+      : news.summary?.[lang] ||
+        news.summary?.["zh-TW"] ||
+        news.content?.[lang]?.slice(0, 50) ||
+        "";
+
+  document.title = title;
+
+  const desc = document.querySelector('meta[name="description"]');
+  desc?.setAttribute(
+    "content",
+    rawSummary || "義歆實業最新消息內容。"
+  );
+}, [news, lang]);
+
+useEffect(() => {
   fetch("/YiHsin/db.json")
     .then((res) => res.json())
     .then((data) => {

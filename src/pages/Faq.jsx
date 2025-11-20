@@ -6,6 +6,28 @@ const Faq = () => {
   const { lang } = useContext(LangContext);
   const [faqData, setFaqData] = useState([]);
 
+  useEffect(() => {
+  const title =
+    lang === "en"
+      ? "FAQ｜Yihsin Industrial"
+      : lang === "zh-CN"
+      ? "常见问题｜义歆实业"
+      : "常見問題｜義歆實業";
+
+  const description =
+    lang === "en"
+      ? "Frequently asked questions about Yihsin Industrial's sealing machines, aluminum lid sealers, fructose dispensers, shaker machines, warranty service, and installation support."
+      : lang === "zh-CN"
+      ? "关于义歆实业封口机、铝盖封口机、果糖机、摇摇机、保固与安装服务的常见问题说明。"
+      : "關於義歆實業封口機、鋁蓋封口機、果糖機、搖搖機、保固與安裝服務的常見問題整理。";
+
+  document.title = title;
+
+  const metaDesc = document.querySelector('meta[name="description"]');
+  metaDesc?.setAttribute("content", description);
+}, [lang]);
+
+
  useEffect(() => {
   fetch("/YiHsin/db.json")
     .then((res) => res.json())

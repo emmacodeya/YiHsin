@@ -227,6 +227,11 @@ const closeDetail = () => {
                 />
                 <div className="card-body text-center text-primary-100">
                   <h6 className="fw-bold">{item.model}</h6>
+                  {item.price && (
+                    <p className="mt-1 small text-center text-danger fw-bold">
+                      {item.price[lang] || item.price["zh-TW"]}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
