@@ -44,12 +44,12 @@ const Footer = () => {
       chooseLang: "选择语言",
     },
     en: {
-      company: "Yihsin Industrial Co., Ltd.",
+      company: "YiHsin Industrial Co., Ltd.",
       desc: "Specialized in sealing and packaging machines — quality and service are our commitment.",
       products: "Products",
       productsList: [
         "Cup Sealer",
-        "Fructose Dispenser",
+        "Syrup Filling Machine",
         "Shaking Machine",
         "Lemon Pounding Machine",
         "Aluminum Lid Sealer",
@@ -58,7 +58,7 @@ const Footer = () => {
       links: "Quick Links",
       linksList: ["About Us", "FAQ", "Contact Us"],
       contact: "Contact Info",
-      address: "5F., No.2, Ln.121, Sec.2, Zhongyang Rd., Tucheng Dist., New Taipei City",
+      address: "5F., No.2, Ln.121, Sec.2, Zhongyang Rd., Tucheng Dist., New Taipei City, Taiwan",
       phone: "Tel",
       fax: "Fax",
       email: "Email",

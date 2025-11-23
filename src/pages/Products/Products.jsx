@@ -15,30 +15,33 @@ const Products = () => {
 
 
 useEffect(() => {
-  // 設定 Title
+  const title =
+    lang === "en"
+      ? "Products｜YiHsin Industrial"
+      : lang === "zh-CN"
+      ? "产品项目｜义歆实业"
+      : "產品項目｜義歆實業";
+
+  const description =
+    lang === "en"
+      ? "Explore YiHsin Industrial's full range of sealing machines, aluminum lid sealers, syrup filling machines, shaker machines, and lemon juicers."
+      : lang === "zh-CN"
+      ? "查看义歆实业全系列封口机、铝盖封口机、果糖机、摇摇机、柠檬机等食品封口设备。提供全台安装、销售、保固与维修服务。"
+      : "查看義歆實業全系列封口機、鋁蓋封口機、果糖機、搖搖機、檸檬機等食品封口設備。提供全台安裝、銷售、保固與維修服務。";
+
   const previousTitle = document.title;
-  document.title = "產品項目｜義歆實業";
+  document.title = title;
 
-  // 設定 Description
-  const metaDescription = document.querySelector('meta[name="description"]');
-  const previousDescription = metaDescription
-    ? metaDescription.getAttribute("content")
-    : "";
-
-  if (metaDescription) {
-    metaDescription.setAttribute(
-      "content",
-      "查看義歆實業全系列封口機、鋁蓋封口機、果糖機、搖搖機、檸檬機等食品封口設備。提供全台安裝、販售、保固、維修服務。"
-    );
-  }
+  const metaDesc = document.querySelector('meta[name="description"]');
+  const previousDescription = metaDesc?.getAttribute("content");
+  metaDesc?.setAttribute("content", description);
 
   return () => {
     document.title = previousTitle;
-    if (metaDescription) {
-      metaDescription.setAttribute("content", previousDescription);
-    }
+    metaDesc?.setAttribute("content", previousDescription);
   };
-}, []);
+}, [lang]);
+
 
 useEffect(() => {
   fetch("/YiHsin/db.json")
@@ -319,7 +322,13 @@ const closeDetail = () => {
 
               {/* 右側文字內容 */}
               <div className="product-info flex-grow-1">
-                <h6 className="fw-bold mb-2">產品特色：</h6>
+               <h6 className="fw-bold mb-2">
+                {lang === "zh-TW"
+                  ? "產品特色："
+                  : lang === "zh-CN"
+                  ? "产品特色："
+                  : "Product Feature:"}
+              </h6>
                 <ul className="small text-muted mb-3">
                   {getFeatures(selected).map((f, i) => (
                     <li key={i}>{f}</li>
@@ -354,14 +363,19 @@ const closeDetail = () => {
 
             {/* 下方 LINE 聯繫按鈕 */}
             <div className="contact-btn text-center py-3 border-top">
-              <a
-                href="https://line.me/R/ti/p/@477fjgkd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline-primary-100 fw-bold px-4 py-2 rounded-pill"
-              >
-                <i className="bi bi-line me-2"></i> 馬上聯繫
-              </a>
+            <a
+              href="https://line.me/R/ti/p/@477fjgkd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-primary-100 fw-bold px-4 py-2 rounded-pill"
+            >
+              <i className="bi bi-line me-2"></i>
+              {lang === "zh-TW"
+                ? "馬上聯繫"
+                : lang === "zh-CN"
+                ? "马上联系"
+                : "Contact Us Now"}
+            </a>
             </div>
           </div>
         )}

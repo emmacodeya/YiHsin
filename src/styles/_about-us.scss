@@ -25,60 +25,59 @@
 
     .about-inner {
       max-width: 900px;
-      line-height: 1.8;
     }
 
-    /* 內容區塊（左導引線條） */
-    .about-content-block {
-      .about-text {
-        font-size: 1.15rem;
-        line-height: 1.9;
-        color: #222;
-        position: relative;
-        padding-left: 1.2rem;
-        margin-bottom: 1.2rem;
+ /* 內容區塊（左導引線條） */
+.about-content-block {
+  .about-text {
+    font-size: 1.15rem;
+    color: #222;
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6; 
 
-        &::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0.6rem;
-          width: 3px;
-          height: calc(100% - 0.6rem);
-          background: linear-gradient(180deg, #0a1e54, #7382c6);
-          border-radius: 2px;
-          opacity: 0.6;
-          transition: opacity 0.3s ease;
-        }
-      }
-
-      &:hover .about-text {
-        color: #0a1e54;
-      }
-      &:hover .about-text::before {
-        opacity: 0.9;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.6rem;
+      width: 3px;
+      height: calc(100% - 0.6rem);
+      background: linear-gradient(180deg, #0a1e54, #7382c6);
+      border-radius: 2px;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
     }
+  }
 
-    /* 列表 */
-    .about-list {
-      list-style: none;
-      padding-left: 0;
+  &:hover .about-text {
+    color: #0a1e54;
+  }
+  &:hover .about-text::before {
+    opacity: 0.9;
+  }
+}
 
-      li {
-        position: relative;
-        margin-bottom: 0.6rem;
-        padding-left: 1.5rem;
-        font-weight: 500;
+/* 列表 */
+.about-list {
+  list-style: none;
+  padding-left: 0;
 
-        &::before {
-          content: "✔";
-          position: absolute;
-          left: 0;
-          color: #0a1e54;
-        }
-      }
+  li {
+    position: relative;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    line-height: 1.6; 
+
+    &::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #0a1e54;
     }
+  }
+}
 
     /* 任務強調框 */
     .about-highlight {

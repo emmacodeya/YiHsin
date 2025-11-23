@@ -17,14 +17,14 @@ const Contact = () => {
   useEffect(() => {
   const title =
     lang === "en"
-      ? "Contact Us｜Yihsin Industrial"
+      ? "Contact Us｜YiHsin Industrial"
       : lang === "zh-CN"
       ? "联系我们｜义歆实业"
       : "聯絡我們｜義歆實業";
 
   const description =
     lang === "en"
-      ? "Contact Yihsin Industrial for sealing machines, aluminum lid sealing machines, fructose dispensers, and shaker machines. We provide installation, sales, warranty, and maintenance services across Taiwan."
+      ? "Contact YiHsin Industrial for sealing machines, aluminum lid sealing machines, fructose dispensers, and shaker machines. We provide installation, sales, warranty, and maintenance services across Taiwan."
       : lang === "zh-CN"
       ? "如需封口机、铝盖封口机、果糖机或摇摇机设备，欢迎联系义歆实业，我们提供全台安装、销售、保固和维修服务。"
       : "如需封口機、鋁蓋封口機、果糖機或搖搖機設備，歡迎聯絡義歆實業，我們提供全台安裝、銷售、保固與維修服務。";
@@ -145,9 +145,6 @@ const Contact = () => {
 
   const text = t[lang] || t["zh-TW"];
 
-  useEffect(() => {
-    document.title = `${text.title}｜義歆實業股份有限公司`;
-  }, [lang, text.title]);
 
   const validateField = (name, value) => {
     let msg = "";

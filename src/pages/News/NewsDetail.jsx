@@ -20,7 +20,7 @@ useEffect(() => {
   // 多語系 Title
   const title =
     lang === "en"
-      ? `${rawTitle}｜Yihsin Industrial`
+      ? `${rawTitle}｜YiHsin Industrial`
       : lang === "zh-CN"
       ? `${rawTitle}｜义歆实业`
       : `${rawTitle}｜義歆實業`;

@@ -12,7 +12,7 @@ const News = () => {
  useEffect(() => {
   const title = 
     lang === "en"
-      ? "News｜Yihsin Industrial"
+      ? "News｜YiHsin Industrial"
       : lang === "zh-CN"
       ? "最新消息｜义歆实业"
       : "最新消息｜義歆實業";
@@ -55,7 +55,7 @@ const News = () => {
     },
     en: {
       title: "Latest News",
-      subtitle: "Stay updated on Yihsin’s newest events, products, and exhibitions",
+      subtitle: "Stay updated on YiHsin’s newest events, products, and exhibitions",
       readMore: "Read more →",
     },
   };
