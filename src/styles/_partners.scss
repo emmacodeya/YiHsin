@@ -2,7 +2,7 @@
 .partners-hero {
   position: relative;
   background: linear-gradient(rgba(10, 30, 84, 0.92), rgba(10, 30, 84, 0.85)),
-    url("http://localhost:3000/images/world-map-dark.jpg") center/cover no-repeat;
+    url("/images/world-map-dark.jpg") center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 8rem 0 6rem;
@@ -51,7 +51,7 @@
     right: 0;
     bottom: 0;
     width: 55%; /* 稍微往左延伸 */
-    background: url("http://localhost:3000/images/team-work.png") center 45% / contain no-repeat;
+    background: url("/images/team-work.png") center 45% / contain no-repeat;
     /* ↑ 45% 表示圖片偏左顯示，可微調成 40%、50% */
     opacity: 0.2; /* 淡化圖片 */
     filter: grayscale(20%) brightness(0.9);
@@ -102,7 +102,7 @@
 /* === 全球邀請 + 合作優勢 + CTA 統一背景 === */
 .partners-section {
   background: linear-gradient(rgba(10, 30, 84, 0.95), rgba(10, 30, 84, 0.95)),
-    url("http://localhost:3000/images/world-map-dark.jpg") center/cover no-repeat;
+    url("/images/world-map-dark.jpg") center/cover no-repeat;
   color: #fff;
   padding: 6rem 0;
 
@@ -140,8 +140,8 @@
     }
 
     .adv-card {
-      width: 240px;
-      height: 240px;
+      width: 250px;
+      height: 250px;
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.2);
@@ -163,12 +163,12 @@
       }
 
       h5 {
-        font-size: 1.2rem;
+        font-size: 1 rem;
         font-weight: 700;
       }
 
       p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: rgba(255, 255, 255, 0.85);
       }
     }

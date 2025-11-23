@@ -58,7 +58,7 @@ const Partners = () => {
       heroTitle: "Become a Global YODO Partner",
       heroSubtitle: "Join us in building a world-class food equipment network",
       intro1:
-        "Yihsin Industrial Co., Ltd. specializes in distributing and promoting YODO Kaiwei catering equipment. Our products include sealing machines, fructose dispensers, shakers, lemon smashers, and aluminum lid sealers, widely used by global beverage brands.",
+        "YiHsin Industrial Co., Ltd. specializes in distributing and promoting YODO  catering equipment. Our products include sealing machines, fructose dispensers, shakers, lemon smashers, and aluminum lid sealers, widely used by global beverage brands.",
       intro2:
         "To provide better localized service, we sincerely invite outstanding distributors worldwide to join our partnership network and expand the market together.",
       inviteTitle: "Global Partnership Invitation",
@@ -81,14 +81,14 @@ const Partners = () => {
     useEffect(() => {
   const title =
     lang === "en"
-      ? "Partners｜Yihsin Industrial"
+      ? "Partners｜YiHsin Industrial"
       : lang === "zh-CN"
       ? "合作伙伴｜义歆实业"
       : "合作夥伴｜義歆實業";
 
   const description =
     lang === "en"
-      ? "Become a Yihsin Industrial global partner. Join us in building a world-class food sealing equipment service platform."
+      ? "Become a YiHsin Industrial global partner. Join us in building a world-class food sealing equipment service platform."
       : lang === "zh-CN"
       ? "成为义歆实业全球合作伙伴，与我们一起打造世界级的食品封口设备服务平台。"
       : "成為義歆實業全球合作夥伴，一起打造世界級的食品封口設備服務平台。";
@@ -170,7 +170,7 @@ const Partners = () => {
           <h2 className="section-title">
             {lang === "zh-TW" && "關於義歆"}
             {lang === "zh-CN" && "关于义歆"}
-            {lang === "en" && "About Yihsin"}
+            {lang === "en" && "About YiHsin"}
           </h2>
           <p className="mb-3">{t.intro1}</p>
           <p>{t.intro2}</p>
@@ -267,7 +267,7 @@ const Partners = () => {
               {t.ctaSubtitle}
             </Motion.p>
             <Motion.a
-              href="/#/contact"
+              href="#/contact"
               className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 px-2 py-1 fw-bold"
               variants={fadeUp}
               initial="hidden"

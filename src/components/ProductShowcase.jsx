@@ -18,7 +18,7 @@ export default function ProductShowcase() {
 
   // 1. 指定每個分類只展示一個固定機型
   const categoryModelMap = {
-    "果糖機": "QF-11D2",
+    "果糖機": "K-11G",
     "鋁蓋封口機": "K-2280A",
     "封口機": "K-2590SA",
     "檸檬機": "K-CD07",

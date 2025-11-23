@@ -10,7 +10,7 @@ const Home = () => {
   const { lang } = useContext(LangContext);
   const [products, setProducts] = useState([]);
 
-  // 多語文字設定
+  // slogan
   const textMap = {
     "zh-TW": "餐飲開店最佳夥伴",
     "zh-CN": "餐饮开店最佳伙伴",
@@ -97,7 +97,7 @@ const flowStepsMap = {
 };
 
   const text = textMap[lang];
-  const letters = text.split("");
+  const words = text.split(" ");
 
   // 資料 state
   const [hotItems, setHotItems] = useState([]);
@@ -105,6 +105,29 @@ const flowStepsMap = {
   const [categories, setCategories] = useState([]);
   const [economical, setEconomical] = useState([]);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  //網頁title
+  useEffect(() => {
+  const title =
+    lang === "en"
+      ? "Yihsin Industrial｜Sealing Machines, Syrup Filling Machines, Shaker Machines, Lemon Juicers"
+      : lang === "zh-CN"
+      ? "义歆实业｜封口机、果糖机、摇摇机、柠檬机"
+      : "義歆實業｜封口機、果糖機、搖搖機、檸檬機";
+
+  const description =
+    lang === "en"
+      ? "YiHsin Industrial specializes in sealing machines, aluminum lid sealers, syrup filling machines, shaker machines, and lemon juicers. Offering installation, sales, warranty and maintenance throughout Taiwan."
+      : lang === "zh-CN"
+      ? "义歆专注食品封口包装设备，封口机、铝盖封口机、果糖机、摇摇机、柠檬机全系列，提供全台安装、销售、保固与维修服务。"
+      : "義歆專注食品封口包裝設備，封口機、鋁蓋封口機、果糖機、搖搖機、檸檬機全系列，提供全台安裝、銷售、保固與維修服務。";
+
+  document.title = title;
+
+  const metaDesc = document.querySelector('meta[name="description"]');
+  metaDesc?.setAttribute("content", description);
+}, [lang]);
+
 
   useEffect(() => {
   fetch("/YiHsin/db.json")
@@ -131,33 +154,30 @@ const flowStepsMap = {
     <>
     <AdPopup /> 
   {/* banner */}
-  <div className="banner p-3  text-primary-1000">
-    <div className="container mt-7 container py-5 text-center text-primary-1000">
-      <h1 className="mb-4">
-  {letters.map((char, i) => (
-  <Motion.span
-    key={i}
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: i * 0.1, duration: 0.6 }}
-    style={{
-      display: "inline-block",
-      width: char === " " ? "0.5em" : "auto"
-    }}
-  >
-    {char === " " ? "\u00A0" : char} 
-  </Motion.span>
-))}
-  </h1>
+<div className="banner p-3 text-primary-1000">
+  <div className="container mt-7 py-5 text-center text-primary-1000">
 
-  <Motion.p
-    initial={{ opacity: 0, y: 10 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: letters.length * 0.1, duration: 0.6 }}
-  >
-  </Motion.p>
-</div>
+    <h1 className="mb-4">
+      {words.map((word, i) => (
+        <Motion.span
+          key={i}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: i * 0.1, duration: 0.6 }}
+          style={{
+            display: "inline-block",
+            marginRight: "0.35em",
+            whiteSpace: "nowrap"
+          }}
+        >
+          {word}
+        </Motion.span>
+      ))}
+    </h1>
+
   </div>
+</div>
+
 
 
  {/* 服務流程 */}
@@ -383,7 +403,6 @@ const flowStepsMap = {
   </div>
 </section>
 
-
 {/* 最實惠區塊 */}
 <section className="py-lg-12 py-5 service-flow two-col-section">
   <div className="container">
@@ -471,9 +490,6 @@ const flowStepsMap = {
     })}
   </div>
 </section>
-
-
-
 
 {/* 飲料開店最佳方案 */}
 <section className="service-flow py-lg-12 py-5 text-primary-100 best-solutions">

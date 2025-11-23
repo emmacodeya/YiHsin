@@ -12,7 +12,7 @@
       "price": {
         "zh-TW": "14,000 元起",
         "zh-CN": "14,000 元起",
-        "en": "From $14,000"
+        "en": "From NTD$14,000"
       },
       "images": [
         "/YiHsin/images/product/K-2590SA.png"
@@ -70,7 +70,7 @@
           "values": {
             "voltage": "220/110/50/60 V/Hz",
             "power": "450 W",
-            "sealing_range": "∮90或∮95 mm",
+            "sealing_range": "∮90 or ∮95 mm",
             "film_width": "130 mm",
             "capacity": "5~12 PSC/min",
             "weight": "20 KG",
@@ -84,7 +84,7 @@
       "price": {
         "zh-TW": "13,000 元起",
         "zh-CN": "13,000 元起",
-        "en": "From $13,000"
+        "en": "From NTD$13,000"
       },
       "images": [
         "/YiHsin/images/product/K-2590S小圖示.png"
@@ -142,7 +142,7 @@
           "values": {
             "voltage": "220/110/50/60 V/Hz",
             "power": "450 W",
-            "sealing_range": "∮90或∮95 mm",
+            "sealing_range": "∮90 or ∮95 mm",
             "film_width": "130 mm",
             "capacity": "5~12 PSC/min",
             "weight": "20 KG",
@@ -164,7 +164,7 @@
       "price": {
         "zh-TW": "12,000 元起",
         "zh-CN": "12,000 元起",
-        "en": "From $12,000"
+        "en": "From NTD$12,000"
       },
       "images": ["/YiHsin/images/product/F-09.png"],
       "features": {
@@ -232,30 +232,36 @@
         }
     },
     {
-      "model": "QF-11D2",
+      "model": "K-11G",
+      "price": {
+        "zh-TW": "12,000 元起",
+        "zh-CN": "12,000 元起",
+        "en": "From NTD$12,000"
+      },
       "images": [
-        "/YiHsin/images/product/QF-11D2-2去背.png",
-        "/YiHsin/images/product/QF-11D2去背.png",
-        "/YiHsin/images/product/QF-11D2-3去背.png"
+        "/YiHsin/images/product/K-11G.png"
       ],
       "features": {
         "zh-TW": [
-          "容易操作、定量精確、超值實用。",
-          "24 組定量設定，大範圍多樣化定量充填。",
-          "設有清潔鍵功能，含加溫功能方便操作。",
-          "防蟻設計，安全衛生。"
+          "高精度出糖控制，誤差僅士0.1g，適合高標準飲品製作。",
+          "具加熱功能，能迅速加溫並穩定保持桶内糖漿溫度。",
+          "支援 3~500cc 出糖量自由設定，靈活對應各種飲品需求。",
+          "配備24組糖量按鍵，快速調出常用配方，提升出杯效率。 。操作介面簡單直覺，設定便利，上手快速。",
+          "通過多國安全規格認證，安全又可靠。"
         ],
         "zh-CN": [
-          "操作简便，定量精确，性价比高。",
-          "24 组定量设置，适应多样化充填需求。",
-          "设有清洁键功能，带加热功能，使用更方便。",
-          "防蚁设计，安全卫生。"
+          "高精度出糖控制，误差仅 ±0.1g，适合高标准饮品制作。",
+          "具备加热功能，能够迅速升温并稳定保持桶内糖浆温度。",
+          "支持 3~500cc 出糖量自由设定，灵活对应各种饮品需求。",
+          "配备 24 组糖量按键，可快速调出常用配方，提高出杯效率；操作界面简单直观、设置方便，上手快速。",
+          "通过多国安全规范认证，安全又可靠。"
         ],
         "en": [
-          "Easy to operate, precise dispensing, and highly practical.",
-          "24 preset quantity settings for a wide range of filling options.",
-          "Includes a cleaning button and heating function for convenience.",
-          "Anti-ant design ensures safety and hygiene."
+          "High-precision syrup dispensing with an accuracy of ±0.1g, ideal for high-standard beverage preparation.",
+          "Equipped with a heating function that quickly warms and consistently maintains the syrup temperature.",
+          "Supports freely adjustable dispensing volume from 3 to 500cc, suitable for various drink recipes.",
+          "Features 24 preset dispense buttons for quick access to common recipes, improving drink-making efficiency. The interface is intuitive and easy to operate.",
+          "Certified by multiple international safety standards, ensuring reliable and safe operation."
         ]
       },
        "specs": {
@@ -265,6 +271,7 @@
               "power": "功率",
               "voltage": "電壓",
               "capacity": "產能",
+              "tank_volume": "容量",
               "weight": "重量",
               "dimensions": "外觀尺寸"
             },
@@ -273,6 +280,7 @@
               "power": "功率",
               "voltage": "电压",
               "capacity": "产能",
+              "tank_volume": "容量",
               "weight": "重量",
               "dimensions": "外观尺寸"
             },
@@ -281,17 +289,19 @@
               "power": "Power",
               "voltage": "Voltage",
               "capacity": "Output Capacity",
+              "tank_volume": "Tank Volume",
               "weight": "Weight",
               "dimensions": "Dimensions"
             }
           },
           "values": {
-            "filling_accuracy": "±1-2 CC",
-            "power": "95 W",
-            "voltage": "110/220/50/60",
-            "capacity": "250 CC",
-            "weight": "12.5 KG",
-            "dimensions": "420*150*400 m"
+            "filling_accuracy": "土1 cc",
+            "power": "400 W",
+            "voltage": "220/110/50/60",
+            "capacity": "2500 CC",
+            "tank_volume": "8 L",
+            "weight": "8KG",
+            "dimensions": "360*250*420 mm"
           }
         }
     }
@@ -307,9 +317,9 @@
     {
       "model": "KS-01A",
       "price": {
-        "zh-TW": " 元起",
-        "zh-CN": " 元起",
-        "en": "From $"
+        "zh-TW": " 22,000元起",
+        "zh-CN": " 22,000元起",
+        "en": "From NTD$22,000"
       },
       "images": ["/YiHsin/images/product/KS-01A.png"],
       "features": {
@@ -378,9 +388,9 @@
     {
       "model": "YY-01A",
       "price": {
-        "zh-TW": " 元起",
-        "zh-CN": " 元起",
-        "en": "From $"
+        "zh-TW": " 22,000元起",
+        "zh-CN": " 22,000元起",
+        "en": "From NTD$22,000"
       },
       "images": ["/YiHsin/images/product/YY-01A.png"],
       "features": {
@@ -452,9 +462,9 @@
     {
       "model": "YY-02",
       "price": {
-        "zh-TW": " 元起",
-        "zh-CN": " 元起",
-        "en": "From $"
+        "zh-TW": " 19,000元起",
+        "zh-CN": " 19,000元起",
+        "en": "From NTD$19,000"
       },
       "images": [
         "/YiHsin/images/product/YY-02小圖示.png",
@@ -526,9 +536,9 @@
     {
       "model": "KS-02",
       "price": {
-        "zh-TW": " 元起",
-        "zh-CN": " 元起",
-        "en": "From $"
+        "zh-TW": " 25,000元起",
+        "zh-CN": " 25,000元起",
+        "en": "From NTD$25,000"
       },
       "images": ["/YiHsin/images/product/KS-02.png"],
       "features": {
@@ -606,9 +616,9 @@
     {
       "model": "K-CD02",
       "price": {
-        "zh-TW": " 元起",
-        "zh-CN": " 元起",
-        "en": "From $"
+        "zh-TW": " 30,000元起",
+        "zh-CN": " 30,000元起",
+        "en": "From NTD$30,000"
       },
       "images": ["/YiHsin/images/product/K-CD02小圖示.png"],
       "features": {
@@ -685,9 +695,9 @@
     {
       "model": "K-CD04",
       "price": {
-        "zh-TW": " 元起",
-        "zh-CN": " 元起",
-        "en": "From $"
+        "zh-TW": " 33,000元起",
+        "zh-CN": " 33,000元起",
+        "en": "From NTD$33,000"
       },
       "images": ["/YiHsin/images/product/K-CD04.png"],
       "features": {
@@ -764,9 +774,9 @@
     {
       "model": "K-CD07",
       "price": {
-        "zh-TW": " 元起",
-        "zh-CN": " 元起",
-        "en": "From $"
+        "zh-TW": " 34,000元起",
+        "zh-CN": " 34,000元起",
+        "en": "From NTD$34,000"
       },
       "images": ["/YiHsin/images/product/K-CD07.png"],
       "features": {
@@ -1481,7 +1491,7 @@
           "zh-CN": "果糖机",
           "en": "Syrup Filling Machine"
         },
-        "image": "/YiHsin/images/product/QF-11D2-2去背.png"
+        "image": "/YiHsin/images/product/K-11G.png"
       },
       {
         "name": {
@@ -1726,20 +1736,20 @@
       "en": {
         "title": "About Us",
         "content": [
-          "Yihsin Industrial Co., Ltd. specializes in distributing and promoting YODO Kaiwei catering equipment, providing comprehensive store-opening solutions for beverage and restaurant businesses.",
-          "YODO Kaiwei has been deeply rooted in Taiwan for many years, focusing on the research and development of food container sealing and packaging technologies. Known for its stability, durability, and innovative design, YODO products are widely used in major beverage chains and restaurants.",
-          "As the exclusive distributor of YODO Kaiwei, Yihsin is committed to:"
+          "YiHsin Industrial Co., Ltd. specializes in distributing and promoting YODO  catering equipment, providing comprehensive store-opening solutions for beverage and restaurant businesses.",
+          "YODO  has been deeply rooted in Taiwan for many years, focusing on the research and development of food container sealing and packaging technologies. Known for its stability, durability, and innovative design, YODO products are widely used in major beverage chains and restaurants.",
+          "As the exclusive distributor of YODO , YiHsin is committed to:"
         ],
         "list": [
-          "Product Sales: Introducing high-quality YODO Kaiwei equipment to the market.",
+          "Product Sales: Introducing high-quality YODO  equipment to the market.",
           "Customer Service: Providing consultation, system integration, and operational guidance.",
           "After-sales Support: Offering maintenance, parts supply, and long-term service to ensure stable operation."
         ],
         "mission": [
           "Our mission is to be the best business partner for chain restaurants and beverage brands.",
-          "Whether you are a startup or an established chain, Yihsin offers professional equipment solutions and reliable support to help your brand grow."
+          "Whether you are a startup or an established chain, YiHsin offers professional equipment solutions and reliable support to help your brand grow."
         ],
-        "vision": "Looking ahead, Yihsin will continue to work closely with YODO Kaiwei to expand into global markets, bringing Taiwan’s high-quality catering equipment to the world."
+        "vision": "Looking ahead, YiHsin will continue to work closely with YODO  to expand into global markets, bringing Taiwan’s high-quality catering equipment to the world."
       }
     }
   ],
@@ -1823,14 +1833,14 @@
     "title": {
       "zh-TW": "全新上市｜鎧瑋商用飲料封口機 K-2590SA",
       "zh-CN": "全新上市｜铠伟商用饮料封口机 K-2590SA",
-      "en": "New Launch｜KAIWEI Commercial Cup Sealer K-2590SA"
+      "en": "New Launch｜YODO Commercial Cup Sealer K-2590SA"
     },
     "date": "2025-11-25",
     "cover": "/YiHsin/images/discount.jpg",
     "summary": {
       "zh-TW": "鎧瑋全新 K-2590SA 飲料封口機，以高效、穩定、耐用為核心，掀起封口新革命！",
       "zh-CN": "铠伟全新 K-2590SA 饮料封口机，以高效、稳定、耐用为核心，掀起封口新革命！",
-      "en": "The new K-2590SA cup sealer by KAIWEI brings a new standard of efficiency, stability, and durability!"
+      "en": "The new K-2590SA cup sealer by YODO brings a new standard of efficiency, stability, and durability!"
     },
     "content": [
       {
@@ -1903,14 +1913,14 @@
     "title": {
       "zh-TW": "義歆實業股份有限公司【官方LINE】上線囉！",
       "zh-CN": "义歆实业股份有限公司【官方LINE】上线啦！",
-      "en": "Yihsin Industrial Official LINE Account is Now Online!"
+      "en": "YiHsin Industrial Official LINE Account is Now Online!"
     },
     "date": "2025-11-25",
     "cover": "/YiHsin/images/LINE.png",
     "summary": {
       "zh-TW": "立即加入義歆實業官方LINE好友，掌握新品、優惠與維修最新資訊！",
       "zh-CN": "立即加入义歆实业官方LINE好友，掌握新品、优惠与维修最新资讯！",
-      "en": "Join Yihsin Industrial's official LINE account for product news, offers, and service updates!"
+      "en": "Join YiHsin Industrial's official LINE account for product news, offers, and service updates!"
     },
     "content": [
       {
@@ -1918,7 +1928,7 @@
         "text": {
           "zh-TW": "為了提供更即時、更貼心的服務，義歆實業正式推出官方LINE帳號！",
           "zh-CN": "为了提供更即时、更贴心的服务，义歆实业正式推出官方LINE帐号！",
-          "en": "To provide faster and more personalized service, Yihsin Industrial has launched its official LINE account!"
+          "en": "To provide faster and more personalized service, YiHsin Industrial has launched its official LINE account!"
         }
       },
       {

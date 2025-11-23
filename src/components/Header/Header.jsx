@@ -32,7 +32,7 @@ const Header = () => {
       phone: "电话",
     },
     en: {
-      company: "Yihsin Industrial Co., Ltd.",
+      company: "YiHsin Industrial Co., Ltd.",
       home: "Home",
       products: "Products",
       used: "Used Machines",
@@ -105,7 +105,7 @@ const Header = () => {
                   className="btn btn-link p-0 text-decoration-none text-primary-1000 "
                   onClick={() => navigate("/contact")}
                 >
-                  0900-008-608
+                  +886 900-008-608
                 </button>
               </div>
 
@@ -153,7 +153,7 @@ const Header = () => {
                       href="tel:0900008608"
                       className="text-white text-decoration-none"
                     >
-                      0900-008-608
+                      +886 900-008-608
                     </a>
                   </p>
                   <p className="mb-1">

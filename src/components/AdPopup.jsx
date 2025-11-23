@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { LangContext } from "../App";
 
 const AdPopup = () => {
   const [visible, setVisible] = useState(false);
+  const { lang } = useContext(LangContext);
+
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 300); // 延遲1.5秒出現
@@ -20,15 +23,18 @@ const AdPopup = () => {
           className="img-fluid rounded my-5"
         />
         
-          <a
-            href="https://line.me/R/ti/p/@477fjgkd"
-            target="_blank"              
-            rel="noopener noreferrer"    
-            className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 
-              px-2 py-1 fw-bold"
-          >
-          馬上聯繫
-        </a>
+         <a
+              href="https://line.me/R/ti/p/@477fjgkd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline-primary-100 rounded-pill px-lg-4 py-lg-2 px-2 py-1 fw-bold"
+            >
+              {lang === "zh-TW"
+                ? "馬上聯繫"
+                : lang === "zh-CN"
+                ? "马上联系"
+                : "Contact Us Now"}
+            </a>
       </div>
     </div>
   );
