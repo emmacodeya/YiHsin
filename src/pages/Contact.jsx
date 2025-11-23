@@ -118,9 +118,9 @@ const Contact = () => {
       title: "Contact Us",
       desc: "For any inquiries or cooperation, please fill in the form below or contact us directly.",
       info: [
-        { icon: "bi-telephone-fill", title: "Telephone", value: "0900-008-608" },
+        { icon: "bi-telephone-fill", title: "Telephone", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "Service Hours", value: "Mon–Fri 9:00–18:00" },
-        { icon: "bi-geo-alt-fill", title: "Address", value: "5F., No.2, Ln.121, Sec.2, Zhongyang Rd., New Taipei City" },
+        { icon: "bi-geo-alt-fill", title: "Address", value: "5F., No.2, Ln.121, Sec.2, Zhongyang Rd., New Taipei City, Taiwan" },
       ],
       name: "Name / Company *",
       email: "Email *",
