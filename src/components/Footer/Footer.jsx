@@ -17,11 +17,11 @@ const Footer = () => {
       company: "義歆實業股份有限公司",
       desc: "專營封口機、包裝設備，品質與服務是我們的堅持。",
       products: "產品項目",
-      productsList: ["封口機","果糖機", "搖搖機", "檸檬機", "鋁蓋封口機","容器封口機"],
+      productsList: ["飲料封口機","果糖機", "搖搖機", "檸檬機", "鋁蓋封口機","容器封口機","產業型封口機"],
       links: "快速連結",
       linksList: ["關於我們", "常見問題", "聯絡我們"],
       contact: "聯絡資訊",
-      address: "新北市土城區中央路二段121巷2號5樓",
+      address: "新北市土城區中央路二段125號5樓",
       phone: "電話",
       fax: "傳真",
       email: "電子信箱",
@@ -32,11 +32,11 @@ const Footer = () => {
       company: "义歆实业股份有限公司",
       desc: "专营封口机、包装设备，品质与服务是我们的坚持。",
       products: "产品项目",
-      productsList: ["封口机", "果糖机", "摇摇机", "柠檬机", "铝盖封口机","容器封口机"],
+      productsList: ["饮料封口机", "果糖机", "摇摇机", "柠檬机", "铝盖封口机","容器封口机","产业型封口机"],
       links: "快速链接",
       linksList: ["关于我们", "常见问题", "联系我们"],
       contact: "联系方式",
-      address: "新北市土城区中央路二段121巷2号5楼",
+      address: "新北市土城区中央路二段125号5楼",
       phone: "电话",
       fax: "传真",
       email: "电子邮箱",
@@ -48,17 +48,18 @@ const Footer = () => {
       desc: "Specialized in sealing and packaging machines — quality and service are our commitment.",
       products: "Products",
       productsList: [
-        "Cup Sealer",
+        "Beverage Cup Sealer",
         "Syrup Filling Machine",
         "Shaking Machine",
         "Lemon Pounding Machine",
         "Aluminum Lid Sealer",
-        "Container Sealer"
+        "Container Sealer",
+        "Industrial Sealer"
       ],
       links: "Quick Links",
       linksList: ["About Us", "FAQ", "Contact Us"],
       contact: "Contact Info",
-      address: "5F., No.2, Ln.121, Sec.2, Zhongyang Rd., Tucheng Dist., New Taipei City, Taiwan",
+      address: "5F., No. 125, Sec. 2, Zhongyang Rd., Tucheng Dist., New Taipei City, Taiwan",
       phone: "Tel",
       fax: "Fax",
       email: "Email",
@@ -148,7 +149,7 @@ const Footer = () => {
               <i className="bi bi-geo-alt-fill me-2"></i>{t.address}
             </p>
             <p className="mb-2">
-              <i className="bi bi-telephone-fill me-2"></i>{t.phone}：0900-008-608
+              <i className="bi bi-telephone-fill me-2"></i>{t.phone}：+886 900-008-608
             </p>
             <p className="mb-0">
               <i className="bi bi-envelope-fill me-2"></i>{t.email}：yihsin1630@gmail.com

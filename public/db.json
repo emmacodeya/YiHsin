@@ -2,9 +2,9 @@
   "products": [
     {
       "category": {
-    "zh-TW": "封口機",
-    "zh-CN": "封口机",
-    "en": "Cup Sealer"
+      "zh-TW": "飲料封口機",
+      "zh-CN": "饮料封口机",
+      "en": "Beverage Cup Sealer"
   },
   "items": [
     {
@@ -864,7 +864,7 @@
       "price": {
         "zh-TW": " 34,000元起",
         "zh-CN": " 34,000元起",
-        "en": "From $34,000"
+        "en": "From NTD$34,000"
       },
       "images": ["/YiHsin/images/product/K-2280A小圖示.png"],
       "features": {
@@ -932,7 +932,7 @@
       "price": {
         "zh-TW": " 33,000元起",
         "zh-CN": " 33,000元起",
-        "en": "From $33,000"
+        "en": "From NTD$33,000"
       },
       "images": ["/YiHsin/images/product/K-2256A小圖示.png"],
       "features": {
@@ -1000,7 +1000,7 @@
       "price": {
         "zh-TW": " 34,000元起",
         "zh-CN": " 34,000元起",
-        "en": "From $34,000"
+        "en": "From NTD$34,000"
       },
       "images": ["/YiHsin/images/product/K-2290A.png"],
       "features": {
@@ -1068,7 +1068,7 @@
       "price": {
         "zh-TW": " 35,000元起",
         "zh-CN": " 35,000元起",
-        "en": "From $35,000"
+        "en": "From NTD$35,000"
       },
       "images": ["/YiHsin/images/product/K-22126A.png"],
       "features": {
@@ -1145,7 +1145,7 @@
       "price": {
         "zh-TW": " 43,000元起",
         "zh-CN": " 43,000元起",
-        "en": "From $43,000"
+        "en": "From NTD$43,000"
       },
       "images": ["/YiHsin/images/product/K-1519.png"],
       "features": {
@@ -1186,7 +1186,6 @@
               "voltage": "電壓",
               "power": "功率",
               "sealing_range": "封口範圍",
-              "film_width": "膠膜寬度",
               "capacity": "產能",
               "weight": "重量",
               "dimensions": "外觀尺寸"
@@ -1223,7 +1222,7 @@
       "price": {
         "zh-TW": " 43,000元起",
         "zh-CN": " 43,000元起",
-        "en": "From $43,000"
+        "en": "From NTD$43,000"
       },
       "images": ["/YiHsin/images/product/K-1823.png"],
       "features": {
@@ -1264,7 +1263,6 @@
               "voltage": "電壓",
               "power": "功率",
               "sealing_range": "封口範圍",
-              "film_width": "膠膜寬度",
               "capacity": "產能",
               "weight": "重量",
               "dimensions": "外觀尺寸"
@@ -1297,11 +1295,85 @@
         }
     },
     {
+      "model": "K-320A",
+      "price": {
+        "zh-TW": " 70,000元起",
+        "zh-CN": " 70,000元起",
+        "en": "From NTD$70,000"
+      },
+      "images": ["/YiHsin/images/product/K-320A.png"],
+      "features": {
+        "zh-TW": [
+          "採用鋁合金結構表面氧化處理，衛生安全，堅固耐用。",
+          "成熟的技機種，性能穩定，物超所值。",
+          "微電腦全自動追蹤封口，膠膜定點，確保封膜準確。",
+          "人性化安全設計，防止異物進入機內，自動復位。",
+          "專利轉動系統與專利自動頂出裝置，適合任何飲料杯置杯、取杯，快捷方便。",
+          "自動封杯計數累計，省時省力。",
+          "封口尺寸可根據客戶的要求做相應的調整。"
+        ],
+        "zh-CN": [
+          "采用铝合金结构表面氧化处理，卫生安全，坚固耐用。",
+          "成熟机型，性能稳定，物超所值。",
+          "微电脑全自动追踪封口，胶膜定点，确保封膜准确。",
+          "人性化安全设计，可防止异物进入机内，并具备自动复位功能。",
+          "专利转动系统与专利自动顶出装置，适用于任何饮料杯的放置与取杯，快捷方便。",
+          "自动封杯计数累计，省时省力。",
+          "封口尺寸可根据客户需求进行相应调整。"
+        ],
+        "en": [
+          "Constructed with anodized aluminum alloy for enhanced hygiene, safety, and durability.",
+          "A proven and reliable model offering stable performance and excellent value.",
+          "Fully automatic microcomputer-controlled film tracking ensures precise sealing alignment.",
+          "User-friendly safety design prevents foreign objects from entering the machine and supports automatic reset.",
+          "Patented rotation system and automatic cup-eject mechanism allow fast and easy cup placement and removal for various beverage cups.",
+          "Automatic sealing cup counter saves time and improves efficiency.",
+          "Sealing size can be adjusted according to customer requirements."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "110/220/50/60 V/Hz",
+            "power": "500 W",
+            "sealing_range": "180*140 or < ∮140",
+            "capacity": "300~400 PSC/HR",
+            "weight": "50 KG",
+            "dimensions": "450*320*670 mm"
+          }
+        }
+    },
+    {
       "model": "K-400",
       "price": {
-        "zh-TW": " 訂製款",
-        "zh-CN": " 定制款",
-        "en": "Customized Model"
+        "zh-TW": " 80,000元起",
+        "zh-CN": " 80,000元起",
+        "en": "From NTD$80,000"
       },
       "images": ["/YiHsin/images/product/400.png"],
       "features": {
@@ -1379,6 +1451,151 @@
               "zh-CN": "打印机",
               "en": "Printer"
             }
+          }
+        }
+    }
+  ]
+    },
+        {
+  "category": {
+      "zh-TW": "產業型封口機",
+      "zh-CN": "产业型封口机",
+      "en": "Industrial Sealer"
+  },
+  "items": [
+    {
+      "model": "KV-02",
+      "price": {
+        "zh-TW": " 125,000元起",
+        "zh-CN": " 125,000元起",
+        "en": "From $125,000"
+      },
+      "images": ["/YiHsin/images/product/KV-02.png"],
+      "features": {
+        "zh-TW": [
+          "微電腦全自動追蹤封口，膠膜定點，確保封膜準確。",
+          "機身小巧，不占空間，最適合完成中小型食品加工或化工企業等的少量多樣化需求。",
+          "採用曲線加減速傳動原理，操作容易，穩定性極佳。",
+          "採鋁合金防銹處理，衛生安全，堅固耐用。",
+          "可加裝自動打碼、印日期裝置。"
+        ],
+        "zh-CN": [
+          "微电脑全自动追踪封口，胶膜定点，确保封膜准确。",
+          "机身小巧，不占空间，最适合中小型食品加工或化工企业的少量多样化需求。",
+          "采用曲线加减速传动原理，操作简单，稳定性极佳。",
+          "采用铝合金防锈处理，卫生安全，坚固耐用。",
+          "可加装自动打码、打印日期装置。"
+        ],
+        "en": [
+          "Fully automatic microcomputer-controlled film tracking ensures precise sealing alignment.",
+          "Compact design saves space, ideal for small to medium food processing or chemical industries with diversified small-batch needs.",
+          "Uses a curved acceleration–deceleration transmission mechanism for easy operation and excellent stability.",
+          "Built with anti-rust treated aluminum alloy for enhanced hygiene, safety, and durability.",
+          "Optional add-ons include an automatic coding or date-printing device."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "110/220/50/60 V/Hz",
+            "power": "1200 W",
+            "sealing_range": "< 200*300 mm",
+            "capacity": "300~400",
+            "weight": "110 KG",
+            "dimensions": "800*800*1500 mm"
+          }
+        }
+    },
+    {
+      "model": "KV-03",
+      "price": {
+        "zh-TW": " 226,000元起",
+        "zh-CN": " 226,000元起",
+        "en": "From $226,000"
+      },
+      "images": ["/YiHsin/images/product/KV-03.png"],
+      "features": {
+        "zh-TW": [
+          "微電腦全自動追蹤封口，膠膜定點，確保封膜準確。",
+          "機身小巧，不占空間，最適合完成中小型食品加工或化工企業等的少量多樣化需求。",
+          "採用曲線加減速傳動原理，操作容易，穩定性極佳。",
+          "採鋁合金防銹處理，衛生安全，堅固耐用。",
+          "旋轉式盒裝杯裝封口機具有自動落杯、自動充填、自動打碼印日期裝置、自動封口、自動取杯、自動整列輸出等生產功能，解決中小型企業少量多樣之生產包裝特性。"
+        ],
+        "zh-CN": [
+          "微电脑全自动追踪封口，胶膜定点，确保封膜准确。",
+          "机身小巧，不占空间，最适合中小型食品加工或化工企业的少量多样化需求。",
+          "采用曲线加减速传动原理，操作简单，稳定性极佳。",
+          "采用铝合金防锈处理，卫生安全，坚固耐用。",
+          "旋转式盒装杯装封口机具备自动落杯、自动充填、自动打码印日期、自动封口、自动取杯、自动整列输出等生产功能，能够满足中小型企业少量多样的生产包装需求。"
+        ],
+        "en": [
+          "Fully automatic microcomputer-controlled film tracking ensures precise sealing alignment.",
+          "Compact design saves space, ideal for small to medium food processing or chemical industries with diversified small-batch needs.",
+          "Uses a curved acceleration–deceleration transmission mechanism for easy operation and excellent stability.",
+          "Built with anti-rust treated aluminum alloy for enhanced hygiene, safety, and durability.",
+          "The rotary cup and container sealing machine features automatic cup dropping, automatic filling, automatic coding and date printing, automatic sealing, automatic cup removal, and automatic output alignment. It is designed to meet the small-batch, diverse production and packaging needs of small and medium-sized enterprises."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "110/220/50/60 V/Hz",
+            "power": "600 W",
+            "sealing_range": "∮160 mm",
+            "capacity": "700~1000",
+            "weight": "120 KG",
+            "dimensions": "1000*800*1650 mm"
           }
         }
     }
@@ -1471,9 +1688,9 @@
     "items": [
       {
         "name": {
-          "zh-TW": "封口機",
-          "zh-CN": "封口机",
-          "en": "Cup Sealer"
+          "zh-TW": "飲料封口機",
+          "zh-CN": "饮料封口机",
+          "en": "Beverage Cup Sealer"
         },
         "image": "/YiHsin/images/product/K-2590SA.png"
       },

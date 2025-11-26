@@ -64,9 +64,9 @@ const Contact = () => {
       title: "聯絡我們",
       desc: "若有任何產品疑問、報價或維修需求，請使用下方表單或透過聯絡方式與我們聯繫。",
       info: [
-        { icon: "bi-telephone-fill", title: "聯絡電話", value: "0900-008-608" },
+        { icon: "bi-telephone-fill", title: "聯絡電話", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "服務時間", value: "週一至週五 09:00–18:00" },
-        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城區中央路二段121巷2號5樓" },
+        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城區中央路二段125號5樓" },
       ],
       name: "姓名／公司名稱 *",
       email: "電子郵件 *",
@@ -91,9 +91,9 @@ const Contact = () => {
       title: "联系我们",
       desc: "如有任何产品疑问、报价或维修需求，请使用下方表单或通过联系方式与我们联系。",
       info: [
-        { icon: "bi-telephone-fill", title: "联系电话", value: "0900-008-608" },
+        { icon: "bi-telephone-fill", title: "联系电话", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "服务时间", value: "周一至周五 09:00–18:00" },
-        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城区中央路二段121巷2号5楼" },
+        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城区中央路二段125号5楼" },
       ],
       name: "姓名／公司名称 *",
       email: "电子邮箱 *",
@@ -120,7 +120,7 @@ const Contact = () => {
       info: [
         { icon: "bi-telephone-fill", title: "Telephone", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "Service Hours", value: "Mon–Fri 9:00–18:00" },
-        { icon: "bi-geo-alt-fill", title: "Address", value: "5F., No.2, Ln.121, Sec.2, Zhongyang Rd., New Taipei City, Taiwan" },
+        { icon: "bi-geo-alt-fill", title: "Address", value: "5F., No. 125, Sec. 2, Zhongyang Rd., Tucheng Dist., New Taipei City, Taiwan" },
       ],
       name: "Name / Company *",
       email: "Email *",

@@ -20,14 +20,14 @@ export default function ProductShowcase() {
   const categoryModelMap = {
     "果糖機": "K-11G",
     "鋁蓋封口機": "K-2280A",
-    "封口機": "K-2590SA",
+    "飲料封口機": "K-2590SA",
     "檸檬機": "K-CD07",
     "搖搖機": "YY-02",
   };
 
   // 2. 要顯示的分類
   const allowedCategories = [
-    "封口機",
+    "飲料封口機",
     "果糖機",
     "搖搖機",
     "檸檬機",
