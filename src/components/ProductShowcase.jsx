@@ -10,7 +10,7 @@ export default function ProductShowcase() {
   const [activeIdx, setActiveIdx] = useState(0);
 
   useEffect(() => {
-    fetch("/YiHsin/db.json")
+    fetch("/db.json")
       .then((res) => res.json())
       .then((data) => setProducts(data.products || []))
       .catch((err) => console.error("載入產品失敗:", err));

@@ -32,7 +32,7 @@ const News = () => {
 
 
  useEffect(() => {
-  fetch("/YiHsin/db.json")
+  fetch("/db.json")
     .then((res) => res.json())
     .then((data) => setNewsList(data.news || []))
     .catch((err) => console.error("載入 news 失敗:", err));

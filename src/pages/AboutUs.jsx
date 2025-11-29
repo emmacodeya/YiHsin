@@ -29,7 +29,7 @@ const AboutUs = () => {
 
 
 useEffect(() => {
-  fetch("/YiHsin/db.json")
+  fetch("/db.json")
     .then((res) => res.json())
     .then((data) => {
       const about = data.about?.[0];

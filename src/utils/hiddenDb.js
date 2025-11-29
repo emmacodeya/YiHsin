@@ -2,7 +2,7 @@ export default {
   hiddenProducts: [
     {
       "model": "K-2590D5.5",
-      "images": ["/YiHsin/images/product/K-2590D5.5.png"],
+      "images": ["/images/product/K-2590D5.5.png"],
       "features": {
         "zh-TW": [
           "支援全自動與半自動雙模式操作，放入杯子即可自動封口，操作快速又省力。",
@@ -66,7 +66,7 @@ export default {
     },
     {
       "model": "K-2580D5.5",
-      "images": ["/YiHsin/images/product/K-2580D5.5.png"],
+      "images": ["/images/product/K-2580D5.5.png"],
       "features": {
         "zh-TW": [
           "支援全自動與半自動操作，放杯即可封口，省時又省力。",
@@ -129,7 +129,7 @@ export default {
         }
     } ,{
       "model": "K-255X",
-      "images": ["/YiHsin/images/product/K-255X.png"],
+      "images": ["/images/product/K-255X.png"],
       "features": {
         "zh-TW": [
           "適用多種盒裝食品，封口範圍廣泛。",
