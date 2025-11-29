@@ -1,12 +1,158 @@
-# React + Vite
+# 義歆實業官方網站 — YiHsin Industrial Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+專注食品封口包裝設備，打造全台最完整的封口機、鋁蓋封口、搖搖機、果糖機、檸檬機資訊平台
 
-Currently, two official plugins are available:
+使用 React + SCSS + Bootstrap + JSON Server 打造的多語系企業形象與產品展示網站
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 關於義歆實業
 
-## Expanding the ESLint configuration
+- **飲料封口機**
+- **鋁蓋封口機**
+- **果糖機**
+- **搖搖機**
+- **檸檬機**
+- **容器封口機**
+- **產業型封口機**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+致力於提供從「產品介紹 → 方案規劃 → 客製模具 → 安裝教學 → 售後維修」的完整服務流程，
+協助全台飲料店、餐飲品牌、中大型食品工廠，導入高效率封口設備。
+
+網站目標為展示品牌專業形象、提供產品資訊、提升使用者體驗並協助客戶快速找到適合的封口設備。
+
+## 網站主要功能
+
+- 首頁-動態 Banner
+- 浮動快捷聯繫按鈕
+- 產品展示-顯示「型號 / 特色 / 規格 / 多張圖片」
+- 多語系支援(繁中、簡中、英文)
+
+
+## [Demo](https://emmacodeya.github.io/YiHsin/)
+
+
+## Node.js 版本
+
+- 專案的 Node.js 版本需為 v16 以上
+- 查看自己版本指令：`node -v`
+
+## 取得專案
+
+- `git clone https://github.com/emmacodeya/YiHsin.git`
+
+## 指令列表
+
+- `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
+- `npm run dev` - 執行開發模式
+- `npm run build` - 執行編譯模式（不會開啟瀏覽器）
+- `npm ru deploy` - 自動化部署
+
+## 📁 專案資料夾結構
+
+```
+
+YiHSIN/
+│
+├── public/                       
+│   ├── images/                   # 圖片
+│   ├── db.json                   # JSON Server 資料庫
+│   ├── robots.txt                # SEO 設定
+│   └── sitemap.xml               # Sitemap
+│
+├── src/
+│   ├── components/               
+│   │   ├── Footer/
+│   │   │   └── Footer.jsx        # 頁尾
+│   │   ├── Header/
+│   │   │   └── Header.jsx        # 頁首
+│   │   ├── AdPopup.jsx           # 彈跳廣告視窗
+│   │   ├── FloatingButtons.jsx   # 右下浮動按鈕
+│   │   ├── FormattedNumber.jsx   # 數字/價格格式化元件
+│   │   ├── Loading.jsx           # Loading Spinner
+│   │   └── ProductShowcase.jsx   # 首頁產品展示元件
+│   │
+│   ├── context/                  # 全域狀態管理
+│   │   └── UserContext.js
+│   │
+│   ├── pages/                    
+│   │   ├── Home/
+│   │   │   └── Home.jsx          # 首頁
+│   │   ├── News/
+│   │   │   ├── News.jsx          # 最新消息列表
+│   │   │   └── NewsDetail.jsx    # 最新消息內頁
+│   │   │
+│   │   ├── Products/
+│   │   │   ├── Products.jsx      # 產品列表頁
+│   │   │   └── ProductDetail.jsx # 產品詳細頁(SEO用)
+│   │   │
+│   │   ├── AboutUs.jsx           # 關於我們
+│   │   ├── Contact.jsx           # 聯絡我們
+│   │   ├── Faq.jsx               # 常見問題 FAQ
+│   │   ├── NotFound.jsx          # 404 頁面
+│   │   └── Partners.jsx          # 合作夥伴
+│   │
+│   ├── styles/                   # SCSS 樣式
+│   │   
+│   ├── utils/                    
+│   │   └── mappings.js           # 各種對應設定（如分類映射）
+│   │   └── hiddenDb.js           # 隱藏資料工具
+│   │
+│   ├── App.jsx                   # 主程式
+│   ├── main.jsx                  # React 入口
+│
+├── .gitignore                     # Git 忽略設定
+├── eslint.config.js               # ESLint 設定
+├── index.html                     # 專案入口 HTML（Vite）
+├── package-lock.json              # 套件鎖定版本
+├── package.json                   # 套件設定與指令
+├── README.md                      # 專案說明文件
+└── vite.config.js                 # Vite 設定檔
+
+
+```
+
+## 專案技術
+
+- React 18
+- React Router（HashRouter）
+- SCSS + Bootstrap 5
+- Bootstrap Icons
+- Framer Motion
+- JSON Server
+- Vite
+
+
+## 聯絡我
+
+- GitHub: [Emma](https://github.com/emmacodeya)  
+  Email: [kkes60128angel@gmail.com](mailto:kkes60128angel@gmail.com)
+
+
+### 注意事項
+
+- GitHub Pages 必須使用 HashRouter，否則刷新會造成 404
+- 請勿移除 .gitignore
+- index.html 須保持為首頁（若你未來建立多頁）
+- JSON Server 僅用於本地開發，正式環境需改由後端 API 提供資料
+
+## 開發模式的監聽
+
+vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使用 `Live Sass Compiler` 的 `Watch SCSS` 功能
+
+## 部署 gh-pages 流程說明
+
+### Windows 版本
+
+1. 在 GitHub 建立一個新的 Repository
+
+2. 部署前請務必先將原始碼上傳到 GitHub Repository 也就是初始化 GitHub，因此通常第一步驟會在專案終端機輸入以下指令
+
+```cmd
+git init # 若已經初始化過就可以不用輸入
+git add .
+git commit -m 'first commit'
+git branch -M main
+git remote add origin [GitHub Repositories Url]
+git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
+```
+
+3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署
