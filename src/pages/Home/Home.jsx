@@ -109,18 +109,19 @@ const flowStepsMap = {
   //網頁title
   useEffect(() => {
   const title =
-    lang === "en"
-      ? "Yihsin Industrial｜Sealing Machines, Syrup Filling Machines, Shaker Machines, Lemon Juicers"
-      : lang === "zh-CN"
-      ? "义歆实业｜封口机、果糖机、摇摇机、柠檬机"
-      : "義歆實業｜封口機、果糖機、搖搖機、檸檬機";
+  lang === "en"
+    ? "Yihsin Industrial｜Cup Sealing Machines, Aluminum Lid Sealers, Syrup Dispensers & Beverage Equipment"
+    : lang === "zh-CN"
+    ? "义歆实业｜封口机、铝盖封口机、果糖机、摇摇机、柠檬机专业设备"
+    : "義歆實業｜封口機、鋁蓋封口機、果糖機、搖搖機、檸檬機專業設備";
 
   const description =
-    lang === "en"
-      ? "YiHsin Industrial specializes in sealing machines, aluminum lid sealers, syrup filling machines, shaker machines, and lemon juicers. Offering installation, sales, warranty and maintenance throughout Taiwan."
-      : lang === "zh-CN"
-      ? "义歆专注食品封口包装设备，封口机、铝盖封口机、果糖机、摇摇机、柠檬机全系列，提供全台安装、销售、保固与维修服务。"
-      : "義歆專注食品封口包裝設備，封口機、鋁蓋封口機、果糖機、搖搖機、檸檬機全系列，提供全台安裝、銷售、保固與維修服務。";
+  lang === "en"
+    ? "Yihsin Industrial provides cup sealing machines, aluminum lid sealers, syrup dispensers, shakers, and lemon juicers. We offer installation, sales, warranty, and maintenance services for beverage equipment."
+    : lang === "zh-CN"
+    ? "义歆实业提供封口机、铝盖封口机、果糖机、摇摇机、柠檬机等全系列饮品设备，提供安装、销售、保固与维修服务，协助饮品店快速打造完整设备。"
+    : "義歆實業提供封口機、鋁蓋封口機、果糖機、搖搖機、檸檬機等全系列飲料設備。全台提供安裝、銷售、保固與維修服務，協助飲料店快速建置完整吧台設備。";
+
 
   document.title = title;
 
