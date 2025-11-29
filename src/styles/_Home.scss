@@ -13,12 +13,12 @@
 
 /*  Banner 區塊 */
 .banner {
-  background: url('/images/banner-2.png') center/cover no-repeat;
+  background: url('../images/banner-2.png') center/cover no-repeat;
   height: 700px;
 
 
   @include respond-down(md) {
-    background: url('/images/banner-sm.png') center/cover no-repeat;
+    background: url('../images/banner-sm.png') center/cover no-repeat;
   }
 }
 
