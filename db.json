@@ -1,0 +1,2191 @@
+{
+  "products": [
+    {
+      "category": {
+      "zh-TW": "飲料封口機",
+      "zh-CN": "饮料封口机",
+      "en": "Beverage Cup Sealer"
+  },
+  "items": [
+    {
+      "model": "K-2590SA",
+      "price": {
+        "zh-TW": "14,000 元起",
+        "zh-CN": "14,000 元起",
+        "en": "From NTD$14,000"
+      },
+      "images": [
+        "/images/product/K-2590SA.png"
+      ],
+      "features": {
+        "zh-TW": [
+          "適用冷熱飲封口，密合度高、圖案對位準確，不滴不漏。",
+          "提供觸控與按鍵雙重操作模式，滿足不同使用習慣。",
+          "支援繁體中文、簡體中文與英文多語系，操作介面簡單易懂。",
+          "精緻外觀搭配全封閉防塵設計，強化衛生與安全。"
+        ],
+        "zh-CN": [
+          "适用于冷热饮封口，密合度高、图案对位准确，不滴不漏。",
+          "提供触控与按键双重操作模式，满足不同使用习惯。",
+          "支持繁体中文、简体中文与英文多语言界面，操作简单易懂。",
+          "精致外观搭配全封闭防尘设计，强化卫生与安全。"
+        ],
+        "en": [
+          "Suitable for sealing hot and cold drinks with tight sealing and accurate film alignment.",
+          "Offers both touch and button control modes to suit different preferences.",
+          "Supports Traditional Chinese, Simplified Chinese, and English interface with easy operation.",
+          "Refined appearance with fully enclosed dustproof design for improved hygiene and safety."
+        ]
+      },
+        "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "film_width": "胶膜宽度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "film_width": "Film Width",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "450 W",
+            "sealing_range": "∮90 or ∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "20 KG",
+            "dimensions": "395.5*266*540 mm"
+          }
+        }
+
+    },
+    {
+      "model": "K-2590S",
+      "price": {
+        "zh-TW": "13,000 元起",
+        "zh-CN": "13,000 元起",
+        "en": "From NTD$13,000"
+      },
+      "images": [
+        "/images/product/K-2590S小圖示.png"
+      ],
+      "features": {
+        "zh-TW": [
+          "自動追蹤膠膜定位，封口圖案對位精準，密封效果穩定不漏。",
+          "數位顯示與溫度調節系統，控溫準確，封口品質一致。",
+          "封口杯數與溫度即時顯示，便於操作與監控產能。",
+          "全封閉式防塵結構設計，有效避免外部污染，提升飲品衛生安全。"
+        ],
+        "zh-CN": [
+          "自动追踪胶膜定位，封口图案对位精准，密封效果稳定不漏。",
+          "数显与温度调节系统，控温准确，封口品质一致。",
+          "封口杯数与温度实时显示，便于操作与监控产能。",
+          "全封闭防尘结构设计，有效避免外部污染，提升饮品卫生安全。"
+        ],
+        "en": [
+          "Automatic film tracking ensures precise alignment and stable sealing.",
+          "Digital temperature control system guarantees consistent sealing quality.",
+          "Displays sealing count and temperature in real-time for better operation monitoring.",
+          "Fully enclosed dustproof design enhances beverage hygiene and safety."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "film_width": "胶膜宽度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "film_width": "Film Width",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "450 W",
+            "sealing_range": "∮90 or ∮95 mm",
+            "film_width": "130 mm",
+            "capacity": "5~12 PSC/min",
+            "weight": "20 KG",
+            "dimensions": "395.5*266*540 mm"
+          }
+        }
+    }
+  ]
+    },
+    {
+      "category": {
+    "zh-TW": "果糖機",
+    "zh-CN": "果糖机",
+    "en": "Syrup Filling Machine"
+  },
+  "items": [
+    {
+      "model": "F-09",
+      "price": {
+        "zh-TW": "12,000 元起",
+        "zh-CN": "12,000 元起",
+        "en": "From NTD$12,000"
+      },
+      "images": ["/images/product/F-09.png"],
+      "features": {
+        "zh-TW": [
+          "定量出糖精準，誤差僅 ±0.1g，確保飲品甜度一致。",
+          "具備重複記憶功能，連續出糖時無需重複按鍵操作，提升效率。",
+          "機身輕巧節省空間，搭配 6L大容量糖桶，適合各種場域。",
+          "設有防蟻腳墊，符合食品衛生需求。",
+          "提供 10 組糖量快捷鍵，設定簡單、操作快速。"
+        ],
+        "zh-CN": [
+          "定量出糖精准，误差仅 ±0.1g，确保饮品甜度一致。",
+          "具备重复记忆功能，连续出糖时无需重复按键操作，提高效率。",
+          "机身轻巧节省空间，搭配 6L 大容量糖桶，适合各种场所。",
+          "配有防蚁脚垫，符合食品卫生要求。",
+          "提供 10 组糖量快捷键，设定简单、操作快捷。"
+        ],
+        "en": [
+          "Precise sugar dispensing with only ±0.1g error for consistent sweetness.",
+          "Memory function allows continuous dispensing without repeated key presses.",
+          "Compact body with a large 6L tank — ideal for various store settings.",
+          "Equipped with anti-ant feet to meet hygiene standards.",
+          "Offers 10 preset sugar levels for fast and easy operation."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "filling_accuracy": "灌裝精度",
+              "power": "功率",
+              "voltage": "電壓",
+              "capacity": "產能",
+              "tank_volume": "容量",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "filling_accuracy": "灌装精度",
+              "power": "功率",
+              "voltage": "电压",
+              "capacity": "产能",
+              "tank_volume": "容量",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "filling_accuracy": "Filling Accuracy",
+              "power": "Power",
+              "voltage": "Voltage",
+              "capacity": "Output Capacity",
+              "tank_volume": "Tank Volume",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "filling_accuracy": "±1 cc",
+            "power": "500 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "capacity": "2500 cc/min",
+            "tank_volume": "6 L",
+            "weight": "6 KG",
+            "dimensions": "420*150*400 mm"
+          }
+        }
+    },
+    {
+      "model": "K-11G",
+      "price": {
+        "zh-TW": "12,000 元起",
+        "zh-CN": "12,000 元起",
+        "en": "From NTD$12,000"
+      },
+      "images": [
+        "/images/product/K-11G.png"
+      ],
+      "features": {
+        "zh-TW": [
+          "高精度出糖控制，誤差僅士0.1g，適合高標準飲品製作。",
+          "具加熱功能，能迅速加溫並穩定保持桶内糖漿溫度。",
+          "支援 3~500cc 出糖量自由設定，靈活對應各種飲品需求。",
+          "配備24組糖量按鍵，快速調出常用配方，提升出杯效率。 。操作介面簡單直覺，設定便利，上手快速。",
+          "通過多國安全規格認證，安全又可靠。"
+        ],
+        "zh-CN": [
+          "高精度出糖控制，误差仅 ±0.1g，适合高标准饮品制作。",
+          "具备加热功能，能够迅速升温并稳定保持桶内糖浆温度。",
+          "支持 3~500cc 出糖量自由设定，灵活对应各种饮品需求。",
+          "配备 24 组糖量按键，可快速调出常用配方，提高出杯效率；操作界面简单直观、设置方便，上手快速。",
+          "通过多国安全规范认证，安全又可靠。"
+        ],
+        "en": [
+          "High-precision syrup dispensing with an accuracy of ±0.1g, ideal for high-standard beverage preparation.",
+          "Equipped with a heating function that quickly warms and consistently maintains the syrup temperature.",
+          "Supports freely adjustable dispensing volume from 3 to 500cc, suitable for various drink recipes.",
+          "Features 24 preset dispense buttons for quick access to common recipes, improving drink-making efficiency. The interface is intuitive and easy to operate.",
+          "Certified by multiple international safety standards, ensuring reliable and safe operation."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "filling_accuracy": "灌裝精度",
+              "power": "功率",
+              "voltage": "電壓",
+              "capacity": "產能",
+              "tank_volume": "容量",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "filling_accuracy": "灌装精度",
+              "power": "功率",
+              "voltage": "电压",
+              "capacity": "产能",
+              "tank_volume": "容量",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "filling_accuracy": "Filling Accuracy",
+              "power": "Power",
+              "voltage": "Voltage",
+              "capacity": "Output Capacity",
+              "tank_volume": "Tank Volume",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "filling_accuracy": "土1 cc",
+            "power": "400 W",
+            "voltage": "220/110/50/60",
+            "capacity": "2500 CC",
+            "tank_volume": "8 L",
+            "weight": "8KG",
+            "dimensions": "360*250*420 mm"
+          }
+        }
+    }
+  ]
+    },
+    {
+      "category": {
+    "zh-TW": "搖搖機",
+    "zh-CN": "摇摇机",
+    "en": "Shaking Machine"
+  },
+  "items": [
+    {
+      "model": "KS-01A",
+      "price": {
+        "zh-TW": " 22,000元起",
+        "zh-CN": " 22,000元起",
+        "en": "From NTD$22,000"
+      },
+      "images": ["/images/product/KS-01A.png"],
+      "features": {
+        "zh-TW": [
+          "全自動進出杯設計，搭配封開式機體結構，運行安靜又安全。",
+          "預設 7 種搖動模式，可自訂時間，靈活滿足不同飲品製作需求。",
+          "可調式杯架設計，兼容多種雪克杯，操作便利。",
+          "採用大吸盤固定底座，搖動穩定、噪音低、耐用性高。",
+          "一鍵啟動搭配緊急停止按鈕，操作安全有保障。",
+          "全不鏽鋼一體成型設計，防水防塵，易於清潔。"
+        ],
+        "zh-CN": [
+          "全自动进出杯设计，搭配开封式机体结构，运行安静又安全。",
+          "预设 7 种摇动模式，可自定义时间，灵活满足不同饮品制作需求。",
+          "可调式杯架设计，兼容多种雪克杯，操作方便。",
+          "采用大吸盘固定底座，摇动稳定、噪音低、耐用性高。",
+          "一键启动搭配紧急停止按钮，操作安全有保障。",
+          "全不锈钢一体成型设计，防水防尘，易于清洁。"
+        ],
+        "en": [
+          "Fully automatic cup loading/unloading with open-frame design for quiet and safe operation.",
+          "Preset 7 shaking modes with adjustable time to meet different drink-making needs.",
+          "Adjustable cup holder compatible with various shaker sizes for easy operation.",
+          "Strong suction base ensures stable, low-noise, and durable performance.",
+          "One-touch start with emergency stop button ensures safety.",
+          "All stainless steel body, waterproof and dustproof, easy to clean."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "timing_accuracy": "定時精度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "timing_accuracy": "定时精度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "timing_accuracy": "Timing Accuracy",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "70 W",
+            "timing_accuracy": "0.1 sec",
+            "capacity": "300-500 PSC/HR",
+            "weight": "31 KG",
+            "dimensions": "560*260*520 mm"
+          }
+        }
+    },
+    {
+      "model": "YY-01A",
+      "price": {
+        "zh-TW": " 22,000元起",
+        "zh-CN": " 22,000元起",
+        "en": "From NTD$22,000"
+      },
+      "images": ["/images/product/YY-01A.png"],
+      "features": {
+        "zh-TW": [
+          "採用 360° 旋轉搖動方式，混合更均勻，口感更穩定。",
+          "自動進出杯設計，封閉式箱體結構，運行安靜、安全。",
+          "可預設 7 種搖動模式，時間可自由調整，滿足多樣飲品需求。",
+          "可調式杯架設計，支援不同尺寸雪克杯，應用靈活。",
+          "強力吸盤設計，搖動穩定性高，低噪音、耐久度佳。",
+          "一鍵啟動與緊急停止設計，強化操作安全。",
+          "不鏽鋼一體成型機身，防水防塵，易於清潔與保養。"
+        ],
+        "zh-CN": [
+          "采用 360° 旋转摇动方式，混合更均匀，口感更稳定。",
+          "自动进出杯设计，封闭式箱体结构，运行安静、安全。",
+          "可预设 7 种摇动模式，时间可自由调整，满足多样饮品需求。",
+          "可调式杯架设计，支持不同尺寸雪克杯，应用灵活。",
+          "强力吸盘设计，摇动稳定性高，低噪音、耐久度佳。",
+          "一键启动与紧急停止设计，强化操作安全。",
+          "不锈钢一体成型机身，防水防尘，易于清洁与保养。"
+        ],
+        "en": [
+          "Adopts 360° rotational shaking for more even mixing and stable texture.",
+          "Automatic cup loading/unloading with enclosed structure ensures quiet and safe operation.",
+          "Preset 7 shaking modes with adjustable timing for versatile drink preparation.",
+          "Adjustable cup holder supports various shaker sizes for flexible use.",
+          "Strong suction base provides stability, low noise, and durability.",
+          "One-touch start and emergency stop enhance operational safety.",
+          "Integrated stainless steel body is waterproof, dustproof, and easy to maintain."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "timing_accuracy": "定時精度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "timing_accuracy": "定时精度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "timing_accuracy": "Timing Accuracy",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "70 W",
+            "timing_accuracy": "0.1 sec",
+            "capacity": "300-500 PSC/HR",
+            "weight": "30 KG",
+            "dimensions": "560*260*550 mm"
+          }
+        }
+    },
+    {
+      "model": "YY-02",
+      "price": {
+        "zh-TW": " 19,000元起",
+        "zh-CN": " 19,000元起",
+        "en": "From NTD$19,000"
+      },
+      "images": [
+        "/images/product/YY-02小圖示.png",
+        "/images/product/YY-02(帶防護罩）.png"
+      ],
+      "features": {
+        "zh-TW": [
+          "自帶防護罩設計，提升作業安全性，操作更安心。",
+          "採用 360° 旋轉搖動技術，可同時製作雙杯，口感均勻，效率倍增。",
+          "支援多種雪克杯與奶油槍，搭配可調式杯架，應用彈性高。",
+          "旋轉式時間設定介面，操作簡單，支援 0.1~3600 秒自由設定。",
+          "全金屬配重設計，穩定性高，機身易於清潔，符合衛生需求。",
+          "附緊急停止按鈕，一鍵停止保護使用者。"
+        ],
+        "zh-CN": [
+          "自带防护罩设计，提升操作安全性，使用更安心。",
+          "采用 360° 旋转摇动技术，可同时制作双杯，口感均匀，效率倍增。",
+          "支持多种雪克杯与奶油枪，搭配可调式杯架，应用灵活。",
+          "旋转式时间设定界面，操作简单，支持 0.1~3600 秒自由设定。",
+          "全金属配重设计，稳定性高，机身易于清洁，符合卫生需求。",
+          "配有紧急停止按钮，一键停止保护使用者。"
+        ],
+        "en": [
+          "Built-in protective cover improves operational safety and confidence.",
+          "360° rotational shaking allows dual-cup operation for efficient mixing.",
+          "Supports various shakers and cream guns with adjustable cup holder.",
+          "Rotary time control interface supports 0.1–3600 sec adjustments for flexibility.",
+          "Full metal counterweight ensures stability and easy cleaning.",
+          "Equipped with emergency stop button for safety."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "timing_accuracy": "定時精度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "timing_accuracy": "定时精度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "timing_accuracy": "Timing Accuracy",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "50 W",
+            "timing_accuracy": "0.1 sec",
+            "capacity": "500-700 PSC/HR",
+            "weight": "26 KG",
+            "dimensions": "390*342*380 mm"
+          }
+        }
+    },
+    {
+      "model": "KS-02",
+      "price": {
+        "zh-TW": " 25,000元起",
+        "zh-CN": " 25,000元起",
+        "en": "From NTD$25,000"
+      },
+      "images": ["/images/product/KS-02.png"],
+      "features": {
+        "zh-TW": [
+          "採雙電機分離控制設計，上下搖動穩定均勻，雙杯同時處理更有效率。",
+          "可調式杯架支援多種雪克杯類型，應用範圍廣。",
+          "搭配旋轉式時間設定，支援 0.1–3600 秒自由調整，靈活操作。",
+          "一體式不鏽鋼機身設計，耐用易清潔，符合商用衛生需求。",
+          "全金屬配重裝置，穩固不移位，機器運作安靜穩定。",
+          "一鍵啟動與緊急停止按鈕設計，操作直覺又安全。"
+        ],
+        "zh-CN": [
+          "采用双电机分离控制设计，上下摇动稳定均匀，双杯同时处理更高效。",
+          "可调式杯架支持多种雪克杯类型，应用范围广。",
+          "搭配旋转式时间设定，支持 0.1–3600 秒自由调整，操作灵活。",
+          "一体式不锈钢机身设计，耐用易清洁，符合商用卫生需求。",
+          "全金属配重装置，稳固不移位，机器运行安静稳定。",
+          "一键启动与紧急停止按钮设计，操作直观又安全。"
+        ],
+        "en": [
+          "Dual-motor independent control ensures stable, even upper and lower shaking.",
+          "Adjustable cup holder supports various shaker types for wide application.",
+          "Rotary timer supports 0.1–3600 sec for flexible operation.",
+          "Integrated stainless steel body — durable, easy to clean, and hygienic.",
+          "Full metal counterweight provides quiet, stable performance.",
+          "One-touch start and emergency stop button ensure safety and simplicity."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "timing_accuracy": "定時精度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "timing_accuracy": "定时精度",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "timing_accuracy": "Timing Accuracy",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "90 W",
+            "timing_accuracy": "0.1 sec",
+            "capacity": "500-700 PSC/HR",
+            "weight": "34 KG",
+            "dimensions": "420*368*413 mm"
+          }
+        }
+    }
+  ]
+    },
+    {
+      "category": {
+    "zh-TW": "檸檬機",
+    "zh-CN": "柠檬机",
+    "en": "Lemon Pounding Machine"
+  },
+  "items": [
+    {
+      "model": "K-CD02",
+      "price": {
+        "zh-TW": " 30,000元起",
+        "zh-CN": " 30,000元起",
+        "en": "From NTD$30,000"
+      },
+      "images": ["/images/product/K-CD02小圖示.png"],
+      "features": {
+        "zh-TW": [
+          "白動旋轉偏心式捶打設計，確保檸檬、水果與冰塊均勻混合，口感佳。",
+          "支援 8 組預設配方，捶打時間與速度可靈活調整，快速切換不同飲品製程。",
+          "自動進出結構設計，杯子穩固放置，操作順手、安全不易傾倒。",
+          "一鍵啟動操作簡單，內建清潔模式，日常保養方便快速。",
+          "可拆式錘頭設計，支援多種杯型與配件客製化需求。",
+          "高匹配杯蓋結構，有效防止捶打過程中飲品飛濺。"
+        ],
+        "zh-CN": [
+          "自动旋转偏心式捶打设计，确保柠檬、水果与冰块均匀混合，口感佳。",
+          "支持 8 组预设配方，捶打时间与速度可灵活调整，快速切换不同饮品工序。",
+          "自动进出结构设计，杯子稳固放置，操作顺手、安全不易倾倒。",
+          "一键启动操作简单，内建清洁模式，日常保养方便快捷。",
+          "可拆式锤头设计，支持多种杯型与配件定制需求。",
+          "高匹配杯盖结构，有效防止捶打过程中饮品飞溅。"
+        ],
+        "en": [
+          "Automatic rotary eccentric pounding design ensures even mixing of lemons, fruits, and ice for a perfect texture.",
+          "Supports 8 preset programs with adjustable pounding time and speed for flexible drink preparation.",
+          "Automatic cup in/out structure keeps cups stable and easy to operate safely.",
+          "One-touch start with built-in cleaning mode for quick daily maintenance.",
+          "Detachable hammer head supports multiple cup sizes and custom accessories.",
+          "High-fitting lid structure prevents splashing during operation."
+        ]
+      },
+     "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "shaker_cup": "搖打杯容量",
+              "cup_height": "適用杯高",
+              "pounding_time": "捶打時間",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "shaker_cup": "摇打杯容量",
+              "cup_height": "适用杯高",
+              "pounding_time": "捶打时间",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "shaker_cup": "Shaker Cup Volume",
+              "cup_height": "Cup Height",
+              "pounding_time": "Pounding Time",
+              "pounding_speed": "Pounding Speed",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "150 W",
+            "voltage": "220/110/50/60 V/Hz",
+            "shaker_cup": "700/1000 ml",
+            "cup_height": "153 mm",
+            "pounding_time": "0-98 s",
+            "pounding_speed": "1-10 levels",
+            "weight": "27 KG",
+            "dimensions": "240*465*596 mm"
+          }
+        }
+    },
+    {
+      "model": "K-CD04",
+      "price": {
+        "zh-TW": " 33,000元起",
+        "zh-CN": " 33,000元起",
+        "en": "From NTD$33,000"
+      },
+      "images": ["/images/product/K-CD04.png"],
+      "features": {
+        "zh-TW": [
+          "自動旋轉偏心式捶打設計，快速均勻混合檸檬、水果與冰塊，製作高品質飲品。",
+          "支援 8 組預設配方，捶打時間與速度可自由調整，滿足不同飲品需求。",
+          "自動進出杯設計，放杯穩定、取杯方便，提升操作效率與安全性。",
+          "高匹配杯蓋結構設計，防止內容物飛濺，保持作業環境整潔。",
+          "一鍵啟動 + 一鍵清潔模式，操作簡單，日常維護省時省力。",
+          "可拆卸式錘頭，支援客製化配件，適應不同作業場景。"
+        ],
+        "zh-CN": [
+          "自动旋转偏心式捶打设计，快速均匀混合柠檬、水果与冰块，制作高品质饮品。",
+          "支持 8 组预设配方，捶打时间与速度可自由调整，满足不同饮品需求。",
+          "自动进出杯设计，放杯稳固、取杯方便，提升操作效率与安全性。",
+          "高匹配杯盖结构设计，防止内容物飞溅，保持作业环境整洁。",
+          "一键启动 + 一键清洁模式，操作简单，日常维护省时省力。",
+          "可拆卸式锤头，支持定制配件，适应不同作业场景。"
+        ],
+        "en": [
+          "Automatic rotary pounding design mixes lemons, fruits, and ice quickly and evenly for high-quality beverages.",
+          "Supports 8 preset modes with adjustable time and speed to meet different drink requirements.",
+          "Automatic cup in/out design provides stable placement and convenient operation.",
+          "High-fitting lid prevents splashing, keeping the workspace clean.",
+          "One-touch start and cleaning modes for simple daily maintenance.",
+          "Detachable hammer head supports customized accessories for various use cases."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "shaker_cup": "搖打杯容量",
+              "cup_height": "適用杯高",
+              "pounding_time": "捶打時間",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "shaker_cup": "摇打杯容量",
+              "cup_height": "适用杯高",
+              "pounding_time": "捶打时间",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "shaker_cup": "Shaker Cup Volume",
+              "cup_height": "Cup Height",
+              "pounding_time": "Pounding Time",
+              "pounding_speed": "Pounding Speed",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "300 W",
+            "voltage": "220/50 V/Hz",
+            "shaker_cup": "1000 ml",
+            "cup_height": "200 mm",
+            "pounding_time": "0-98 s",
+            "pounding_speed": "1-10 levels",
+            "weight": "30 KG",
+            "dimensions": "240*465*670 mm"
+          }
+        }
+    },
+    {
+      "model": "K-CD07",
+      "price": {
+        "zh-TW": " 34,000元起",
+        "zh-CN": " 34,000元起",
+        "en": "From NTD$34,000"
+      },
+      "images": ["/images/product/K-CD07.png"],
+      "features": {
+        "zh-TW": [
+          "搭載邊旋轉邊捶打結構，確保混合更均勻、口感更滑順。",
+          "支援 8 組預設配方，捶打時間與速度可彈性設定，快速切換作業。",
+          "適配 153mm 與 200mm 杯高，支援多種雪克杯尺寸，使用更自由。",
+          "強勁動力設計，可輕鬆處理整顆檸檬、水果與冰塊，效率高。",
+          "一鍵啟動操作簡便，搭配一鍵清潔功能，日常保養無負擔。",
+          "可拆卸式錘頭，支援定制，滿足不同飲品調製需求。"
+        ],
+        "zh-CN": [
+          "搭载边旋转边捶打结构，确保混合更均匀、口感更顺滑。",
+          "支持 8 组预设配方，捶打时间与速度可灵活调整，快速切换操作。",
+          "适配 153mm 与 200mm 杯高，支持多种雪克杯尺寸，使用更自由。",
+          "强劲动力设计，可轻松处理整颗柠檬、水果与冰块，效率高。",
+          "一键启动操作简便，搭配一键清洁功能，日常保养无负担。",
+          "可拆卸式锤头，支持定制，满足不同饮品制作需求。"
+        ],
+        "en": [
+          "Equipped with a simultaneous rotating and pounding mechanism to ensure more even mixing and a smoother texture.",
+          "Supports 8 preset modes with flexible time and speed adjustments.",
+          "Compatible with 153mm and 200mm cups — fits multiple shaker sizes.",
+          "Powerful motor easily handles whole lemons, fruits, and ice with high efficiency.",
+          "One-touch start and cleaning functions make maintenance effortless.",
+          "Detachable hammer head supports customization for various drink applications."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "shaker_cup": "搖打杯容量",
+              "cup_height": "適用杯高",
+              "pounding_time": "捶打時間",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "shaker_cup": "摇打杯容量",
+              "cup_height": "适用杯高",
+              "pounding_time": "捶打时间",
+              "pounding_speed": "捶打速度",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "shaker_cup": "Shaker Cup Volume",
+              "cup_height": "Cup Height",
+              "pounding_time": "Pounding Time",
+              "pounding_speed": "Pounding Speed",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "300 W",
+            "voltage": "220/50 V/Hz",
+            "shaker_cup": "1000 ml",
+            "cup_height": "153/200 mm",
+            "pounding_time": "0-98 s",
+            "pounding_speed": "1-10 levels",
+            "weight": "30 KG",
+            "dimensions": "230*465*570 mm"
+          }
+        }
+    }
+  ]
+    },
+    {
+  "category": {
+    "zh-TW": "鋁蓋封口機",
+    "zh-CN": "铝盖封口机",
+    "en": "Aluminum Lid Sealer"
+  },
+  "items": [
+    {
+      "model": "K-2280A",
+      "price": {
+        "zh-TW": " 34,000元起",
+        "zh-CN": " 34,000元起",
+        "en": "From NTD$34,000"
+      },
+      "images": ["/images/product/K-2280A小圖示.png"],
+      "features": {
+        "zh-TW": [
+          "雙工位自動進出設計，快速放置杯體與杯蓋，提升封口效率。",
+          "開機即用、無需預熱，封口不等待，有效節能提升產能。",
+          "特製可更換式杯座設計，穩定固定杯體，適用多種容器。",
+          "支援客製化杯座，一機多用，降低設備投資成本。",
+          "配備安全防護罩與一鍵復位功能，操作更安心。"
+        ],
+        "zh-CN": [
+          "双工位自动进出设计，快速放置杯体与杯盖，提升封口效率。",
+          "开机即用，无需预热，封口不等待，有效节能提升产能。",
+          "特制可更换式杯座设计，稳定固定杯体，适用多种容器。",
+          "支持定制杯座，一机多用，降低设备投资成本。",
+          "配备安全防护罩与一键复位功能，操作更安心。"
+        ],
+        "en": [
+          "Dual-station automatic loading and unloading design improves sealing efficiency.",
+          "Ready to use without preheating — saves time and energy while increasing output.",
+          "Customizable interchangeable cup holders provide stable support for various containers.",
+          "Supports multiple cup sizes with a single machine, reducing equipment investment.",
+          "Equipped with a safety guard and one-touch reset for secure operation."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "sealing_diameter": "封口口徑",
+              "sealing_time": "封口時間",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "sealing_diameter": "封口口径",
+              "sealing_time": "封口时间",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "sealing_diameter": "Sealing Diameter",
+              "sealing_time": "Sealing Time",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "100 W",
+            "voltage": "220/50 V/Hz",
+            "sealing_diameter": "∮80 mm",
+            "sealing_time": "7s",
+            "weight": "30 KG",
+            "dimensions": "260*465*565 mm"
+          }
+        }
+    },
+    {
+      "model": "K-2256A",
+      "price": {
+        "zh-TW": " 33,000元起",
+        "zh-CN": " 33,000元起",
+        "en": "From NTD$33,000"
+      },
+      "images": ["/images/product/K-2256A小圖示.png"],
+      "features": {
+        "zh-TW": [
+          "雙工位設計，放杯與封口可同步作業，顯著提升封杯效率。",
+          "無需預熱，開機即用，縮短等候時間並節省能源。",
+          "可替換式特製杯座設計，固定性高，可支援多樣容器。",
+          "支援客製化杯座規格，一機多用，減少設備汰換成本。",
+          "搭配安全防護罩與一鍵復位功能，操作直覺又安全。"
+        ],
+        "zh-CN": [
+          "双工位设计，放杯与封口可同步作业，显著提升封杯效率。",
+          "无需预热，开机即用，缩短等待时间并节省能源。",
+          "可替换式特制杯座设计，固定性高，可支持多样容器。",
+          "支持定制杯座规格，一机多用，减少设备更换成本。",
+          "搭配安全防护罩与一键复位功能，操作直观又安全。"
+        ],
+        "en": [
+          "Dual-station design allows cup loading and sealing simultaneously for improved productivity.",
+          "No preheating required — start sealing immediately, saving time and energy.",
+          "Custom-designed interchangeable cup holders ensure high stability and versatility.",
+          "Supports custom cup holder specifications to reduce replacement costs.",
+          "Equipped with a safety guard and reset function for intuitive and safe operation."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "sealing_diameter": "封口口徑",
+              "sealing_time": "封口時間",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "sealing_diameter": "封口口径",
+              "sealing_time": "封口时间",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "sealing_diameter": "Sealing Diameter",
+              "sealing_time": "Sealing Time",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "100 W",
+            "voltage": "220/50 V/Hz",
+            "sealing_diameter": "∮56 mm",
+            "sealing_time": "7s",
+            "weight": "30 KG",
+            "dimensions": "260*465*565 mm"
+          }
+        }
+    },
+    {
+      "model": "K-2290A",
+      "price": {
+        "zh-TW": " 34,000元起",
+        "zh-CN": " 34,000元起",
+        "en": "From NTD$34,000"
+      },
+      "images": ["/images/product/K-2290A.png"],
+      "features": {
+        "zh-TW": [
+          "採雙工位設計，杯體與杯蓋可快速進出，封口效率高。",
+          "免預熱設計，開機即用，有效節省等待時間與耗電。",
+          "特製可替換杯座，固定穩定，適用多種杯型。",
+          "客製化支援多規格容器，一機可多用途，靈活應用。",
+          "內建安全防護罩與一鍵復位功能，確保操作安全性。"
+        ],
+        "zh-CN": [
+          "采用双工位设计，杯体与杯盖可快速进出，封口效率高。",
+          "免预热设计，开机即用，有效节省等待时间与耗电。",
+          "特制可替换杯座，固定稳定，适用多种杯型。",
+          "支持定制多规格容器，一机多用途，灵活应用。",
+          "内建安全防护罩与一键复位功能，确保操作安全性。"
+        ],
+        "en": [
+          "Dual-station structure enables fast cup and lid movement for high sealing efficiency.",
+          "No preheating required — start operation immediately and save energy.",
+          "Specially designed replaceable cup holders provide stable support for various cup types.",
+          "Customizable for different container sizes — one machine for multiple purposes.",
+          "Built-in safety guard and one-touch reset ensure safe operation."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "sealing_diameter": "封口口徑",
+              "sealing_time": "封口時間",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "sealing_diameter": "封口口径",
+              "sealing_time": "封口时间",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "sealing_diameter": "Sealing Diameter",
+              "sealing_time": "Sealing Time",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "100 W",
+            "voltage": "220/50 V/Hz",
+            "sealing_diameter": "∮90 mm",
+            "sealing_time": "7s",
+            "weight": "30 KG",
+            "dimensions": "260*465*565 mm"
+          }
+        }
+    },
+    {
+      "model": "K-22126A",
+      "price": {
+        "zh-TW": " 35,000元起",
+        "zh-CN": " 35,000元起",
+        "en": "From NTD$35,000"
+      },
+      "images": ["/images/product/K-22126A.png"],
+      "features": {
+        "zh-TW": [
+          "雙工位自動進出設計，快速置放盒體與鋁蓋，封盒效率高。",
+          "採免預熱技術，開機即可操作，節省時間與電力。",
+          "特製可替換杯座設計，穩固耐用，支援多種容器盒型。",
+          "支援客製化多種盒型模具，一機多用，擴充性佳。",
+          "配備安全防護罩與一鍵復位功能，作業安全有保障。"
+        ],
+        "zh-CN": [
+          "双工位自动进出设计，快速放置盒体与铝盖，封盒效率高。",
+          "采用免预热技术，开机即可操作，节省时间与电力。",
+          "特制可替换杯座设计，稳固耐用，支持多种容器盒型。",
+          "支持定制多种盒型模具，一机多用，扩展性佳。",
+          "配备安全防护罩与一键复位功能，操作安全有保障。"
+        ],
+        "en": [
+          "Dual-station automatic design enables fast loading of trays and aluminum lids for efficient sealing.",
+          "No preheating required — start operation immediately to save time and energy.",
+          "Customizable replaceable cup holders ensure durability and multi-container compatibility.",
+          "Supports various tray mold specifications — one machine for multiple formats.",
+          "Equipped with a safety guard and one-touch reset for secure and reliable operation."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "power": "功率",
+              "voltage": "電壓",
+              "sealing_diameter": "封口口徑",
+              "sealing_time": "封口時間",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "power": "功率",
+              "voltage": "电压",
+              "sealing_diameter": "封口口径",
+              "sealing_time": "封口时间",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "power": "Power",
+              "voltage": "Voltage",
+              "sealing_diameter": "Sealing Diameter",
+              "sealing_time": "Sealing Time",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "power": "100 W",
+            "voltage": "220/50 V/Hz",
+            "sealing_diameter": "∮126 mm",
+            "sealing_time": "7s",
+            "weight": "39 KG",
+            "dimensions": "260*465*565 mm"
+          }
+        }
+    }
+  ]
+      },
+    {
+  "category": {
+    "zh-TW": "容器封口機",
+    "zh-CN": "容器封口机",
+    "en": "Container Sealer"
+  },
+  "items": [
+    {
+      "model": "K-1519",
+      "price": {
+        "zh-TW": " 43,000元起",
+        "zh-CN": " 43,000元起",
+        "en": "From NTD$43,000"
+      },
+      "images": ["/images/product/K-1519.png"],
+      "features": {
+        "zh-TW": [
+          "適用多種盒裝食品，封口範圍最大可達 155×190mm。",
+          "自動感應封口與半自動雙模式。",
+          "自動頂盒功能，放置取盒快速順暢。",
+          "可客製封口模具，對應不同容器尺寸。",
+          "數位控溫，溫度穩定提升密封品質。",
+          "自動對位功能，外觀整齊美觀。",
+          "封口數量自動計數，產能一目了然。",
+          "安全擋板與一鍵復位，保障安全。"
+        ],
+        "zh-CN": [
+          "适用于多种盒装食品，封口范围最大可达 155×190mm。",
+          "自动感应封口与半自动双模式。",
+          "自动顶盒功能，放置取盒快速顺畅。",
+          "可定制封口模具，适配不同容器尺寸。",
+          "数字控温，温度稳定提升密封质量。",
+          "自动对位功能，外观整齐美观。",
+          "封口数量自动计数，产能一目了然。",
+          "安全挡板与一键复位，保障安全。"
+        ],
+        "en": [
+          "Suitable for various boxed foods with sealing range up to 155×190mm.",
+          "Automatic and semi-automatic modes for flexible use.",
+          "Automatic tray lifting for smooth loading and unloading.",
+          "Custom sealing molds to fit different container sizes.",
+          "Digital temperature control for consistent sealing quality.",
+          "Auto alignment for clean and neat appearance.",
+          "Automatic sealing count for easy productivity tracking.",
+          "Safety guard and reset function ensure safe operation."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1000 W",
+            "sealing_range": "155*190",
+            "capacity": "400-500 PSC/HR",
+            "weight": "35 KG",
+            "dimensions": "510*310*575 mm"
+          }
+        }
+    },
+    {
+      "model": "K-1823",
+      "price": {
+        "zh-TW": " 43,000元起",
+        "zh-CN": " 43,000元起",
+        "en": "From NTD$43,000"
+      },
+      "images": ["/images/product/K-1823.png"],
+      "features": {
+        "zh-TW": [
+          "適用大型餐盒封口（最大 180×230mm），適合外送需求。",
+          "自動感應封口與半自動操作，情境應用靈活。",
+          "自動頂盒機構，放盒與取盒更輕鬆。",
+          "可客製化封口模具，擴充性高。",
+          "數位控溫，封口溫度精準穩定。",
+          "膠膜圖案自動對位，外觀整齊。",
+          "封口數自動計數，方便管理。",
+          "安全擋板與一鍵復位，強化安全。"
+        ],
+        "zh-CN": [
+          "适用于大型餐盒封口（最大 180×230mm），适合外卖需求。",
+          "自动感应封口与半自动操作，应用灵活。",
+          "自动顶盒机构，放盒与取盒更轻松。",
+          "可定制封口模具，扩展性高。",
+          "数字控温，封口温度精准稳定。",
+          "胶膜图案自动对位，外观整齐。",
+          "封口数量自动计数，方便管理。",
+          "安全挡板与一键复位，强化安全。"
+        ],
+        "en": [
+          "Ideal for sealing large meal boxes (up to 180×230mm), suitable for delivery use.",
+          "Supports automatic and semi-automatic sealing for versatile applications.",
+          "Auto tray lifting system makes loading and unloading effortless.",
+          "Customizable sealing molds for expansion and flexibility.",
+          "Digital temperature control ensures precise, stable sealing.",
+          "Auto film alignment keeps appearance clean and consistent.",
+          "Automatic sealing count simplifies management.",
+          "Safety guard and one-touch reset enhance safety."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1200 W",
+            "sealing_range": "180*230",
+            "capacity": "400-500 PSC/HR",
+            "weight": "38 KG",
+            "dimensions": "598*326*566 mm"
+          }
+        }
+    },
+    {
+      "model": "K-320A",
+      "price": {
+        "zh-TW": " 70,000元起",
+        "zh-CN": " 70,000元起",
+        "en": "From NTD$70,000"
+      },
+      "images": ["/images/product/K-320A.png"],
+      "features": {
+        "zh-TW": [
+          "採用鋁合金結構表面氧化處理，衛生安全，堅固耐用。",
+          "成熟的技機種，性能穩定，物超所值。",
+          "微電腦全自動追蹤封口，膠膜定點，確保封膜準確。",
+          "人性化安全設計，防止異物進入機內，自動復位。",
+          "專利轉動系統與專利自動頂出裝置，適合任何飲料杯置杯、取杯，快捷方便。",
+          "自動封杯計數累計，省時省力。",
+          "封口尺寸可根據客戶的要求做相應的調整。"
+        ],
+        "zh-CN": [
+          "采用铝合金结构表面氧化处理，卫生安全，坚固耐用。",
+          "成熟机型，性能稳定，物超所值。",
+          "微电脑全自动追踪封口，胶膜定点，确保封膜准确。",
+          "人性化安全设计，可防止异物进入机内，并具备自动复位功能。",
+          "专利转动系统与专利自动顶出装置，适用于任何饮料杯的放置与取杯，快捷方便。",
+          "自动封杯计数累计，省时省力。",
+          "封口尺寸可根据客户需求进行相应调整。"
+        ],
+        "en": [
+          "Constructed with anodized aluminum alloy for enhanced hygiene, safety, and durability.",
+          "A proven and reliable model offering stable performance and excellent value.",
+          "Fully automatic microcomputer-controlled film tracking ensures precise sealing alignment.",
+          "User-friendly safety design prevents foreign objects from entering the machine and supports automatic reset.",
+          "Patented rotation system and automatic cup-eject mechanism allow fast and easy cup placement and removal for various beverage cups.",
+          "Automatic sealing cup counter saves time and improves efficiency.",
+          "Sealing size can be adjusted according to customer requirements."
+        ]
+      },
+       "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "110/220/50/60 V/Hz",
+            "power": "500 W",
+            "sealing_range": "180*140 or < ∮140",
+            "capacity": "300~400 PSC/HR",
+            "weight": "50 KG",
+            "dimensions": "450*320*670 mm"
+          }
+        }
+    },
+    {
+      "model": "K-400",
+      "price": {
+        "zh-TW": " 80,000元起",
+        "zh-CN": " 80,000元起",
+        "en": "From NTD$80,000"
+      },
+      "images": ["/images/product/400.png"],
+      "features": {
+        "zh-TW": [
+          "支援標準封口、抽真空封口與氣調保鮮封口。",
+          "全自動、半自動與單動三種操作模式可切換。",
+          "專利轉動系統與自動頂出裝置，置杯與取杯效率提升。",
+          "適用封口範圍大，可封多樣盒型。",
+          "數位溫控系統，依材質調整封溫，保證密封品質。",
+          "自動追蹤封口膠膜定位，封口圖案整齊準確。",
+          "內建封杯數自動計數功能，有助生產監控。",
+          "鋁合金表面陽極氧化處理＋不鏽鋼機身，耐蝕耐用、安全衛生。"
+        ],
+        "zh-CN": [
+          "支持标准封口、真空封口与气调保鲜封口。",
+          "全自动、半自动与单动三种操作模式可切换。",
+          "专利转动系统与自动顶出装置，放杯与取杯更高效。",
+          "适用封口范围广，可封多样盒型。",
+          "数字温控系统根据材质调整温度，保证密封品质。",
+          "自动追踪封口胶膜定位，封口图案整齐准确。",
+          "内建封杯数自动计数功能，有助生产监控。",
+          "铝合金阳极氧化处理 + 不锈钢机身，耐蚀耐用、安全卫生。"
+        ],
+        "en": [
+          "Supports standard, vacuum, and MAP (modified atmosphere) sealing modes.",
+          "Switchable between fully automatic, semi-automatic, and manual modes.",
+          "Patented rotation system and auto-eject tray improve workflow efficiency.",
+          "Wide sealing range suitable for various container types.",
+          "Digital temperature control adjusts based on material for reliable sealing quality.",
+          "Auto film tracking ensures neat and accurate sealing pattern alignment.",
+          "Built-in seal counter helps monitor production progress.",
+          "Aluminum alloy with anodized finish and stainless steel body — corrosion-resistant, durable, and hygienic."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "film_width": "膠膜寬度",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸",
+              "optional_config": "可選配項目"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸",
+              "optional_config": "可选配项目"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions",
+              "optional_config": "Optional Configuration"
+            }
+          },
+          "values": {
+            "voltage": "220/110/50/60 V/Hz",
+            "power": "1000 W",
+            "sealing_range": "∮180 or 220*175 mm",
+            "capacity": "5-12 PSC/min",
+            "weight": "56 KG",
+            "dimensions": "480*400*645 mm",
+            "optional_config": {
+              "zh-TW": "印字機",
+              "zh-CN": "打印机",
+              "en": "Printer"
+            }
+          }
+        }
+    }
+  ]
+    },
+        {
+  "category": {
+      "zh-TW": "產業型封口機",
+      "zh-CN": "产业型封口机",
+      "en": "Industrial Sealer"
+  },
+  "items": [
+    {
+      "model": "KV-02",
+      "price": {
+        "zh-TW": " 125,000元起",
+        "zh-CN": " 125,000元起",
+        "en": "From $125,000"
+      },
+      "images": ["/images/product/KV-02.png"],
+      "features": {
+        "zh-TW": [
+          "微電腦全自動追蹤封口，膠膜定點，確保封膜準確。",
+          "機身小巧，不占空間，最適合完成中小型食品加工或化工企業等的少量多樣化需求。",
+          "採用曲線加減速傳動原理，操作容易，穩定性極佳。",
+          "採鋁合金防銹處理，衛生安全，堅固耐用。",
+          "可加裝自動打碼、印日期裝置。"
+        ],
+        "zh-CN": [
+          "微电脑全自动追踪封口，胶膜定点，确保封膜准确。",
+          "机身小巧，不占空间，最适合中小型食品加工或化工企业的少量多样化需求。",
+          "采用曲线加减速传动原理，操作简单，稳定性极佳。",
+          "采用铝合金防锈处理，卫生安全，坚固耐用。",
+          "可加装自动打码、打印日期装置。"
+        ],
+        "en": [
+          "Fully automatic microcomputer-controlled film tracking ensures precise sealing alignment.",
+          "Compact design saves space, ideal for small to medium food processing or chemical industries with diversified small-batch needs.",
+          "Uses a curved acceleration–deceleration transmission mechanism for easy operation and excellent stability.",
+          "Built with anti-rust treated aluminum alloy for enhanced hygiene, safety, and durability.",
+          "Optional add-ons include an automatic coding or date-printing device."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "110/220/50/60 V/Hz",
+            "power": "1200 W",
+            "sealing_range": "< 200*300 mm",
+            "capacity": "300~400",
+            "weight": "110 KG",
+            "dimensions": "800*800*1500 mm"
+          }
+        }
+    },
+    {
+      "model": "KV-03",
+      "price": {
+        "zh-TW": " 226,000元起",
+        "zh-CN": " 226,000元起",
+        "en": "From $226,000"
+      },
+      "images": ["/images/product/KV-03.png"],
+      "features": {
+        "zh-TW": [
+          "微電腦全自動追蹤封口，膠膜定點，確保封膜準確。",
+          "機身小巧，不占空間，最適合完成中小型食品加工或化工企業等的少量多樣化需求。",
+          "採用曲線加減速傳動原理，操作容易，穩定性極佳。",
+          "採鋁合金防銹處理，衛生安全，堅固耐用。",
+          "旋轉式盒裝杯裝封口機具有自動落杯、自動充填、自動打碼印日期裝置、自動封口、自動取杯、自動整列輸出等生產功能，解決中小型企業少量多樣之生產包裝特性。"
+        ],
+        "zh-CN": [
+          "微电脑全自动追踪封口，胶膜定点，确保封膜准确。",
+          "机身小巧，不占空间，最适合中小型食品加工或化工企业的少量多样化需求。",
+          "采用曲线加减速传动原理，操作简单，稳定性极佳。",
+          "采用铝合金防锈处理，卫生安全，坚固耐用。",
+          "旋转式盒装杯装封口机具备自动落杯、自动充填、自动打码印日期、自动封口、自动取杯、自动整列输出等生产功能，能够满足中小型企业少量多样的生产包装需求。"
+        ],
+        "en": [
+          "Fully automatic microcomputer-controlled film tracking ensures precise sealing alignment.",
+          "Compact design saves space, ideal for small to medium food processing or chemical industries with diversified small-batch needs.",
+          "Uses a curved acceleration–deceleration transmission mechanism for easy operation and excellent stability.",
+          "Built with anti-rust treated aluminum alloy for enhanced hygiene, safety, and durability.",
+          "The rotary cup and container sealing machine features automatic cup dropping, automatic filling, automatic coding and date printing, automatic sealing, automatic cup removal, and automatic output alignment. It is designed to meet the small-batch, diverse production and packaging needs of small and medium-sized enterprises."
+        ]
+      },
+      "specs": {
+          "titles": {
+            "zh-TW": {
+              "voltage": "電壓",
+              "power": "功率",
+              "sealing_range": "封口範圍",
+              "capacity": "產能",
+              "weight": "重量",
+              "dimensions": "外觀尺寸"
+            },
+            "zh-CN": {
+              "voltage": "电压",
+              "power": "功率",
+              "sealing_range": "封口范围",
+              "capacity": "产能",
+              "weight": "重量",
+              "dimensions": "外观尺寸"
+            },
+            "en": {
+              "voltage": "Voltage",
+              "power": "Power",
+              "sealing_range": "Sealing Range",
+              "capacity": "Capacity",
+              "weight": "Weight",
+              "dimensions": "Dimensions"
+            }
+          },
+          "values": {
+            "voltage": "110/220/50/60 V/Hz",
+            "power": "600 W",
+            "sealing_range": "∮160 mm",
+            "capacity": "700~1000",
+            "weight": "120 KG",
+            "dimensions": "1000*800*1650 mm"
+          }
+        }
+    }
+  ]
+    }
+  ],
+  "categories": [
+  {
+    "title": {
+      "zh-TW": "尋找食品包裝機型",
+      "zh-CN": "寻找食品包装机型",
+      "en": "Find Your Packaging Machine"
+    },
+    "subtitle": {
+      "zh-TW": "讓我們協助您搭配最適合的食品包裝機器",
+      "zh-CN": "让我们协助您搭配最适合的食品包装机器",
+      "en": "Let us help you find the ideal food packaging machine"
+    },
+    "items": [
+      {
+        "name": {
+          "zh-TW": "飲料封口",
+          "zh-CN": "饮料封口",
+          "en": "Drink Sealing"
+        },
+        "image": {
+          "desktop": "/images/container/飲料封口.jpg",
+          "mobile": "/images/container/飲料封口sm.jpg"
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "飲料食品封罐",
+          "zh-CN": "饮料食品封罐",
+          "en": "Food & Beverage Canning"
+        },
+        "image": {
+          "desktop": "/images/container/封罐.jpg",
+          "mobile": "/images/container/封罐sm.jpg"
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "冷凍食品",
+          "zh-CN": "冷冻食品",
+          "en": "Frozen Food"
+        },
+        "image": {
+          "desktop": "/images/container/冷凍食品.jpg",
+          "mobile": "/images/container/冷凍食品sm.jpg"
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "便當",
+          "zh-CN": "便当",
+          "en": "Lunch Box"
+        },
+        "image": {
+          "desktop": "/images/container/便當.jpg",
+          "mobile": "/images/container/便當sm.jpg"
+        }
+      },
+      {
+        "name": {
+          "zh-TW": "湯品",
+          "zh-CN": "汤品",
+          "en": "Soup"
+        },
+        "image": {
+          "desktop": "/images/container/湯品.jpg",
+          "mobile": "/images/container/湯品sm.jpg"
+        }
+      }
+    ]
+  }
+],
+ "bestSolutions": [
+  {
+    "title": {
+      "zh-TW": "飲料開店最佳方案",
+      "zh-CN": "饮料开店最佳方案",
+      "en": "Best Solutions for Beverage Shops"
+    },
+    "subtitle": {
+      "zh-TW": "讓我們為您搭配專屬於您的桌上型開店設備",
+      "zh-CN": "让我们为您搭配专属于您的桌上型开店设备",
+      "en": "Let us help you create your personalized countertop setup"
+    },
+    "items": [
+      {
+        "name": {
+          "zh-TW": "飲料封口機",
+          "zh-CN": "饮料封口机",
+          "en": "Beverage Cup Sealer"
+        },
+        "image": "/images/product/K-2590SA.png"
+      },
+      {
+        "name": {
+          "zh-TW": "鋁蓋封口機",
+          "zh-CN": "铝盖封口机",
+          "en": "Aluminum Lid Sealer"
+        },
+        "image": "/images/product/K-2280A小圖示.png"
+      },
+      {
+        "name": {
+          "zh-TW": "果糖機",
+          "zh-CN": "果糖机",
+          "en": "Syrup Filling Machine"
+        },
+        "image": "/images/product/K-11G.png"
+      },
+      {
+        "name": {
+          "zh-TW": "搖搖機",
+          "zh-CN": "摇摇机",
+          "en": "Shaking Machine"
+        },
+        "image": "/images/product/YY-02小圖示.png"
+      },
+      {
+        "name": {
+          "zh-TW": "檸檬機",
+          "zh-CN": "柠檬机",
+          "en": "Lemon Pounding Machine"
+        },
+        "image": "/images/product/K-CD07.png"
+      }
+    ]
+  }
+]
+,
+  "hotitems": [
+  {
+    "items": [
+      {
+        "name": "K-2590S",
+        "image": "/images/product/K-2590S小圖示.png",
+        "tagline": {
+          "zh-TW": "熱銷第一名機型",
+          "zh-CN": "热销第一名机型",
+          "en": "Top-Selling Model"
+        }
+      },
+      {
+        "name": "K-2280A",
+        "image": "/images/product/K-2280A小圖示.png",
+        "tagline": {
+          "zh-TW": "中小型店家最愛",
+          "zh-CN": "中小型店家最爱",
+          "en": "Most Popular for Small Shops"
+        }
+      },
+      {
+        "name": "YY-02",
+        "image": "/images/product/YY-02小圖示.png",
+        "tagline": {
+          "zh-TW": "穩定耐用設計",
+          "zh-CN": "稳定耐用设计",
+          "en": "Stable and Durable Design"
+        }
+      },
+      {
+        "name": "K-CD07",
+        "image": "/images/product/K-CD07.png",
+        "tagline": {
+          "zh-TW": "商用高效率款",
+          "zh-CN": "商用高效率款",
+          "en": "High-Efficiency Commercial Model"
+        }
+      }
+    ]
+  }
+],
+  "economical": [
+    {
+      "items": [
+        {
+          "name": {
+            "zh-TW": "K-2590S",
+            "zh-CN": "K-2590S",
+            "en": "K-2590S"
+          },
+          "image": "/images/product/K-2590S小圖示.png",
+          "features": {
+            "zh-TW": [
+              "自動追蹤膠膜定位，封口圖案對位精準，密封效果穩定不漏。",
+              "數位顯示與溫度調節系統，控溫準確，封口品質一致。"
+            ],
+            "zh-CN": [
+              "自动追踪胶膜定位，封口图案对位精准，密封效果稳定不漏。",
+              "数字显示与温度调节系统，控温准确，封口品质一致。"
+            ],
+            "en": [
+              "Automatic film tracking ensures precise sealing alignment with no leaks.",
+              "Digital display and temperature control system ensure consistent sealing quality."
+            ]
+          }
+        },
+        {
+          "name": {
+            "zh-TW": "K-2256A",
+            "zh-CN": "K-2256A",
+            "en": "K-2256A"
+          },
+          "image": "/images/product/K-2256A小圖示.png",
+          "features": {
+            "zh-TW": [
+              "雙工位設計，放杯與封口可同步作業，顯著提升封杯效率。",
+              "無需預熱，開機即用，縮短等候時間並節省能源。"
+            ],
+            "zh-CN": [
+              "双工位设计，放杯与封口可同步作业，显著提升封杯效率。",
+              "无需预热，开机即用，缩短等待时间并节省能源。"
+            ],
+            "en": [
+              "Dual-station design allows cup loading and sealing simultaneously for higher efficiency.",
+              "No preheating required—ready to use instantly, saving time and energy."
+            ]
+          }
+        },
+        {
+          "name": {
+            "zh-TW": "YY-02",
+            "zh-CN": "YY-02",
+            "en": "YY-02"
+          },
+          "image": "/images/product/YY-02小圖示.png",
+          "features": {
+            "zh-TW": [
+              "自帶防護罩設計，提升作業安全性，操作更安心。",
+              "採用360°旋轉搖動技術，可同時製作雙杯，口感均勻，效率倍增。"
+            ],
+            "zh-CN": [
+              "自带防护罩设计，提升作业安全性，操作更安心。",
+              "采用360°旋转摇动技术，可同时制作双杯，口感均匀，效率倍增。"
+            ],
+            "en": [
+              "Built-in protective cover enhances operational safety and confidence.",
+              "360° rotational shaking enables dual-cup operation for even texture and double efficiency."
+            ]
+          }
+        },
+        {
+          "name": {
+            "zh-TW": "K-CD02",
+            "zh-CN": "K-CD02",
+            "en": "K-CD02"
+          },
+          "image": "/images/product/K-CD02小圖示.png",
+          "features": {
+            "zh-TW": [
+              "白動旋轉偏心式捶打設計，確保檸檬、水果與冰塊均勻混合，口感佳。",
+              "支援8組預設配方，捶打時間與速度可靈活調整，快速切換不同飲品製程。"
+            ],
+            "zh-CN": [
+              "自动旋转偏心式捶打设计，确保柠檬、水果与冰块均匀混合，口感佳。",
+              "支持8组预设配方，捶打时间与速度可灵活调整，快速切换不同饮品制作。"
+            ],
+            "en": [
+              "Automatic rotary eccentric pounding design ensures even mixing of lemons, fruits, and ice for better taste.",
+              "Supports 8 preset programs with adjustable time and speed for flexible drink preparation."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "faq": [{
+    "zh-TW": [
+      {
+        "q": "如何挑選封口機種類及報價？",
+        "a": "市面上容器種類繁多，不同 c.c. 數有不同口徑與用途。\n請您提供容器尺寸、容器材質、每日產能及是否有其他特殊需求等，我們會根據您的需要提供最適當的產品與報價。"
+      },
+      {
+        "q": "單一封口機是否可以處理多種不同的尺寸容器？",
+        "a": "一般桌上型封口機都是固定口徑（95mm），不過可依客戶需求加購 90mm 套環，只需套上套環便可實現單台封口機處理兩種尺寸的杯型。\n此外，相同口徑但不同高度的容器，單台封口機亦可通用。"
+      },
+      {
+        "q": "如何訂購？",
+        "a": "可透過『聯繫我們』的聯絡資訊與我們接洽。\n我們會先初步了解您的需求與使用地點，為您尋找最近的服務點，由當地服務人員為您提供報價與售後服務。\n往後的保養與維修也將由他們協助，讓您省去溝通成本並能快速解決問題。"
+      }
+    ],
+    "zh-CN": [
+      {
+        "q": "如何挑选封口机种类及报价？",
+        "a": "市面上容器种类繁多，不同 c.c. 数有不同口径和用途。\n请您提供容器尺寸、容器材质、每日产能以及是否有其他特殊需求，我们会根据您的需要提供最合适的产品与报价。"
+      },
+      {
+        "q": "单一封口机是否可以处理多种不同尺寸的容器？",
+        "a": "一般桌上型封口机都是固定口径（95mm），不过可依客户需求加购 90mm 套环，只需套上套环便可实现单台封口机处理两种尺寸的杯型。\n此外，相同口径但不同高度的容器，单台封口机亦可通用。"
+      },
+      {
+        "q": "如何订购？",
+        "a": "可通过『联系我们』的联系方式与我们洽谈。\n我们会先了解您的需求及使用地点，帮您寻找最近的服务点，由当地人员提供报价与售后支持。\n后续保养及维修也由他们服务，既节省沟通成本，也能快速解决问题。"
+      }
+    ],
+    "en": [
+      {
+        "q": "How to choose the right sealing machine and get a quotation?",
+        "a": "There are many types of containers with different capacities, diameters, and purposes. Please provide your container size, material, daily output, and any special requirements. We will recommend the most suitable model and quotation based on your needs."
+      },
+      {
+        "q": "Can one sealing machine handle multiple container sizes?",
+        "a": "Most tabletop sealing machines have a fixed diameter (95mm). However, by purchasing an optional 90mm adapter ring, one machine can handle two cup sizes. For containers with the same diameter but different heights, the same machine can be used as well."
+      },
+      {
+        "q": "How to place an order?",
+        "a": "You can contact us through the information listed in the ‘Contact Us’ section. We will first understand your needs and location, then connect you with the nearest service center for quotation and follow-up maintenance. This helps reduce communication costs and ensures prompt service."
+      }
+    ]
+  }],
+  "about": [
+    {
+      "zh-TW": {
+        "title": "關於我們",
+        "content": [
+          "義歆實業股份有限公司，專注於代理與推廣 YODO 鎧瑋品牌餐飲設備，為飲料與餐飲業者提供完整的開店解決方案。",
+          "YODO 鎧瑋深耕台灣多年，致力於食品容器封口包裝之研究與開發，擁有百分百之自主技術，以穩定耐用與創新設計著稱，廣泛應用於連鎖飲料品牌與餐飲門市。",
+          "義歆作為鎧瑋的專屬代理，致力於："
+        ],
+        "list": [
+          "產品銷售：將最優質的 YODO 鎧瑋設備帶入市場",
+          "客戶服務：提供諮詢、導入與使用建議",
+          "售後支援：維修、保養及零件供應，確保客戶長期穩定營運"
+        ],
+        "mission": [
+          "我們的使命是成為連鎖餐飲品牌開店的最佳合作夥伴。",
+          "無論您是新創品牌或成熟連鎖體系，義歆都能提供合適的設備方案與專業支援，協助您快速進入市場並持續成長。"
+        ],
+        "vision": "展望未來，義歆將與鎧瑋一同攜手，拓展更多海外市場，讓台灣製造的高品質餐飲設備走向國際。"
+      },
+
+      "zh-CN": {
+        "title": "关于我们",
+        "content": [
+          "义歆实业股份有限公司，专注于代理与推广 YODO 铠玮品牌餐饮设备，为饮料与餐饮业者提供完整的开店解决方案。",
+          "YODO 铠玮深耕台湾多年，致力于食品容器封口包装之研究与开发，拥有百分百的自主技术，以稳定耐用与创新设计著称，广泛应用于连锁饮料品牌与餐饮门市。",
+          "义歆作为铠玮的专属代理，致力于："
+        ],
+        "list": [
+          "产品销售：将最优质的 YODO 铠玮设备带入市场",
+          "客户服务：提供咨询、导入与使用建议",
+          "售后支援：维修、保养及零件供应，确保客户长期稳定营运"
+        ],
+        "mission": [
+          "我们的使命是成为连锁餐饮品牌开店的最佳合作伙伴。",
+          "无论您是新创品牌或成熟连锁体系，义歆都能提供合适的设备方案与专业支援，协助您快速进入市场并持续成长。"
+        ],
+        "vision": "展望未来，义歆将与铠玮携手，拓展更多海外市场，让台湾制造的高品质餐饮设备走向国际。"
+      },
+
+      "en": {
+        "title": "About Us",
+        "content": [
+          "YiHsin Industrial Co., Ltd. specializes in distributing and promoting YODO  catering equipment, providing comprehensive store-opening solutions for beverage and restaurant businesses.",
+          "YODO  has been deeply rooted in Taiwan for many years, focusing on the research and development of food container sealing and packaging technologies. Known for its stability, durability, and innovative design, YODO products are widely used in major beverage chains and restaurants.",
+          "As the exclusive distributor of YODO , YiHsin is committed to:"
+        ],
+        "list": [
+          "Product Sales: Introducing high-quality YODO  equipment to the market.",
+          "Customer Service: Providing consultation, system integration, and operational guidance.",
+          "After-sales Support: Offering maintenance, parts supply, and long-term service to ensure stable operation."
+        ],
+        "mission": [
+          "Our mission is to be the best business partner for chain restaurants and beverage brands.",
+          "Whether you are a startup or an established chain, YiHsin offers professional equipment solutions and reliable support to help your brand grow."
+        ],
+        "vision": "Looking ahead, YiHsin will continue to work closely with YODO  to expand into global markets, bringing Taiwan’s high-quality catering equipment to the world."
+      }
+    }
+  ],
+  "countries":[
+    {
+  "zh-TW": [
+    { "label": "台灣", "value": "Taiwan" },
+    { "label": "中國", "value": "China" },
+    { "label": "香港", "value": "Hong Kong" },
+    { "label": "澳門", "value": "Macau" },
+    { "label": "日本", "value": "Japan" },
+    { "label": "韓國", "value": "Korea, Republic of" },
+    { "label": "新加坡", "value": "Singapore" },
+    { "label": "馬來西亞", "value": "Malaysia" },
+    { "label": "泰國", "value": "Thailand" },
+    { "label": "越南", "value": "Vietnam" },
+    { "label": "菲律賓", "value": "Philippines" },
+    { "label": "印尼", "value": "Indonesia" },
+    { "label": "印度", "value": "India" },
+    { "label": "美國", "value": "United States" },
+    { "label": "加拿大", "value": "Canada" },
+    { "label": "英國", "value": "United Kingdom" },
+    { "label": "德國", "value": "Germany" },
+    { "label": "法國", "value": "France" },
+    { "label": "澳洲", "value": "Australia" },
+    { "label": "紐西蘭", "value": "New Zealand" },
+    { "label": "其他", "value": "Other" }
+  ],
+  "zh-CN": [
+    { "label": "台湾", "value": "Taiwan" },
+    { "label": "中国", "value": "China" },
+    { "label": "香港", "value": "Hong Kong" },
+    { "label": "澳门", "value": "Macau" },
+    { "label": "日本", "value": "Japan" },
+    { "label": "韩国", "value": "Korea, Republic of" },
+    { "label": "新加坡", "value": "Singapore" },
+    { "label": "马来西亚", "value": "Malaysia" },
+    { "label": "泰国", "value": "Thailand" },
+    { "label": "越南", "value": "Vietnam" },
+    { "label": "菲律宾", "value": "Philippines" },
+    { "label": "印尼", "value": "Indonesia" },
+    { "label": "印度", "value": "India" },
+    { "label": "美国", "value": "United States" },
+    { "label": "加拿大", "value": "Canada" },
+    { "label": "英国", "value": "United Kingdom" },
+    { "label": "德国", "value": "Germany" },
+    { "label": "法国", "value": "France" },
+    { "label": "澳大利亚", "value": "Australia" },
+    { "label": "新西兰", "value": "New Zealand" },
+    { "label": "其他", "value": "Other" }
+  ],
+  "en": [
+    { "label": "Taiwan", "value": "Taiwan" },
+    { "label": "China", "value": "China" },
+    { "label": "Hong Kong", "value": "Hong Kong" },
+    { "label": "Macau", "value": "Macau" },
+    { "label": "Japan", "value": "Japan" },
+    { "label": "South Korea", "value": "Korea, Republic of" },
+    { "label": "Singapore", "value": "Singapore" },
+    { "label": "Malaysia", "value": "Malaysia" },
+    { "label": "Thailand", "value": "Thailand" },
+    { "label": "Vietnam", "value": "Vietnam" },
+    { "label": "Philippines", "value": "Philippines" },
+    { "label": "Indonesia", "value": "Indonesia" },
+    { "label": "India", "value": "India" },
+    { "label": "United States", "value": "United States" },
+    { "label": "Canada", "value": "Canada" },
+    { "label": "United Kingdom", "value": "United Kingdom" },
+    { "label": "Germany", "value": "Germany" },
+    { "label": "France", "value": "France" },
+    { "label": "Australia", "value": "Australia" },
+    { "label": "New Zealand", "value": "New Zealand" },
+    { "label": "Other", "value": "Other" }
+  ]
+}
+
+  ],
+ "news": [
+  {
+    "id": 1,
+    "title": {
+      "zh-TW": "全新上市｜鎧瑋商用飲料封口機 K-2590SA",
+      "zh-CN": "全新上市｜铠伟商用饮料封口机 K-2590SA",
+      "en": "New Launch｜YODO Commercial Cup Sealer K-2590SA"
+    },
+    "date": "2025-11-25",
+    "cover": "/images/discount.jpg",
+    "summary": {
+      "zh-TW": "鎧瑋全新 K-2590SA 飲料封口機，以高效、穩定、耐用為核心，掀起封口新革命！",
+      "zh-CN": "铠伟全新 K-2590SA 饮料封口机，以高效、稳定、耐用为核心，掀起封口新革命！",
+      "en": "The new K-2590SA cup sealer by YODO brings a new standard of efficiency, stability, and durability!"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "迎接飲品封口新世代！鎧瑋最新推出 K-2590SA 商用飲料封口機，以高效、穩定、耐用為核心，滿足飲料店與餐飲業者的日常高強度使用需求。",
+          "zh-CN": "迎接饮品封口新时代！铠伟推出 K-2590SA 商用饮料封口机，以高效、稳定、耐用为核心，满足饮品店及餐饮业者的日常高强度使用需求。",
+          "en": "Introducing the next generation of beverage sealing! The K-2590SA commercial cup sealer is designed for high efficiency, stability, and durability to meet daily demands of beverage and food businesses."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "zh-TW": "產品特色",
+          "zh-CN": "产品特色",
+          "en": "Key Features"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "zh-TW": [
+            "電磁式熱封按鍵：一鍵自動刺膜+封口，降低人力及時間成本。",
+            "液晶觸控螢幕：操作簡易，溫度、時間一目了然。",
+            "金屬烤漆防塵機身：耐磨防鏽、質感升級。",
+            "護手擋板設計：安全防護再升級。"
+          ],
+          "zh-CN": [
+            "电磁式热封按键：一键自动刺膜+封口，降低人力与时间成本。",
+            "液晶触控萤幕：操作简易，温度与时间一目了然。",
+            "金属烤漆防尘机身：耐磨防锈、质感升级。",
+            "护手挡板设计：安全防护再升级。"
+          ],
+          "en": [
+            "Electromagnetic sealing button: one-touch automatic pierce and seal.",
+            "LCD touch screen for easy temperature and time control.",
+            "Metal powder-coated body: durable and stylish.",
+            "Safety guard panel for enhanced protection."
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "市場勁爆價：NT$14,000，高CP值入門首選！",
+          "zh-CN": "市场劲爆价：NT$14,000，高性价比入门首选！",
+          "en": "Special launch price: NT$14,000 — the best value for professional sealing!"
+        }
+      },
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "立即洽詢，搶先體驗高效封口新標準。",
+          "zh-CN": "立即洽询，抢先体验高效封口新标准。",
+          "en": "Contact us now and be the first to experience the new standard in high-efficiency sealing."
+        }
+      },
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "客服專線：0900-008-608",
+          "zh-CN": "客服专线：0900-008-608",
+          "en": "Customer Service: 0900-008-608"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": {
+      "zh-TW": "義歆實業股份有限公司【官方LINE】上線囉！",
+      "zh-CN": "义歆实业股份有限公司【官方LINE】上线啦！",
+      "en": "YiHsin Industrial Official LINE Account is Now Online!"
+    },
+    "date": "2025-11-25",
+    "cover": "/images/LINE.png",
+    "summary": {
+      "zh-TW": "立即加入義歆實業官方LINE好友，掌握新品、優惠與維修最新資訊！",
+      "zh-CN": "立即加入义歆实业官方LINE好友，掌握新品、优惠与维修最新资讯！",
+      "en": "Join YiHsin Industrial's official LINE account for product news, offers, and service updates!"
+    },
+    "content": [
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "為了提供更即時、更貼心的服務，義歆實業正式推出官方LINE帳號！",
+          "zh-CN": "为了提供更即时、更贴心的服务，义歆实业正式推出官方LINE帐号！",
+          "en": "To provide faster and more personalized service, YiHsin Industrial has launched its official LINE account!"
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "zh-TW": "加入好友即可享有",
+          "zh-CN": "加入好友即可享有",
+          "en": "Join us to enjoy these benefits"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "zh-TW": [
+            "最新機型與活動第一手通知",
+            "專屬LINE客服快速回覆",
+            "維修與保固狀況即時查詢"
+          ],
+          "zh-CN": [
+            "最新机型与活动第一手通知",
+            "专属LINE客服快速回复",
+            "维修与保固状况即时查询"
+          ],
+          "en": [
+            "First-hand updates on new products and events",
+            "Quick customer support via LINE",
+            "Instant service and warranty tracking"
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "text": {
+          "zh-TW": "立即掃描QR Code 或點擊右方LINE小圖標！",
+          "zh-CN": "立即扫描QR Code 或点击右方LINE小图标！",
+          "en": "Scan the QR code or click the LINE icon to connect now!"
+        }
+      }
+    ]
+  }
+]
+
+}
