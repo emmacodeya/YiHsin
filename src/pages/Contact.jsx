@@ -40,7 +40,7 @@ const Contact = () => {
  useEffect(() => {
   const fetchCountries = async () => {
     try {
-      const res = await fetch("/YiHsin/db.json");
+      const res = await fetch("/db.json");
       if (!res.ok) throw new Error("Network response was not ok");
 
       const data = await res.json();

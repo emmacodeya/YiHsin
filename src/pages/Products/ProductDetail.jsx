@@ -8,7 +8,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch("/YiHsin/db.json")
+    fetch("/db.json")
       .then((res) => res.json())
       .then((data) => {
         const allItems = data.products.flatMap((p) =>

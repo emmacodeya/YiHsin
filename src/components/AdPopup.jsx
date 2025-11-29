@@ -28,7 +28,7 @@ const AdPopup = () => {
         </button>
 
         <img
-          src="/YiHsin/images/discount.jpg"
+          src="/images/discount.jpg"
           alt="限時優惠"
           className="img-fluid rounded my-5"
         />

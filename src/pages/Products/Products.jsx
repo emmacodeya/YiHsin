@@ -44,7 +44,7 @@ useEffect(() => {
 
 
 useEffect(() => {
-  fetch("/YiHsin/db.json")
+  fetch("/db.json")
     .then((res) => res.json())
     .then((data) => {
       const productList = data.products || [];

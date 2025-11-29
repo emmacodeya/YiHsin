@@ -44,7 +44,7 @@ useEffect(() => {
 }, [news, lang]);
 
 useEffect(() => {
-  fetch("/YiHsin/db.json")
+  fetch("/db.json")
     .then((res) => res.json())
     .then((data) => {
       const item = data.news?.find((n) => String(n.id) === String(id));
