@@ -15,7 +15,7 @@ const Header = () => {
       news: "最新消息",
       partners: "尋找合作夥伴",
       contact: "聯繫我們",
-      gmail: "Gmail",
+      gmail: "電子信箱",
       line: "官方LINE",
       phone: "電話",
     },
