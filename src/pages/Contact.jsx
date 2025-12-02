@@ -304,10 +304,17 @@ const Contact = () => {
 
               {/* 下方快速按鈕 */}
               <div className="mt-5 d-flex justify-content-center gap-3 flex-wrap">
-                <a href="https://line.me/R/ti/p/@477fjgkd" target="_blank" rel="noreferrer" className="btn btn-line rounded-pill px-4 py-2 fw-bold">
+                <a href="https://line.me/R/ti/p/@477fjgkd" target="_blank" rel="noreferrer" className="btn btn-line rounded-pill px-4 py-2 fw-bold"
+                onClick={() => {
+                window.gtag('event', 'line_click');
+              }}>
                   <i className="bi bi-line me-1"></i> {text.line}
                 </a>
-                <a href="mailto:yihsin1630@gmail.com" className="btn btn-mail rounded-pill px-4 py-2 fw-bold">
+                <a href="mailto:yihsin1630@gmail.com" 
+                className="btn btn-mail rounded-pill px-4 py-2 fw-bold"
+                onClick={() => {
+                window.gtag('event', 'email_click');
+              }}>
                   <i className="bi bi-envelope me-1"></i> {text.mail}
                 </a>
               </div>

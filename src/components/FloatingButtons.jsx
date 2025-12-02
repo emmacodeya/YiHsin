@@ -39,6 +39,9 @@ const FloatingButtons = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-success floating-btn shadow"
+          onClick={() => {
+            window.gtag('event', 'line_click');
+          }}
         >
           <i className="bi bi-line fs-5"></i>
         </a>
@@ -46,6 +49,9 @@ const FloatingButtons = () => {
         <a
           href="mailto:yihsin1630@gmail.com"
           className="btn btn-danger floating-btn shadow"
+          onClick={() => {
+            window.gtag('event', 'email_click');
+          }}
         >
           <i className="bi bi-envelope fs-5"></i>
         </a>
@@ -73,6 +79,9 @@ const FloatingButtons = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-success floating-btn shadow"
+              onClick={() => {
+              window.gtag('event', 'line_click');
+            }}
             >
               <i className="bi bi-line fs-6"></i>
             </a>
@@ -80,6 +89,9 @@ const FloatingButtons = () => {
             <a
               href="mailto:yihsin1630@gmail.com"
               className="btn btn-danger floating-btn shadow"
+              onClick={() => {
+                window.gtag('event', 'email_click');
+              }}
             >
               <i className="bi bi-envelope fs-6"></i>
             </a>

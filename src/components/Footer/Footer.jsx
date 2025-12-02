@@ -85,6 +85,9 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="icon-circle"
                 aria-label="LINE"
+                onClick={() => {
+                  window.gtag('event', 'line_click');
+                }}
               >
                 <i className="bi bi-line"></i>
               </a>
@@ -92,6 +95,9 @@ const Footer = () => {
                 href="mailto:yihsin1630@gmail.com"
                 className="icon-circle"
                 aria-label="Email"
+                onClick={() => {
+                window.gtag('event', 'email_click');
+              }}
               >
                 <i className="bi bi-envelope"></i>
               </a>

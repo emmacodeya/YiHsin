@@ -98,12 +98,15 @@ const Header = () => {
           <div className="text-end small contact-info mt-lg-0 mt-2">
             {/* 桌機版 */}
             <div className="d-none d-md-flex gap-4 justify-content-end">
-              {/* 聯絡我們 */}
+              {/* 聯絡我們 (電話) */}
               <div className="text-center">
                 <p className="fw-bold">{t.contact}</p>
                 <button
-                  className="btn btn-link p-0 text-decoration-none text-primary-1000 "
-                  onClick={() => navigate("/contact")}
+                  className="btn btn-link p-0 text-decoration-none text-primary-1000"
+                  onClick={() => {
+                    window.gtag('event', 'phone_click');
+                    navigate("/contact");
+                  }}
                 >
                   +886 900-008-608
                 </button>
@@ -114,7 +117,10 @@ const Header = () => {
                 <p className="fw-bold">{t.gmail}</p>
                 <a
                   href="mailto:yihsin1630@gmail.com"
-                  className="text-decoration-none text-primary-1000 "
+                  className="text-decoration-none text-primary-1000"
+                  onClick={() => {
+                    window.gtag('event', 'email_click');
+                  }}
                 >
                   yihsin1630@gmail.com
                 </a>
@@ -127,7 +133,10 @@ const Header = () => {
                   href="https://line.me/R/ti/p/@477fjgkd"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-decoration-none text-primary-1000 "
+                  className="text-decoration-none text-primary-1000"
+                  onClick={() => {
+                    window.gtag('event', 'line_click');
+                  }}
                 >
                   @477fjgkd
                 </a>
@@ -152,6 +161,10 @@ const Header = () => {
                     <a
                       href="tel:0900008608"
                       className="text-white text-decoration-none"
+                      onClick={() => {
+                    window.gtag('event', 'phone_click');
+                    navigate("/contact");
+                  }}
                     >
                       +886 900-008-608
                     </a>
@@ -161,6 +174,9 @@ const Header = () => {
                     <a
                       href="mailto:yihsin1630@gmail.com"
                       className="text-white text-decoration-none"
+                      onClick={() => {
+                    window.gtag('event', 'email_click');
+                  }}
                     >
                       yihsin1630@gmail.com
                     </a>
@@ -172,6 +188,9 @@ const Header = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-link text-white text-decoration-none p-0"
+                      onClick={() => {
+                      window.gtag('event', 'line_click');
+                      }}
                     >
                       @477fjgkd
                     </a>
