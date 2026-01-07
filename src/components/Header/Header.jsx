@@ -53,7 +53,7 @@ const Header = () => {
         {/* LOGO + 公司名稱 */}
         <NavLink to="/" className="navbar-brand d-flex align-items-center">
          <img
-            src={`${import.meta.env.BASE_URL}images/logo/logo-1.png`}
+            src="/images/logo/logo-1.png"
             alt="義歆實業"
             className="navbar-logo"
           />
