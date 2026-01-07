@@ -2184,7 +2184,119 @@
         }
       }
     ]
-  }
+  },
+  {
+  "id": 3,
+  "title": {
+    "zh-TW": "飲料店與餐飲開店設備怎麼選？穩定的封口設備是關鍵",
+    "zh-CN": "饮料店与餐饮开店设备怎么选？稳定的封口设备是关键",
+    "en": "How to Choose Beverage & Restaurant Equipment? Stable Sealing Is the Key"
+  },
+  "date": "2026-01-05",
+  "cover": "/images/news/435_raw.mp4",
+  "summary": {
+    "zh-TW": "飲料店與餐飲開店初期，選對穩定高效的封口設備，是提升出杯效率與品質的關鍵。",
+    "zh-CN": "饮料店与餐饮开店初期，选择稳定高效的封口设备，是提升出杯效率与品质的关键。",
+    "en": "Choosing a stable and efficient sealing machine is essential for beverage and restaurant startups."
+  },
+  "content": [
+    {
+      "type": "video",
+      "src": "/images/news/435_raw.mp4"
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "在飲料店與餐飲門市營運中，封口設備的穩定性與效率，往往直接影響出杯速度與產品品質。不論是手搖飲店、外帶餐盒，或食品包裝應用，選對合適的餐飲設備與封口機，都是開店初期不可忽略的重要環節。",
+        "zh-CN": "在饮料店与餐饮门市营运中，封口设备的稳定性与效率，往往直接影响出杯速度与产品品质。不论是手摇饮店、外带餐盒，或食品包装应用，选对合适的餐饮设备与封口机，都是开店初期不可忽略的重要环节。",
+        "en": "In beverage shops and restaurants, the stability and efficiency of sealing equipment directly affect serving speed and product quality. Choosing the right equipment is crucial at the startup stage."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "義歆實業長期專注於食品封口包裝設備與飲料門市桌上型機器，包含封口機、果糖機、搖搖機等多項設備，協助店家在高峰時段仍能維持穩定作業流程。",
+        "zh-CN": "义歆实业长期专注于食品封口包装设备与饮料门市桌上型设备，包含封口机、果糖机、摇摇机等，协助店家在高峰时段维持稳定作业流程。",
+        "en": "YiHsin Industrial specializes in food sealing and countertop beverage equipment, helping stores maintain stable workflows even during peak hours."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "對於正在規劃飲料店開店或進行設備汰換的業者而言，除了設備性能外，模具是否可客製、售後服務是否完整，同樣是選購時的重要考量。",
+        "zh-CN": "对于正在规划饮料店开店或设备汰换的业者而言，除了设备性能，模具是否可定制、售后服务是否完整同样重要。",
+        "en": "For new stores or equipment upgrades, customization options and after-sales service are just as important as performance."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "義歆提供從需求評估、模具開發、現場教學到售後保固的一站式服務，讓店家能安心使用、長期穩定營運。未來也將持續引進符合市場需求的餐飲設備，陪伴品牌穩健成長。",
+        "zh-CN": "义歆提供从需求评估、模具开发、现场教学到售后保固的一站式服务，协助店家安心使用、长期稳定营运。",
+        "en": "YiHsin offers a one-stop service from evaluation and customization to training and warranty, supporting long-term business growth."
+      }
+    }
+  ]
+},
+{
+  "id": 4,
+  "title": {
+    "zh-TW": "春節休假通知",
+    "zh-CN": "春节休假通知",
+    "en": "Chinese New Year Holiday Notice"
+  },
+  "date": "2026-01-07",
+  "cover": "/images/news/春節休假.jpg",
+  "summary": {
+    "zh-TW": "本公司春節期間將暫停出貨與維修服務，敬請提前備貨，感謝您的支持與體諒。",
+    "zh-CN": "本公司春节期间将暂停出货与维修服务，请提前备货，感谢您的支持与体谅。",
+    "en": "During the Chinese New Year holiday, shipping and maintenance services will be suspended. Please prepare in advance."
+  },
+  "content": [
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "親愛的客戶您好：農曆春節即將到來，感謝您過去一年對義歆實業的支持、肯定與寶貴建議。",
+        "zh-CN": "亲爱的客户您好：农历春节即将到来，感谢您过去一年对义歆实业的支持与肯定。",
+        "en": "Dear customers, thank you for your continued support and trust over the past year."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "春節休假期間",
+        "zh-CN": "春节休假期间",
+        "en": "Holiday Period"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "本公司春節假期為：115年2月13日 至 115年2月22日，期間將停止出貨與維修服務。",
+        "zh-CN": "本公司春节假期为：115年2月13日至115年2月22日，期间将暂停出货与维修服务。",
+        "en": "Our Chinese New Year holiday period is from Feb 13 to Feb 22, 2026. Shipping and maintenance services will be suspended during this time."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "為避免影響您的營運與出貨時程，敬請提前安排備貨。如有任何需求，歡迎於假期前與我們聯繫。",
+        "zh-CN": "为避免影响您的营运与出货时程，请提前安排备货。",
+        "en": "To avoid any disruption, please arrange your orders in advance. Feel free to contact us before the holiday."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "義歆實業股份有限公司 敬祝　金馬奔騰・財源滾滾",
+        "zh-CN": "义歆实业股份有限公司 敬祝　金马奔腾・财源滚滚",
+        "en": "YiHsin Industrial wishes you prosperity and success in the Year of the Horse."
+      }
+    }
+  ]
+}
+
+
 ]
 
 }
