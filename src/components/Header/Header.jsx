@@ -54,7 +54,7 @@ const Header = () => {
         <NavLink to="/" className="navbar-brand d-flex align-items-center">
          <img
             src="/images/logo/logo-1.png"
-            alt="義歆實業 YiHsin"
+            alt="義歆實業"
             className="navbar-logo"
           />
           <span className="fw-bold d-none d-lg-inline">
