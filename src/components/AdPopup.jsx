@@ -3,12 +3,30 @@ import { LangContext } from "../App";
 
 const AdPopup = () => {
   const [visible, setVisible] = useState(false);
+  const [current, setCurrent] = useState(0);
   const { lang } = useContext(LangContext);
 
+  const images = [
+    "/images/news/春節休假.jpg",
+    "/images/discount.jpg" 
+  ];
+
+  // 顯示彈窗
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 300);
     return () => clearTimeout(timer);
   }, []);
+
+  // 自動輪播
+  useEffect(() => {
+    if (!visible) return;
+
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 2000); // 3 秒換一張
+
+    return () => clearInterval(interval);
+  }, [visible, images.length]);
 
   if (!visible) return null;
 
@@ -16,23 +34,23 @@ const AdPopup = () => {
 
   return (
     <div className="ad-popup-overlay" onClick={closePopup}>
-      
-      {/* 彈窗本體 */}
       <div
-        className="ad-popup"
-        onClick={(e) => e.stopPropagation()} // 避免點到裡面也關閉
+        className="ad-popup text-center"
+        onClick={(e) => e.stopPropagation()}
       >
-        {/* X 按鈕 */}
+        {/* X */}
         <button className="close-btn" onClick={closePopup}>
           ×
         </button>
 
+        {/* 圖片 */}
         <img
-          src="/images/discount.jpg"
-          alt="限時優惠"
-          className="img-fluid rounded my-5"
+          src={images[current]}
+          alt="popup"
+          className="img-fluid rounded my-4"
         />
 
+        {/* CTA */}
         <a
           href="https://line.me/R/ti/p/@477fjgkd"
           target="_blank"
@@ -46,7 +64,6 @@ const AdPopup = () => {
             : "Contact Us Now"}
         </a>
       </div>
-
     </div>
   );
 };

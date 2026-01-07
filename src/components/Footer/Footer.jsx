@@ -74,35 +74,53 @@ const Footer = () => {
     <footer className="footer-classic text-light">
       <div className="container py-5">
         <div className="row gy-4 gx-5 align-items-start">
-          {/* 公司資訊 */}
-          <div className="col-12 col-md-6 col-lg-3">
-            <h5 className="fw-bold text-accent mb-2">{t.company}</h5>
-            <p className="small text-gray-200 mb-3">{t.desc}</p>
-            <div className="d-flex gap-3">
-              <a
-                href="https://line.me/R/ti/p/@477fjgkd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="icon-circle"
-                aria-label="LINE"
-                onClick={() => {
-                  window.gtag('event', 'line_click');
-                }}
-              >
-                <i className="bi bi-line"></i>
-              </a>
-              <a
-                href="mailto:yihsin1630@gmail.com"
-                className="icon-circle"
-                aria-label="Email"
-                onClick={() => {
-                window.gtag('event', 'email_click');
-              }}
-              >
-                <i className="bi bi-envelope"></i>
-              </a>
-            </div>
+         {/* 公司資訊 */}
+        <div className="col-12 col-md-6 col-lg-3 text-center text-lg-start">
+          {/* LOGO + 公司名 */}
+          <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-2">
+            <img
+              src="/images/logo/logo-1.png"
+              alt="義歆實業 YiHsin"
+              className="footer-logo"
+            />
+            <h5 className="fw-bold text-accent mb-0">
+              {t.company}
+            </h5>
           </div>
+
+          {/* 說明文字 */}
+          <p className="small text-gray-200 mb-3">
+            {t.desc}
+          </p>
+
+          {/* icon */}
+          <div className="d-flex justify-content-center justify-content-lg-start gap-3">
+            <a
+              href="https://line.me/R/ti/p/@477fjgkd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-circle"
+              aria-label="LINE"
+              onClick={() => {
+                window.gtag("event", "line_click");
+              }}
+            >
+              <i className="bi bi-line"></i>
+            </a>
+
+            <a
+              href="mailto:yihsin1630@gmail.com"
+              className="icon-circle"
+              aria-label="Email"
+              onClick={() => {
+                window.gtag("event", "email_click");
+              }}
+            >
+              <i className="bi bi-envelope"></i>
+            </a>
+          </div>
+        </div>
+
 
          {/* 產品項目 */}
           <div className="col-6 col-md-3 col-lg-2">

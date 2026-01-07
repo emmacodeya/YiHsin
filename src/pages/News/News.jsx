@@ -9,6 +9,7 @@ const News = () => {
   const { lang } = useContext(LangContext);
 
 
+
  useEffect(() => {
   const title = 
     lang === "en"
@@ -75,7 +76,9 @@ const News = () => {
 
           {/* 卡片區 */}
           <div className="row g-4">
-            {newsList.map((n, i) => (
+            {[...newsList]
+              .sort((a, b) => new Date(b.date) - new Date(a.date))
+              .map((n, i) => (
               <div className="col-md-6 col-lg-4" key={n.id}>
                 <Motion.div
                   className="news-card card h-100 shadow-sm border-0 overflow-hidden"
@@ -83,8 +86,25 @@ const News = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
                 >
-                  <div className="card-img-wrap position-relative">
-                    <img src={n.cover} className="card-img-top" alt={t(n.title)} />
+                 <div className="card-img-wrap position-relative">
+                    {n.cover?.endsWith(".mp4") ? (
+                      <video
+                        src={n.cover}
+                        muted
+                        autoPlay
+                        loop
+                        playsInline
+                        className="card-img-top"
+                        style={{ objectFit: "cover" }}
+                      />
+                    ) : (
+                      <img
+                        src={n.cover}
+                        className="card-img-top"
+                        alt={t(n.title)}
+                      />
+                    )}
+
                     <span className="date-badge">{n.date}</span>
                   </div>
 

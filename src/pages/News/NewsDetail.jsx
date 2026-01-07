@@ -54,7 +54,8 @@ useEffect(() => {
 }, [id]);
 
   if (!news) return <p className="text-center py-5">載入中...</p>;
-
+  
+  const isVideo = news.cover?.endsWith(".mp4");
   const t = (obj) => obj?.[lang] || obj?.["zh-TW"];
   const text = {
     "zh-TW": { back: "返回最新消息" },
@@ -72,17 +73,29 @@ useEffect(() => {
             <p>{news.date}</p>
           </div>
 
-          {/* === 封面圖 === */}
-          {news.cover && (
-            <div className="text-center mb-5">
-              <img
-                src={news.cover}
-                alt={t(news.title)}
-                className="img-fluid rounded shadow-sm"
-                style={{ maxHeight: "420px", objectFit: "cover" }}
-              />
-            </div>
-          )}
+          {/* === 封面圖 / 影片 === */}
+            {news.cover && (
+              <div className="text-center mb-5">
+                {isVideo ? (
+                  <video
+                    src={news.cover}
+                    muted
+                    autoPlay
+                    loop
+                    playsInline
+                    className="img-fluid rounded shadow-sm"
+                    style={{ maxHeight: "420px", objectFit: "cover" }}
+                  />
+                ) : (
+                  <img
+                    src={news.cover}
+                    alt={t(news.title)}
+                    className="img-fluid rounded shadow-sm"
+                    style={{ maxHeight: "420px", objectFit: "cover" }}
+                  />
+                )}
+              </div>
+            )}
 
           {/* === 內文 === */}
           <article className="mx-auto" style={{ maxWidth: "800px" }}>

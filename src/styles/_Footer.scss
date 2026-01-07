@@ -78,3 +78,15 @@
     }
   }
 }
+
+.footer-logo {
+  max-height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    max-height: 48px;
+  }
+}

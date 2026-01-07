@@ -12,6 +12,13 @@
   letter-spacing: 0.5px;
 }
 
+.navbar-logo {
+  height: 30px;
+  max-height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
   // 中間導覽列
   .navbar-nav {
     .nav-link {

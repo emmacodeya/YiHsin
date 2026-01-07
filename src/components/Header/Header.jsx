@@ -50,9 +50,16 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg py-3 navbar-classic">
       <div className="container-fluid">
-        {/* 公司名稱 */}
-        <NavLink to="/" className="navbar-brand fs-4">
-          {t.company}
+        {/* LOGO + 公司名稱 */}
+        <NavLink to="/" className="navbar-brand d-flex align-items-center">
+         <img
+            src="/images/logo/logo-1.png"
+            alt="義歆實業 YiHsin"
+            className="navbar-logo"
+          />
+          <span className="fw-bold d-none d-lg-inline">
+            {t.company}
+          </span>
         </NavLink>
 
         {/* 漢堡選單 */}
