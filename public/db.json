@@ -87,14 +87,13 @@
         "en": "From NTD$13,000"
       },
       "images": [
-        "/images/product/K-2590S小圖示.png"
+        "/images/product/K-2590SB.PNG"
       ],
       "features": {
         "zh-TW": [
           "自動追蹤膠膜定位，封口圖案對位精準，密封效果穩定不漏。",
           "數位顯示與溫度調節系統，控溫準確，封口品質一致。",
-          "封口杯數與溫度即時顯示，便於操作與監控產能。",
-          "全封閉式防塵結構設計，有效避免外部污染，提升飲品衛生安全。"
+          "封口杯數與溫度即時顯示，便於操作與監控產能。"
         ],
         "zh-CN": [
           "自动追踪胶膜定位，封口图案对位精准，密封效果稳定不漏。",
@@ -1735,7 +1734,7 @@
     "items": [
       {
         "name": "K-2590S",
-        "image": "/images/product/K-2590S小圖示.png",
+        "image": "/images/product/K-2590SB.PNG",
         "tagline": {
           "zh-TW": "熱銷第一名機型",
           "zh-CN": "热销第一名机型",
@@ -1781,7 +1780,7 @@
             "zh-CN": "K-2590S",
             "en": "K-2590S"
           },
-          "image": "/images/product/K-2590S小圖示.png",
+          "image": "/images/product/K-2590SB.PNG",
           "features": {
             "zh-TW": [
               "自動追蹤膠膜定位，封口圖案對位精準，密封效果穩定不漏。",
