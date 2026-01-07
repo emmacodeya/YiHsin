@@ -79,7 +79,7 @@ const Footer = () => {
           {/* LOGO + 公司名 */}
           <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-2">
             <img
-              src="/images/logo/logo-1.png"
+              src={`${import.meta.env.BASE_URL}images/logo/logo-1.png`}
               alt="義歆實業 YiHsin"
               className="footer-logo"
             />
