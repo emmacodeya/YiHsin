@@ -7,7 +7,7 @@ const AdPopup = () => {
   const { lang } = useContext(LangContext);
 
   const images = [
-    "/images/news/cny-holiday.jpg",
+    "/images/news/discount-2.jpg",
     "/images/discount.jpg" 
   ];
 
@@ -23,7 +23,7 @@ const AdPopup = () => {
 
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 2000); // 3 秒換一張
+    }, 2500); 
 
     return () => clearInterval(interval);
   }, [visible, images.length]);
@@ -42,6 +42,15 @@ const AdPopup = () => {
         <button className="close-btn" onClick={closePopup}>
           ×
         </button>
+
+        {/* 提示文字 */}
+          <p className="popup-hint text-primary-100 ">
+            {lang === "zh-TW"
+              ? "詳情請至最新消息查看"
+              : lang === "zh-CN"
+              ? "详情请至最新消息查看"
+              : "For more details, please check our latest news"}
+          </p>
 
         {/* 圖片 */}
         <img

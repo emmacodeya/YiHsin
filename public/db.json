@@ -2294,7 +2294,105 @@
       }
     }
   ]
+},
+{
+  "id": 5,
+  "title": {
+    "zh-TW": "改變外送包裝新世代｜全自動餐盒封口機上市",
+    "zh-CN": "改变外送包装新时代｜全自动餐盒封口机上市",
+    "en": "A New Era of Food Delivery Packaging｜Automatic Tray Sealers Launch"
+  },
+  "date": "2026-01-09",
+  "cover": "/images/news/discount-2.jpg",
+  "summary": {
+    "zh-TW": "鎧瑋推出 K-1519／K-1823 全自動餐盒封口機，全自動機型、半自動價格，功能完整、價格只要他牌 2/3。",
+    "zh-CN": "铠玮推出 K-1519／K-1823 全自动餐盒封口机，全自动机型、半自动价格，功能完整、价格仅为他牌 2/3。",
+    "en": "Kaiwei introduces the K-1519 / K-1823 automatic tray sealers—full automation at a semi-automatic price."
+  },
+  "content": [
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "改變外送包裝新世代！鎧瑋正式推出 K-1519／K-1823 全自動餐盒封口機，全自動機型，卻只要半自動的價格。",
+        "zh-CN": "改变外送包装新时代！铠玮正式推出 K-1519／K-1823 全自动餐盒封口机，全自动机型，却只要半自动的价格。",
+        "en": "A new era of food delivery packaging begins with the launch of the K-1519 / K-1823 automatic tray sealers."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "相較於他品牌產品，功能無異，價格僅需 2/3，並可依需求客製封口模具與加購印字機，協助餐飲業者提升包裝效率。",
+        "zh-CN": "与其他品牌相比，功能相同但价格仅需 2/3，并支持客制模具与加购印字机。",
+        "en": "Compared with other brands, it offers the same functions at only two-thirds of the price, with customizable molds and optional date printers."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "產品特色",
+        "zh-CN": "产品特色",
+        "en": "Key Features"
+      }
+    },
+    {
+  "type": "paragraph",
+  "text": {
+    "zh-TW": "適用於多種盒裝食品（如便當、麵飯、湯品等），支援自動感應封口與半自動操作雙模式，操作彈性高、效率佳。",
+    "zh-CN": "适用于多种盒装食品（如便当、面饭、汤品等），支持自动感应封口与半自动双模式，操作灵活、效率高。",
+    "en": "Suitable for various tray foods such as bento, noodles, rice, and soup, featuring both automatic sensing and semi-automatic operation modes for flexible and efficient use."
+  }
+},
+{
+  "type": "paragraph",
+  "text": {
+    "zh-TW": "配備自動頂盒功能，放置與取盒快速順暢，提升產線流暢度，並可客製封口模具，精準對應不同容器尺寸，應用彈性高。",
+    "zh-CN": "配备自动顶盒功能，放置与取盒顺畅快速，并支持客制封口模具，精准对应不同容器尺寸。",
+    "en": "Equipped with an automatic tray lifting system for smooth loading and unloading, with customizable sealing molds to match various container sizes."
+  }
+},
+{
+  "type": "paragraph",
+  "text": {
+    "zh-TW": "搭載數位控溫技術，確保封口溫度穩定，提升密封品質，並具備自動追蹤膠膜對位功能，圖案準確、外觀整齊。",
+    "zh-CN": "搭载数位控温技术，确保封口温度稳定，并具备自动追踪胶膜对位功能，封口美观整齐。",
+    "en": "Features digital temperature control for stable sealing quality, along with automatic film alignment for accurate and neat sealing appearance."
+  }
+},
+{
+  "type": "paragraph",
+  "text": {
+    "zh-TW": "封口數量自動計數，產能一目了然，便於管理，並搭載安全擋板與一鍵複位設計，全面保障作業安全。",
+    "zh-CN": "封口数量自动计数，产能清晰易掌握，并搭载安全挡板与一键复位设计，保障作业安全。",
+    "en": "Includes an automatic output counter for easy production management, plus safety guards and one-touch reset for secure operation."
+  }
+},
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "2026 年度市場推廣價NT$43,000 起",
+        "zh-CN": "2026 年度市场推广价NT$43,000 起",
+        "en": "2026 Promotional Price starts from NT$43,000."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "數量有限，歡迎洽詢。",
+        "zh-CN": "数量有限，欢迎咨询。",
+        "en": "Limited availability."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "立即洽詢，搶先體驗高效封口新標準。客服專線：0900-008-608",
+        "zh-CN": "立即咨询，抢先体验高效封口新标准。客服专线：0900-008-608",
+        "en": "Contact us now to experience a new standard of sealing efficiency. Service line: +886-900-008-608"
+      }
+    }
+  ]
 }
+
 
 
 ]
