@@ -1,5 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import { LangContext } from "../App";
+import { Link } from "react-router-dom";
 
 const AdPopup = () => {
   const [visible, setVisible] = useState(false);
@@ -7,6 +8,7 @@ const AdPopup = () => {
   const { lang } = useContext(LangContext);
 
   const images = [
+    "/images/news/maintenance.png",
     "/images/news/discount-2.jpg",
     "/images/discount.jpg" 
   ];
@@ -44,13 +46,15 @@ const AdPopup = () => {
         </button>
 
         {/* 提示文字 */}
-          <p className="popup-hint text-primary-100 ">
-            {lang === "zh-TW"
-              ? "詳情請至最新消息查看"
-              : lang === "zh-CN"
-              ? "详情请至最新消息查看"
-              : "For more details, please check our latest news"}
-          </p>
+        <p className="popup-hint text-primary-100">
+          {lang === "zh-TW" ? (
+            <>詳情請至 <Link to="/news">最新消息</Link> 查看</>
+          ) : lang === "zh-CN" ? (
+            <>详情请至 <Link to="/news">最新消息</Link> 查看</>
+          ) : (
+            <>For more details, please check our <Link to="/news">latest news</Link></>
+          )}
+        </p>
 
         {/* 圖片 */}
         <img
