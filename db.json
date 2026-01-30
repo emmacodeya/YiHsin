@@ -2391,7 +2391,88 @@
       }
     }
   ]
+},
+{
+  "id": 6,
+  "title": {
+    "zh-TW": "叫修／保養流程說明",
+    "zh-CN": "维修／保养流程说明",
+    "en": "Repair & Maintenance Service Guide"
+  },
+  "date": "2026-01-30",
+  "cover": "/images/news/maintenance.png",
+  "summary": {
+    "zh-TW": "設備需要維修或保養嗎？加入義歆官方 LINE，依流程提供資料，即可快速安排服務。",
+    "zh-CN": "设备需要维修或保养吗？加入义歆官方 LINE，依流程提供资料即可安排服务。",
+    "en": "Need repair or maintenance? Contact YiHsin via official LINE and follow the service process."
+  },
+  "content": [
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "如您的設備有維修或保養需求，請先加入義歆實業官方 LINE，將由專人協助您安排後續服務。",
+        "zh-CN": "如您的设备有维修或保养需求，请先加入义歆实业官方 LINE，由专人协助安排服务。",
+        "en": "If your equipment requires repair or maintenance, please contact YiHsin via our official LINE for assistance."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "請提供以下資訊",
+        "zh-CN": "请提供以下信息",
+        "en": "Please Prepare the Following Information"
+      }
+    },
+    {
+      "type": "list",
+      "items": {
+        "zh-TW": [
+          "故障原因或異常狀況說明",
+          "設備所在縣市／地區",
+          "方便維修的時間（例：上午 11 點前）",
+          "設備照片或操作影片"
+        ],
+        "zh-CN": [
+          "故障原因或异常情况说明",
+          "设备所在地区",
+          "方便维修的时间（如上午 11 点前）",
+          "设备照片或操作影片"
+        ],
+        "en": [
+          "Description of the issue or malfunction",
+          "Equipment location",
+          "Available service time (e.g. before 11 AM)",
+          "Photos or videos of the equipment"
+        ]
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "保固與保養說明",
+        "zh-CN": "保固与保养说明",
+        "en": "Warranty & Maintenance Policy"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "新機於保固一年內，非人為損壞或天災因素，維修皆為免費。大型保養內容包含設備內外清潔、上油與模具定位（如需更換零件則另行報價）。",
+        "zh-CN": "新机在一年保固内，非人为或天灾因素，维修费用全免。大型保养包含设备清洁、上油及模具定位（零件更换另计）。",
+        "en": "All new machines include a one-year warranty covering non-human and non-natural damages. Major maintenance includes cleaning, lubrication, and mold alignment (replacement parts are charged separately)."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "保養期間如有需要，我們將提供備用機，確保您的營運不中斷。",
+        "zh-CN": "保养期间如有需要，将提供备用机，确保营运不中断。",
+        "en": "Backup machines are available during maintenance to ensure uninterrupted operation."
+      }
+    }
+  ]
 }
+
 
 
 
