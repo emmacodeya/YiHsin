@@ -8,8 +8,9 @@ const AdPopup = () => {
   const { lang } = useContext(LangContext);
 
   const images = [
+    "/images/news/cny-holiday.jpg",
     "/images/news/maintenance.png",
-    "/images/news/discount-2.jpg",
+  
     "/images/discount.jpg" 
   ];
 
