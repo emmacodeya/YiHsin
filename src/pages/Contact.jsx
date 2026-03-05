@@ -66,7 +66,7 @@ const Contact = () => {
       info: [
         { icon: "bi-telephone-fill", title: "聯絡電話", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "服務時間", value: "週一至週五 09:00–18:00" },
-        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城區中央路二段125號5樓" },
+        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城區中央路四段2號4樓之3（玉山銀行樓上）" },
       ],
       name: "姓名／公司名稱 *",
       email: "電子郵件 *",
@@ -93,7 +93,7 @@ const Contact = () => {
       info: [
         { icon: "bi-telephone-fill", title: "联系电话", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "服务时间", value: "周一至周五 09:00–18:00" },
-        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城区中央路二段125号5楼" },
+        { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城区中央路四段2号4楼之3（玉山银行楼上）" },
       ],
       name: "姓名／公司名称 *",
       email: "电子邮箱 *",
@@ -120,7 +120,7 @@ const Contact = () => {
       info: [
         { icon: "bi-telephone-fill", title: "Telephone", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "Service Hours", value: "Mon–Fri 9:00–18:00" },
-        { icon: "bi-geo-alt-fill", title: "Address", value: "5F., No. 125, Sec. 2, Zhongyang Rd., Tucheng Dist., New Taipei City, Taiwan" },
+        { icon: "bi-geo-alt-fill", title: "Address", value: "4F-3, No. 2, Sec. 4, Zhongyang Rd., Tucheng Dist., New Taipei City 236, Taiwan (Above E.Sun Bank)" },
       ],
       name: "Name / Company *",
       email: "Email *",
