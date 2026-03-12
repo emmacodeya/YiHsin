@@ -92,6 +92,7 @@ useEffect(() => {
                     alt={t(news.title)}
                     className="img-fluid rounded shadow-sm"
                     style={{ maxHeight: "420px", objectFit: "cover" }}
+                    loading="lazy"
                   />
                 )}
               </div>

@@ -102,6 +102,7 @@ const News = () => {
                         src={n.cover}
                         className="card-img-top"
                         alt={t(n.title)}
+                        loading="lazy"
                       />
                     )}
 

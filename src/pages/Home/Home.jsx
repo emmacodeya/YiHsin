@@ -295,7 +295,7 @@ const flowStepsMap = {
                   className="text-decoration-none"
                 >
                   <div className="hot-topic position-relative">
-                    <img src={imgSrc} alt={name} />
+                    <img src={imgSrc} alt={name}  loading="lazy"/>
                     <p className="position-absolute bottom-0 start-0 m-1 fw-bold fs-6 text-white">
                       {name}
                     </p>
@@ -386,6 +386,7 @@ const flowStepsMap = {
                       src={item.image}
                       className="hot-item-img"
                       alt={item.name}
+                      loading="lazy"
                     />
 
                     {/* tagline 疊在圖片底部 */}
@@ -456,6 +457,7 @@ const flowStepsMap = {
               src={item.image}
               alt={name}
               className="fixed-square"
+              loading="lazy"
             />
           </div>
 
@@ -540,6 +542,7 @@ const flowStepsMap = {
                       src={item.image}
                       alt={name}
                       className="img-fluid"
+                      loading="lazy"
                     />
                     <p className="fw-bold fs-6 mt-2 text-primary-100">
                       {name}

@@ -227,6 +227,7 @@ const closeDetail = () => {
                   src={item.images?.[0]}
                   className="card-img-top"
                   alt={item.model}
+                  loading="lazy"
                 />
                 <div className="card-body text-center text-primary-100">
                   <h6 className="fw-bold">{item.model}</h6>
@@ -274,6 +275,7 @@ const closeDetail = () => {
                           src={img}
                           className="d-block w-100 rounded"
                           alt={`${selected.model}-${i}`}
+                          loading="lazy"
                         />
                       </div>
                     ))}
@@ -316,6 +318,7 @@ const closeDetail = () => {
                   src={selected.images?.[0]}
                   className="img-fluid mb-3 rounded"
                   alt={selected.model}
+                  loading="lazy"
                 />
               )}
               </div>
