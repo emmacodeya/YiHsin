@@ -134,6 +134,7 @@ export default function ProductShowcase() {
                               src={activeItem.images[0]}
                               alt={`${activeItem.model} 圖片`}
                               className="w-100 h-100 object-fit-contain"
+                              loading="lazy"
                             />
                           ) : (
                             <div className="ph" />

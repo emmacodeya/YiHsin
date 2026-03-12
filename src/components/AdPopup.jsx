@@ -8,8 +8,9 @@ const AdPopup = () => {
   const { lang } = useContext(LangContext);
 
   const images = [
-    "/images/news/maintenance.png",
-    "/images/discount.jpg" 
+    "/images/news/maintenance.webp",
+    "/images/news/discount-2.webp" ,
+    "/images/discount.jpg"
   ];
 
   // 顯示彈窗
