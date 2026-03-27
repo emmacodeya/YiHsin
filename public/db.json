@@ -87,7 +87,7 @@
         "en": "From NTD$13,000"
       },
       "images": [
-        "/images/product/K-2590SB.webp"
+        "/images/product/K-2590S小圖示.webp"
       ],
       "features": {
         "zh-TW": [
@@ -1734,7 +1734,7 @@
     "items": [
       {
         "name": "K-2590S",
-        "image": "/images/product/K-2590SB.webp",
+        "image": "/images/product/K-2590S小圖示.webp",
         "tagline": {
           "zh-TW": "熱銷第一名機型",
           "zh-CN": "热销第一名机型",
@@ -1780,7 +1780,7 @@
             "zh-CN": "K-2590S",
             "en": "K-2590S"
           },
-          "image": "/images/product/K-2590SB.webp",
+          "image": "/images/product/K-2590S小圖示.webp",
           "features": {
             "zh-TW": [
               "自動追蹤膠膜定位，封口圖案對位精準，密封效果穩定不漏。",
