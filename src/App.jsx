@@ -18,6 +18,7 @@ import Partners from "./pages/Partners";
 import NotFound from "./pages/NotFound";
 import News from "./pages/News/News";
 import NewsDetail from "./pages/News/NewsDetail";
+import Cases from "./pages/Cases/Cases";
 
 
 
@@ -137,6 +138,7 @@ useEffect(() => {
         <Route path="/news/:id" element={<NewsDetail />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/cases" element={<Cases />} />
       </Routes>
     )}
     {!isAdmin && <Footer />}

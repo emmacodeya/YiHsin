@@ -1,0 +1,240 @@
+.cases-page {
+
+  /* 標題 */
+  .title-underline {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #b39a84, #cfc7c8);
+    border-radius: 2px;
+  }
+
+  /* 卡片 */
+  .case-row {
+    background: $gray-100;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-bottom: 60px;
+    transition: 0.3s;
+    border: 1px solid rgba(0,0,0,0.05);
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+
+    /* hover 桌機 */
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        transform: translateY(-4px);
+      }
+    }
+  }
+
+  /* 圖片 */
+  .case-image-wrap {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .case-img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.6s ease;
+  }
+
+  /* hover 只限桌機 */
+  @media (hover: hover) {
+    .case-image-wrap:hover .case-img {
+      transform: scale(1.05);
+    }
+  }
+
+  /* LOGO */
+  .logo-img {
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  /* 箭頭 */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .arrow i {
+    font-size: 40px;
+    color: $gray-400;
+    transition: 0.3s;
+  }
+
+  .arrow i:hover {
+    transform: scale(1.15);
+    color: $gray-800;
+  }
+
+  .arrow.left { left: 10px; }
+  .arrow.right { right: 10px; }
+
+  /* 文字 */
+  .case-content {
+    padding: 20px;
+  }
+
+  .case-title {
+    font-size: 1.8rem;
+    color: $gray-600;
+  }
+
+  .case-desc {
+    color: $gray-600;
+    line-height: 1.6;
+  }
+
+  /* TAG */
+  .case-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .tag {
+    position: relative;
+    overflow: hidden;
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 999px;
+    color: $gray-100;
+    background-color: $primary-1000;
+    border: 1px solid $primary-1000;
+    letter-spacing: 0.5px;
+  }
+
+  .tag::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.6),
+      transparent
+    );
+    animation: tag-shimmer 2.5s infinite;
+  }
+
+  @keyframes tag-shimmer {
+    0% { left: -75%; }
+    100% { left: 125%; }
+  }
+
+  /* =========================
+     Swiper（手機滑動）
+     ========================= */
+  .case-swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .case-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* =========================
+     Tablet & Mobile
+     ========================= */
+  @media (max-width: 768px) {
+
+    .case-row {
+      flex-direction: column !important;
+      padding: 16px;
+      margin-bottom: 24px;
+    }
+
+    .case-row.reverse {
+      flex-direction: column !important;
+    }
+
+    /* 圖片 */
+    .case-img {
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .logo-img {
+      object-fit: contain;
+    }
+
+    /* 手機不顯示箭頭 */
+    .arrow {
+      display: none;
+    }
+
+    /* 文字 */
+    .case-content {
+      padding: 12px 8px;
+    }
+
+    .case-title {
+      font-size: 1.3rem;
+      margin-bottom: 6px;
+    }
+
+    .case-desc {
+      font-size: 0.9rem;
+
+      /* 限制3行 */
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .case-tags {
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+    }
+  }
+
+  /* =========================
+     Small Mobile
+     ========================= */
+  @media (max-width: 480px) {
+
+    .case-img {
+      height: 180px;
+    }
+
+    .case-title {
+      font-size: 1.1rem;
+    }
+
+    .case-desc {
+      font-size: 0.85rem;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+    }
+  }
+}

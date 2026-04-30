@@ -14,6 +14,7 @@ const Header = () => {
       used: "精選中古機",
       news: "最新消息",
       partners: "尋找合作夥伴",
+      cases: "合作案例",
       contact: "聯繫我們",
       gmail: "電子信箱",
       line: "官方LINE",
@@ -26,6 +27,7 @@ const Header = () => {
       used: "精选中古机",
       news: "最新消息",
       partners: "寻找合作伙伴",
+      cases: "合作案例",
       contact: "联系我们",
       gmail: "邮箱",
       line: "官方LINE",
@@ -38,6 +40,7 @@ const Header = () => {
       used: "Used Machines",
       news: "News",
       partners: "Partners",
+      cases: "Cases", 
       contact: "Contact Us",
       gmail: "Email",
       line: "LINE",
@@ -99,6 +102,11 @@ const Header = () => {
                 {t.partners}
               </NavLink>
             </li>
+            <li className="nav-item">
+            <NavLink to="/cases" className="nav-link">
+              {t.cases}
+            </NavLink>
+          </li>
           </ul>
 
           {/* ✅ 右邊聯繫資訊 */}

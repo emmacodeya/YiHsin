@@ -2537,10 +2537,53 @@
     }
   ]
 }
+],
 
-
-
-
+"cases": [
+  {
+    "id": 1,
+    "title": {
+      "zh-TW": "良良海南雞飯-芝山定食所",
+      "zh-CN": "良良海南鸡饭-芝山定食所",
+      "en": "Liang Liang Hainan Chicken Rice"
+    },
+    "description": {
+      "zh-TW": "導入封口機設備，提升餐點封口品質與出餐效率，優化門市整體作業流程",
+      "zh-CN": "导入封口机设备，提升餐点封口品质与出餐效率，优化门店整体作业流程",
+      "en": "Implemented sealing machine to improve sealing quality, operational efficiency, and streamline store workflow"
+    },
+    "images": [
+      "/images/case/良良LOGO.webp",  
+      "/images/case/良良機器.webp"
+    ],
+    "tags": {
+      "zh-TW": ["餐飲業", "封口機","K-2590SA"],
+      "zh-CN": ["餐饮业", "封口机","K-2590SA"],
+      "en": ["Food Service", "Sealing Machine","K-2590SA"]
+    }
+  },
+  {
+    "id": 2,
+    "title": {
+      "zh-TW": "阿美米干-平鎮店",
+      "zh-CN": "阿美米干-平镇店",
+      "en": "Amei Rice Noodles"
+    },
+    "description": {
+        "zh-TW": "採用鋁蓋封口機，有效提升餐點密封品質，確保外帶與配送過程的完整性",
+        "zh-CN": "采用铝盖封口机，有效提升餐点密封品质，确保外带与配送过程的完整性",
+        "en": "Adopted aluminum sealing machine to enhance sealing quality and ensure food integrity during takeaway and delivery"
+      },
+    "images": [
+      "/images/case/阿美LOGO.webp",
+      "/images/case/阿美機器.webp"
+    ],
+    "tags": {
+        "zh-TW": ["餐飲業", "鋁蓋封口機","K-2290A"],
+        "zh-CN": ["餐饮业", "铝盖封口机","K-2290A"],
+        "en": ["Food Service", "Aluminum Sealing Machine","K-2290A"]
+      }
+  }
 ]
 
 }
