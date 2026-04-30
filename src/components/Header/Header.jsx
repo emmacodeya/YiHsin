@@ -210,7 +210,7 @@ const Header = () => {
                         window.gtag('event', 'tel_click');
                       }}
                     >
-                      (02) 1234-5678
+                      02 2260-7800#9
                     </a>
                   </p>
                 </div>
