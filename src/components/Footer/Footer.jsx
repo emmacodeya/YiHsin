@@ -22,7 +22,8 @@ const Footer = () => {
       linksList: ["關於我們", "常見問題", "聯絡我們"],
       contact: "聯絡資訊",
       address: "新北市土城區中央路四段2號4樓之3 (玉山銀行樓上)",
-      phone: "電話",
+      tel: "市話",
+      mobile: "服務專員",
       fax: "傳真",
       email: "電子信箱",
       copyright: "版權所有 © 2025 義歆實業股份有限公司",
@@ -37,7 +38,8 @@ const Footer = () => {
       linksList: ["关于我们", "常见问题", "联系我们"],
       contact: "联系方式",
       address: "新北市土城区中央路四段2号4楼之3（玉山银行楼上）",
-      phone: "电话",
+      tel: "座机",
+      mobile: "客服专员",
       fax: "传真",
       email: "电子邮箱",
       copyright: "版权所有 © 2025 义歆实业股份有限公司",
@@ -60,7 +62,8 @@ const Footer = () => {
       linksList: ["About Us", "FAQ", "Contact Us"],
       contact: "Contact Info",
       address: "4F-3, No. 2, Sec. 4, Zhongyang Rd., Tucheng Dist., New Taipei City 236, Taiwan (Above E.Sun Bank)",
-      phone: "Tel",
+      tel: "Tel",
+      mobile: "Customer Service Specialist",
       fax: "Fax",
       email: "Email",
       copyright: "© 2025 Yihsin Industrial Co., Ltd. All Rights Reserved.",
@@ -173,7 +176,10 @@ const Footer = () => {
               <i className="bi bi-geo-alt-fill me-2"></i>{t.address}
             </p>
             <p className="mb-2">
-              <i className="bi bi-telephone-fill me-2"></i>{t.phone}：+886 900-008-608
+              <i className="bi bi-telephone-fill me-2"></i>{t.tel}：02 2260-7800#9
+            </p>
+            <p className="mb-2">
+              <i className="bi bi-phone me-2"></i>{t.mobile}：+886 900-008-608
             </p>
             <p className="mb-0">
               <i className="bi bi-envelope-fill me-2"></i>{t.email}：yihsin1630@gmail.com

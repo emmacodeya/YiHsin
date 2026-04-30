@@ -1,10 +1,9 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { LangContext } from "../../App";
 
 const Header = () => {
   const { lang } = useContext(LangContext);
-  const navigate = useNavigate();
 
   const text = {
     "zh-TW": {
@@ -16,9 +15,9 @@ const Header = () => {
       partners: "尋找合作夥伴",
       cases: "合作案例",
       contact: "聯繫我們",
-      gmail: "電子信箱",
       line: "官方LINE",
-      phone: "電話",
+      tel: "市話",
+      mobile: "服務專員",
     },
     "zh-CN": {
       company: "义歆实业股份有限公司",
@@ -29,9 +28,9 @@ const Header = () => {
       partners: "寻找合作伙伴",
       cases: "合作案例",
       contact: "联系我们",
-      gmail: "邮箱",
       line: "官方LINE",
-      phone: "电话",
+      tel: "座机",
+      mobile: "客服专员",
     },
     en: {
       company: "YiHsin Industrial Co., Ltd.",
@@ -43,8 +42,8 @@ const Header = () => {
       cases: "Cases", 
       contact: "Contact Us",
       gmail: "Email",
-      line: "LINE",
-      phone: "Phone",
+      tel: "Tel",
+      mobile: "Customer Service Specialist",
     },
   };
 
@@ -113,34 +112,7 @@ const Header = () => {
           <div className="text-end small contact-info mt-lg-0 mt-2">
             {/* 桌機版 */}
             <div className="d-none d-md-flex gap-4 justify-content-end">
-              {/* 聯絡我們 (電話) */}
-              <div className="text-center">
-                <p className="fw-bold">{t.contact}</p>
-                <button
-                  className="btn btn-link p-0 text-decoration-none text-primary-1000"
-                  onClick={() => {
-                    window.gtag('event', 'phone_click');
-                    navigate("/contact");
-                  }}
-                >
-                  +886 900-008-608
-                </button>
-              </div>
-
-              {/* Gmail */}
-              <div className="text-center">
-                <p className="fw-bold">{t.gmail}</p>
-                <a
-                  href="mailto:yihsin1630@gmail.com"
-                  className="text-decoration-none text-primary-1000"
-                  onClick={() => {
-                    window.gtag('event', 'email_click');
-                  }}
-                >
-                  yihsin1630@gmail.com
-                </a>
-              </div>
-
+              
               {/* LINE */}
               <div className="text-center">
                 <p className="fw-bold">{t.line}</p>
@@ -156,6 +128,35 @@ const Header = () => {
                   @477fjgkd
                 </a>
               </div>
+
+                {/* 服務專員電話 */}
+                <div className="text-center">
+                  <p className="fw-bold">{t.mobile}</p>
+                  <a
+                    href="tel:+886900008608"
+                    className="text-decoration-none text-primary-1000"
+                    onClick={() => {
+                      window.gtag('event', 'mobile_click');
+                    }}
+                  >
+                    +886 900-008-608
+                  </a>
+                </div>
+
+                {/* 市話 */}
+                <div className="text-center">
+                  <p className="fw-bold">{t.tel}</p>
+                  <a
+                    href="tel:022260-7800#9"
+                    className="text-decoration-none text-primary-1000"
+                    onClick={() => {
+                      window.gtag('event', 'tel_click');
+                    }}
+                  >
+                    02 2260-7800#9
+                  </a> 
+                </div>
+
             </div>
 
             {/* 手機版：折疊式 */}
@@ -171,43 +172,45 @@ const Header = () => {
 
               <div className="collapse mt-2" id="contactCollapse">
                 <div className="text-center bg-primary-200 text-white py-2 rounded">
+                  
                   <p className="mb-1">
-                    {t.phone}：
-                    <a
-                      href="tel:0900008608"
-                      className="text-white text-decoration-none"
-                      onClick={() => {
-                    window.gtag('event', 'phone_click');
-                    navigate("/contact");
-                  }}
-                    >
-                      +886 900-008-608
-                    </a>
-                  </p>
-                  <p className="mb-1">
-                    {t.gmail}：
-                    <a
-                      href="mailto:yihsin1630@gmail.com"
-                      className="text-white text-decoration-none"
-                      onClick={() => {
-                    window.gtag('event', 'email_click');
-                  }}
-                    >
-                      yihsin1630@gmail.com
-                    </a>
-                  </p>
-                  <p className="mb-0">
                     {t.line}：
                     <a
                       href="https://line.me/R/ti/p/@477fjgkd"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-link text-white text-decoration-none p-0"
+                      className="text-white text-decoration-none"
                       onClick={() => {
                       window.gtag('event', 'line_click');
                       }}
                     >
                       @477fjgkd
+                    </a>
+                  </p>
+                  {/* 服務專員（手機） */}
+                  <p className="mb-1">
+                    {t.mobile}：
+                    <a
+                      href="tel:+886900008608"
+                      className="text-white text-decoration-none"
+                      onClick={() => {
+                        window.gtag('event', 'mobile_click');
+                      }}
+                    >
+                      +886 900-008-608
+                    </a>
+                  </p>
+                  {/* 市話 */}
+                  <p className="mb-0">
+                    {t.tel}：
+                    <a
+                      href="tel:+886212345678"
+                      className="text-white text-decoration-none"
+                      onClick={() => {
+                        window.gtag('event', 'tel_click');
+                      }}
+                    >
+                      (02) 1234-5678
                     </a>
                   </p>
                 </div>

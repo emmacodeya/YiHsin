@@ -64,7 +64,8 @@ const Contact = () => {
       title: "聯絡我們",
       desc: "若有任何產品疑問、報價或維修需求，請使用下方表單或透過聯絡方式與我們聯繫。",
       info: [
-        { icon: "bi-telephone-fill", title: "聯絡電話", value: "+886 900-008-608" },
+        { icon: "bi-telephone-fill", title: "市話", value: "+02 2260-7800#9" },
+        { icon: "bi-phone", title: "服務專員", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "服務時間", value: "週一至週五 09:00–18:00" },
         { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城區中央路四段2號4樓之3（玉山銀行樓上）" },
       ],
@@ -91,7 +92,8 @@ const Contact = () => {
       title: "联系我们",
       desc: "如有任何产品疑问、报价或维修需求，请使用下方表单或通过联系方式与我们联系。",
       info: [
-        { icon: "bi-telephone-fill", title: "联系电话", value: "+886 900-008-608" },
+        { icon: "bi-telephone-fill", title: "座机", value: "+02 2260-7800#9" },
+        { icon: "bi-phone", title: "客服专员", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "服务时间", value: "周一至周五 09:00–18:00" },
         { icon: "bi-geo-alt-fill", title: "公司地址", value: "新北市土城区中央路四段2号4楼之3（玉山银行楼上）" },
       ],
@@ -118,7 +120,8 @@ const Contact = () => {
       title: "Contact Us",
       desc: "For any inquiries or cooperation, please fill in the form below or contact us directly.",
       info: [
-        { icon: "bi-telephone-fill", title: "Telephone", value: "+886 900-008-608" },
+        { icon: "bi-telephone-fill", title: "Tel", value: "+02 2260-7800#9" },
+        { icon: "bi-phone", title: "Customer Service Specialist", value: "+886 900-008-608" },
         { icon: "bi-clock-fill", title: "Service Hours", value: "Mon–Fri 9:00–18:00" },
         { icon: "bi-geo-alt-fill", title: "Address", value: "4F-3, No. 2, Sec. 4, Zhongyang Rd., Tucheng Dist., New Taipei City 236, Taiwan (Above E.Sun Bank)" },
       ],
