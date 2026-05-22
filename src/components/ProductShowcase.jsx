@@ -62,7 +62,7 @@ export default function ProductShowcase() {
   };
 
   return (
-    <section className="py-lg-12 py-5 product-showcase">
+    <section className="hot-section py-lg-12 py-5 product-showcase">
       <div className="container">
         {/* 區塊標題 */}
         <h2 className="text-center fw-bold display-6 mb-lg-8 mb-5 text-primary-100">

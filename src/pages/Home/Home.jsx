@@ -11,11 +11,11 @@ const Home = () => {
   const [products, setProducts] = useState([]);
 
   // slogan
-  const textMap = {
-    "zh-TW": "餐飲開店最佳夥伴",
-    "zh-CN": "餐饮开店最佳伙伴",
-    en: "Your Best Partner in Starting a Restaurant Business.",
-  };
+ const textMap = {
+      "zh-TW": "YODO鎧瑋\n餐飲設備解決方案",
+      "zh-CN": "YODO铠玮\n餐饮设备解决方案",
+      en: "YODO\nFood Equipment Solutions",
+    };
 
 
   const flowTitleMap = {
@@ -97,7 +97,7 @@ const flowStepsMap = {
 };
 
   const text = textMap[lang];
-  const words = text.split(" ");
+  const lines = text.split("\n");
 
   // 資料 state
   const [hotItems, setHotItems] = useState([]);
@@ -105,6 +105,7 @@ const flowStepsMap = {
   const [categories, setCategories] = useState([]);
   const [economical, setEconomical] = useState([]);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  
 
   //網頁title
   useEffect(() => {
@@ -155,28 +156,61 @@ const flowStepsMap = {
     <>
     <AdPopup /> 
   {/* banner */}
-<div className="banner p-3 text-primary-1000">
-  <div className="container mt-7 py-5 text-center text-primary-1000">
+<div className="banner position-relative text-primary-1000">
 
-    <h1 className="mb-4">
-      {words.map((word, i) => (
-        <Motion.span
-          key={i}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: i * 0.1, duration: 0.6 }}
-          style={{
-            display: "inline-block",
-            marginRight: "0.35em",
-            whiteSpace: "nowrap"
-          }}
-        >
-          {word}
-        </Motion.span>
-      ))}
-    </h1>
+  {/* Banner 圖 */}
 
-  </div>
+   <picture>
+    {/* 手機 */}
+    <source
+      media="(max-width: 767px)"
+      srcSet="/images/YODOSM.webp"
+    />
+
+    {/* 平板 */}
+    <source
+      media="(max-width: 991px)"
+      srcSet="/images/YODOMD.webp"
+    />
+
+    {/* 桌機 */}
+    <img
+      src="/images/YODO1920.webp"
+      alt="banner"
+      className="banner-img"
+    />
+  </picture>
+
+{/* 文字 */}
+<div className="banner-content container  text-start text-primary-1000">
+
+  <h1 className="display-5 fw-bold">
+
+    {lines.map((line, lineIndex) => (
+      <div key={lineIndex}>
+        {line.split("").map((char, i) => (
+          <Motion.span
+            key={`${lineIndex}-${i}`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: (lineIndex * 10 + i) * 0.05,
+              duration: 0.6
+            }}
+            style={{
+              display: "inline-block",
+              whiteSpace: "pre"
+            }}
+          >
+            {char}
+          </Motion.span>
+        ))}
+      </div>
+    ))}
+
+  </h1>
+
+</div>
 </div>
 
 

@@ -2536,6 +2536,121 @@
       }
     }
   ]
+},
+{
+  "id": 8,
+  "title": {
+    "zh-TW": "手搖飲市場持續成長，設備成為門市競爭關鍵",
+    "zh-CN": "手摇饮市场持续成长，设备成为门市竞争关键",
+    "en": "Bubble Tea Market Keeps Growing — Equipment Becomes the Key to Competition"
+  },
+  "date": "2026-05-22",
+  "cover": "/images/news/義歆產業走勢分析海報.webp",
+  "summary": {
+    "zh-TW": "2024 台灣手搖飲市場創下歷史新高，面對激烈競爭與展店潮，設備穩定性與自動化成為門市經營關鍵。",
+    "zh-CN": "2024 台湾手摇饮市场创下历史新高，面对激烈竞争与展店潮，设备稳定性与自动化成为门市经营关键。",
+    "en": "Taiwan's bubble tea market reached a record high in 2024. As competition intensifies, stable and automated equipment has become essential for store operations."
+  },
+  "content": [
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "手搖飲市場，正在改寫紀錄。2024 年，台灣手搖飲營業額衝上 1,331 億元，創下歷史新高，全台門市更達 16,049 家。",
+        "zh-CN": "手摇饮市场，正在改写纪录。2024 年，台湾手摇饮营业额冲上 1,331 亿元，创下历史新高，全台门市更达到 16,049 家。",
+        "en": "The bubble tea market is rewriting records. In 2024, Taiwan's bubble tea industry reached NT$133.1 billion in revenue, with over 16,049 stores nationwide."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "放眼全球，珍珠奶茶市場更以每年約 9.5% 的速度成長，預估至 2035 年市場規模將突破 97 億美元。",
+        "zh-CN": "放眼全球，珍珠奶茶市场更以每年约 9.5% 的速度成长，预计至 2035 年市场规模将突破 97 亿美元。",
+        "en": "Globally, the bubble tea market is growing at an annual rate of around 9.5%, with projections reaching USD 9.7 billion by 2035."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "競爭升溫，設備成為關鍵",
+        "zh-CN": "竞争升温，设备成为关键",
+        "en": "As Competition Intensifies, Equipment Matters More Than Ever"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "但熱鬧背後，是越來越激烈的競爭。台灣手搖飲市場平均每月新增超過 40 家門市，要在市場中脫穎而出，「設備」已成為影響營運效率與品質的重要核心。",
+        "zh-CN": "但热闹背后，是越来越激烈的竞争。台湾手摇饮市场平均每月新增超过 40 家门市，要在市场中脱颖而出，「设备」已成为影响营运效率与品质的重要核心。",
+        "en": "Behind the booming market lies fierce competition. With over 40 new stores opening every month in Taiwan, equipment has become a critical factor in operational efficiency and drink quality."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "我們觀察到的五大趨勢",
+        "zh-CN": "我们观察到的五大趋势",
+        "en": "Five Major Trends We Observed"
+      }
+    },
+    {
+      "type": "list",
+      "items": {
+        "zh-TW": [
+          "市場規模持續創新高",
+          "展店競爭日益白熱化",
+          "設備自動化需求快速提升",
+          "食安與保鮮成為基本門檻",
+          "連鎖化與海外拓展同步成長"
+        ],
+        "zh-CN": [
+          "市场规模持续创新高",
+          "展店竞争日益白热化",
+          "设备自动化需求快速提升",
+          "食安与保鲜成为基本门槛",
+          "连锁化与海外拓展同步成长"
+        ],
+        "en": [
+          "The market continues to reach record highs",
+          "Store expansion competition is intensifying",
+          "Demand for automated equipment is rapidly increasing",
+          "Food safety and freshness are becoming essential standards",
+          "Chain expansion and overseas growth continue simultaneously"
+        ]
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "每一項趨勢，都指向同一件事——一台穩定、衛生、有效率的設備，將直接影響門市的出杯品質與營運成本。",
+        "zh-CN": "每一项趋势，都指向同一件事——一台稳定、卫生、高效率的设备，将直接影响门市的出杯品质与营运成本。",
+        "en": "Every trend points to the same conclusion: stable, hygienic, and efficient equipment directly impacts drink quality and operational costs."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "YODO 鎧瑋，陪您掌握下一波成長",
+        "zh-CN": "YODO 铠玮，陪您掌握下一波成长",
+        "en": "YODO — Your Partner for the Next Wave of Growth"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "YODO 鎧瑋專注於商用飲料設備研發與製造，從全自動封口機、精準定量果糖機到整體產線規劃，全系列設備皆通過歐洲 CE 認證。",
+        "zh-CN": "YODO 铠玮专注于商用饮料设备研发与制造，从全自动封口机、精准定量果糖机到整体产线规划，全系列设备皆通过欧洲 CE 认证。",
+        "en": "YODO specializes in the development and manufacturing of commercial beverage equipment, from automatic cup sealers and precise fructose dispensers to complete production lines — all CE certified."
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "趨勢已經很明確，設備就是競爭力。讓 YODO 鎧瑋陪您一起抓住市場下一波成長機會。",
+        "zh-CN": "趋势已经很明确，设备就是竞争力。让 YODO 铠玮陪您一起抓住市场下一波成长机会。",
+        "en": "The trend is clear — equipment is competitiveness. Let YODO help you seize the next growth opportunity in the beverage market."
+      }
+    }
+  ]
 }
 ],
 
