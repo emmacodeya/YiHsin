@@ -67,9 +67,15 @@ useEffect(() => {
     <>
       <section className="news-detail py-5">
         <div className="container">
-          {/* === 標題區 === */}
+        {/* === 標題區 === */}
           <div className="text-center mb-5">
-            <h2 className="fw-bold mb-3">{t(news.title)}</h2>
+            <h2
+              className="fw-bold mb-3"
+              style={{ whiteSpace: "pre-line" }}
+            >
+              {t(news.title)}
+            </h2>
+
             <p>{news.date}</p>
           </div>
 
@@ -133,6 +139,27 @@ useEffect(() => {
                       ))}
                     </ul>
                   );
+                  case "table":
+                    return (
+                      <div key={i} className="table-responsive my-4">
+                        <table className="table table-bordered align-middle">
+                          <tbody>
+                            {block.rows.map((row, idx) => (
+                              <tr key={idx}>
+                                <th
+                                  className="bg-light"
+                                  style={{ width: "30%", whiteSpace: "nowrap" }}
+                                >
+                                  {t(row.label)}
+                                </th>
+
+                                <td>{t(row.value)}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    );
                 default:
                   return null;
               }

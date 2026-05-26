@@ -8,6 +8,7 @@ const AdPopup = () => {
   const { lang } = useContext(LangContext);
 
   const images = [
+     "/images/news/taipei-pack-2026-banner.webp",
     "/images/news/maintenance.webp",
     "/images/news/discount-2.webp" ,
     "/images/discount.jpg"
