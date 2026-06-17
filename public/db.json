@@ -152,6 +152,164 @@
   ]
     },
     {
+  "category": {
+    "zh-TW": "雪克奶昔機",
+    "zh-CN": "雪克奶昔机",
+    "en": "Milkshake Machine"
+  },
+  "items": [
+    {
+      "model": "K-S8",
+      "price": {
+        "zh-TW": "7,999 元起",
+        "zh-CN": "7,999 元起",
+        "en": "From NTD$7,999"
+      },
+      "images": [
+        "/images/product/K-S8白色.webp",
+        "/images/product/K-S8黑色.webp"
+      ],
+      "features": {
+        "zh-TW": [
+          "採用無刷直流馬達驅動，運轉穩定、低噪音、使用壽命長。",
+          "最高轉速可達 18,000 RPM，可快速完成奶昔、冰沙與飲品攪拌。",
+          "內建三組記憶功能鍵，可自訂轉速與時間設定，提升製作效率。",
+          "智慧安全保護設計，攪拌杯未正確掛置時自動停止運作。"
+        ],
+        "zh-CN": [
+          "采用无刷直流马达驱动，运行稳定、低噪音、使用寿命长。",
+          "最高转速可达 18,000 RPM，可快速完成奶昔、冰沙与饮品搅拌。",
+          "内建三组记忆功能键，可自定义转速与时间设定，提升制作效率。",
+          "智能安全保护设计，搅拌杯未正确挂置时自动停止运作。"
+        ],
+        "en": [
+          "Powered by a brushless DC motor for stable performance, low noise, and long service life.",
+          "Maximum speed up to 18,000 RPM for fast milkshake, smoothie, and beverage mixing.",
+          "Built-in three programmable memory buttons for customized speed and time settings.",
+          "Smart safety protection automatically stops operation when the mixing cup is not properly mounted."
+        ]
+      },
+      "specs": {
+        "titles": {
+          "zh-TW": {
+            "voltage": "電壓",
+            "power": "功率",
+            "capacity": "容量",
+            "weight": "重量",
+            "dimensions": "外觀尺寸"
+          },
+          "zh-CN": {
+            "voltage": "电压",
+            "power": "功率",
+            "capacity": "容量",
+            "weight": "重量",
+            "dimensions": "外观尺寸"
+          },
+          "en": {
+            "voltage": "Voltage",
+            "power": "Power",
+            "capacity": "Capacity",
+            "weight": "Weight",
+            "dimensions": "Dimensions"
+          }
+        },
+        "values": {
+          "voltage": "110~220 V",
+          "power": "350 W",
+          "capacity": "1.2 L",
+          "weight": "4.5 KG",
+          "dimensions": "140*260*520 mm"
+        }
+      }
+    }
+  ]
+},
+{
+  "category": {
+    "zh-TW": "智能泡茶機",
+    "zh-CN": "智能泡茶机",
+    "en": "Smart Tea Maker"
+  },
+  "items": [
+    {
+      "model": "K-T055",
+      "price": {
+        "zh-TW": "58,000 元起",
+        "zh-CN": "58,000 元起",
+        "en": "From NTD$58,000"
+      },
+      "images": [
+        "/images/product/K-T055.webp"
+      ],
+      "features": {
+        "zh-TW": [
+          "全自動標準化泡茶流程，一鍵完成注水、浸泡、攪拌與出茶。",
+          "支援多組泡茶配方設定，可依不同茶葉需求調整溫度、水量與浸泡時間。",
+          "智慧觸控操作介面，茶湯品質穩定一致，降低人員訓練成本。",
+          "具備定時開關機與出水量校準功能，提升門市營運效率。"
+        ],
+        "zh-CN": [
+          "全自动标准化泡茶流程，一键完成注水、浸泡、搅拌与出茶。",
+          "支持多组泡茶配方设定，可依不同茶叶需求调整温度、水量与浸泡时间。",
+          "智能触控操作界面，茶汤品质稳定一致，降低人员培训成本。",
+          "具备定时开关机与出水量校准功能，提升门店营运效率。"
+        ],
+        "en": [
+          "Fully automated tea brewing process with one-touch operation for filling, steeping, stirring, and dispensing.",
+          "Supports multiple tea recipes with adjustable temperature, water volume, and steeping time.",
+          "Smart touch-screen interface ensures consistent tea quality while reducing staff training time.",
+          "Built-in timer scheduling and water calibration functions improve operational efficiency."
+        ]
+      },
+      "specs": {
+        "titles": {
+          "zh-TW": {
+            "voltage": "電壓",
+            "power": "功率",
+            "water_tank": "水箱容量",
+            "tea_tank": "泡茶桶容量",
+            "pressure": "進水壓力",
+            "temperature": "泡茶溫度",
+            "weight": "重量",
+            "dimensions": "外觀尺寸"
+          },
+          "zh-CN": {
+            "voltage": "电压",
+            "power": "功率",
+            "water_tank": "水箱容量",
+            "tea_tank": "泡茶桶容量",
+            "pressure": "进水压力",
+            "temperature": "泡茶温度",
+            "weight": "重量",
+            "dimensions": "外观尺寸"
+          },
+          "en": {
+            "voltage": "Voltage",
+            "power": "Power",
+            "water_tank": "Water Tank Capacity",
+            "tea_tank": "Tea Brewing Capacity",
+            "pressure": "Water Pressure",
+            "temperature": "Brewing Temperature",
+            "weight": "Weight",
+            "dimensions": "Dimensions"
+          }
+        },
+        "values": {
+          "voltage": "220V/50Hz",
+          "power": "3300 W",
+          "water_tank": "11 L",
+          "tea_tank": "5.5 L",
+          "pressure": "1~4 bar",
+          "temperature": "75~97°C",
+          "weight": "29.5 KG",
+          "dimensions": "270*592*802 mm"
+        }
+      }
+    }
+  ]
+}
+    ,
+    {
       "category": {
     "zh-TW": "果糖機",
     "zh-CN": "果糖机",
