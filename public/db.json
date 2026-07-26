@@ -3120,6 +3120,94 @@
       "src": "/images/news/taipei-pack-2026-banner2.webp"
     }
   ]
+},
+{
+  "id": 10,
+  "title": {
+    "zh-TW": "開手搖飲怎麼選設備？抓住 3 個原則就不踩雷",
+    "zh-CN": "开手摇饮怎么选设备？掌握 3 个原则就不踩雷",
+    "en": "How to Choose Equipment for Your Bubble Tea Shop: 3 Principles to Avoid Costly Mistakes"
+  },
+  "date": "2026-07-26",
+  "cover": "/images/news/how-to-choose-equipment-banner.webp",
+  "summary": {
+    "zh-TW": "選設備不只比價格，更要看安全、售後與未來擴店需求。",
+    "zh-CN": "选设备不只比价格，更要看安全、售后与未来扩店需求。",
+    "en": "Choosing equipment isn't just about price—focus on safety, after-sales support, and future scalability."
+  },
+  "content": [
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "開一間手搖飲，很多人把設備留到最後才決定，但一家店每天能做多少杯、口味穩不穩、尖峰會不會塞單，其實都被後檯那幾台機器決定。偏偏設備一比就琳瑯滿目——封口機、果糖機、煮茶機、搖搖機，光是品牌與價位就看得眼花撩亂。與其糾結「哪台功能多、哪台便宜幾百塊」，不如先退一步，抓住真正決定長期營運的三個原則。把這幾點想清楚，選設備就不會踩雷。",
+        "zh-CN": "开一家手摇饮店，很多人都会把设备留到最后才决定，但一家店每天能做多少杯、口味稳不稳、尖峰时段会不会塞单，其实都取决于后场的那些设备。封口机、果糖机、煮茶机、摇摇机，光是品牌与价格就让人眼花缭乱。与其纠结哪台功能更多、哪台便宜几百元，不如先掌握真正影响长期经营的三个原则，选设备就不会踩雷。",
+        "en": "Many entrepreneurs leave equipment selection until the last minute when opening a bubble tea shop. However, your daily output, drink consistency, and service speed during peak hours are all determined by the equipment behind the counter. With so many options—from cup sealers and fructose dispensers to tea brewers and shaker machines—it's easy to focus only on price. Instead, keep these three key principles in mind to make a smarter long-term investment."
+      }
+    },
+
+    {
+      "type": "image",
+      "src": "/images/news/how-to-choose-equipment-01.webp"
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "原則一：認證與安全，是最基本的門檻",
+        "zh-CN": "原则一：认证与安全，是最基本的门槛",
+        "en": "Principle 1: Safety Certification Comes First"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "飲料設備每天長時間通電、連續運轉，安全規格絕不能省；一台沒過安規的機器，省下的那點錢，可能換來漏電、過熱甚至停業的風險。判斷的第一道門檻，就是看是否通過歐洲 CE 認證這項國際公認的安全與品質標準。YODO 鎧瑋全系列通過 CE 認證、元件用料紮實，讓你在尖峰時段連續出杯也用得安心——設備是要陪你好幾年的夥伴，安全這關，一開始就不能將就。",
+        "zh-CN": "饮料设备每天长时间通电、连续运转，安全规格绝不能省。一台没有通过安全认证的设备，省下来的成本，可能换来漏电、过热甚至停业的风险。选择设备时，首先要确认是否通过欧洲 CE 认证。YODO 铠玮全系列设备皆通过 CE 认证，采用扎实耐用的零组件，让您长期使用更安心。",
+        "en": "Commercial beverage equipment operates for long hours every day, making safety a top priority. Choosing equipment certified to international standards, such as CE certification, helps reduce the risk of electrical hazards and unexpected downtime. YODO equipment is CE certified and built with reliable components for safe and stable operation."
+      }
+    },
+
+    {
+      "type": "image",
+      "src": "/images/news/how-to-choose-equipment-02.webp"
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "原則二：售後與零件，才是真正的成本",
+        "zh-CN": "原则二：售后与零件，才是真正的成本",
+        "en": "Principle 2: After-Sales Service Matters More Than Price"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "選設備別只看「買的當下多少錢」。機器總有故障、需要保養與換零件的一天，當它在營業尖峰突然罷工，卻找不到人修、叫不到料，蒸發的就是一整天的營業額。義歆提供從設備導入到售後維護的一站式服務，協助店家穩定營運。",
+        "zh-CN": "选设备不要只看购买价格。设备总有维修、保养与更换零件的时候，若营业高峰突然故障却无法立即维修，损失的将是一整天的营业额。义歆提供从设备导入到售后维护的一站式服务，让经营更安心。",
+        "en": "The purchase price is only part of the total cost. Reliable after-sales support and easy access to spare parts are essential for minimizing downtime. YiHsin provides complete support, from equipment installation to long-term maintenance, helping businesses operate with confidence."
+      }
+    },
+
+    {
+      "type": "image",
+      "src": "/images/news/how-to-choose-equipment-03.webp"
+    },
+    {
+      "type": "heading",
+      "text": {
+        "zh-TW": "原則三：能不能規模化，決定你走得多遠",
+        "zh-CN": "原则三：能不能规模化，决定你能走多远",
+        "en": "Principle 3: Choose Equipment That Supports Business Growth"
+      }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "zh-TW": "若你不只想開一家店，而是規劃展店或加盟，設備就必須具備標準化能力。定量、定溫與穩定品質，都是連鎖經營的重要基礎。YODO 鎧瑋深耕設備研發製造 33 年，協助眾多連鎖品牌建立一致且高效率的營運流程。設備選對，才能讓品牌走得更遠。",
+        "zh-CN": "如果未来规划展店或加盟，设备必须具备标准化能力。稳定的定量、定温与品质一致性，是连锁经营的重要基础。YODO 铠玮深耕设备研发制造 33 年，协助众多连锁品牌建立稳定且高效率的营运流程。",
+        "en": "If you plan to expand beyond a single store, standardized equipment becomes essential. Consistent portion control, temperature accuracy, and operational efficiency make it easier to replicate quality across multiple locations. With over 33 years of manufacturing experience, YODO helps brands build scalable operations for long-term growth."
+      }
+    }
+  ]
 }
 ],
 

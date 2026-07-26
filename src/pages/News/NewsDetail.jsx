@@ -11,7 +11,7 @@ const NewsDetail = () => {
 useEffect(() => {
   if (!news) return;
 
-  // 🔥 正確取得多語系標題
+  // 正確取得多語系標題
   const rawTitle =
     typeof news.title === "string"
       ? news.title
@@ -159,6 +159,15 @@ useEffect(() => {
                           </tbody>
                         </table>
                       </div>
+                    );
+                    case "subheading":
+                    return (
+                      <h5
+                        key={i}
+                        className="mt-3 mb-2 fw-semibold text-primary-600"
+                      >
+                        {t(block.text)}
+                      </h5>
                     );
                 default:
                   return null;
